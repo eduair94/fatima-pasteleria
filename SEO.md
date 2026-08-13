@@ -85,6 +85,24 @@ crea con la dirección oculta.
 - Subí las fotos del catálogo el primer día. Las fichas con fotos propias rankean mejor que las
   que dependen de fotos de clientes.
 
+**Descripción para pegar** (Google admite 750 caracteres; ésta usa 690 y sólo dice cosas que la
+cuenta ya publicó):
+
+> Pastelería artesanal por encargo en Montevideo. Hago cheesecakes, tortas y tartas, scones,
+> alfajores de maicena y brownies, todo en tandas chicas y horneado para cada pedido.
+>
+> Uso ingredientes naturales, sin conservantes ni colorantes. Las plantillas del tiramisú las
+> horneo acá, una por una, en lugar de comprarlas hechas.
+>
+> Los pedidos se toman con 48 horas de anticipación y se coordinan por WhatsApp: me contás qué
+> querés y para cuándo, y te confirmo disponibilidad y la entrega, a partir de las 19 h.
+>
+> Retiro sin costo en Aguada y La Comercial. Envío a Tres Cruces, Nuevo Centro, Av. Italia y
+> Parque Batlle. Otras zonas de Montevideo, a coordinar.
+
+Notas de uso: no le agregues palabras clave al final ni repitas «Montevideo» de más — Google
+premia que se lea natural. Cuando haya dominio propio, cambiá el sitio web de la ficha.
+
 **Las estrellas salen de ahí, no del sitio.** Por eso el schema no declara ninguna calificación:
 inventarla sería falsear datos, y las estrellas que Google muestra para un negocio local vienen
 de su ficha.
