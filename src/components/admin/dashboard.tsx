@@ -97,9 +97,10 @@ export function AdminDashboard({
             <Icon name="alert" size={18} className="mt-px shrink-0" />
             <p>
               <strong className="font-semibold">Los cambios no se están guardando de forma permanente.</strong>{" "}
-              Este despliegue no tiene base de datos conectada, así que todo vuelve al catálogo
-              original cuando el servidor se reinicia. Ver el README, sección
-              &ldquo;Persistencia del catálogo&rdquo;.
+              Este despliegue todavía no tiene almacenamiento conectado, así que todo vuelve al
+              catálogo original cuando el servidor se reinicia. Se arregla en un clic:
+              en Vercel, <em>Storage → Connect Store → Blob</em>, conectarlo al proyecto y volver a
+              desplegar. Ver el README, sección &ldquo;Persistencia del catálogo&rdquo;.
             </p>
           </div>
         ) : null}

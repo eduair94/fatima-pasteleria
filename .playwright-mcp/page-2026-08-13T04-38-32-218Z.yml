@@ -1,0 +1,22 @@
+- generic [ref=f11e1]:
+  - link "Saltar al contenido" [ref=f11e2] [cursor=pointer]:
+    - /url: "#contenido"
+  - main [ref=f11e3]:
+    - generic [ref=f11e5]:
+      - generic [ref=f11e6]:
+        - generic [ref=f11e7]:
+          - generic [ref=f11e8]: Fátima
+          - generic [ref=f11e9]: Pastelería Artesanal
+        - separator [ref=f11e10]
+        - heading "Panel de productos" [level=1] [ref=f11e11]
+        - paragraph [ref=f11e12]: Desde acá se cambian precios, se pausa lo que no hay y se agregan productos nuevos.
+      - generic [ref=f11e13]:
+        - generic [ref=f11e14]:
+          - generic [ref=f11e15]: Contraseña
+          - generic [ref=f11e16]:
+            - textbox "Contraseña" [active] [ref=f11e17]
+            - button "Mostrar la contraseña" [ref=f11e18] [cursor=pointer]
+        - button "Entrar" [disabled] [ref=f11e22]
+      - link "Volver al sitio" [ref=f11e23] [cursor=pointer]:
+        - /url: /
+  - alert [ref=f11e24]

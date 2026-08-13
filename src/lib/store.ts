@@ -4,26 +4,31 @@ import { seedCatalog } from "./catalog-seed";
 import type { Catalog, Product, Settings } from "./types";
 
 /**
- * Almacenamiento del catálogo, con tres controladores y sin dependencias:
+ * Almacenamiento del catálogo, con cuatro controladores. Se elige el primero
+ * que esté disponible:
  *
- *   1. `upstash`  — Redis por REST (Upstash o Vercel KV). Es el modo de
- *                   producción: persiste entre despliegues y entre regiones.
- *   2. `fs`       — archivo `data/catalog.json`. Sólo en desarrollo local.
- *   3. `memory`   — respaldo. Sirve para ver el sitio, pero cada instancia
+ *   1. `upstash`  — Redis por REST (Upstash o Vercel KV), sin dependencias.
+ *   2. `blob`     — Vercel Blob. Alcanza con conectar un store al proyecto:
+ *                   Vercel inyecta BLOB_READ_WRITE_TOKEN y esto se activa solo.
+ *   3. `fs`       — archivo `data/catalog.json`. Sólo en desarrollo local.
+ *   4. `memory`   — respaldo. Sirve para ver el sitio, pero cada instancia
  *                   arranca desde la semilla. El panel lo avisa.
  *
  * Ver README → "Persistencia del catálogo".
  */
 
 const KEY = "fatima:catalog:v1";
+const BLOB_PREFIX = "catalogo-";
 
 const REDIS_URL = process.env.UPSTASH_REDIS_REST_URL || process.env.KV_REST_API_URL;
 const REDIS_TOKEN = process.env.UPSTASH_REDIS_REST_TOKEN || process.env.KV_REST_API_TOKEN;
+const BLOB_TOKEN = process.env.BLOB_READ_WRITE_TOKEN;
 
-export type StoreDriver = "upstash" | "fs" | "memory";
+export type StoreDriver = "upstash" | "blob" | "fs" | "memory";
 
 export function storeDriver(): StoreDriver {
   if (REDIS_URL && REDIS_TOKEN) return "upstash";
+  if (BLOB_TOKEN) return "blob";
   if (!process.env.VERCEL) return "fs";
   return "memory";
 }
@@ -54,6 +59,50 @@ async function redisCommand(command: (string | number)[]): Promise<unknown> {
   const json = (await res.json()) as { result?: unknown; error?: string };
   if (json.error) throw new Error(`Redis: ${json.error}`);
   return json.result ?? null;
+}
+
+/* --------------------------------------------------------------- blob */
+
+/**
+ * Cada guardado sube un archivo nuevo con marca de tiempo y borra los viejos.
+ * Así se evita la caché del CDN: la URL cambia en cada cambio, y el listado
+ * —que va contra la API autenticada, no contra el CDN— siempre está fresco.
+ */
+async function blobNewest() {
+  const { list } = await import("@vercel/blob");
+  const { blobs } = await list({ prefix: BLOB_PREFIX, token: BLOB_TOKEN });
+  if (blobs.length === 0) return null;
+  return [...blobs].sort(
+    (a, b) => new Date(b.uploadedAt).getTime() - new Date(a.uploadedAt).getTime(),
+  );
+}
+
+async function readFromBlob(): Promise<Catalog | null> {
+  const blobs = await blobNewest();
+  if (!blobs) return null;
+  const response = await fetch(blobs[0].url, { cache: "no-store" });
+  if (!response.ok) return null;
+  return (await response.json()) as Catalog;
+}
+
+async function writeToBlob(catalog: Catalog): Promise<void> {
+  const { put, del } = await import("@vercel/blob");
+  await put(`${BLOB_PREFIX}${Date.now()}.json`, JSON.stringify(catalog), {
+    access: "public",
+    token: BLOB_TOKEN,
+    contentType: "application/json",
+    addRandomSuffix: true,
+  });
+
+  // Se conservan las dos versiones anteriores por si hay que volver atrás.
+  const blobs = await blobNewest();
+  const stale = blobs?.slice(3) ?? [];
+  if (stale.length) {
+    await del(
+      stale.map((blob) => blob.url),
+      { token: BLOB_TOKEN },
+    );
+  }
 }
 
 /* ----------------------------------------------------------------- archivo */
@@ -110,6 +159,15 @@ export async function readCatalog(): Promise<Catalog> {
     return seedCatalog();
   }
 
+  if (driver === "blob") {
+    try {
+      return normalize(await readFromBlob());
+    } catch (error) {
+      console.error("[store] no se pudo leer del Blob, se usa la semilla:", error);
+      return seedCatalog();
+    }
+  }
+
   if (driver === "fs") {
     return normalize(await readFromFile());
   }
@@ -123,6 +181,11 @@ export async function writeCatalog(catalog: Catalog): Promise<void> {
 
   if (driver === "upstash") {
     await redisCommand(["SET", KEY, JSON.stringify(catalog)]);
+    return;
+  }
+
+  if (driver === "blob") {
+    await writeToBlob(catalog);
     return;
   }
 

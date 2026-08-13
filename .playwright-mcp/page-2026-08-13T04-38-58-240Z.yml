@@ -1,0 +1,131 @@
+- generic [active] [ref=f11e1]:
+  - link "Saltar al contenido" [ref=f11e2] [cursor=pointer]:
+    - /url: "#contenido"
+  - main [ref=f11e3]:
+    - generic [ref=f11e25]:
+      - generic [ref=f11e27]:
+        - generic [ref=f11e28]:
+          - generic [ref=f11e29]:
+            - generic [ref=f11e30]: Fátima
+            - generic [ref=f11e31]: Pastelería Artesanal
+          - generic [ref=f11e32]: Panel
+        - generic [ref=f11e33]:
+          - link "Ver el sitio" [ref=f11e34] [cursor=pointer]:
+            - /url: /
+          - button "Salir" [ref=f11e35] [cursor=pointer]
+      - generic [ref=f11e39]:
+        - paragraph [ref=f11e43]:
+          - strong [ref=f11e44]: Los cambios no se están guardando de forma permanente.
+          - text: Este despliegue no tiene base de datos conectada, así que todo vuelve al catálogo original cuando el servidor se reinicia. Ver el README, sección “Persistencia del catálogo”.
+        - paragraph [ref=f11e49]:
+          - strong [ref=f11e50]: Estás usando la contraseña que viene por defecto.
+          - text: Es pública porque el código es abierto. Definí la variable
+          - code [ref=f11e51]: ADMIN_PASSWORD
+          - text: en Vercel para tener una propia.
+        - generic [ref=f11e52]:
+          - heading "Catálogo" [level=1] [ref=f11e53]
+          - paragraph [ref=f11e54]: "9 productos · 9 disponibles · almacenamiento: memory"
+        - tablist "Secciones del panel" [ref=f11e55]:
+          - tab "Productos" [selected] [ref=f11e56] [cursor=pointer]
+          - tab "Ajustes de entrega" [ref=f11e57] [cursor=pointer]
+      - generic [ref=f11e58]:
+        - button "Agregar producto" [ref=f11e59] [cursor=pointer]
+        - generic [ref=f11e61]:
+          - generic [ref=f11e62]:
+            - heading "Cheesecakes" [level=2] [ref=f11e63]
+            - separator [ref=f11e64]
+            - generic [ref=f11e65]: "1"
+          - list [ref=f11e66]:
+            - listitem [ref=f11e67]:
+              - generic [ref=f11e69]:
+                - generic [ref=f11e70]:
+                  - generic [ref=f11e71]: Cheesecake de dulce de leche
+                  - generic [ref=f11e72]: Portada
+                - generic [ref=f11e73]: "Entero: $ 1.100 · Porción: $ 200"
+              - generic [ref=f11e74]:
+                - button "Pausar" [ref=f11e75] [cursor=pointer]
+                - button "Editar" [ref=f11e76] [cursor=pointer]
+                - button "Eliminar Cheesecake de dulce de leche" [ref=f11e80] [cursor=pointer]
+        - generic [ref=f11e84]:
+          - generic [ref=f11e85]:
+            - heading "Tortas y tartas" [level=2] [ref=f11e86]
+            - separator [ref=f11e87]
+            - generic [ref=f11e88]: "4"
+          - list [ref=f11e89]:
+            - listitem [ref=f11e90]:
+              - generic [ref=f11e92]:
+                - generic [ref=f11e93]:
+                  - generic [ref=f11e94]: Lemon pie
+                  - generic [ref=f11e95]: Portada
+                - generic [ref=f11e96]: "Entero: $ 900 · Porción: $ 140"
+              - generic [ref=f11e97]:
+                - button "Pausar" [ref=f11e98] [cursor=pointer]
+                - button "Editar" [ref=f11e99] [cursor=pointer]
+                - button "Eliminar Lemon pie" [ref=f11e103] [cursor=pointer]
+            - listitem [ref=f11e107]:
+              - generic [ref=f11e109]:
+                - generic [ref=f11e110]:
+                  - generic [ref=f11e111]: Carrot cake
+                  - generic [ref=f11e112]: Portada
+                - generic [ref=f11e113]: "Torta entera: $ 1.200"
+              - generic [ref=f11e114]:
+                - button "Pausar" [ref=f11e115] [cursor=pointer]
+                - button "Editar" [ref=f11e116] [cursor=pointer]
+                - button "Eliminar Carrot cake" [ref=f11e120] [cursor=pointer]
+            - listitem [ref=f11e124]:
+              - generic [ref=f11e126]:
+                - generic [ref=f11e127]: Torta de frutillas
+                - generic [ref=f11e129]: "Torta entera: $ 1.200"
+              - generic [ref=f11e130]:
+                - button "Pausar" [ref=f11e131] [cursor=pointer]
+                - button "Editar" [ref=f11e132] [cursor=pointer]
+                - button "Eliminar Torta de frutillas" [ref=f11e136] [cursor=pointer]
+            - listitem [ref=f11e140]:
+              - generic [ref=f11e142]:
+                - generic [ref=f11e143]: Tiramisú
+                - generic [ref=f11e145]: "A coordinar: consultar"
+              - generic [ref=f11e146]:
+                - button "Pausar" [ref=f11e147] [cursor=pointer]
+                - button "Editar" [ref=f11e148] [cursor=pointer]
+                - button "Eliminar Tiramisú" [ref=f11e152] [cursor=pointer]
+        - generic [ref=f11e156]:
+          - generic [ref=f11e157]:
+            - heading "Scones y galletería" [level=2] [ref=f11e158]
+            - separator [ref=f11e159]
+            - generic [ref=f11e160]: "4"
+          - list [ref=f11e161]:
+            - listitem [ref=f11e162]:
+              - generic [ref=f11e164]:
+                - generic [ref=f11e165]:
+                  - generic [ref=f11e166]: Scones de queso
+                  - generic [ref=f11e167]: Portada
+                - generic [ref=f11e168]: "6 unidades: $ 100"
+              - generic [ref=f11e169]:
+                - button "Pausar" [ref=f11e170] [cursor=pointer]
+                - button "Editar" [ref=f11e171] [cursor=pointer]
+                - button "Eliminar Scones de queso" [ref=f11e175] [cursor=pointer]
+            - listitem [ref=f11e179]:
+              - generic [ref=f11e181]:
+                - generic [ref=f11e182]: Alfajores de maicena
+                - generic [ref=f11e184]: "Por unidad: $ 30"
+              - generic [ref=f11e185]:
+                - button "Pausar" [ref=f11e186] [cursor=pointer]
+                - button "Editar" [ref=f11e187] [cursor=pointer]
+                - button "Eliminar Alfajores de maicena" [ref=f11e191] [cursor=pointer]
+            - listitem [ref=f11e195]:
+              - generic [ref=f11e197]:
+                - generic [ref=f11e198]: Brownies de chocolate
+                - generic [ref=f11e200]: "Porción: $ 130"
+              - generic [ref=f11e201]:
+                - button "Pausar" [ref=f11e202] [cursor=pointer]
+                - button "Editar" [ref=f11e203] [cursor=pointer]
+                - button "Eliminar Brownies de chocolate" [ref=f11e207] [cursor=pointer]
+            - listitem [ref=f11e211]:
+              - generic [ref=f11e213]:
+                - generic [ref=f11e214]: Cookies de chocolate y nuez
+                - generic [ref=f11e216]: "A coordinar: consultar"
+              - generic [ref=f11e217]:
+                - button "Pausar" [ref=f11e218] [cursor=pointer]
+                - button "Editar" [ref=f11e219] [cursor=pointer]
+                - button "Eliminar Cookies de chocolate y nuez" [ref=f11e223] [cursor=pointer]
+  - alert [ref=f11e24]

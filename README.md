@@ -105,19 +105,31 @@ El sitio queda en <http://localhost:3000> y el panel en <http://localhost:3000/a
 | `ADMIN_PASSWORD` | **Sí, en producción** | Contraseña del panel. Sin definirla se usa la del repositorio, que es pública. |
 | `ADMIN_SESSION_SECRET` | Recomendada | Firma la cookie de sesión del panel. Cadena larga y aleatoria. |
 | `UPSTASH_REDIS_REST_URL` / `UPSTASH_REDIS_REST_TOKEN` | Recomendada | Persistencia del catálogo. También sirven `KV_REST_API_URL` / `KV_REST_API_TOKEN`. |
+| `BLOB_READ_WRITE_TOKEN` | Alternativa | Persistencia con Vercel Blob. La inyecta Vercel al conectar un Blob store; no hay que escribirla a mano. |
 
 ### Persistencia del catálogo
 
+> **Un clic pendiente.** Recién desplegado, el sitio corre con el controlador de memoria: se ve y
+> se pide perfecto, pero los cambios del panel se pierden cuando el servidor se reinicia. Para que
+> queden guardados alcanza con conectar un almacenamiento; no hay que tocar código.
+>
+> **Camino más corto:** Vercel → **Storage** → *Connect Store* → **Blob** (ya existe uno creado con
+> el nombre `fatima-catalogo`) → conectarlo al proyecto → **Redeploy**. Vercel inyecta
+> `BLOB_READ_WRITE_TOKEN` y el sitio cambia de controlador solo.
+
 El catálogo se guarda con el primer controlador disponible:
 
-1. **Redis por REST** — si están `UPSTASH_REDIS_REST_URL` y `UPSTASH_REDIS_REST_TOKEN` (o el par
-   `KV_REST_API_*`). Es el modo de producción: los cambios sobreviven a los despliegues.
-   Se crea gratis desde **Vercel → Storage → Upstash Redis**, que además carga las variables solo.
-2. **Archivo** — en desarrollo local escribe `data/catalog.json` (ignorado por git).
-3. **Memoria** — respaldo. El sitio funciona, pero los cambios del panel se pierden cuando el
-   servidor se reinicia. El panel lo avisa con un aviso amarillo bien visible.
+| Controlador | Se activa con | Dónde sirve |
+| --- | --- | --- |
+| **Redis por REST** | `UPSTASH_REDIS_REST_URL` + `UPSTASH_REDIS_REST_TOKEN` (o el par `KV_REST_API_*`) | Producción. Lo más rápido de leer. Se crea gratis desde Vercel → Storage → Upstash Redis |
+| **Vercel Blob** | `BLOB_READ_WRITE_TOKEN` | Producción. Es el que aparece solo al conectar un Blob store al proyecto |
+| **Archivo** | Nada: es el modo por defecto fuera de Vercel | Desarrollo local. Escribe `data/catalog.json`, ignorado por git |
+| **Memoria** | Nada: es el último recurso | Respaldo. El panel lo avisa con una franja amarilla |
 
-No hay dependencias de base de datos: el cliente de Redis son dos `fetch`.
+Cada guardado en Blob sube un archivo nuevo con marca de tiempo y borra los anteriores salvo los
+dos últimos: así la URL cambia en cada cambio y nunca se lee una versión vieja del CDN.
+
+El cliente de Redis son dos `fetch`, sin dependencias.
 
 ---
 
