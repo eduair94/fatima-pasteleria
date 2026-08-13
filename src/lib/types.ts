@@ -17,6 +17,12 @@ export type Product = {
   summary: string;
   /** Dos o tres frases para la ficha. Redacción propia, no la caption. */
   description: string;
+  /**
+   * Cómo se hace este producto en concreto. Antes las nueve fichas repetían
+   * la misma línea —"hecho a mano, sin conservantes"—, y de ~160 palabras
+   * visibles sólo el 15% era propio del producto.
+   */
+  craft?: string;
   images: { src: string; alt: string }[];
   variants: Variant[];
   /** Horas de anticipación. 48 en todo el catálogo. */

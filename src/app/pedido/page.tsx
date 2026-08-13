@@ -15,7 +15,7 @@ export const revalidate = 120;
 
 export default function CheckoutPage() {
   return (
-    <div className="wrap flex flex-col gap-8 py-8 pb-24 md:py-14">
+    <div className="wrap flex flex-col gap-8 py-8 pb-28 md:py-14 md:pb-24">
       <div className="flex flex-col gap-4">
         <nav aria-label="Miga de pan" className="text-xs text-brown-500">
           <Link href="/catalogo" className="text-brown-500 no-underline hover:text-brown-900">

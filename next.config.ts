@@ -8,6 +8,21 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "**" },
     ],
   },
+  /**
+   * Las categorías pasaron de `?categoria=` a rutas propias. Se redirige de
+   * forma permanente para no perder ningún enlace ya compartido.
+   */
+  async redirects() {
+    return [
+      {
+        source: "/catalogo",
+        has: [{ type: "query", key: "categoria", value: "(?<categoria>.*)" }],
+        destination: "/catalogo/:categoria",
+        permanent: true,
+      },
+    ];
+  },
+
   async headers() {
     return [
       {

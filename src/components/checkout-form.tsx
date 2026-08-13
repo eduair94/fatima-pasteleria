@@ -381,6 +381,52 @@ export function CheckoutForm() {
               }.`}
         </p>
       </aside>
+
+      {/* En mobile el resumen queda debajo de todo el formulario, así que el
+          botón de enviar quedaba a un scroll largo del campo que lo habilita.
+          Esta barra lo deja siempre a mano, con el total a la vista. */}
+      <div className="fixed inset-x-0 bottom-0 z-60 flex items-center gap-4 border-t border-line-200 bg-cream-50 px-5 py-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] shadow-[var(--shadow-bar)] md:hidden">
+        <span className="flex flex-col leading-tight">
+          <span className="text-xs text-brown-500">Total</span>
+          <span className="tnum text-[17px] font-semibold whitespace-nowrap">
+            {formatPrice(totals.subtotal + (totals.shipping ?? 0))}
+            {totals.totalPending ? " + envío" : ""}
+          </span>
+        </span>
+        {valid ? (
+          <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={handleSend}
+            className="fp-btn fp-btn--whatsapp ml-auto"
+          >
+            <Icon name="whatsapp" size={18} />
+            Enviar pedido
+          </a>
+        ) : (
+          <button
+            type="button"
+            aria-disabled="true"
+            className="fp-btn fp-btn--whatsapp ml-auto"
+            onClick={() => {
+              setTouched({ name: true, date: true, address: true, zoneId: true });
+              const firstInvalid = (
+                ["name", "date", "zoneId", "address"] as (keyof OrderDetails)[]
+              ).find((field) => errors[field]);
+              const id = firstInvalid ? FIELD_IDS[firstInvalid] : undefined;
+              if (id) {
+                const el = document.getElementById(id);
+                el?.scrollIntoView({ block: "center", behavior: "smooth" });
+                el?.focus({ preventScroll: true });
+              }
+            }}
+          >
+            <Icon name="whatsapp" size={18} />
+            Enviar pedido
+          </button>
+        )}
+      </div>
     </div>
   );
 }

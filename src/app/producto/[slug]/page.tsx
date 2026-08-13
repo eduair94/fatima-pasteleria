@@ -9,7 +9,7 @@ import { ProductCard } from "@/components/product-card";
 import { ProductGallery } from "@/components/product-gallery";
 import { formatPrice } from "@/lib/format";
 import { breadcrumbJsonLd, productJsonLd } from "@/lib/jsonld";
-import { metaDescription } from "@/lib/product";
+import { hasPrice, metaDescription, priceLabel } from "@/lib/product";
 import { SITE, ZONES, categoryName } from "@/lib/site";
 import { readCatalog } from "@/lib/store";
 
@@ -76,7 +76,7 @@ export default async function ProductPage({ params }: { params: Params }) {
           breadcrumbJsonLd([
             { name: "Inicio", path: "/" },
             { name: "Catálogo", path: "/catalogo" },
-            { name: categoryName(product.category), path: `/catalogo?categoria=${product.category}` },
+            { name: categoryName(product.category), path: `/catalogo/${product.category}` },
             { name: product.name, path: `/producto/${product.slug}` },
           ]),
         ]}
@@ -93,7 +93,7 @@ export default async function ProductPage({ params }: { params: Params }) {
           </Link>
           <span aria-hidden="true"> / </span>
           <Link
-            href={`/catalogo?categoria=${product.category}`}
+            href={`/catalogo/${product.category}`}
             className="text-brown-500 no-underline hover:text-brown-900"
           >
             {categoryName(product.category)}
@@ -110,6 +110,16 @@ export default async function ProductPage({ params }: { params: Params }) {
               <p className="eyebrow">{categoryName(product.category)}</p>
               <h1 className="t-h1">{product.name}</h1>
               <p className="prose-fp text-[16px]">{product.description || product.summary}</p>
+              {/* La respuesta completa —qué es, cuánto sale, dónde y cómo se
+                  pide— en texto visible. Antes sólo existía en el meta
+                  description, que no todos los buscadores leen. */}
+              <p className="text-sm leading-relaxed text-brown-500">
+                {product.name} por encargo en {SITE.city}
+                {hasPrice(product) ? `, ${priceLabel(product).toLowerCase()}` : ""}. Se pide con{" "}
+                {product.leadTimeHours} hs de anticipación y se coordina por WhatsApp: envío{" "}
+                {formatPrice(settings.shippingCost)} en zona o retiro sin costo en{" "}
+                {SITE.neighborhoods}.
+              </p>
             </header>
 
             <AddToOrder product={product} />
@@ -130,7 +140,7 @@ export default async function ProductPage({ params }: { params: Params }) {
                 <div>
                   <dt className="text-sm font-semibold">Elaboración</dt>
                   <dd className="m-0 text-sm text-brown-500">
-                    Hecho a mano, sin conservantes ni colorantes.
+                    {product.craft ?? "Hecho a mano, sin conservantes ni colorantes."}
                   </dd>
                 </div>
               </div>

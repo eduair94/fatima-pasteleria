@@ -181,7 +181,7 @@ export default async function HomePage() {
               return (
                 <Link
                   key={category.id}
-                  href={`/catalogo?categoria=${category.id}`}
+                  href={`/catalogo/${category.id}`}
                   className="fp-prod no-underline"
                 >
                   <div className="relative aspect-16/9 overflow-hidden bg-cream-300 md:aspect-4/3">
@@ -272,6 +272,51 @@ export default async function HomePage() {
         </div>
       </section>
 
+      {/* ------------------------------------------------------ quién hace */}
+      {/* Quién está detrás del producto. Es lo más flojo del sitio para los
+          buscadores —no hay firma, ni oficio, ni contexto— y todo lo que dice
+          acá sale de lo que la cuenta ya publicó. Ver README, "Pendientes con
+          Fátima": la historia personal la tiene que contar ella. */}
+      <section id="como-trabajo" className="section" aria-labelledby="titulo-como-trabajo">
+        <div className="wrap grid items-start gap-8 md:grid-cols-[1fr_1.2fr] md:gap-14">
+          <div className="relative aspect-4/5 overflow-hidden rounded-[26px] bg-cream-300 md:aspect-square">
+            <Image
+              src="/fotos/09_scones_queso_01.webp"
+              alt="Scones de queso recién horneados sobre una tabla de madera, con la luz de la tarde entrando de costado"
+              fill
+              sizes="(min-width: 768px) 40vw, 100vw"
+              className="object-cover"
+            />
+          </div>
+
+          <div className="flex flex-col gap-5">
+            <SectionHeading
+              eyebrow="Quién lo hace"
+              title="Cómo trabajo"
+              id="titulo-como-trabajo"
+            />
+            <div className="prose-fp flex flex-col gap-4 text-[16px]">
+              <p>
+                Hago todo por encargo y en tandas chicas. No tengo local ni vitrina: cada cosa se
+                hornea para un pedido concreto, con fecha, y por eso pido {settings.leadTimeHours} hs
+                de anticipación.
+              </p>
+              <p>
+                Uso ingredientes naturales, sin conservantes ni colorantes. Las plantillas del
+                tiramisú las horneo acá, una por una, en lugar de comprarlas hechas. Cuando algo sale
+                en cantidad limitada lo aviso: prefiero decir que no hay antes que entregar algo
+                apurado.
+              </p>
+              <p>
+                Trabajo desde {SITE.neighborhoods}, y de ahí salen las entregas. Si estás en el
+                barrio, retirás sin costo; si no, te lo llevo. Todo se coordina por WhatsApp, y ahí
+                mismo te confirmo disponibilidad y la hora.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* --------------------------------------------------------- reseñas */}
       <section className="section" aria-labelledby="titulo-resenas">
         <div className="wrap flex flex-col gap-8">
@@ -331,6 +376,28 @@ export default async function HomePage() {
             </a>
           </div>
           <ZonesMap />
+        </div>
+
+        {/* Los dos barrios de retiro sin costo, cada uno con su propio texto y
+            su propia ancla: es la ventaja concreta frente a las pastelerías
+            con local, y hasta ahora sólo existía como un ítem de una lista. */}
+        <div className="wrap mt-10 grid gap-4 md:mt-14 md:grid-cols-2 md:gap-6">
+          <div id="retiro-aguada" className="fp-card flex flex-col gap-3 p-6">
+            <h3 className="t-h3">Retiro sin costo en Aguada</h3>
+            <p className="text-sm leading-relaxed text-brown-700">
+              Si estás en Aguada, pasás a buscar el pedido y no pagás envío. Coordinamos la hora por
+              WhatsApp, a partir de las {settings.deliveryFromHour} h. Es la zona donde amaso, así
+              que suele ser la entrega más rápida de acordar.
+            </p>
+          </div>
+          <div id="retiro-la-comercial" className="fp-card flex flex-col gap-3 p-6">
+            <h3 className="t-h3">Retiro sin costo en La Comercial</h3>
+            <p className="text-sm leading-relaxed text-brown-700">
+              En La Comercial también retirás sin cargo. Encargá con {settings.leadTimeHours} hs de
+              anticipación y coordinamos el punto y la hora por WhatsApp. Si preferís que te lo
+              lleve, el envío en la zona sale {formatPrice(settings.shippingCost)}.
+            </p>
+          </div>
         </div>
       </section>
 

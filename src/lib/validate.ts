@@ -124,6 +124,7 @@ export function parseProduct(input: unknown, existing?: Product): Product {
     category,
     summary: str(body.summary, "el resumen", { max: 200 }),
     description: str(body.description, "la descripción", { required: false, max: 1200 }),
+    craft: str(body.craft, "la elaboración", { required: false, max: 300 }) || undefined,
     images: parseImages(body.images),
     variants: parseVariants(body.variants),
     leadTimeHours: int(body.leadTimeHours, "la anticipación", existing?.leadTimeHours ?? 48),

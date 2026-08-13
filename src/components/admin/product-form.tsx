@@ -18,6 +18,7 @@ const EMPTY: Draft = {
   category: "tortas",
   summary: "",
   description: "",
+  craft: "",
   images: [],
   variants: [{ id: "unico", label: "Entero", price: null }],
   leadTimeHours: 48,
@@ -166,6 +167,21 @@ export function ProductForm({
           maxLength={1200}
           value={draft.description}
           onChange={(event) => set("description", event.target.value)}
+        />
+      </Labelled>
+
+      <Labelled
+        label="Elaboración"
+        htmlFor="pf-craft"
+        help="Una línea sobre cómo se hace ESTE producto. Si todas las fichas dicen lo mismo, no aporta."
+      >
+        <input
+          id="pf-craft"
+          className="fp-input"
+          maxLength={300}
+          placeholder="Las plantillas se hornean acá, una por una."
+          value={draft.craft ?? ""}
+          onChange={(event) => set("craft", event.target.value)}
         />
       </Labelled>
 
