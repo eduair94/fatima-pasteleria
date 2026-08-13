@@ -144,7 +144,13 @@ export function CatalogView({
 
         {active ? (
           <p className="text-sm text-brown-500">
-            <Link href="/catalogo" className="text-berry-700 hover:text-brown-900">
+            {/* Va subrayado porque es el único enlace que cae dentro de texto
+                corrido: contra el marrón que lo rodea el contraste es 1.04:1 y
+                el color solo no alcanza para distinguirlo. */}
+            <Link
+              href="/catalogo"
+              className="text-berry-700 underline underline-offset-2 hover:text-brown-900"
+            >
               Ver todo el catálogo
             </Link>{" "}
             · {CATEGORIES.filter((c) => c.id !== active).map((c) => c.name).join(" · ")}

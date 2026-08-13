@@ -1,0 +1,156 @@
+- generic [active] [ref=e1]:
+  - link "Saltar al contenido" [ref=e2] [cursor=pointer]:
+    - /url: "#contenido"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - button "Abrir menú" [ref=e5] [cursor=pointer]
+      - link "Fátima Pastelería Artesanal" [ref=e8] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e9]:
+          - generic [ref=e10]: Fátima
+          - generic [ref=e11]: Pastelería Artesanal
+      - button "Ver el pedido, 1 ítems" [ref=e13] [cursor=pointer]:
+        - generic [ref=e17]: "1"
+  - main [ref=e18]:
+    - article [ref=e19]:
+      - navigation "Miga de pan" [ref=e20]:
+        - link "Inicio" [ref=e21] [cursor=pointer]:
+          - /url: /
+        - text: /
+        - link "Catálogo" [ref=e22] [cursor=pointer]:
+          - /url: /catalogo
+        - text: /
+        - link "Tortas y tartas" [ref=e23] [cursor=pointer]:
+          - /url: /catalogo/tortas
+        - text: / Lemon pie
+      - generic [ref=e24]:
+        - generic [ref=e25]:
+          - 'tabpanel "Foto 1: Lemon pie entero con una capa alta de merengue suizo dorado a soplete, sobre plato blanco" [ref=e26]':
+            - img "Lemon pie entero con una capa alta de merengue suizo dorado a soplete, sobre plato blanco" [ref=e27]
+            - generic [ref=e28]: Cantidad limitada
+          - tablist "Fotos del producto" [ref=e29]:
+            - 'tab "Foto 1: Lemon pie entero con una capa alta de merengue suizo dorado a soplete, sobre plato blanco" [selected] [ref=e30]'
+            - 'tab "Foto 2: Lemon pie visto desde arriba, con las ondas del merengue tostado" [ref=e31]'
+        - generic [ref=e32]:
+          - generic [ref=e33]:
+            - paragraph [ref=e34]: Tortas y tartas
+            - heading "Lemon pie" [level=1] [ref=e35]
+            - paragraph [ref=e36]: Base de galletitas y mousse de limón intenso, terminado con merengue suizo dorado a soplete. Hecho a mano, con ingredientes naturales, sin colorantes ni conservantes. Se hornea en cantidad limitada, así que conviene reservarlo con tiempo. Entero para compartir, o por porción. Es de los que más se piden cuando alguien quiere algo cítrico y no tan dulce.
+            - paragraph [ref=e37]: "Lemon pie por encargo en Montevideo, desde $ 140. Se pide con 48 hs de anticipación y se coordina por WhatsApp: envío $ 100 en zona o retiro sin costo en Aguada y La Comercial."
+          - generic [ref=e38]:
+            - group "Tamaño" [ref=e39]:
+              - generic [ref=e41]:
+                - generic [ref=e42] [cursor=pointer]:
+                  - radio "Entero $ 900" [checked]
+                  - generic [ref=e44]:
+                    - generic [ref=e45]: Entero
+                    - generic [ref=e46]: $ 900
+                - generic [ref=e47] [cursor=pointer]:
+                  - radio "Porción $ 140 · Cada una"
+                  - generic [ref=e49]:
+                    - generic [ref=e50]: Porción
+                    - generic [ref=e51]: $ 140 · Cada una
+            - generic [ref=e52]:
+              - generic [ref=e53]: Nota para este ítem (opcional)
+              - textbox "Nota para este ítem (opcional)" [ref=e54]:
+                - /placeholder: Dedicatoria, sin azúcar, alergias
+            - paragraph [ref=e58]: 48 hs de anticipación. La primera fecha posible es el 15 de agosto, con entrega a partir de las 19 h.
+            - generic [ref=e59]:
+              - group "Cantidad de Lemon pie" [ref=e60]:
+                - button "Quitar uno" [disabled] [ref=e61]
+                - generic [ref=e63]: "1"
+                - button "Agregar uno" [ref=e64]
+              - button "Agregar · $ 900" [ref=e66] [cursor=pointer]
+          - generic [ref=e67]:
+            - generic [ref=e68]:
+              - term [ref=e74]: Envío y retiro
+              - definition [ref=e75]: Envío $ 100 en zona. Retiro sin costo en Aguada y La Comercial.
+            - generic [ref=e76]:
+              - term [ref=e79]: Elaboración
+              - definition [ref=e80]: Merengue suizo dorado a soplete sobre mousse de limón, con base de galletitas.
+            - generic [ref=e81]:
+              - term [ref=e85]: Llego a
+              - definition [ref=e86]: La Comercial, Aguada, Tres Cruces, Nuevo Centro, Av. Italia, Parque Batlle. Otras zonas, a coordinar.
+          - link "Ver la publicación en Instagram" [ref=e87] [cursor=pointer]:
+            - /url: https://www.instagram.com/faticastro001/p/Db6wiy5mbn6/
+      - region [ref=e90]:
+        - generic [ref=e91]:
+          - heading "También de tortas y tartas" [level=2] [ref=e92]
+          - separator [ref=e93]
+        - generic [ref=e94]:
+          - article [ref=e95]:
+            - link [ref=e96] [cursor=pointer]:
+              - /url: /producto/carrot-cake
+              - img "Carrot cake con el frosting de queso crema en espiral, nuez picada y tres capas de bizcocho a la vista" [ref=e97]
+            - generic [ref=e98]:
+              - heading [level=3] [ref=e99]:
+                - link "Carrot cake" [ref=e100] [cursor=pointer]:
+                  - /url: /producto/carrot-cake
+              - paragraph [ref=e101]: 48 hs de anticipación
+              - generic [ref=e102]:
+                - generic [ref=e103]: $ 1.200
+                - button "Agregar Carrot cake al pedido" [ref=e104] [cursor=pointer]
+          - article [ref=e106]:
+            - link [ref=e107] [cursor=pointer]:
+              - /url: /producto/torta-de-frutillas
+              - img "Torta de frutillas de dos pisos con crema batida, frutillas picadas y hojas de menta arriba" [ref=e108]
+            - generic [ref=e109]:
+              - heading [level=3] [ref=e110]:
+                - link "Torta de frutillas" [ref=e111] [cursor=pointer]:
+                  - /url: /producto/torta-de-frutillas
+              - paragraph [ref=e112]: 48 hs de anticipación
+              - generic [ref=e113]:
+                - generic [ref=e114]: $ 1.200
+                - button "Agregar Torta de frutillas al pedido" [ref=e115] [cursor=pointer]
+          - article [ref=e117]:
+            - link [ref=e118] [cursor=pointer]:
+              - /url: /producto/tiramisu
+              - img "Mesada con huevos, harina, azúcar, manga y placa marcada para hornear las plantillas del tiramisú" [ref=e119]
+            - generic [ref=e120]:
+              - heading [level=3] [ref=e121]:
+                - link "Tiramisú" [ref=e122] [cursor=pointer]:
+                  - /url: /producto/tiramisu
+              - paragraph [ref=e123]: 48 hs de anticipación
+              - generic [ref=e124]:
+                - generic [ref=e125]: Consultar
+                - link "Consultar por Tiramisú en WhatsApp" [ref=e126] [cursor=pointer]:
+                  - /url: https://wa.me/59896247822?text=Hola%20F%C3%A1tima%2C%20quer%C3%ADa%20consultarte%20por%20Tiramis%C3%BA%3A%20precio%20y%20disponibilidad.
+  - contentinfo [ref=e129]:
+    - generic [ref=e130]:
+      - generic [ref=e131]:
+        - generic [ref=e132]:
+          - generic [ref=e133]: Fátima
+          - generic [ref=e134]: Pastelería Artesanal
+        - paragraph [ref=e135]: El sabor de lo hecho en casa. Cheesecakes, scones y tortas caseras por encargo en Montevideo.
+      - generic [ref=e136]:
+        - heading "Contacto" [level=2] [ref=e137]
+        - link "096 247 822" [ref=e138] [cursor=pointer]:
+          - /url: https://wa.me/59896247822?text=Hola%20F%C3%A1tima%2C%20quer%C3%ADa%20hacerte%20una%20consulta.
+        - link "@faticastro001" [ref=e141] [cursor=pointer]:
+          - /url: https://www.instagram.com/faticastro001/
+        - paragraph [ref=e144]: Aguada y La Comercial, Montevideo
+        - paragraph [ref=e148]: Entregas desde las 19 h
+      - generic [ref=e152]:
+        - heading "Zonas de entrega" [level=2] [ref=e153]
+        - paragraph [ref=e154]: La Comercial, Aguada, Tres Cruces, Nuevo Centro, Av. Italia, Parque Batlle.
+        - paragraph [ref=e155]: Otras zonas de Montevideo, a coordinar. Retiro sin costo en Aguada y La Comercial.
+        - navigation "Secciones" [ref=e156]:
+          - link "Catálogo" [ref=e157] [cursor=pointer]:
+            - /url: /catalogo
+          - link "Preguntas" [ref=e158] [cursor=pointer]:
+            - /url: /#preguntas
+          - link "Administrar" [ref=e159] [cursor=pointer]:
+            - /url: /admin
+    - generic [ref=e161]:
+      - paragraph [ref=e162]: Los pedidos se coordinan por WhatsApp. El sitio arma el mensaje; la confirmación llega por ese medio. No se cobra nada en línea.
+      - paragraph [ref=e163]:
+        - text: © 2026 Fátima Pastelería. Sitio por
+        - link "Eduardo Airaudo" [ref=e164] [cursor=pointer]:
+          - /url: https://www.linkedin.com/in/eduardo-airaudo/
+        - text: .
+  - alert [ref=e165]
+  - region "Resumen del pedido" [ref=e166]:
+    - generic [ref=e170]:
+      - generic [ref=e171]: 1 ítem
+      - generic [ref=e172]: $ 1.100
+    - button "Ver pedido" [ref=e173] [cursor=pointer]
