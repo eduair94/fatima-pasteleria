@@ -61,6 +61,36 @@ cambiar un precio en el panel quedaban dos fuentes oficiales diciendo cosas dist
 WhatsApp, así que el número ya viene con el chat— y en mobile hay una barra fija con el total y
 el botón de enviar, que lleva el foco al primer campo que falte.
 
+**Prioridad de red de la imagen LCP.** La foto del hero salía a prioridad `Low` en mobile y
+quedaba encolada detrás de otros recursos. El `priority` de `next/image` genera el
+`<link rel="preload">` pero no marca `fetchpriority`, así que el navegador no tenía cómo saber
+que esa imagen era el LCP. Ahora va explícito, y queda tanto en el `<img>` como en el preload.
+Mismo cambio en la primera foto de las fichas.
+
+---
+
+## Rendimiento: qué se midió y qué no
+
+**Verificado, y no depende del cronómetro:**
+
+- La request del hero pasó de `initialPriority: Low` a `High` en mobile (leído por CDP). En
+  desktop ya salía en `High`, que es por qué el problema no se veía ahí.
+- La auditoría `lcp-discovery-insight` de Lighthouse pasó de fallar a dar score 1.
+- **CLS = 0** en las cinco corridas, sin elementos culpables.
+- INP de las interacciones muestreadas (stepper de cantidad, menú hamburguesa): 16-48 ms.
+
+**No verificado, y conviene no inventarlo.** No hay un número de ahorro en milisegundos. Cuatro
+corridas de Lighthouse sobre el sitio ya corregido dieron 2154, 2314, 2817 y 2823 ms de LCP:
+mediana 2565 ms, pero con 669 ms de dispersión (±31%) porque la máquina tenía decenas de procesos
+de Chrome compitiendo por CPU. La medición previa al cambio fue **una sola corrida** (2224 ms) y
+cae dentro de ese mismo rango, así que un antes/contra/después de una muestra cada uno no puede
+resolver un efecto de esta magnitud. Se hizo el cambio porque es la práctica recomendada para la
+imagen LCP y porque el mecanismo quedó comprobado, no porque haya un número que lo respalde.
+
+El número que va a valer es el de campo: **CrUX / PageSpeed Insights, una vez que el sitio tenga
+tráfico real.** La API sin key devolvió `429` (cuota diaria agotada en el pool de IPs compartido)
+y CrUX pide key registrada, así que hoy no hay percentil 75 de usuarios reales que consultar.
+
 ---
 
 ## Falta, y es lo que más rinde
