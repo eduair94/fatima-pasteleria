@@ -17,7 +17,7 @@ type SyncStatus = {
   active: string | null;
   configured: boolean;
   missing: string[];
-  gemini: boolean;
+  modelo: { active: string | null; configured: boolean; missing: string[]; respaldos: string[] };
   username: string;
   ready: boolean;
 };

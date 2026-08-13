@@ -1,6 +1,6 @@
 import "server-only";
 
-import { draftProductFromPost, geminiIsConfigured } from "./gemini";
+import { draftProductFromPost, extractorStatus } from "./ai";
 import { activeProvider, providerStatus } from "./instagram";
 import type { InstagramPost } from "./instagram";
 import { SITE } from "./site";
@@ -31,9 +31,9 @@ export function syncStatus() {
   const provider = providerStatus();
   return {
     ...provider,
-    gemini: geminiIsConfigured(),
+    modelo: extractorStatus(),
     username: instagramUsername(),
-    ready: provider.configured && geminiIsConfigured(),
+    ready: provider.configured && extractorStatus().configured,
   };
 }
 
@@ -74,8 +74,8 @@ export async function runSync(): Promise<SyncOutcome> {
       },
     };
   }
-  if (!status.gemini) {
-    return { state: "listo", report: { ...emptyReport(status.active), error: "Falta GEMINI_API_KEY." } };
+  if (!status.modelo.configured) {
+    return { state: "listo", report: { ...emptyReport(status.active), error: `Falta configurar el modelo: ${status.modelo.missing.join(", ")}.` } };
   }
 
   const catalog = await readCatalog({ fresh: true });

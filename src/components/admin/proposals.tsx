@@ -13,7 +13,7 @@ type SyncStatus = {
   active: string | null;
   configured: boolean;
   missing: string[];
-  gemini: boolean;
+  modelo: { active: string | null; configured: boolean; missing: string[]; respaldos: string[] };
   username: string;
   ready: boolean;
 };
@@ -135,7 +135,7 @@ export function Proposals({
             <p>
               {!status.configured
                 ? `Falta configurar el proveedor de Instagram: ${status.missing.join(", ") || "ninguno elegido"}.`
-                : "Falta GEMINI_API_KEY."}{" "}
+                : `Falta configurar el modelo que lee las publicaciones: ${status.modelo.missing.join(", ")}.`}{" "}
               Está explicado en el README, sección “Sincronizar con Instagram”.
             </p>
           </div>
@@ -145,6 +145,16 @@ export function Proposals({
           <p className="fp-alert fp-alert--info" role="status">
             <Icon name="info" size={18} className="mt-px shrink-0" />
             {mensaje}
+          </p>
+        ) : null}
+
+        {status.ready ? (
+          <p className="fp-help">
+            Lee de {status.active} y redacta con {status.modelo.active}
+            {status.modelo.respaldos.length
+              ? `, con ${status.modelo.respaldos.join(" y ")} de respaldo`
+              : ""}
+            .
           </p>
         ) : null}
 

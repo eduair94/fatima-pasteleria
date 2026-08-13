@@ -115,7 +115,7 @@ El sitio queda en <http://localhost:3000> y el panel en <http://localhost:3000/a
 | `BLOB_READ_WRITE_TOKEN` | Recomendada | Guarda el catálogo y recibe las fotos que se suben desde el panel. La inyecta Vercel al conectar un Blob store; no se escribe a mano. |
 | `NEXT_PUBLIC_SITE_URL` | Recomendada | URL canónica del sitio. Sin ella, los metadatos y el sitemap apuntan al dominio por defecto. |
 | `UPSTASH_REDIS_REST_URL` / `UPSTASH_REDIS_REST_TOKEN` | Opcional | Alternativa al Blob **para el catálogo**. Si están, tienen prioridad. También sirven `KV_REST_API_*`. Las fotos siguen necesitando el Blob. |
-| `GEMINI_API_KEY`, `APIFY_TOKEN` o `RAPIDAPI_*`, `CRON_SECRET` | Opcional | Sincronización con Instagram. Ver la sección de más abajo. Sin estas variables el resto del sitio funciona igual. |
+| `XAI_API_KEY` y/o `GEMINI_API_KEY`, `APIFY_TOKEN` o `RAPIDAPI_*`, `CRON_SECRET` | Opcional | Sincronización con Instagram. Ver la sección de más abajo. Sin estas variables el resto del sitio funciona igual. |
 
 ### Almacenamiento: catálogo y fotos
 
@@ -197,7 +197,7 @@ la ficha a partir del texto y las fotos, y deja el resultado esperando en el pan
 cron diario
   → traer las últimas publicaciones (Apify o RapidAPI)
   → descartar las que ya están publicadas o ya fueron revisadas
-  → Gemini(caption + fotos) → nombre, categoría, precios, descripción y textos alternativos
+  → modelo(caption + fotos) → nombre, categoría, precios, descripción y textos alternativos
   → guardar como PROPUESTA
 ```
 
@@ -237,6 +237,34 @@ es arranque de contenedor. Como no hay tope de 60 segundos que sea confiable, el
 dos fases: una llamada lo arranca y las siguientes lo recolectan. El panel consulta cada cuatro
 segundos; el cron recoge lo que haya quedado de la corrida anterior antes de arrancar otra.
 
+### El modelo que redacta
+
+También es un adaptador, y por el mismo motivo: los dos que se pueden usar gratis fallan, pero
+por razones distintas. Con los dos configurados, si el elegido falla el otro toma el relevo y la
+corrida sale igual.
+
+| Modelo | Cómo se usa gratis | Variables |
+| --- | --- | --- |
+| **Grok** (xAI) | **No tiene free tier permanente.** Da USD 25 al registrarse, y crédito mensual si se activa `Settings → Data Sharing` en [console.x.ai](https://console.x.ai). Sin crédito, la API responde `403 doesn't have any credits` | `XAI_API_KEY`, opcional `GROK_MODEL` |
+| **Gemini** (Google AI Studio) | Free tier generoso, pero **devuelve 503 y 429 con frecuencia** | `GEMINI_API_KEY`, opcional `GEMINI_MODEL` |
+
+`AI_PROVIDER` elige cuál va primero (`grok` o `gemini`); si se omite, se usa el primero que tenga
+clave. El panel muestra cuál está redactando y cuál queda de respaldo.
+
+> **El crédito de xAI se paga con datos.** Activar *Data Sharing* significa que las llamadas —o
+> sea, las captions y las fotos de Fátima— se usan para entrenar sus modelos. El contenido ya es
+> público en Instagram, pero es la marca de una clienta: conviene decidirlo a conciencia, no por
+> descarte.
+
+Sobre los modelos: `GEMINI_MODEL` usa por defecto el alias `gemini-flash-latest`, porque Google
+deja de servir los modelos con número a las cuentas nuevas —`gemini-2.5-flash` ya devuelve 404—
+y el alias sigue al vigente sin tocar código. Si el modelo de Grok elegido no acepta imágenes, la
+llamada se reintenta sin ellas: se pierden los textos alternativos, no la ficha entera.
+
+Cuando ninguno responde, la publicación **igual se guarda** con su foto y su caption para cargarla
+a mano, y las propuestas que quedaron con error se vuelven a intentar solas en la corrida
+siguiente.
+
 El adaptador de RapidAPI es genérico a propósito: en el marketplace hay una docena de scrapers
 que cambian de nombre, de ruta y de forma de respuesta seguido, así que el host y la ruta son
 variables y la normalización cubre las formas más comunes (`data.items`, `items`, `edges` con
@@ -250,15 +278,7 @@ Para agregar otro proveedor alcanza con un archivo nuevo en `src/lib/instagram/`
 
 ### Puesta en marcha
 
-1. Sacá una clave en [Google AI Studio](https://aistudio.google.com/apikey) → `GEMINI_API_KEY`.
-   El free tier alcanza de sobra para una cuenta que publica menos de diez veces por mes, pero
-   **devuelve 503 y 429 con bastante frecuencia**. El pipeline lo contempla: reintenta con espera
-   creciente, prueba modelos de respaldo, y si aun así falla guarda la publicación con su foto y
-   su caption para cargarla a mano. Las propuestas que quedaron con error se vuelven a intentar
-   solas en la corrida siguiente.
-   `GEMINI_MODEL` usa por defecto el alias `gemini-flash-latest`: Google deja de servir los
-   modelos con número a las cuentas nuevas —`gemini-2.5-flash` ya devuelve 404— y el alias sigue
-   al vigente sin tocar código.
+1. Configurá al menos un modelo (ver abajo). Conviene cargar los dos.
 2. Elegí proveedor y cargá sus variables.
 3. Definí `CRON_SECRET` con una cadena aleatoria. **Sin ella la corrida diaria no se
    habilita**: una corrida gasta crédito del scraper y cuota de Gemini, así que un endpoint
