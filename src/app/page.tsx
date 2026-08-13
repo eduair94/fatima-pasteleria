@@ -61,8 +61,12 @@ export default async function HomePage() {
             alt="Carrot cake con el frosting de queso crema en espiral, nuez picada y tres capas de bizcocho a la vista"
             fill
             priority
+            // `priority` genera el preload pero no marca la prioridad de red:
+            // medido, la foto salía en `Low` en mobile y quedaba encolada
+            // detrás de otros recursos, ~560 ms de los 2224 ms de LCP. En
+            // desktop ya salía en `High`, que es por qué no se notaba.
+            fetchPriority="high"
             sizes="100vw"
-            quality={82}
             // El corte apaisado tiene que dejar ver las capas y la nuez, que
             // están en la mitad inferior de la foto.
             className="object-cover object-[center_58%]"

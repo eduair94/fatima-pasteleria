@@ -27,6 +27,7 @@ export function ProductGallery({
           alt={active.alt}
           fill
           priority
+          fetchPriority="high"
           sizes="(min-width: 768px) 50vw, 100vw"
           className="anim-fade object-cover"
         />
