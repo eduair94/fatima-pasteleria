@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { AddButton } from "@/components/add-button";
-import { priceLabel } from "@/lib/product";
+import { isSoldOut, priceLabel, stockNote } from "@/lib/product";
 import type { Product } from "@/lib/types";
 
 export function ProductCard({
@@ -15,6 +15,8 @@ export function ProductCard({
   sizes?: string;
 }) {
   const photo = product.images[0];
+  const orderable = product.available && !isSoldOut(product);
+  const note = orderable ? stockNote(product) : null;
 
   return (
     <article className="fp-prod">
@@ -34,13 +36,19 @@ export function ProductCard({
           />
         ) : null}
 
-        {product.badge && product.available ? (
+        {product.badge && orderable ? (
           <span className="fp-badge fp-badge--gold absolute top-3 left-3">{product.badge}</span>
         ) : null}
 
-        {!product.available ? (
+        {note ? (
+          <span className="fp-badge fp-badge--berry absolute top-3 right-3">{note}</span>
+        ) : null}
+
+        {!orderable ? (
           <span className="absolute inset-0 flex items-end bg-brown-900/45 p-3">
-            <span className="fp-badge fp-badge--neutral">Esta semana no hay</span>
+            <span className="fp-badge fp-badge--neutral">
+              {isSoldOut(product) ? "Se agotó la tanda" : "Esta semana no hay"}
+            </span>
           </span>
         ) : null}
       </Link>

@@ -213,6 +213,15 @@ export function AdminDashboard({
                             {!product.available ? (
                               <span className="fp-badge fp-badge--neutral">Pausado</span>
                             ) : null}
+                            {product.available && product.stock !== null ? (
+                              <span
+                                className={`fp-badge ${
+                                  product.stock > 0 ? "fp-badge--berry" : "fp-badge--warn"
+                                }`}
+                              >
+                                {product.stock > 0 ? `Quedan ${product.stock}` : "Agotado"}
+                              </span>
+                            ) : null}
                           </div>
                           <span className="text-sm text-brown-500">
                             {product.variants

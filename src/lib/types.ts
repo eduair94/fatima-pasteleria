@@ -21,8 +21,13 @@ export type Product = {
   variants: Variant[];
   /** Horas de anticipación. 48 en todo el catálogo. */
   leadTimeHours: number;
-  /** Fuera de stock = visible pero no se puede agregar al pedido. */
+  /** Pausado = visible en el catálogo pero no se puede agregar al pedido. */
   available: boolean;
+  /**
+   * Unidades que quedan de la tanda. `null` = sin límite, que es lo normal en
+   * lo que se hace por encargo. En 0 el producto se muestra como agotado.
+   */
+  stock: number | null;
   /** Etiqueta opcional sobre la foto: "Cantidad limitada". */
   badge?: string;
   /** Se destaca en la home. */
@@ -63,6 +68,8 @@ export type CartItem = {
   note?: string;
   image?: string;
   leadTimeHours: number;
+  /** Copia del stock al momento de agregar, para topear el contador. */
+  stock?: number | null;
 };
 
 export type DeliveryMode = "retiro" | "envio";

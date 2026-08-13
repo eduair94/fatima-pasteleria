@@ -137,6 +137,7 @@ export function CartPanel() {
                           value={item.quantity}
                           onChange={(next) => setQuantity(item.key, next)}
                           min={0}
+                          max={item.stock ?? 99}
                           size="sm"
                           label={`Cantidad de ${item.name}`}
                         />

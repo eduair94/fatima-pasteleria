@@ -1,4 +1,4 @@
-import { hasPrice, metaDescription } from "./product";
+import { hasPrice, isOrderable, metaDescription } from "./product";
 import { FAQ, SITE, ZONES } from "./site";
 import type { Product, Settings } from "./types";
 
@@ -46,7 +46,7 @@ export function bakeryJsonLd(products: Product[], settings: Settings) {
         itemOffered: { "@type": "Product", name: product.name, url: `${SITE.url}/producto/${product.slug}` },
         priceCurrency: "UYU",
         price: Math.min(...product.variants.filter((v) => v.price !== null).map((v) => v.price!)),
-        availability: product.available
+        availability: isOrderable(product)
           ? "https://schema.org/PreOrder"
           : "https://schema.org/OutOfStock",
       })),
@@ -56,7 +56,7 @@ export function bakeryJsonLd(products: Product[], settings: Settings) {
 
 export function productJsonLd(product: Product) {
   const url = `${SITE.url}/producto/${product.slug}`;
-  const availability = product.available
+  const availability = isOrderable(product)
     ? "https://schema.org/PreOrder"
     : "https://schema.org/OutOfStock";
 

@@ -6,7 +6,7 @@ import { useCart } from "@/components/cart-provider";
 import { Icon } from "@/components/icon";
 import { QuantityStepper } from "@/components/quantity-stepper";
 import { firstAvailableDate, formatDateShort, formatPrice, formatVariantPrice } from "@/lib/format";
-import { hasPrice } from "@/lib/product";
+import { hasPrice, isSoldOut, stockNote } from "@/lib/product";
 import type { Product } from "@/lib/types";
 import { buildProductInquiry, waLink } from "@/lib/whatsapp";
 
@@ -43,12 +43,17 @@ export function AddToOrder({ product }: { product: Product }) {
     );
   }
 
-  if (!product.available) {
+  if (!product.available || isSoldOut(product)) {
     return (
       <div className="flex flex-col gap-3">
         <div className="fp-alert fp-alert--warn">
           <Icon name="cookie" size={18} className="mt-px shrink-0" />
-          <p>Esta semana no hay {product.name.toLowerCase()}. Escribime y te aviso cuando vuelve.</p>
+          <p>
+            {isSoldOut(product)
+              ? `Se agotó la tanda de ${product.name.toLowerCase()}.`
+              : `Esta semana no hay ${product.name.toLowerCase()}.`}{" "}
+            Escribime y te aviso cuando vuelve.
+          </p>
         </div>
         <a
           href={waLink(settings.whatsappE164, buildProductInquiry(product.name))}
@@ -64,6 +69,7 @@ export function AddToOrder({ product }: { product: Product }) {
   }
 
   const total = (variant?.price ?? 0) * quantity;
+  const escasez = stockNote(product);
 
   return (
     <div className="flex flex-col gap-6">
@@ -122,10 +128,18 @@ export function AddToOrder({ product }: { product: Product }) {
         </p>
       </div>
 
+      {escasez ? (
+        <p className="flex items-center gap-2 text-sm text-berry-700">
+          <Icon name="cookie" size={16} className="shrink-0" />
+          {escasez} de esta tanda.
+        </p>
+      ) : null}
+
       <div className="flex items-center gap-3">
         <QuantityStepper
           value={quantity}
           onChange={setQuantity}
+          max={product.stock ?? 99}
           label={`Cantidad de ${product.name}`}
         />
         <button

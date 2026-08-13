@@ -33,6 +33,22 @@ export function priceLabel(product: Product): string {
   return `Desde ${formatPrice(Math.min(...priced.map((v) => v.price!)))}`;
 }
 
+/** Se puede pedir: no está pausado y queda tanda. */
+export function isOrderable(product: Product): boolean {
+  return product.available && (product.stock === null || product.stock > 0);
+}
+
+/** Se agotó la tanda, aunque el producto siga publicado. */
+export function isSoldOut(product: Product): boolean {
+  return product.available && product.stock !== null && product.stock <= 0;
+}
+
+/** Aviso de escasez, sólo cuando queda poco de verdad. */
+export function stockNote(product: Product): string | null {
+  if (product.stock === null || product.stock <= 0 || product.stock > 6) return null;
+  return product.stock === 1 ? "Queda 1" : `Quedan ${product.stock}`;
+}
+
 /** Variante que agrega el botón + de la tarjeta, sin abrir la ficha. */
 export function defaultVariant(product: Product) {
   return pricedVariants(product)[0] ?? product.variants[0];

@@ -21,6 +21,7 @@ const EMPTY: Draft = {
   variants: [{ id: "unico", label: "Entero", price: null }],
   leadTimeHours: 48,
   available: true,
+  stock: null,
   badge: "",
   featured: false,
   order: 99,
@@ -305,7 +306,24 @@ export function ProductForm({
       </fieldset>
 
       {/* --------------------------------------------------------- extras */}
-      <div className="grid gap-5 md:grid-cols-3">
+      <div className="grid gap-5 md:grid-cols-4">
+        <Labelled
+          label="Unidades disponibles"
+          htmlFor="pf-stock"
+          help="Vacío = sin límite. En 0 se muestra como agotado."
+        >
+          <input
+            id="pf-stock"
+            type="number"
+            min={0}
+            className="fp-input tnum"
+            placeholder="Sin límite"
+            value={draft.stock ?? ""}
+            onChange={(event) =>
+              set("stock", event.target.value === "" ? null : Number(event.target.value))
+            }
+          />
+        </Labelled>
         <Labelled label="Anticipación (horas)" htmlFor="pf-lead">
           <input
             id="pf-lead"

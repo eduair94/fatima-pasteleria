@@ -138,6 +138,8 @@ El cliente de Redis son dos `fetch`, sin dependencias.
 `/admin`, con contraseña. Desde ahí se puede:
 
 - cambiar el precio de cualquier opción y el nombre, el resumen y la descripción;
+- cargar el stock de la tanda: vacío es sin límite, un número avisa cuánto queda y topea el
+  contador, y en cero el producto pasa a «Se agotó la tanda»;
 - pausar un producto («esta semana no hay») sin borrarlo;
 - crear y eliminar productos, con sus fotos y textos alternativos;
 - destacar productos en la portada y ordenarlos dentro de su grupo;
@@ -189,6 +191,7 @@ GET /api/productos/lemon-pie           # un producto por su dirección web
       ],
       "leadTimeHours": 48,
       "available": true,
+      "stock": null,
       "badge": "Cantidad limitada"
     }
   ],
@@ -197,6 +200,9 @@ GET /api/productos/lemon-pie           # un producto por su dirección web
 ```
 
 `price: null` significa **sin precio publicado**: la interfaz lo muestra como «Consultar».
+`stock: null` significa **sin límite de tanda**, que es lo normal en lo que se hace por encargo;
+con un número, la ficha avisa cuánto queda, el contador no deja pasarse y en `0` el producto pasa a
+«Se agotó la tanda».
 
 ### Administración
 

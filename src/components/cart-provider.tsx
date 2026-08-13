@@ -83,12 +83,19 @@ export function CartProvider({
       const key = itemKey(product.id, variant.id);
       const current = getCartSnapshot();
       const found = current.find((item) => item.key === key);
+      const cap = (value: number) =>
+        product.stock === null ? value : Math.min(value, product.stock);
 
       writeCart(
         found
           ? current.map((item) =>
               item.key === key
-                ? { ...item, quantity: item.quantity + quantity, note: note ?? item.note }
+                ? {
+                    ...item,
+                    quantity: cap(item.quantity + quantity),
+                    stock: product.stock,
+                    note: note ?? item.note,
+                  }
                 : item,
             )
           : [
@@ -101,10 +108,11 @@ export function CartProvider({
                 variantId: variant.id,
                 variantLabel: product.variants.length > 1 ? variant.label : "",
                 unitPrice: variant.price,
-                quantity,
+                quantity: cap(quantity),
                 note,
                 image: product.images[0]?.src,
                 leadTimeHours: product.leadTimeHours,
+                stock: product.stock,
               },
             ],
       );
@@ -118,7 +126,17 @@ export function CartProvider({
     writeCart(
       quantity <= 0
         ? current.filter((item) => item.key !== key)
-        : current.map((item) => (item.key === key ? { ...item, quantity } : item)),
+        : current.map((item) =>
+            item.key === key
+              ? {
+                  ...item,
+                  quantity:
+                    item.stock === null || item.stock === undefined
+                      ? quantity
+                      : Math.min(quantity, item.stock),
+                }
+              : item,
+          ),
     );
   }, []);
 

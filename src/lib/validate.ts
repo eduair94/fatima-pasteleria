@@ -46,6 +46,17 @@ function int(value: unknown, field: string, fallback: number): number {
   return Math.round(num);
 }
 
+/** Vacío o null = sin límite de tanda. */
+function parseStock(value: unknown, fallback: number | null): number | null {
+  if (value === undefined) return fallback;
+  if (value === null || value === "") return null;
+  const num = Number(value);
+  if (!Number.isFinite(num)) throw new ValidationError("El stock tiene que ser un número.", "stock");
+  if (num < 0) throw new ValidationError("El stock no puede ser negativo.", "stock");
+  if (num > 100000) throw new ValidationError("El stock es demasiado alto.", "stock");
+  return Math.round(num);
+}
+
 function bool(value: unknown, fallback = false): boolean {
   if (typeof value === "boolean") return value;
   if (value === "true") return true;
@@ -117,6 +128,7 @@ export function parseProduct(input: unknown, existing?: Product): Product {
     variants: parseVariants(body.variants),
     leadTimeHours: int(body.leadTimeHours, "la anticipación", existing?.leadTimeHours ?? 48),
     available: bool(body.available, existing?.available ?? true),
+    stock: parseStock(body.stock, existing?.stock ?? null),
     badge: str(body.badge, "la etiqueta", { required: false, max: 40 }) || undefined,
     featured: bool(body.featured, existing?.featured ?? false),
     order: int(body.order, "el orden", existing?.order ?? 99),

@@ -2,7 +2,7 @@
 
 import { useCart } from "@/components/cart-provider";
 import { Icon } from "@/components/icon";
-import { defaultVariant, hasPrice } from "@/lib/product";
+import { defaultVariant, hasPrice, isSoldOut } from "@/lib/product";
 import type { Product } from "@/lib/types";
 import { buildProductInquiry, waLink } from "@/lib/whatsapp";
 
@@ -14,11 +14,17 @@ import { buildProductInquiry, waLink } from "@/lib/whatsapp";
 export function AddButton({ product }: { product: Product }) {
   const { add, settings } = useCart();
 
-  if (!product.available) {
+  if (!product.available || isSoldOut(product)) {
     return (
-      <span className="fp-badge fp-badge--neutral" aria-label={`${product.name} no está disponible`}>
-        Sin stock
-      </span>
+      <a
+        href={waLink(settings.whatsappE164, buildProductInquiry(product.name))}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fp-btn fp-btn--ghost fp-btn--sm"
+      >
+        <Icon name="whatsapp" size={14} />
+        Avisame
+      </a>
     );
   }
 

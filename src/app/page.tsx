@@ -9,7 +9,7 @@ import { SectionHeading } from "@/components/section-heading";
 import { ZonesMap } from "@/components/zones-map";
 import { formatPrice } from "@/lib/format";
 import { bakeryJsonLd, faqJsonLd } from "@/lib/jsonld";
-import { lowestPrice } from "@/lib/product";
+import { isOrderable, lowestPrice } from "@/lib/product";
 import { CATEGORIES, FAQ, ORDER_STEPS, SITE, TESTIMONIALS, ZONES } from "@/lib/site";
 import { readCatalog } from "@/lib/store";
 import { waConsultLink } from "@/lib/whatsapp";
@@ -43,8 +43,9 @@ const INSTAGRAM_STRIP = [
 export default async function HomePage() {
   const { products, settings } = await readCatalog();
   const visible = products.filter((product) => product.available);
-  const featured = visible.filter((product) => product.featured).slice(0, 4);
-  const shownProducts = featured.length ? featured : visible.slice(0, 4);
+  const orderable = visible.filter(isOrderable);
+  const featured = orderable.filter((product) => product.featured).slice(0, 4);
+  const shownProducts = featured.length ? featured : orderable.slice(0, 4);
 
   const zonesWithCost = ZONES.filter((zone) => zone.cost !== null);
 
