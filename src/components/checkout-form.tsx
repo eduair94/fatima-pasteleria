@@ -60,9 +60,15 @@ export function CheckoutForm() {
   const errors = useMemo(() => {
     const next: Partial<Record<keyof OrderDetails, string>> = {};
     if (!details.name.trim()) next.name = "Necesito tu nombre para el pedido.";
-    if (details.phone.replace(/\D/g, "").length < 8) {
-      next.phone = "Necesito un teléfono para coordinar.";
+
+    // El teléfono es opcional: el pedido llega por WhatsApp, así que el número
+    // ya viene con el mensaje. Sólo se avisa si lo que escribieron no parece
+    // un teléfono, para que no viaje un dato mal copiado.
+    const digits = details.phone.replace(/\D/g, "");
+    if (digits.length > 0 && digits.length < 8) {
+      next.phone = "Ese teléfono parece incompleto. Podés dejarlo vacío.";
     }
+
     if (!details.date) next.date = "Elegí una fecha de entrega.";
     else if (details.date < minDate) {
       next.date = `Necesito ${leadTimeHours} hs. La primera fecha posible es el ${formatDateShort(minDate)}.`;
@@ -124,7 +130,8 @@ export function CheckoutForm() {
           <Field
             label="Teléfono"
             htmlFor="telefono"
-            help="Para coordinar la entrega por WhatsApp."
+            optional
+            help="Si preferís que te escriba a otro número."
             error={showError("phone")}
           >
             <input
@@ -353,7 +360,7 @@ export function CheckoutForm() {
             aria-disabled="true"
             className="fp-btn fp-btn--whatsapp fp-btn--lg fp-btn--block"
             onClick={() => {
-              setTouched({ name: true, phone: true, date: true, address: true, zoneId: true });
+              setTouched({ name: true, date: true, address: true, zoneId: true });
               const firstInvalid = (
                 ["name", "phone", "date", "zoneId", "address"] as (keyof OrderDetails)[]
               ).find((field) => errors[field]);
@@ -369,8 +376,8 @@ export function CheckoutForm() {
         <p className="text-sm leading-relaxed text-brown-500">
           {valid
             ? "Se abre WhatsApp con el pedido ya redactado. Fátima confirma disponibilidad y entrega por ese mismo chat. No se paga en el sitio."
-            : `El botón se habilita cuando estén nombre, teléfono, fecha${
-                details.mode === "envio" ? ", zona y dirección" : ""
+            : `El botón se habilita cuando estén nombre y fecha${
+                details.mode === "envio" ? ", más zona y dirección" : ""
               }.`}
         </p>
       </aside>

@@ -81,7 +81,9 @@ export function buildOrderMessage(
   const lines: string[] = ["Hola Fátima, quiero hacer un pedido.", ""];
 
   lines.push(`Nombre: ${details.name.trim()}`);
-  lines.push(`Teléfono: ${formatPhone(details.phone)}`);
+  // El teléfono es opcional: el mensaje llega por WhatsApp, así que el número
+  // ya viene con el chat. Sólo se agrega si dejaron uno distinto.
+  if (details.phone.trim()) lines.push(`Teléfono: ${formatPhone(details.phone)}`);
   lines.push("", "Pedido:");
 
   for (const item of items) {
