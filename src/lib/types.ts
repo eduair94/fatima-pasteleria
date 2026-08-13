@@ -81,11 +81,18 @@ export type SyncReport = {
   error?: string;
 };
 
+/** Trabajo del scraper que quedó corriendo, para recolectarlo después. */
+export type PendingJob = {
+  jobId: string;
+  startedAt: string;
+};
+
 export type Catalog = {
   products: Product[];
   settings: Settings;
   proposals?: Proposal[];
   lastSync?: SyncReport;
+  pendingJob?: PendingJob | null;
 };
 
 /** Ítem del carrito, tal como vive en localStorage. */

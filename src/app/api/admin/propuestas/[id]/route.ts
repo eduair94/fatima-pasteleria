@@ -25,7 +25,7 @@ export async function POST(request: Request, { params }: { params: Promise<{ id:
   if (!(await isAuthenticated())) return unauthorized();
 
   const { id } = await params;
-  const catalog = await readCatalog();
+  const catalog = await readCatalog({ fresh: true });
   const proposals = catalog.proposals ?? [];
   const proposal = proposals.find((item) => item.id === id);
 
@@ -87,7 +87,7 @@ export async function DELETE(_request: Request, { params }: { params: Promise<{ 
   if (!(await isAuthenticated())) return unauthorized();
 
   const { id } = await params;
-  const proposals = (await readCatalog()).proposals ?? [];
+  const proposals = (await readCatalog({ fresh: true })).proposals ?? [];
 
   if (!proposals.some((item) => item.id === id)) {
     return NextResponse.json({ error: "Esa propuesta ya no está." }, { status: 404 });

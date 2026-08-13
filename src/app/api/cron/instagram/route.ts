@@ -32,6 +32,26 @@ export async function GET(request: Request) {
     return NextResponse.json({ error: "No autorizado." }, { status: 401 });
   }
 
-  const report = await runSync();
-  return NextResponse.json({ report }, { status: report.error ? 502 : 200 });
+  // El scraper tarda más de lo que dura esta función, así que se arranca y se
+  // espera un rato. Lo que no llegue a terminar lo recolecta la corrida de
+  // mañana antes de arrancar una nueva.
+  const deadline = Date.now() + 45_000;
+  let outcome = await runSync();
+
+  while (outcome.state === "pendiente" && Date.now() < deadline) {
+    await new Promise((resolve) => setTimeout(resolve, 5_000));
+    outcome = await runSync();
+  }
+
+  if (outcome.state === "pendiente") {
+    return NextResponse.json(
+      { state: "pendiente", nota: "Se recolecta en la próxima corrida." },
+      { status: 202 },
+    );
+  }
+
+  return NextResponse.json(
+    { state: "listo", report: outcome.report },
+    { status: outcome.report.error ? 502 : 200 },
+  );
 }

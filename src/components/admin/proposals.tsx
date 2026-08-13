@@ -35,25 +35,49 @@ export function Proposals({
   const [busy, setBusy] = useState(false);
   const [mensaje, setMensaje] = useState<string | null>(null);
 
+  /**
+   * El scraper tarda entre 20 y 40 segundos y arranca en otra máquina, así que
+   * la primera llamada sólo lo dispara. Se vuelve a preguntar cada cuatro
+   * segundos hasta que hay resultado, con tres minutos de tope.
+   */
   async function buscar() {
     setBusy(true);
-    setMensaje(null);
-    const response = await fetch("/api/admin/instagram", { method: "POST" }).catch(() => null);
-    const data = ((await response?.json().catch(() => ({}))) ?? {}) as {
-      report?: SyncReport;
-    };
-    setBusy(false);
+    setMensaje("Buscando en Instagram…");
 
-    if (data.report?.error) {
-      setMensaje(data.report.error);
+    const limite = Date.now() + 3 * 60 * 1000;
+
+    while (Date.now() < limite) {
+      const response = await fetch("/api/admin/instagram", { method: "POST" }).catch(() => null);
+      const data = ((await response?.json().catch(() => ({}))) ?? {}) as {
+        state?: string;
+        report?: SyncReport;
+      };
+
+      if (data.state === "pendiente") {
+        await new Promise((resolve) => setTimeout(resolve, 4000));
+        continue;
+      }
+
+      setBusy(false);
+
+      if (!data.report) {
+        setMensaje("No se pudo buscar. Probá de nuevo.");
+        return;
+      }
+      if (data.report.error) {
+        setMensaje(data.report.error);
+        return;
+      }
+
+      setMensaje(
+        `${data.report.postsFound} publicaciones leídas · ${data.report.newProposals} nuevas · ${data.report.skipped} ya estaban`,
+      );
+      router.refresh();
       return;
     }
-    setMensaje(
-      data.report
-        ? `${data.report.postsFound} publicaciones leídas · ${data.report.newProposals} nuevas · ${data.report.skipped} ya estaban`
-        : "No se pudo buscar.",
-    );
-    router.refresh();
+
+    setBusy(false);
+    setMensaje("La búsqueda está tardando más de lo normal. Volvé a intentar en un rato.");
   }
 
   async function probar() {

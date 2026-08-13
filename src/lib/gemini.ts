@@ -19,7 +19,57 @@ import type { Product } from "./types";
  */
 
 const ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/models";
-const MODEL = process.env.GEMINI_MODEL?.trim() || "gemini-2.5-flash";
+
+/**
+ * Alias, no versión fija: Google deja de servir los modelos viejos a las
+ * cuentas nuevas —`gemini-2.5-flash` ya devuelve 404— y un alias sigue al
+ * modelo vigente sin que haya que tocar el código.
+ */
+const MODEL = process.env.GEMINI_MODEL?.trim() || "gemini-flash-latest";
+
+/**
+ * Si el modelo elegido está saturado se prueban estos, en orden. El free tier
+ * devuelve 503 "high demand" con bastante frecuencia y sin retry se pierde la
+ * publicación entera.
+ */
+const FALLBACKS = ["gemini-flash-latest", "gemini-3.5-flash", "gemini-flash-lite-latest"];
+
+const REINTENTOS = 3;
+
+/** 429 y 5xx son transitorios; el resto no mejora reintentando. */
+function esTransitorio(status: number): boolean {
+  return status === 429 || status >= 500;
+}
+
+const esperar = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
+
+/**
+ * Llama a Gemini aguantando saturación: reintenta con espera creciente y, si el
+ * modelo sigue sin responder, prueba con los de respaldo.
+ */
+async function generate(key: string, body: string): Promise<Response> {
+  const modelos = [MODEL, ...FALLBACKS.filter((m) => m !== MODEL)];
+  let ultimo: Response | null = null;
+
+  for (const modelo of modelos) {
+    for (let intento = 1; intento <= REINTENTOS; intento++) {
+      const response = await fetch(`${ENDPOINT}/${modelo}:generateContent`, {
+        method: "POST",
+        headers: { "x-goog-api-key": key, "Content-Type": "application/json" },
+        cache: "no-store",
+        body,
+      });
+
+      if (response.ok) return response;
+      ultimo = response;
+
+      if (!esTransitorio(response.status)) break;
+      if (intento < REINTENTOS) await esperar(1500 * intento);
+    }
+  }
+
+  return ultimo!;
+}
 
 export function geminiIsConfigured(): boolean {
   return Boolean(process.env.GEMINI_API_KEY?.trim());
@@ -118,11 +168,9 @@ export async function draftProductFromPost(post: InstagramPost): Promise<Product
     if (image) parts.push({ inline_data: image });
   }
 
-  const response = await fetch(`${ENDPOINT}/${MODEL}:generateContent?key=${encodeURIComponent(key)}`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    cache: "no-store",
-    body: JSON.stringify({
+  const response = await generate(
+    key,
+    JSON.stringify({
       contents: [{ role: "user", parts }],
       generationConfig: {
         temperature: 0.2,
@@ -130,10 +178,15 @@ export async function draftProductFromPost(post: InstagramPost): Promise<Product
         responseSchema: SCHEMA,
       },
     }),
-  });
+  );
 
   if (!response.ok) {
-    throw new Error(`Gemini respondió ${response.status}: ${(await response.text()).slice(0, 200)}`);
+    const detalle = (await response.text()).slice(0, 160);
+    throw new Error(
+      response.status === 503
+        ? "Gemini está saturado en este momento. Probá de nuevo en unos minutos."
+        : `Gemini respondió ${response.status}: ${detalle}`,
+    );
   }
 
   const payload = (await response.json()) as {

@@ -20,7 +20,7 @@ export default async function AdminPage() {
     return <AdminLogin configured={configured} />;
   }
 
-  const { products, settings, proposals, lastSync } = await readCatalog();
+  const { products, settings, proposals, lastSync } = await readCatalog({ fresh: true });
 
   return (
     <AdminDashboard

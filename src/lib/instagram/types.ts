@@ -20,13 +20,28 @@ export type FetchOptions = {
   limit: number;
 };
 
+export type JobResult =
+  | { done: false }
+  | { done: true; posts: InstagramPost[] }
+  | { done: true; failed: true; reason: string };
+
 export interface InstagramProvider {
   readonly name: ProviderName;
   /** Si faltan las variables de entorno, el proveedor no está disponible. */
   isConfigured(): boolean;
   /** Qué variable falta, para poder decirlo en el panel. */
   missingConfig(): string[];
+  /** Camino directo. Puede tardar más de lo que dura una función serverless. */
   fetchLatestPosts(options: FetchOptions): Promise<InstagramPost[]>;
+
+  /**
+   * Camino en dos fases, para proveedores que arrancan un trabajo y tardan.
+   * Medido en Apify: entre 18 y 39 segundos, sin relación con la cantidad de
+   * publicaciones — es arranque de contenedor. Ningún tope de 60 segundos es
+   * confiable, así que se arranca y se recolecta después.
+   */
+  startJob?(options: FetchOptions): Promise<string>;
+  collectJob?(jobId: string): Promise<JobResult>;
 }
 
 export class ProviderError extends Error {

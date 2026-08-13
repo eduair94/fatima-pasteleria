@@ -18,7 +18,7 @@ export async function PUT(request: Request, { params }: { params: Promise<{ id: 
   const { id } = await params;
 
   try {
-    const { products } = await readCatalog();
+    const { products } = await readCatalog({ fresh: true });
     const existing = products.find((p) => p.id === id);
     if (!existing) return NextResponse.json({ error: "No existe ese producto." }, { status: 404 });
 
@@ -51,7 +51,7 @@ export async function PATCH(request: Request, { params }: { params: Promise<{ id
   const { id } = await params;
 
   try {
-    const { products } = await readCatalog();
+    const { products } = await readCatalog({ fresh: true });
     const existing = products.find((p) => p.id === id);
     if (!existing) return NextResponse.json({ error: "No existe ese producto." }, { status: 404 });
 
@@ -75,7 +75,7 @@ export async function DELETE(_request: Request, { params }: { params: Promise<{ 
   if (!(await isAuthenticated())) return unauthorized();
 
   const { id } = await params;
-  const { products } = await readCatalog();
+  const { products } = await readCatalog({ fresh: true });
 
   if (!products.some((p) => p.id === id)) {
     return NextResponse.json({ error: "No existe ese producto." }, { status: 404 });

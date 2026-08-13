@@ -18,7 +18,7 @@ function refresh() {
 /** Todos los productos, incluidos los pausados. */
 export async function GET() {
   if (!(await isAuthenticated())) return unauthorized();
-  const { products, settings } = await readCatalog();
+  const { products, settings } = await readCatalog({ fresh: true });
   return NextResponse.json({ products, settings });
 }
 
@@ -27,7 +27,7 @@ export async function POST(request: Request) {
   if (!(await isAuthenticated())) return unauthorized();
 
   try {
-    const { products } = await readCatalog();
+    const { products } = await readCatalog({ fresh: true });
     const product = parseProduct(await request.json());
 
     if (products.some((p) => p.slug === product.slug)) {
@@ -64,7 +64,7 @@ export async function PATCH(request: Request) {
       return NextResponse.json({ error: "Falta el nuevo orden." }, { status: 422 });
     }
 
-    const { products } = await readCatalog();
+    const { products } = await readCatalog({ fresh: true });
     const positions = new Map(body.order.map((item) => [item.id, Number(item.order)]));
 
     await saveProducts(

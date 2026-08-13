@@ -2,6 +2,7 @@ import {
   type FetchOptions,
   type InstagramPost,
   type InstagramProvider,
+  type JobResult,
   ProviderError,
   firstString,
   toIsoDate,
@@ -20,7 +21,15 @@ import {
  */
 
 const ACTOR = process.env.APIFY_ACTOR_ID?.trim() || "apify~instagram-scraper";
-const TIMEOUT_SECONDS = 45;
+
+/**
+ * El actor tarda entre 15 y 25 segundos con pocas publicaciones, y se pasa del
+ * minuto si se le piden doce. Como el tope de una función en Vercel Hobby son
+ * 60 s, se le pide poco y con ventana de fechas: corriendo todos los días,
+ * mirar el último mes alcanza de sobra.
+ */
+const TIMEOUT_SECONDS = 50;
+const WINDOW = process.env.INSTAGRAM_SYNC_WINDOW?.trim() || "30 days";
 
 export const apifyProvider: InstagramProvider = {
   name: "apify",
@@ -51,6 +60,7 @@ export const apifyProvider: InstagramProvider = {
           directUrls: [`https://www.instagram.com/${username}/`],
           resultsType: "posts",
           resultsLimit: limit,
+          onlyPostsNewerThan: WINDOW,
           addParentData: false,
         }),
       });
@@ -84,7 +94,76 @@ export const apifyProvider: InstagramProvider = {
 
     return items.map(normalize).filter((post): post is InstagramPost => post !== null);
   },
+
+  /** Arranca el actor y devuelve enseguida el id de la corrida. */
+  async startJob({ username, limit }: FetchOptions): Promise<string> {
+    const run = (await call(`acts/${ACTOR}/runs`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        directUrls: [`https://www.instagram.com/${username}/`],
+        resultsType: "posts",
+        resultsLimit: limit,
+        onlyPostsNewerThan: WINDOW,
+        addParentData: false,
+      }),
+    })) as { data?: { id?: string } };
+
+    const id = run.data?.id;
+    if (!id) throw new ProviderError("Apify no devolvió el id de la corrida.", "apify");
+    return id;
+  },
+
+  async collectJob(jobId: string): Promise<JobResult> {
+    const run = (await call(`actor-runs/${jobId}`)) as {
+      data?: { status?: string; defaultDatasetId?: string; statusMessage?: string };
+    };
+
+    const status = run.data?.status;
+    if (status === "READY" || status === "RUNNING") return { done: false };
+
+    if (status !== "SUCCEEDED") {
+      return {
+        done: true,
+        failed: true,
+        reason: run.data?.statusMessage || `La corrida terminó en estado ${status}.`,
+      };
+    }
+
+    const dataset = run.data?.defaultDatasetId;
+    if (!dataset) return { done: true, posts: [] };
+
+    const items = (await call(`datasets/${dataset}/items?clean=true`)) as Record<string, unknown>[];
+    if (!Array.isArray(items)) return { done: true, posts: [] };
+
+    return {
+      done: true,
+      posts: items.map(normalize).filter((post): post is InstagramPost => post !== null),
+    };
+  },
 };
+
+/** Llamada a la API de Apify con el token, devolviendo JSON. */
+async function call(path: string, init?: RequestInit): Promise<unknown> {
+  const token = process.env.APIFY_TOKEN?.trim();
+  if (!token) throw new ProviderError("Falta APIFY_TOKEN.", "apify");
+
+  const separator = path.includes("?") ? "&" : "?";
+  const response = await fetch(
+    `https://api.apify.com/v2/${path}${separator}token=${encodeURIComponent(token)}`,
+    { ...init, cache: "no-store" },
+  );
+
+  if (!response.ok) {
+    throw new ProviderError(
+      `Apify respondió ${response.status}: ${(await response.text()).slice(0, 200)}`,
+      "apify",
+      response.status,
+    );
+  }
+
+  return response.json();
+}
 
 function normalize(item: Record<string, unknown>): InstagramPost | null {
   const shortcode = firstString(item.shortCode, item.shortcode, item.id);

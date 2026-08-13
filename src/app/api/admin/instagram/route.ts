@@ -18,22 +18,34 @@ function unauthorized() {
 export async function GET() {
   if (!(await isAuthenticated())) return unauthorized();
 
-  const { proposals, lastSync } = await readCatalog();
+  const { proposals, lastSync, pendingJob } = await readCatalog({ fresh: true });
   return NextResponse.json({
     status: syncStatus(),
     lastSync: lastSync ?? null,
     pending: proposals?.length ?? 0,
+    running: Boolean(pendingJob),
   });
 }
 
-/** Busca novedades ahora. */
+/**
+ * Busca novedades. Se puede llamar varias veces: si el scraper todavía está
+ * corriendo, devuelve `pendiente` en lugar de arrancar otro. El panel vuelve a
+ * llamar cada pocos segundos hasta que termina.
+ */
 export async function POST() {
   if (!(await isAuthenticated())) return unauthorized();
 
-  const report = await runSync();
-  revalidatePath("/admin");
+  const outcome = await runSync();
 
-  return NextResponse.json({ report }, { status: report.error ? 502 : 200 });
+  if (outcome.state === "pendiente") {
+    return NextResponse.json({ state: "pendiente", startedAt: outcome.startedAt }, { status: 202 });
+  }
+
+  revalidatePath("/admin");
+  return NextResponse.json(
+    { state: "listo", report: outcome.report },
+    { status: outcome.report.error ? 502 : 200 },
+  );
 }
 
 /**
