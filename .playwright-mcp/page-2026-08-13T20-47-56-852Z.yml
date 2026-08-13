@@ -1,0 +1,118 @@
+- generic [active] [ref=e1]:
+  - link "Saltar al contenido" [ref=e2] [cursor=pointer]:
+    - /url: "#contenido"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "Fátima — Pastelería Artesanal, ir al inicio" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e7]:
+          - generic [ref=e8]: Fátima
+          - generic [ref=e9]: Pastelería Artesanal
+      - navigation "Principal" [ref=e10]:
+        - link "Catálogo" [ref=e11] [cursor=pointer]:
+          - /url: /catalogo
+        - link "Cómo pedir" [ref=e12] [cursor=pointer]:
+          - /url: /#como-pedir
+        - link "Zonas de entrega" [ref=e13] [cursor=pointer]:
+          - /url: /#zonas
+        - link "Preguntas" [ref=e14] [cursor=pointer]:
+          - /url: /#preguntas
+      - generic [ref=e15]:
+        - link "096 247 822" [ref=e16] [cursor=pointer]:
+          - /url: https://wa.me/59896247822?text=Hola%20F%C3%A1tima%2C%20quer%C3%ADa%20hacerte%20una%20consulta.
+        - button "Ver el pedido" [ref=e19] [cursor=pointer]
+  - main [ref=e23]:
+    - article [ref=e24]:
+      - navigation "Miga de pan" [ref=e25]:
+        - link "Inicio" [ref=e26] [cursor=pointer]:
+          - /url: /
+        - text: /
+        - link "Catálogo" [ref=e27] [cursor=pointer]:
+          - /url: /catalogo
+        - text: /
+        - link "Cheesecakes" [ref=e28] [cursor=pointer]:
+          - /url: /catalogo?categoria=cheesecakes
+        - text: / Cheesecake de dulce de leche
+      - generic [ref=e29]:
+        - generic [ref=e30]:
+          - img "Cheesecake entero cubierto de dulce de leche en espiral, apoyado sobre una tabla de madera clara" [ref=e32]
+          - tablist "Fotos del producto" [ref=e33]:
+            - listitem [ref=e34]:
+              - 'tab "Foto 1: Cheesecake entero cubierto de dulce de leche en espiral, apoyado sobre una tabla de madera clara" [selected] [ref=e35]'
+            - listitem [ref=e36]:
+              - 'tab "Foto 2: Porción de cheesecake de dulce de leche con la base de galletitas a la vista" [ref=e37]'
+        - generic [ref=e38]:
+          - generic [ref=e39]:
+            - paragraph [ref=e40]: Cheesecakes
+            - heading "Cheesecake de dulce de leche" [level=1] [ref=e41]
+            - paragraph [ref=e42]: Base de galletitas bien crocante, relleno cremoso de queso y una capa de dulce de leche que cubre toda la superficie. Se hornea por encargo, sin conservantes ni colorantes. Se puede pedir entero o por porción.
+          - generic [ref=e43]:
+            - group "Tamaño" [ref=e44]:
+              - generic [ref=e46]:
+                - generic [ref=e47] [cursor=pointer]:
+                  - radio "Entero $ 1.100 · Aproximadamente 10 porciones" [checked]
+                  - generic [ref=e49]:
+                    - generic [ref=e50]: Entero
+                    - generic [ref=e51]: $ 1.100 · Aproximadamente 10 porciones
+                - generic [ref=e52] [cursor=pointer]:
+                  - radio "Porción $ 200 · Cada una"
+                  - generic [ref=e54]:
+                    - generic [ref=e55]: Porción
+                    - generic [ref=e56]: $ 200 · Cada una
+            - generic [ref=e57]:
+              - generic [ref=e58]: Nota para este ítem (opcional)
+              - textbox "Nota para este ítem (opcional)" [ref=e59]:
+                - /placeholder: Dedicatoria, sin azúcar, alergias
+            - paragraph [ref=e63]: 48 hs de anticipación. La primera fecha posible es el 15 de agosto, con entrega a partir de las 19 h.
+            - generic [ref=e64]:
+              - group "Cantidad de Cheesecake de dulce de leche" [ref=e65]:
+                - button "Quitar uno" [disabled] [ref=e66]
+                - generic [ref=e68]: "1"
+                - button "Agregar uno" [ref=e69]
+              - button "Agregar · $ 1.100" [ref=e71] [cursor=pointer]
+          - generic [ref=e72]:
+            - generic [ref=e79]:
+              - term [ref=e80]: Envío y retiro
+              - definition [ref=e81]: Envío $ 100 en zona. Retiro sin costo en Aguada y La Comercial.
+            - generic [ref=e85]:
+              - term [ref=e86]: Elaboración
+              - definition [ref=e87]: Hecho a mano, sin conservantes ni colorantes.
+            - generic [ref=e92]:
+              - term [ref=e93]: Llego a
+              - definition [ref=e94]: La Comercial, Aguada, Tres Cruces, Nuevo Centro, Av. Italia, Parque Batlle. Otras zonas, a coordinar.
+          - link "Ver la publicación en Instagram" [ref=e95] [cursor=pointer]:
+            - /url: https://www.instagram.com/faticastro001/p/DabzmU8DUGZ/
+  - contentinfo [ref=e98]:
+    - generic [ref=e99]:
+      - generic [ref=e100]:
+        - generic [ref=e101]:
+          - generic [ref=e102]: Fátima
+          - generic [ref=e103]: Pastelería Artesanal
+        - paragraph [ref=e104]: El sabor de lo hecho en casa. Cheesecakes, scones y tortas caseras por encargo en Montevideo.
+      - generic [ref=e105]:
+        - heading "Contacto" [level=2] [ref=e106]
+        - link "096 247 822" [ref=e107] [cursor=pointer]:
+          - /url: https://wa.me/59896247822?text=Hola%20F%C3%A1tima%2C%20quer%C3%ADa%20hacerte%20una%20consulta.
+        - link "@faticastro001" [ref=e110] [cursor=pointer]:
+          - /url: https://www.instagram.com/faticastro001/
+        - paragraph [ref=e113]: Aguada y La Comercial, Montevideo
+        - paragraph [ref=e117]: Entregas desde las 19 h
+      - generic [ref=e121]:
+        - heading "Zonas de entrega" [level=2] [ref=e122]
+        - paragraph [ref=e123]: La Comercial, Aguada, Tres Cruces, Nuevo Centro, Av. Italia, Parque Batlle.
+        - paragraph [ref=e124]: Otras zonas de Montevideo, a coordinar. Retiro sin costo en Aguada y La Comercial.
+        - navigation "Secciones" [ref=e125]:
+          - link "Catálogo" [ref=e126] [cursor=pointer]:
+            - /url: /catalogo
+          - link "Preguntas" [ref=e127] [cursor=pointer]:
+            - /url: /#preguntas
+          - link "Administrar" [ref=e128] [cursor=pointer]:
+            - /url: /admin
+    - generic [ref=e130]:
+      - paragraph [ref=e131]: Los pedidos se coordinan por WhatsApp. El sitio arma el mensaje; la confirmación llega por ese medio. No se cobra nada en línea.
+      - paragraph [ref=e132]:
+        - text: © 2026 Fátima Pastelería. Sitio por
+        - link "Eduardo Airaudo" [ref=e133] [cursor=pointer]:
+          - /url: https://www.linkedin.com/in/eduardo-airaudo/
+        - text: .
+  - alert [ref=e134]

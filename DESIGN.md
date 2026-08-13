@@ -96,9 +96,11 @@ rebota. Press `scale(.985)`. **Nunca se usa opacidad para el hover.** Con
 
 - **Foco:** halo rosa de 3 px más borde `--berry-600`. Siempre visible, nunca `outline: none`
   sin reemplazo.
-- **Deshabilitado:** fondo `--cream-300`, texto `--brown-300`, sin sombra ni transformación.
-  Se usa de verdad: el botón de enviar el pedido está apagado hasta tener nombre, teléfono,
-  fecha y —si es envío— zona y dirección.
+- **Deshabilitado:** fondo `--cream-300`, texto `--brown-700`, sin sombra ni transformación.
+  Se usa de verdad: el botón de enviar el pedido está apagado hasta tener nombre, fecha y
+  —si es envío— zona y dirección. **El teléfono no se pide**: el pedido llega por WhatsApp,
+  así que el número ya viene con el chat, y cada campo de más en el único camino de conversión
+  se paga.
 - **Toque:** 44 px mínimo en mobile, 52 px el CTA principal, 64 px la barra de pedido. Los
   botones de 36 px y los chips de 38 px existen **sólo en desktop**: por debajo de 768 px el
   chip crece a 44 px.
