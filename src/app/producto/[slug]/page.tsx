@@ -72,7 +72,7 @@ export default async function ProductPage({ params }: { params: Params }) {
     <>
       <JsonLd
         data={[
-          productJsonLd(product),
+          productJsonLd(product, settings),
           breadcrumbJsonLd([
             { name: "Inicio", path: "/" },
             { name: "Catálogo", path: "/catalogo" },

@@ -1,5 +1,5 @@
 import { hasPrice, isOrderable, metaDescription } from "./product";
-import { FAQ, SITE, ZONES } from "./site";
+import { FAQ, SITE, TESTIMONIALS, ZONES } from "./site";
 import type { Product, Settings } from "./types";
 
 const absolute = (path: string) => (path.startsWith("http") ? path : `${SITE.url}${path}`);
@@ -31,6 +31,24 @@ export function bakeryJsonLd(products: Product[], settings: Settings) {
       name: `${zone.name}, ${SITE.city}`,
     })),
     sameAs: [SITE.instagram.url],
+    /**
+     * Los tres mensajes reales que se ven en la portada, **sin
+     * `reviewRating`**: no existe ninguna calificación publicada y no se
+     * inventa una. Es válido en schema.org —el puntaje es opcional— y sirve
+     * como señal de confianza citable. Google no va a mostrar estrellas, que
+     * es exactamente lo correcto: las estrellas de un negocio local salen de
+     * su ficha de Google, no del schema del propio sitio.
+     */
+    review: TESTIMONIALS.map((testimonial) => ({
+      "@type": "Review",
+      reviewBody: testimonial.quote,
+      author: {
+        "@type": "Person",
+        name: testimonial.source.startsWith("@")
+          ? testimonial.source.split(",")[0]
+          : "Clienta de Fátima",
+      },
+    })),
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "customer service",
@@ -54,7 +72,48 @@ export function bakeryJsonLd(products: Product[], settings: Settings) {
   };
 }
 
-export function productJsonLd(product: Product) {
+/**
+ * El vendedor va con tipo y nombre, no como un `@id` suelto.
+ *
+ * El nodo `Bakery` se define en la portada, y los parsers procesan cada URL
+ * por separado: desde una ficha de producto, una referencia por `@id` a otra
+ * página llega como nodo vacío, sin tipo ni nombre.
+ */
+function sellerNode() {
+  return {
+    "@id": `${SITE.url}#pasteleria`,
+    "@type": "Bakery",
+    name: SITE.name,
+    url: SITE.url,
+  };
+}
+
+/** Envío y plazo, con los datos que el sitio ya publica. */
+function shippingDetails(settings: Settings) {
+  return {
+    "@type": "OfferShippingDetails",
+    shippingRate: {
+      "@type": "MonetaryAmount",
+      value: String(settings.shippingCost),
+      currency: "UYU",
+    },
+    shippingDestination: {
+      "@type": "DefinedRegion",
+      addressCountry: SITE.countryCode,
+      addressRegion: "Montevideo",
+    },
+    deliveryTime: {
+      "@type": "ShippingDeliveryTime",
+      handlingTime: {
+        "@type": "QuantitativeValue",
+        minValue: Math.ceil(settings.leadTimeHours / 24),
+        unitCode: "DAY",
+      },
+    },
+  };
+}
+
+export function productJsonLd(product: Product, settings?: Settings) {
   const url = `${SITE.url}/producto/${product.slug}`;
   const availability = isOrderable(product)
     ? "https://schema.org/PreOrder"
@@ -69,13 +128,14 @@ export function productJsonLd(product: Product) {
       priceCurrency: "UYU",
       availability,
       url,
-      seller: { "@id": `${SITE.url}#pasteleria` },
+      seller: sellerNode(),
       areaServed: { "@type": "City", name: SITE.city },
       deliveryLeadTime: {
         "@type": "QuantitativeValue",
         minValue: Math.ceil(product.leadTimeHours / 24),
         unitCode: "DAY",
       },
+      ...(settings ? { shippingDetails: shippingDetails(settings) } : {}),
     }));
 
   return {

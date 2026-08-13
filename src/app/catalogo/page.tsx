@@ -17,19 +17,36 @@ export async function generateMetadata({ searchParams }: { searchParams: Search 
   const { categoria } = await searchParams;
   const category = CATEGORIES.find((c) => c.id === categoria);
 
+  // El `openGraph.url` va explícito: sin él hereda el del layout raíz y
+  // compartir un enlace de categoría muestra la vista previa de la portada.
   if (category) {
+    const path = `/catalogo?categoria=${category.id}`;
+    const description = `${category.name} caseros de Fátima — Pastelería Artesanal. Por encargo en Montevideo con 48 hs de anticipación, envío o retiro sin costo. Pedidos por WhatsApp.`;
+
     return {
       title: `${category.name} por encargo en Montevideo`,
-      description: `${category.name} caseros de Fátima — Pastelería Artesanal. Por encargo en Montevideo con 48 hs de anticipación, envío o retiro sin costo. Pedidos por WhatsApp.`,
-      alternates: { canonical: `/catalogo?categoria=${category.id}` },
+      description,
+      alternates: { canonical: path },
+      openGraph: {
+        title: `${category.name} por encargo en Montevideo | Fátima`,
+        description,
+        url: `${SITE.url}${path}`,
+      },
     };
   }
 
+  const description =
+    "Todo lo que se puede pedir: cheesecakes, tortas y tartas, scones y galletería. Hecho a mano en Montevideo, por encargo con 48 hs de anticipación. Precios publicados y pedido por WhatsApp.";
+
   return {
     title: "Catálogo de tortas, cheesecakes y scones caseros",
-    description:
-      "Todo lo que se puede pedir: cheesecakes, tortas y tartas, scones y galletería. Hecho a mano en Montevideo, por encargo con 48 hs de anticipación. Precios publicados y pedido por WhatsApp.",
+    description,
     alternates: { canonical: "/catalogo" },
+    openGraph: {
+      title: "Catálogo de tortas, cheesecakes y scones caseros | Fátima",
+      description,
+      url: `${SITE.url}/catalogo`,
+    },
   };
 }
 
