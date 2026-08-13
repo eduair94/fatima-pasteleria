@@ -223,8 +223,19 @@ proveedor es un adaptador: se cambia con una variable, sin tocar el resto del c�
 
 | Proveedor | Free tier | Variables |
 | --- | --- | --- |
-| **Apify** (recomendado) | USD 5 de crédito por mes, sin tarjeta. El actor cobra ~USD 1,50 por 1.000 resultados, así que una corrida diaria de 12 publicaciones gasta centavos | `APIFY_TOKEN` |
+| **Apify** (recomendado) | USD 5 de crédito por mes, sin tarjeta. Una corrida diaria de seis publicaciones gasta centavos | `APIFY_TOKEN` |
 | **RapidAPI** | Depende de la API que elijas; varias dan entre 50 llamadas por día y 30 por mes | `RAPIDAPI_KEY`, `RAPIDAPI_HOST`, `RAPIDAPI_PATH` |
+
+> **Ojo con qué actor de Apify usás.** El que viene por defecto,
+> `apify/instagram-scraper`, funciona por API en el plan gratuito. Varios de los actores de
+> terceros —por ejemplo `apidojo/instagram-scraper-api`— **bloquean el uso por API en el plan
+> Free** y devuelven `{"demo": true}`: sólo andan desde la consola de Apify. Si cambiás de actor
+> con `APIFY_ACTOR_ID`, probalo con el botón *Probar conexión* antes de confiar en él.
+
+El scraper tarda entre 18 y 39 segundos, y medido no depende de cuántas publicaciones se pidan:
+es arranque de contenedor. Como no hay tope de 60 segundos que sea confiable, el trabajo va en
+dos fases: una llamada lo arranca y las siguientes lo recolectan. El panel consulta cada cuatro
+segundos; el cron recoge lo que haya quedado de la corrida anterior antes de arrancar otra.
 
 El adaptador de RapidAPI es genérico a propósito: en el marketplace hay una docena de scrapers
 que cambian de nombre, de ruta y de forma de respuesta seguido, así que el host y la ruta son
@@ -240,7 +251,14 @@ Para agregar otro proveedor alcanza con un archivo nuevo en `src/lib/instagram/`
 ### Puesta en marcha
 
 1. Sacá una clave en [Google AI Studio](https://aistudio.google.com/apikey) → `GEMINI_API_KEY`.
-   El free tier son ~1.500 llamadas por día; la cuenta publica menos de diez por mes.
+   El free tier alcanza de sobra para una cuenta que publica menos de diez veces por mes, pero
+   **devuelve 503 y 429 con bastante frecuencia**. El pipeline lo contempla: reintenta con espera
+   creciente, prueba modelos de respaldo, y si aun así falla guarda la publicación con su foto y
+   su caption para cargarla a mano. Las propuestas que quedaron con error se vuelven a intentar
+   solas en la corrida siguiente.
+   `GEMINI_MODEL` usa por defecto el alias `gemini-flash-latest`: Google deja de servir los
+   modelos con número a las cuentas nuevas —`gemini-2.5-flash` ya devuelve 404— y el alias sigue
+   al vigente sin tocar código.
 2. Elegí proveedor y cargá sus variables.
 3. Definí `CRON_SECRET` con una cadena aleatoria. **Sin ella la corrida diaria no se
    habilita**: una corrida gasta crédito del scraper y cuota de Gemini, así que un endpoint
