@@ -4,6 +4,31 @@
  * "Envíos". No se inventa ningún dato comercial.
  */
 
+/**
+ * URL canónica del sitio, en orden de prioridad:
+ *
+ *   1. `NEXT_PUBLIC_SITE_URL`, si está definida. Es la que manda, y la que hay
+ *      que usar cuando el sitio tenga dominio propio.
+ *   2. `VERCEL_PROJECT_PRODUCTION_URL`, que Vercel inyecta sola con el dominio
+ *      de producción del proyecto.
+ *   3. localhost, para desarrollo.
+ *
+ * **Acá no va un dominio escrito a mano.** Tenerlo hacía que un despliegue
+ * nuevo heredara el dominio de otro proyecto: el canonical, el `og:url` y el
+ * sitemap entero apuntaban al sitio equivocado, y con los dos vivos y el mismo
+ * contenido, los buscadores le daban todo el valor al viejo. Sólo se nota
+ * mirando el HTML, así que conviene que el código no pueda equivocarse.
+ */
+function resolveSiteUrl(): string {
+  const explicita = process.env.NEXT_PUBLIC_SITE_URL?.trim();
+  if (explicita) return explicita.replace(/\/+$/, "");
+
+  const vercel = process.env.VERCEL_PROJECT_PRODUCTION_URL?.trim();
+  if (vercel) return `https://${vercel.replace(/\/+$/, "")}`;
+
+  return "http://localhost:3000";
+}
+
 export const SITE = {
   name: "Fátima — Pastelería Artesanal",
   shortName: "Fátima Pastelería",
@@ -14,8 +39,7 @@ export const SITE = {
   countryCode: "UY",
   neighborhoods: "Aguada y La Comercial",
   locale: "es-UY",
-  /** Se sobrescribe en producción con NEXT_PUBLIC_SITE_URL. */
-  url: process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") || "https://fatima-pasteleria.vercel.app",
+  url: resolveSiteUrl(),
   instagram: {
     handle: "@faticastro001",
     url: "https://www.instagram.com/faticastro001/",
