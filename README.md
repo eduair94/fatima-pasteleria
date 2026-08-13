@@ -378,7 +378,7 @@ Los errores de validación vuelven con `422` y un mensaje en español que dice q
 src/
 ├── app/
 │   ├── page.tsx                  Portada
-│   ├── catalogo/                 Catálogo con filtro por grupo
+│   ├── catalogo/                 Catálogo, y una ruta estática por grupo
 │   ├── producto/[slug]/          Ficha indexable, una URL por producto
 │   ├── pedido/                   Datos del pedido y confirmación
 │   ├── admin/                    Panel
@@ -434,6 +434,11 @@ fuente de verdad.
 - Una URL por producto, con slug en español: `/producto/cheesecake-de-dulce-de-leche`.
 - Términos que cubre el contenido: *pastelería artesanal Montevideo*, *cheesecake por encargo
   Montevideo*, *tortas por encargo con envío*, *scones caseros*.
+- Una ruta estática por grupo (`/catalogo/tortas`), con título, bajada y descripción propios, en
+  lugar de tres URLs con parámetro y el mismo texto.
+- **[SEO.md](SEO.md)** tiene el resultado de la auditoría completa: qué se implementó, qué queda
+  fuera del sitio —Google Business Profile es la palanca más grande— y qué decisiones se tomaron
+  a propósito para no volver a discutirlas.
 - Fotos WebP servidas por `next/image` en AVIF/WebP, con `alt` que describe lo que realmente se ve
   —«scones de queso apilados en una tabla redonda de madera, con luz de tarde»—, nunca «foto de producto».
 - **No se publican reseñas con estrellas.** La cuenta tiene mensajes de clientas, pero ninguna
@@ -449,6 +454,9 @@ Cosas que el sitio deja marcadas en lugar de resolverlas por su cuenta:
 - **Conservación de cada producto.** Mismo caso.
 - **Permiso para las reseñas.** Los tres mensajes son reales y salen de la historia destacada, pero
   no están firmados. Conviene pedirle nombre y permiso a cada clienta antes de dejarlos publicados.
+- **Su historia.** La sección «Cómo trabajo» está escrita sólo con hechos ya publicados. Falta lo
+  que sólo ella sabe: hace cuánto arrancó, por qué, qué aprendió y de quién. Es lo que más
+  levantaría la autoridad del sitio, y no se puede deducir del catálogo.
 - **Precio del tiramisú y de las cookies.** Se muestran como «Consultar». En cuanto haya precio, se
   carga desde el panel.
 - **El logotipo es un JPG de 1080 px.** Alcanza para pantalla. Para impresión o para ponerlo sobre
