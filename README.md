@@ -242,7 +242,9 @@ Para agregar otro proveedor alcanza con un archivo nuevo en `src/lib/instagram/`
 1. Sacá una clave en [Google AI Studio](https://aistudio.google.com/apikey) → `GEMINI_API_KEY`.
    El free tier son ~1.500 llamadas por día; la cuenta publica menos de diez por mes.
 2. Elegí proveedor y cargá sus variables.
-3. Definí `CRON_SECRET` con una cadena aleatoria: protege `/api/cron/instagram`.
+3. Definí `CRON_SECRET` con una cadena aleatoria. **Sin ella la corrida diaria no se
+   habilita**: una corrida gasta crédito del scraper y cuota de Gemini, así que un endpoint
+   abierto es una forma de que un tercero te vacíe la cuenta.
 4. Desplegá. El cron de `vercel.json` corre a las 11:00 UTC (8 de la mañana en Montevideo).
 
 En el plan Hobby de Vercel se permiten 2 cron jobs y **una corrida por día cada uno**, que es
