@@ -6,30 +6,39 @@ import { cookies } from "next/headers";
 /**
  * Sesión del panel de administración.
  *
- * No hay base de usuarios: hay una sola contraseña. Al validarla se emite una
+ * No hay base de usuarios: hay una sola contraseña, y vive **sólo** en la
+ * variable de entorno ADMIN_PASSWORD. No hay valor por defecto en el código:
+ * sin esa variable el panel no abre para nadie. Al validarla se emite una
  * cookie httpOnly firmada con HMAC-SHA256 y vencimiento, así el servidor no
  * guarda estado y la contraseña no viaja en cada request.
  *
- * ⚠️ La contraseña por defecto está en el repositorio a pedido del cliente.
- * En producción hay que definir ADMIN_PASSWORD y ADMIN_SESSION_SECRET como
- * variables de entorno. Ver README → "Seguridad del panel".
+ * Ver README → "Seguridad del panel".
  */
 
 const COOKIE = "fp_admin";
 const MAX_AGE_SECONDS = 60 * 60 * 12; // 12 horas
 
-export const DEFAULT_ADMIN_PASSWORD = "667703";
-
-function adminPassword(): string {
-  return process.env.ADMIN_PASSWORD || DEFAULT_ADMIN_PASSWORD;
+/** `null` cuando la variable no está definida o quedó vacía. */
+function adminPassword(): string | null {
+  const value = process.env.ADMIN_PASSWORD?.trim();
+  return value ? value : null;
 }
 
-export function usingDefaultPassword(): boolean {
-  return !process.env.ADMIN_PASSWORD;
+/** El panel sólo funciona si hay contraseña configurada. */
+export function adminIsConfigured(): boolean {
+  return adminPassword() !== null;
+}
+
+/**
+ * Sin ADMIN_SESSION_SECRET la firma se deriva de la contraseña. Funciona, pero
+ * ata las dos cosas: cambiar la contraseña invalida las sesiones abiertas.
+ */
+export function usingDerivedSecret(): boolean {
+  return !process.env.ADMIN_SESSION_SECRET?.trim();
 }
 
 function secret(): string {
-  return process.env.ADMIN_SESSION_SECRET || `fatima-pasteleria::${adminPassword()}`;
+  return process.env.ADMIN_SESSION_SECRET || `fatima-pasteleria::${adminPassword() ?? ""}`;
 }
 
 function sign(payload: string): string {
@@ -48,7 +57,10 @@ function safeEqual(a: string, b: string): boolean {
 }
 
 export function verifyPassword(candidate: string): boolean {
-  return safeEqual(candidate ?? "", adminPassword());
+  const expected = adminPassword();
+  // Sin contraseña configurada no entra nadie, ni siquiera mandando vacío.
+  if (expected === null) return false;
+  return safeEqual(candidate ?? "", expected);
 }
 
 function createToken(): string {

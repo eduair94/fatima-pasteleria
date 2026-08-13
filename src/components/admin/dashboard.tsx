@@ -12,7 +12,12 @@ import { formatPrice } from "@/lib/format";
 import { CATEGORIES } from "@/lib/site";
 import type { Product, Settings } from "@/lib/types";
 
-type Status = { driver: string; durable: boolean; defaultPassword: boolean };
+type Status = {
+  driver: string;
+  durable: boolean;
+  derivedSecret: boolean;
+  canUploadImages: boolean;
+};
 
 export function AdminDashboard({
   products,
@@ -105,14 +110,14 @@ export function AdminDashboard({
           </div>
         ) : null}
 
-        {status.defaultPassword ? (
-          <div className="fp-alert fp-alert--warn">
+        {status.derivedSecret ? (
+          <div className="fp-alert fp-alert--info">
             <Icon name="lock" size={18} className="mt-px shrink-0" />
             <p>
-              <strong className="font-semibold">Estás usando la contraseña que viene por defecto.</strong>{" "}
-              Es pública porque el código es abierto. Definí la variable{" "}
-              <code className="rounded bg-cream-300 px-1">ADMIN_PASSWORD</code> en Vercel para tener
-              una propia.
+              La firma de la sesión se está derivando de la contraseña. Funciona, pero al cambiar la
+              contraseña se cierran todas las sesiones abiertas. Para desacoplarlas, definí{" "}
+              <code className="rounded bg-cream-300 px-1">ADMIN_SESSION_SECRET</code> con una cadena
+              larga y aleatoria.
             </p>
           </div>
         ) : null}
@@ -158,7 +163,11 @@ export function AdminDashboard({
       {tab === "productos" ? (
         <div className="wrap flex flex-col gap-8 pt-8">
           {creating ? (
-            <ProductForm onSaved={() => refresh("Producto creado.")} onCancel={() => setCreating(false)} />
+            <ProductForm
+              canUploadImages={status.canUploadImages}
+              onSaved={() => refresh("Producto creado.")}
+              onCancel={() => setCreating(false)}
+            />
           ) : (
             <button type="button" className="fp-btn fp-btn--primary w-fit" onClick={() => setCreating(true)}>
               <Icon name="plus" size={18} />
@@ -186,6 +195,7 @@ export function AdminDashboard({
                       <li key={product.id}>
                         <ProductForm
                           product={product}
+                          canUploadImages={status.canUploadImages}
                           onSaved={() => refresh("Cambios guardados.")}
                           onCancel={() => setEditing(null)}
                         />

@@ -37,6 +37,11 @@ export function storeIsDurable(): boolean {
   return storeDriver() !== "memory";
 }
 
+/** Hay Blob conectado: se pueden subir fotos desde el panel. */
+export function blobIsAvailable(): boolean {
+  return Boolean(BLOB_TOKEN);
+}
+
 /* ------------------------------------------------------------------ memoria */
 
 const globalStore = globalThis as unknown as { __fatimaCatalog?: Catalog };
@@ -80,7 +85,10 @@ async function blobNewest() {
 async function readFromBlob(): Promise<Catalog | null> {
   const blobs = await blobNewest();
   if (!blobs) return null;
-  const response = await fetch(blobs[0].url, { cache: "no-store" });
+  // La URL cambia en cada guardado, así que su contenido es inmutable y se
+  // puede cachear. Pedirla con `no-store` volvía dinámicas las fichas de
+  // producto y las hacía caer a la semilla durante el build.
+  const response = await fetch(blobs[0].url, { cache: "force-cache" });
   if (!response.ok) return null;
   return (await response.json()) as Catalog;
 }

@@ -74,8 +74,16 @@ personales y no se cobra nada en línea.
 git clone https://github.com/<tu-usuario>/fatima-pasteleria.git
 cd fatima-pasteleria
 npm install
-cp .env.example .env.local   # opcional en desarrollo
+cp .env.example .env.local   # y completá ADMIN_PASSWORD
 npm run dev
+```
+
+Si el proyecto ya está en Vercel, en lugar de completar el archivo a mano se bajan las
+variables reales:
+
+```bash
+vercel link
+vercel env pull .env.local
 ```
 
 El sitio queda en <http://localhost:3000> y el panel en <http://localhost:3000/admin>.
@@ -101,35 +109,44 @@ El sitio queda en <http://localhost:3000> y el panel en <http://localhost:3000/a
 
 | Variable | Obligatoria | Para qué |
 | --- | --- | --- |
+| `ADMIN_PASSWORD` | **Sí** | Contraseña del panel. **No hay valor por defecto en el código**: sin esta variable el panel no abre para nadie. |
+| `ADMIN_SESSION_SECRET` | Recomendada | Firma la cookie de sesión. Si falta, se deriva de la contraseña: funciona, pero cambiar la contraseña cierra las sesiones abiertas. |
+| `BLOB_READ_WRITE_TOKEN` | Recomendada | Guarda el catálogo y recibe las fotos que se suben desde el panel. La inyecta Vercel al conectar un Blob store; no se escribe a mano. |
 | `NEXT_PUBLIC_SITE_URL` | Recomendada | URL canónica del sitio. Sin ella, los metadatos y el sitemap apuntan al dominio por defecto. |
-| `ADMIN_PASSWORD` | **Sí, en producción** | Contraseña del panel. Sin definirla se usa la del repositorio, que es pública. |
-| `ADMIN_SESSION_SECRET` | Recomendada | Firma la cookie de sesión del panel. Cadena larga y aleatoria. |
-| `UPSTASH_REDIS_REST_URL` / `UPSTASH_REDIS_REST_TOKEN` | Recomendada | Persistencia del catálogo. También sirven `KV_REST_API_URL` / `KV_REST_API_TOKEN`. |
-| `BLOB_READ_WRITE_TOKEN` | Alternativa | Persistencia con Vercel Blob. La inyecta Vercel al conectar un Blob store; no hay que escribirla a mano. |
+| `UPSTASH_REDIS_REST_URL` / `UPSTASH_REDIS_REST_TOKEN` | Opcional | Alternativa al Blob **para el catálogo**. Si están, tienen prioridad. También sirven `KV_REST_API_*`. Las fotos siguen necesitando el Blob. |
 
-### Persistencia del catálogo
+### Almacenamiento: catálogo y fotos
 
-> **Un clic pendiente.** Recién desplegado, el sitio corre con el controlador de memoria: se ve y
-> se pide perfecto, pero los cambios del panel se pierden cuando el servidor se reinicia. Para que
-> queden guardados alcanza con conectar un almacenamiento; no hay que tocar código.
->
-> **Camino más corto:** Vercel → **Storage** → *Connect Store* → **Blob** (ya existe uno creado con
-> el nombre `fatima-catalogo`) → conectarlo al proyecto → **Redeploy**. Vercel inyecta
-> `BLOB_READ_WRITE_TOKEN` y el sitio cambia de controlador solo.
+Un solo **Vercel Blob store** hace las dos cosas: guarda el catálogo y recibe las fotos que se
+suben desde el panel. Se conecta una vez desde **Storage → Connect Store → Blob**; Vercel inyecta
+`BLOB_READ_WRITE_TOKEN` y el sitio cambia de controlador solo, sin tocar código.
 
-El catálogo se guarda con el primer controlador disponible:
+El catálogo usa el primer controlador disponible:
 
 | Controlador | Se activa con | Dónde sirve |
 | --- | --- | --- |
-| **Redis por REST** | `UPSTASH_REDIS_REST_URL` + `UPSTASH_REDIS_REST_TOKEN` (o el par `KV_REST_API_*`) | Producción. Lo más rápido de leer. Se crea gratis desde Vercel → Storage → Upstash Redis |
-| **Vercel Blob** | `BLOB_READ_WRITE_TOKEN` | Producción. Es el que aparece solo al conectar un Blob store al proyecto |
-| **Archivo** | Nada: es el modo por defecto fuera de Vercel | Desarrollo local. Escribe `data/catalog.json`, ignorado por git |
+| **Redis por REST** | `UPSTASH_REDIS_REST_URL` + `UPSTASH_REDIS_REST_TOKEN` (o el par `KV_REST_API_*`) | Producción. Lo más rápido de leer |
+| **Vercel Blob** | `BLOB_READ_WRITE_TOKEN` | Producción. Es el modo normal de este proyecto |
+| **Archivo** | Nada: es el modo por defecto fuera de Vercel y sin Blob | Desarrollo local. Escribe `data/catalog.json`, ignorado por git |
 | **Memoria** | Nada: es el último recurso | Respaldo. El panel lo avisa con una franja amarilla |
 
 Cada guardado en Blob sube un archivo nuevo con marca de tiempo y borra los anteriores salvo los
 dos últimos: así la URL cambia en cada cambio y nunca se lee una versión vieja del CDN.
 
-El cliente de Redis son dos `fetch`, sin dependencias.
+### Fotos
+
+Desde el panel se sube una foto y queda publicada, sin pasar por el repositorio:
+
+1. El navegador **reduce la foto antes de subirla** — máximo 1440 px de lado, WebP con calidad
+   0,82. Una foto de teléfono de 6 MB queda en torno a 200 kB. Si el recodificado no achica nada,
+   se sube el original: nunca se degrada una foto que ya estaba optimizada.
+2. El archivo va **del navegador al Blob directo**. El servidor sólo firma un token de un solo uso
+   después de verificar la sesión, así que el tope de 4,5 MB del cuerpo de una función serverless
+   nunca entra en juego.
+3. La URL pública queda cargada en el producto y `next/image` la sirve en AVIF/WebP.
+
+Los formatos aceptados son JPEG, PNG, WebP y AVIF, hasta 8 MB. Si no hay Blob conectado, el
+uploader lo dice y el campo de ruta manual sigue funcionando con las fotos de `public/fotos/`.
 
 ---
 
@@ -138,6 +155,7 @@ El cliente de Redis son dos `fetch`, sin dependencias.
 `/admin`, con contraseña. Desde ahí se puede:
 
 - cambiar el precio de cualquier opción y el nombre, el resumen y la descripción;
+- **subir fotos desde el teléfono**, que se reducen solas y quedan publicadas al instante;
 - cargar el stock de la tanda: vacío es sin límite, un número avisa cuánto queda y topea el
   contador, y en cero el producto pasa a «Se agotó la tanda»;
 - pausar un producto («esta semana no hay») sin borrarlo;
@@ -149,19 +167,21 @@ El cliente de Redis son dos `fetch`, sin dependencias.
 
 Cada cambio revalida las páginas afectadas, así que se ve en el sitio al instante.
 
-> ### ⚠️ Seguridad del panel
->
-> La contraseña por defecto (`667703`) está en el código **a pedido del cliente**, y como el
-> repositorio es abierto, es pública. Antes de compartir la URL con alguien más:
->
-> 1. definí `ADMIN_PASSWORD` en Vercel con una contraseña propia;
-> 2. definí `ADMIN_SESSION_SECRET` con una cadena aleatoria;
-> 3. redesplegá.
->
-> El panel muestra un aviso mientras siga usando la contraseña por defecto. La sesión es una
-> cookie `httpOnly` firmada con HMAC-SHA256 que vence a las 12 horas, la comparación de la
-> contraseña es de tiempo constante y hay límite de intentos por IP. Aun así, una contraseña
-> pública es una contraseña pública.
+### Seguridad del panel
+
+**La contraseña no está en el código.** Vive sólo en `ADMIN_PASSWORD`, y sin esa variable el panel
+no abre para nadie: la pantalla de login muestra las instrucciones de configuración en lugar del
+formulario. No hay valor por defecto que alguien pueda leer del repositorio.
+
+- La sesión es una cookie `httpOnly` `SameSite=Lax` firmada con HMAC-SHA256, que vence a las 12 h.
+- La comparación de la contraseña es de tiempo constante (`timingSafeEqual`), y no filtra la
+  longitud.
+- Hay límite de intentos por IP: 8 en 10 minutos.
+- `/admin` y `/api/admin/*` van con `noindex` y quedan fuera del `robots.txt`.
+- Cambiar `ADMIN_SESSION_SECRET` invalida todas las sesiones abiertas.
+
+Para rotar la contraseña: cambiar la variable en Vercel y volver a desplegar. No hay que tocar
+código ni hacer commit.
 
 ---
 
@@ -214,6 +234,8 @@ Todas piden la cookie de sesión que emite `POST /api/admin/sesion`.
 | `GET` | `/api/admin/sesion` | Estado de la sesión y del almacenamiento |
 | `DELETE` | `/api/admin/sesion` | Cierra la sesión |
 | `GET` | `/api/admin/productos` | Todos los productos, incluidos los pausados |
+| `POST` | `/api/admin/imagenes` | Firma un token de subida directa al Blob |
+| `DELETE` | `/api/admin/imagenes?url=…` | Borra una foto del Blob |
 | `POST` | `/api/admin/productos` | Crea un producto |
 | `PATCH` | `/api/admin/productos` | Reordena en lote |
 | `PUT` | `/api/admin/productos/:id` | Reemplaza un producto |

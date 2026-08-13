@@ -7,7 +7,7 @@ import { useState } from "react";
 import { Icon } from "@/components/icon";
 import { Wordmark } from "@/components/wordmark";
 
-export function AdminLogin() {
+export function AdminLogin({ configured }: { configured: boolean }) {
   const router = useRouter();
   const [password, setPassword] = useState("");
   const [visible, setVisible] = useState(false);
@@ -38,6 +38,53 @@ export function AdminLogin() {
       setError("No hay conexión. Probá de nuevo.");
       setSending(false);
     }
+  }
+
+  if (!configured) {
+    return (
+      <div className="flex min-h-screen items-center justify-center px-5 py-14">
+        <div className="fp-card flex w-full max-w-[30rem] flex-col gap-5 p-8">
+          <div className="flex flex-col items-center gap-3 text-center">
+            <Wordmark href={null} size={24} />
+            <hr className="rule-gold" />
+            <h1 className="t-h2 mt-1">Falta configurar el panel</h1>
+          </div>
+
+          <div className="fp-alert fp-alert--warn">
+            <Icon name="lock" size={18} className="mt-px shrink-0" />
+            <p>
+              No hay contraseña definida, así que el panel no abre para nadie. La contraseña vive
+              sólo en una variable de entorno: no está en el código.
+            </p>
+          </div>
+
+          <ol className="m-0 flex list-decimal flex-col gap-2 pl-5 text-sm leading-relaxed text-brown-700">
+            <li>
+              En Vercel: <strong className="font-semibold">Settings → Environment Variables</strong>.
+            </li>
+            <li>
+              Agregá <code className="rounded bg-cream-200 px-1">ADMIN_PASSWORD</code> con la
+              contraseña que quieras.
+            </li>
+            <li>
+              Agregá <code className="rounded bg-cream-200 px-1">ADMIN_SESSION_SECRET</code> con una
+              cadena larga y aleatoria.
+            </li>
+            <li>Volvé a desplegar.</li>
+          </ol>
+
+          <p className="text-sm leading-relaxed text-brown-500">
+            En desarrollo local, las mismas dos variables van en un archivo{" "}
+            <code className="rounded bg-cream-200 px-1">.env.local</code>. Está en el README, sección
+            &ldquo;Seguridad del panel&rdquo;.
+          </p>
+
+          <Link href="/" className="text-center text-sm text-berry-700 hover:text-brown-900">
+            Volver al sitio
+          </Link>
+        </div>
+      </div>
+    );
   }
 
   return (

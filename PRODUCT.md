@@ -28,7 +28,7 @@ el negocio ya opera.
 1. Que se entienda el catálogo y el precio sin escribir un mensaje.
 2. Que el pedido llegue por WhatsApp ya redactado, con fecha y modalidad decididas.
 3. Que aparezca en Google para búsquedas locales de repostería por encargo.
-4. Que Fátima pueda mantener precios y disponibilidad sola.
+4. Que Fátima pueda mantener precios, stock y fotos sola, desde el teléfono.
 
 ## Restricciones
 
@@ -76,6 +76,6 @@ evidencia y queda anotado para revisar:
    hay calificación publicada ni nombre. No se emite `aggregateRating`.
 3. **Formas de pago, seña y conservación** no están publicadas: la FAQ deriva a WhatsApp en
    vez de inventar una política.
-4. **Contraseña del panel en el repositorio** (`667703`), por pedido explícito. El código es
-   abierto, así que es pública: el README y el propio panel insisten en reemplazarla con
-   `ADMIN_PASSWORD`.
+4. **La contraseña del panel no está en el código.** Vive sólo en la variable de entorno
+   `ADMIN_PASSWORD` y sin ella el panel no abre para nadie. Rotarla es cambiar la variable en
+   Vercel y redesplegar, sin commit.

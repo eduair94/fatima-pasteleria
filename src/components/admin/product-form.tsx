@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 
+import { ImageUploader } from "@/components/admin/image-uploader";
 import { Icon } from "@/components/icon";
 import { slugify } from "@/lib/format";
 import { CATEGORIES } from "@/lib/site";
@@ -30,10 +31,12 @@ const EMPTY: Draft = {
 
 export function ProductForm({
   product,
+  canUploadImages,
   onSaved,
   onCancel,
 }: {
   product?: Product;
+  canUploadImages: boolean;
   onSaved: () => void;
   onCancel: () => void;
 }) {
@@ -239,9 +242,16 @@ export function ProductForm({
       <fieldset className="m-0 flex flex-col gap-3 border-0 p-0">
         <legend className="fp-label p-0">Fotos</legend>
         <p className="fp-help -mt-1">
-          Ruta dentro del sitio (/fotos/nombre.webp) o una URL https. El texto alternativo describe lo
-          que se ve: sirve para Google y para quien no ve la imagen.
+          Subí la foto desde el teléfono o pegá una ruta del sitio (/fotos/nombre.webp). El texto
+          alternativo describe lo que se ve: sirve para Google y para quien no ve la imagen.
         </p>
+
+        <ImageUploader
+          disponible={canUploadImages}
+          onUploaded={(url) =>
+            set("images", [...draft.images, { src: url, alt: "" }].slice(0, 6))
+          }
+        />
 
         {draft.images.map((image, index) => (
           <div key={index} className="grid gap-3 sm:grid-cols-[64px_1fr_1fr_44px] sm:items-center">
@@ -300,8 +310,8 @@ export function ProductForm({
           disabled={draft.images.length >= 6}
           onClick={() => set("images", [...draft.images, { src: "", alt: "" }])}
         >
-          <Icon name="image" size={16} />
-          Agregar foto
+          <Icon name="plus" size={16} />
+          Agregar una ruta a mano
         </button>
       </fieldset>
 

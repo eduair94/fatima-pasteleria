@@ -1,13 +1,14 @@
 import { NextResponse } from "next/server";
 
 import {
+  adminIsConfigured,
   clearAttempts,
   endSession,
   isAuthenticated,
   registerFailedAttempt,
   startSession,
   tooManyAttempts,
-  usingDefaultPassword,
+  usingDerivedSecret,
   verifyPassword,
 } from "@/lib/auth";
 import { storeDriver, storeIsDurable } from "@/lib/store";
@@ -26,14 +27,26 @@ function clientKey(request: Request): string {
 export async function GET() {
   return NextResponse.json({
     authenticated: await isAuthenticated(),
+    configured: adminIsConfigured(),
+    derivedSecret: usingDerivedSecret(),
     driver: storeDriver(),
     durable: storeIsDurable(),
-    defaultPassword: usingDefaultPassword(),
   });
 }
 
 export async function POST(request: Request) {
   const key = clientKey(request);
+
+  if (!adminIsConfigured()) {
+    return NextResponse.json(
+      {
+        error:
+          "El panel no tiene contraseña configurada. Definí ADMIN_PASSWORD en las variables de entorno.",
+        configured: false,
+      },
+      { status: 503 },
+    );
+  }
 
   if (tooManyAttempts(key)) {
     return NextResponse.json(
@@ -62,7 +75,7 @@ export async function POST(request: Request) {
     ok: true,
     driver: storeDriver(),
     durable: storeIsDurable(),
-    defaultPassword: usingDefaultPassword(),
+    derivedSecret: usingDerivedSecret(),
   });
 }
 

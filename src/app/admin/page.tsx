@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 
 import { AdminDashboard } from "@/components/admin/dashboard";
 import { AdminLogin } from "@/components/admin/login";
-import { isAuthenticated, usingDefaultPassword } from "@/lib/auth";
-import { readCatalog, storeDriver, storeIsDurable } from "@/lib/store";
+import { adminIsConfigured, isAuthenticated, usingDerivedSecret } from "@/lib/auth";
+import { blobIsAvailable, readCatalog, storeDriver, storeIsDurable } from "@/lib/store";
 
 export const metadata: Metadata = {
   title: "Panel de productos",
@@ -13,7 +13,11 @@ export const metadata: Metadata = {
 export const dynamic = "force-dynamic";
 
 export default async function AdminPage() {
-  if (!(await isAuthenticated())) return <AdminLogin />;
+  const configured = adminIsConfigured();
+
+  if (!configured || !(await isAuthenticated())) {
+    return <AdminLogin configured={configured} />;
+  }
 
   const { products, settings } = await readCatalog();
 
@@ -24,7 +28,8 @@ export default async function AdminPage() {
       status={{
         driver: storeDriver(),
         durable: storeIsDurable(),
-        defaultPassword: usingDefaultPassword(),
+        derivedSecret: usingDerivedSecret(),
+        canUploadImages: blobIsAvailable(),
       }}
     />
   );
