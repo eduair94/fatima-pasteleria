@@ -93,23 +93,33 @@ export function CatalogView({
         </div>
       </div>
 
-      <div className="no-scrollbar sticky top-14 z-40 overflow-x-auto border-b border-line-200 bg-cream-100/95 py-3 backdrop-blur-sm md:top-[72px]">
+      {/* Son enlaces a otra página, no botones de alternancia: `aria-pressed`
+          no está permitido en un <a>. Lo que corresponde acá es `aria-current`,
+          que además se anuncia como «página actual». */}
+      <nav
+        aria-label="Categorías"
+        className="no-scrollbar sticky top-14 z-40 overflow-x-auto border-b border-line-200 bg-cream-100/95 py-3 backdrop-blur-sm md:top-[72px]"
+      >
         <div className="wrap flex gap-2">
-          <Link href="/catalogo" aria-pressed={!active} className="fp-chip shrink-0 no-underline">
+          <Link
+            href="/catalogo"
+            aria-current={active ? undefined : "page"}
+            className="fp-chip shrink-0 no-underline"
+          >
             Todo
           </Link>
           {CATEGORIES.map((category) => (
             <Link
               key={category.id}
               href={`/catalogo/${category.id}`}
-              aria-pressed={active === category.id}
+              aria-current={active === category.id ? "page" : undefined}
               className="fp-chip shrink-0 no-underline"
             >
               {category.name}
             </Link>
           ))}
         </div>
-      </div>
+      </nav>
 
       <div className="wrap flex flex-col gap-14 py-10 pb-24 md:gap-20">
         {grouped.length === 0 ? (

@@ -43,8 +43,11 @@ export function Wordmark({
 
   if (!href) return content;
 
+  // Sin `aria-label`: el nombre accesible tiene que contener el texto visible, y
+  // el guion largo que separaba las dos líneas hacía que no coincidieran. El
+  // propio texto del lockup ya nombra el enlace.
   return (
-    <Link href={href} aria-label="Fátima — Pastelería Artesanal, ir al inicio" className="no-underline">
+    <Link href={href} className="no-underline">
       {content}
     </Link>
   );

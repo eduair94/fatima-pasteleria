@@ -124,32 +124,29 @@ export default async function ProductPage({ params }: { params: Params }) {
 
             <AddToOrder product={product} />
 
+            {/* Un <dl> sólo admite un nivel de <div> para agrupar cada par. El
+                ícono se ubica con la grilla en vez de con un div extra, que
+                dejaba a los <dt>/<dd> como nietos y no como hijos. */}
             <dl className="m-0 grid gap-4 border-t border-line-200 pt-6 sm:grid-cols-2">
-              <div className="flex items-start gap-3">
-                <Icon name="truck" size={20} className="mt-0.5 shrink-0 text-brown-700" />
-                <div>
-                  <dt className="text-sm font-semibold">Envío y retiro</dt>
-                  <dd className="m-0 text-sm text-brown-500">
-                    Envío {formatPrice(settings.shippingCost)} en zona. Retiro sin costo en{" "}
-                    {SITE.neighborhoods}.
-                  </dd>
-                </div>
+              <div className="grid grid-cols-[20px_1fr] items-start gap-x-3">
+                <Icon name="truck" size={20} className="row-span-2 mt-0.5 text-brown-700" />
+                <dt className="text-sm font-semibold">Envío y retiro</dt>
+                <dd className="m-0 text-sm text-brown-500">
+                  Envío {formatPrice(settings.shippingCost)} en zona. Retiro sin costo en{" "}
+                  {SITE.neighborhoods}.
+                </dd>
               </div>
-              <div className="flex items-start gap-3">
-                <Icon name="heart" size={20} className="mt-0.5 shrink-0 text-brown-700" />
-                <div>
-                  <dt className="text-sm font-semibold">Elaboración</dt>
-                  <dd className="m-0 text-sm text-brown-500">
-                    {product.craft ?? "Hecho a mano, sin conservantes ni colorantes."}
-                  </dd>
-                </div>
+              <div className="grid grid-cols-[20px_1fr] items-start gap-x-3">
+                <Icon name="heart" size={20} className="row-span-2 mt-0.5 text-brown-700" />
+                <dt className="text-sm font-semibold">Elaboración</dt>
+                <dd className="m-0 text-sm text-brown-500">
+                  {product.craft ?? "Hecho a mano, sin conservantes ni colorantes."}
+                </dd>
               </div>
-              <div className="flex items-start gap-3 sm:col-span-2">
-                <Icon name="map-pin" size={20} className="mt-0.5 shrink-0 text-brown-700" />
-                <div>
-                  <dt className="text-sm font-semibold">Llego a</dt>
-                  <dd className="m-0 text-sm text-brown-500">{zones}. Otras zonas, a coordinar.</dd>
-                </div>
+              <div className="grid grid-cols-[20px_1fr] items-start gap-x-3 sm:col-span-2">
+                <Icon name="map-pin" size={20} className="row-span-2 mt-0.5 text-brown-700" />
+                <dt className="text-sm font-semibold">Llego a</dt>
+                <dd className="m-0 text-sm text-brown-500">{zones}. Otras zonas, a coordinar.</dd>
               </div>
             </dl>
 

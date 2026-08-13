@@ -564,6 +564,7 @@
     }
   }
 
+  .fp-chip[aria-current="page"],
   .fp-chip[aria-pressed="true"],
   .fp-chip[aria-selected="true"] {
     background: var(--berry-700);
@@ -571,6 +572,7 @@
     color: var(--cream-50);
   }
 
+  .fp-chip[aria-current="page"]:hover,
   .fp-chip[aria-pressed="true"]:hover,
   .fp-chip[aria-selected="true"]:hover {
     background: var(--berry-800);
