@@ -62,7 +62,8 @@ personales y no se cobra nada en línea.
 | 📅 **Anticipación real** | 48 hs de mínimo. El calendario bloquea las fechas anteriores y la anticipación del pedido la fija el ítem de mayor plazo. |
 | 🚚 **Zonas y envío** | Seis barrios con costo fijo, el resto de Montevideo a coordinar. El total avisa cuando el envío todavía no se puede calcular. |
 | 🔐 **Panel propio** | `/admin` con contraseña: cambiar precios, pausar lo que no hay, agregar productos, ajustar envío y anticipación. Sin tocar código. |
-| 🔌 **API pública** | `/api/productos` sirve el catálogo en JSON, listo para sincronizar con Instagram u otro canal más adelante. |
+| 🔌 **API pública** | `/api/productos` sirve el catálogo en JSON, listo para consumir desde otro canal. |
+| 🔄 **Sigue a Instagram** | Un cron diario lee las publicaciones nuevas y propone la ficha con Gemini. Nada se publica sin aprobación, y los precios se verifican contra el texto original. |
 | 🔍 **SEO y GEO** | Metadatos por producto, JSON-LD (`Bakery`, `Product`, `Offer`, `FAQPage`, `BreadcrumbList`), sitemap dinámico, `robots.txt` y `llms.txt`. |
 | ♿ **Accesible** | Contraste AA, foco visible, objetivos de toque de 44 px, navegación por teclado, `prefers-reduced-motion` respetado. |
 
@@ -114,6 +115,7 @@ El sitio queda en <http://localhost:3000> y el panel en <http://localhost:3000/a
 | `BLOB_READ_WRITE_TOKEN` | Recomendada | Guarda el catálogo y recibe las fotos que se suben desde el panel. La inyecta Vercel al conectar un Blob store; no se escribe a mano. |
 | `NEXT_PUBLIC_SITE_URL` | Recomendada | URL canónica del sitio. Sin ella, los metadatos y el sitemap apuntan al dominio por defecto. |
 | `UPSTASH_REDIS_REST_URL` / `UPSTASH_REDIS_REST_TOKEN` | Opcional | Alternativa al Blob **para el catálogo**. Si están, tienen prioridad. También sirven `KV_REST_API_*`. Las fotos siguen necesitando el Blob. |
+| `GEMINI_API_KEY`, `APIFY_TOKEN` o `RAPIDAPI_*`, `CRON_SECRET` | Opcional | Sincronización con Instagram. Ver la sección de más abajo. Sin estas variables el resto del sitio funciona igual. |
 
 ### Almacenamiento: catálogo y fotos
 
@@ -185,6 +187,83 @@ código ni hacer commit.
 
 ---
 
+## Sincronizar con Instagram
+
+El catálogo puede seguir a la cuenta sola. Una vez por día el sitio lee las publicaciones
+nuevas de [@faticastro001](https://www.instagram.com/faticastro001/), le pide a Gemini que arme
+la ficha a partir del texto y las fotos, y deja el resultado esperando en el panel.
+
+```
+cron diario
+  → traer las últimas publicaciones (Apify o RapidAPI)
+  → descartar las que ya están publicadas o ya fueron revisadas
+  → Gemini(caption + fotos) → nombre, categoría, precios, descripción y textos alternativos
+  → guardar como PROPUESTA
+```
+
+> **Nada se publica solo.** La propuesta aparece en la pestaña *Novedades de Instagram* con la
+> foto y el caption original al lado, y se publica recién al aprobarla. Un precio mal leído y
+> publicado sin mirar es peor que un producto que tarda un día en aparecer.
+
+Tres defensas contra un precio inventado:
+
+1. El prompt prohíbe estimar: si la caption no dice un número, el precio va en `null`.
+2. Al recibir la respuesta, **el código vuelve a buscar cada precio en el texto de la caption**
+   (probando `1200`, `1.200` y `1 200`). Si no aparece, lo borra y lo anota como advertencia.
+3. La propuesta se muestra junto al caption original, así que aprobar sin ver de dónde salió el
+   número requiere ignorar algo que está a la izquierda de la pantalla.
+
+Las publicaciones que no venden nada —fotos de proceso, avisos, agradecimientos— se descartan
+solas y no vuelven a consumir cuota.
+
+### Proveedores
+
+La cuenta no es nuestra, así que no hay OAuth posible y hay que leerla desde afuera. El
+proveedor es un adaptador: se cambia con una variable, sin tocar el resto del código.
+
+| Proveedor | Free tier | Variables |
+| --- | --- | --- |
+| **Apify** (recomendado) | USD 5 de crédito por mes, sin tarjeta. El actor cobra ~USD 1,50 por 1.000 resultados, así que una corrida diaria de 12 publicaciones gasta centavos | `APIFY_TOKEN` |
+| **RapidAPI** | Depende de la API que elijas; varias dan entre 50 llamadas por día y 30 por mes | `RAPIDAPI_KEY`, `RAPIDAPI_HOST`, `RAPIDAPI_PATH` |
+
+El adaptador de RapidAPI es genérico a propósito: en el marketplace hay una docena de scrapers
+que cambian de nombre, de ruta y de forma de respuesta seguido, así que el host y la ruta son
+variables y la normalización cubre las formas más comunes (`data.items`, `items`, `edges` con
+`node`, array plano; captions como string o como `{text}`; fotos en `image_versions2`,
+`display_url`, `thumbnail_url` o `carousel_media`). El botón **Probar conexión** del panel trae
+tres publicaciones y muestra lo que entendió, sin gastar cuota de Gemini: sirve para ajustar
+`RAPIDAPI_PATH` en unos segundos.
+
+Para agregar otro proveedor alcanza con un archivo nuevo en `src/lib/instagram/` que implemente
+`InstagramProvider`.
+
+### Puesta en marcha
+
+1. Sacá una clave en [Google AI Studio](https://aistudio.google.com/apikey) → `GEMINI_API_KEY`.
+   El free tier son ~1.500 llamadas por día; la cuenta publica menos de diez por mes.
+2. Elegí proveedor y cargá sus variables.
+3. Definí `CRON_SECRET` con una cadena aleatoria: protege `/api/cron/instagram`.
+4. Desplegá. El cron de `vercel.json` corre a las 11:00 UTC (8 de la mañana en Montevideo).
+
+En el plan Hobby de Vercel se permiten 2 cron jobs y **una corrida por día cada uno**, que es
+justo lo que usa este proyecto. El botón *Buscar novedades* del panel corre lo mismo a demanda.
+
+> ### ⚠️ Lo que hay que saber antes de encenderlo
+>
+> Leer Instagram con un scraper de terceros **va contra los términos de uso de Meta**, aunque el
+> contenido sea público y la cuenta sea de la clienta. En la práctica se usa muchísimo y el
+> riesgo recae en el proveedor, pero conviene saberlo antes de encenderlo.
+>
+> Además, estos servicios **se rompen**: Instagram cambia algo y el scraper deja de andar hasta
+> que su dueño lo arregla. Por eso el proveedor es reemplazable y por eso el panel muestra el
+> error crudo en lugar de fallar en silencio.
+>
+> **La salida durable** es conseguir acceso a la cuenta: convertirla a Business o Creator (gratis,
+> 30 segundos) y usar la API oficial de Meta, que para tu propia cuenta no pide App Review. El
+> día que eso pase, es un adaptador más en `src/lib/instagram/`.
+
+---
+
 ## API
 
 ### Pública
@@ -236,6 +315,11 @@ Todas piden la cookie de sesión que emite `POST /api/admin/sesion`.
 | `GET` | `/api/admin/productos` | Todos los productos, incluidos los pausados |
 | `POST` | `/api/admin/imagenes` | Firma un token de subida directa al Blob |
 | `DELETE` | `/api/admin/imagenes?url=…` | Borra una foto del Blob |
+| `GET` | `/api/admin/instagram` | Estado de la sincronización y última corrida |
+| `POST` | `/api/admin/instagram` | Busca novedades ahora |
+| `PUT` | `/api/admin/instagram` | Prueba de conexión, sin llamar a Gemini ni guardar |
+| `POST` | `/api/admin/propuestas/:id` | Aprueba y publica la propuesta |
+| `DELETE` | `/api/admin/propuestas/:id` | Descarta la propuesta |
 | `POST` | `/api/admin/productos` | Crea un producto |
 | `PATCH` | `/api/admin/productos` | Reordena en lote |
 | `PUT` | `/api/admin/productos/:id` | Reemplaza un producto |

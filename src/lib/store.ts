@@ -1,7 +1,7 @@
 import "server-only";
 
 import { seedCatalog } from "./catalog-seed";
-import type { Catalog, Product, Settings } from "./types";
+import type { Catalog, Product, Proposal, Settings, SyncReport } from "./types";
 
 /**
  * Almacenamiento del catálogo, con cuatro controladores. Se elige el primero
@@ -150,6 +150,8 @@ function normalize(raw: Partial<Catalog> | null): Catalog {
   return {
     products: raw.products.map((p) => ({ ...p, images: p.images ?? [] })),
     settings: { ...seed.settings, ...(raw.settings ?? {}) },
+    proposals: Array.isArray(raw.proposals) ? raw.proposals : [],
+    lastSync: raw.lastSync,
   };
 }
 
@@ -237,4 +239,21 @@ export async function saveSettings(settings: Settings): Promise<void> {
 
 export async function resetCatalog(): Promise<void> {
   await writeCatalog(seedCatalog());
+}
+
+/* ------------------------------------------- propuestas de Instagram --- */
+
+export async function getProposals(): Promise<Proposal[]> {
+  const { proposals } = await readCatalog();
+  return proposals ?? [];
+}
+
+export async function saveProposals(proposals: Proposal[]): Promise<void> {
+  const catalog = await readCatalog();
+  await writeCatalog({ ...catalog, proposals });
+}
+
+export async function saveSyncReport(report: SyncReport, proposals: Proposal[]): Promise<void> {
+  const catalog = await readCatalog();
+  await writeCatalog({ ...catalog, proposals, lastSync: report });
 }

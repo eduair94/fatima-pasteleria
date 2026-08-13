@@ -50,9 +50,42 @@ export type Settings = {
   updatedAt: string;
 };
 
+/**
+ * Producto candidato, leído de una publicación de Instagram. **No se publica
+ * solo**: espera aprobación en el panel. Un precio mal leído y publicado sin
+ * mirar es peor que un producto que tarda un día en aparecer.
+ */
+export type Proposal = {
+  /** Shortcode de la publicación: sirve de clave para no repetir. */
+  id: string;
+  postUrl: string;
+  postedAt: string;
+  caption: string;
+  /** URLs del proveedor. Caducan, así que al aprobar se copian al Blob. */
+  imageUrls: string[];
+  /** Lo que entendió el modelo. Puede venir incompleto. */
+  draft: Partial<Product>;
+  /** Qué habría que mirar con atención antes de aprobar. */
+  warnings: string[];
+  /** Si el modelo falló, la publicación igual se guarda para cargarla a mano. */
+  error?: string;
+  createdAt: string;
+};
+
+export type SyncReport = {
+  ranAt: string;
+  provider: string;
+  postsFound: number;
+  newProposals: number;
+  skipped: number;
+  error?: string;
+};
+
 export type Catalog = {
   products: Product[];
   settings: Settings;
+  proposals?: Proposal[];
+  lastSync?: SyncReport;
 };
 
 /** Ítem del carrito, tal como vive en localStorage. */

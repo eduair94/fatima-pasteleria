@@ -4,6 +4,7 @@ import { AdminDashboard } from "@/components/admin/dashboard";
 import { AdminLogin } from "@/components/admin/login";
 import { adminIsConfigured, isAuthenticated, usingDerivedSecret } from "@/lib/auth";
 import { blobIsAvailable, readCatalog, storeDriver, storeIsDurable } from "@/lib/store";
+import { syncStatus } from "@/lib/sync";
 
 export const metadata: Metadata = {
   title: "Panel de productos",
@@ -19,12 +20,15 @@ export default async function AdminPage() {
     return <AdminLogin configured={configured} />;
   }
 
-  const { products, settings } = await readCatalog();
+  const { products, settings, proposals, lastSync } = await readCatalog();
 
   return (
     <AdminDashboard
       products={products}
       settings={settings}
+      proposals={proposals ?? []}
+      sync={syncStatus()}
+      lastSync={lastSync}
       status={{
         driver: storeDriver(),
         durable: storeIsDurable(),

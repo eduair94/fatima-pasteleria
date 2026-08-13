@@ -6,11 +6,21 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 import { ProductForm } from "@/components/admin/product-form";
+import { Proposals } from "@/components/admin/proposals";
 import { Icon } from "@/components/icon";
 import { Wordmark } from "@/components/wordmark";
 import { formatPrice } from "@/lib/format";
 import { CATEGORIES } from "@/lib/site";
-import type { Product, Settings } from "@/lib/types";
+import type { Product, Proposal, Settings, SyncReport } from "@/lib/types";
+
+type SyncStatus = {
+  active: string | null;
+  configured: boolean;
+  missing: string[];
+  gemini: boolean;
+  username: string;
+  ready: boolean;
+};
 
 type Status = {
   driver: string;
@@ -23,13 +33,19 @@ export function AdminDashboard({
   products,
   settings,
   status,
+  proposals,
+  sync,
+  lastSync,
 }: {
   products: Product[];
   settings: Settings;
   status: Status;
+  proposals: Proposal[];
+  sync: SyncStatus;
+  lastSync?: SyncReport;
 }) {
   const router = useRouter();
-  const [tab, setTab] = useState<"productos" | "ajustes">("productos");
+  const [tab, setTab] = useState<"productos" | "novedades" | "ajustes">("productos");
   const [editing, setEditing] = useState<string | null>(null);
   const [creating, setCreating] = useState(false);
   const [busy, setBusy] = useState<string | null>(null);
@@ -130,10 +146,16 @@ export function AdminDashboard({
           </p>
         </div>
 
-        <div role="tablist" aria-label="Secciones del panel" className="flex gap-2">
+        <div role="tablist" aria-label="Secciones del panel" className="flex flex-wrap gap-2">
           {(
             [
               { id: "productos", label: "Productos" },
+              {
+                id: "novedades",
+                label: proposals.length
+                  ? `Novedades de Instagram · ${proposals.length}`
+                  : "Novedades de Instagram",
+              },
               { id: "ajustes", label: "Ajustes de entrega" },
             ] as const
           ).map((item) => (
@@ -160,7 +182,9 @@ export function AdminDashboard({
         </div>
       ) : null}
 
-      {tab === "productos" ? (
+      {tab === "novedades" ? (
+        <Proposals proposals={proposals} status={sync} lastSync={lastSync} />
+      ) : tab === "productos" ? (
         <div className="wrap flex flex-col gap-8 pt-8">
           {creating ? (
             <ProductForm
