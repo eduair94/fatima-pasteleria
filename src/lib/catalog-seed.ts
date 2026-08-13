@@ -86,12 +86,12 @@ export const SEED_PRODUCTS: Product[] = [
       "Zanahoria fresca rallada, especias y capas de frosting de queso crema hecho en casa, con nuez picada por encima. Sin conservantes ni colorante. Es la torta que más piden en invierno.",
     images: [
       {
-        src: "/fotos/02_carrot_cake_01.jpg",
-        alt: "Corte de carrot cake con tres capas de bizcocho, frosting de queso crema y nuez picada en el borde",
+        src: "/fotos/02_carrot_cake_02.webp",
+        alt: "Carrot cake con el frosting de queso crema en espiral, nuez picada y tres capas de bizcocho a la vista",
       },
       {
-        src: "/fotos/02_carrot_cake_02.webp",
-        alt: "Carrot cake entero con el frosting de queso crema trabajado en espiral",
+        src: "/fotos/02_carrot_cake_01.jpg",
+        alt: "Corte de carrot cake con tres capas de bizcocho, frosting de queso crema y nuez picada en el borde",
       },
     ],
     variants: [{ id: "entera", label: "Torta entera", price: 1200 }],

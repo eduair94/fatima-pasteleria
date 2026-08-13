@@ -53,16 +53,18 @@ export function ProductCard({
         ) : null}
       </Link>
 
-      <div className="flex flex-1 flex-col gap-1 p-4">
-        <h3 className="t-h3">
+      <div className="flex flex-1 flex-col gap-1 p-3 md:p-4">
+        <h3 className="t-h3 text-base md:text-[1.1875rem]">
           <Link href={`/producto/${product.slug}`} className="text-brown-900 no-underline">
             {product.name}
           </Link>
         </h3>
         <p className="text-xs text-brown-500">{product.leadTimeHours} hs de anticipación</p>
-        <div className="mt-auto flex items-center justify-between gap-3 pt-3">
+        {/* Se permite que el precio y el botón se apilen: en pantallas de 360px
+            no entran en una línea, y partir la cifra del signo es peor. */}
+        <div className="mt-auto flex flex-wrap items-center justify-between gap-2 pt-3">
           <span
-            className={`tnum text-[17px] font-semibold ${
+            className={`tnum text-[15px] font-semibold whitespace-nowrap md:text-[17px] ${
               priceLabel(product) === "Consultar" ? "text-brown-500" : "text-brown-900"
             }`}
           >

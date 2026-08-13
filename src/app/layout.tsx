@@ -62,10 +62,10 @@ export const metadata: Metadata = {
       "Cheesecakes, scones y tortas caseras por encargo. Pedí por WhatsApp con 48 hs de anticipación. Envío en Montevideo o retiro sin costo.",
     images: [
       {
-        url: "/fotos/02_carrot_cake_01.jpg",
-        width: 720,
-        height: 960,
-        alt: "Corte de carrot cake con capas de bizcocho y frosting de queso crema",
+        url: "/og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Carrot cake casero con capas de bizcocho, frosting de queso crema y nuez picada",
       },
     ],
   },
@@ -74,7 +74,7 @@ export const metadata: Metadata = {
     title: "Fátima — Pastelería artesanal en Montevideo",
     description:
       "Cheesecakes, scones y tortas caseras por encargo. Pedidos por WhatsApp, con 48 hs de anticipación.",
-    images: ["/fotos/02_carrot_cake_01.jpg"],
+    images: ["/og.jpg"],
   },
   robots: {
     index: true,
@@ -83,7 +83,7 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [{ url: "/icono.svg", type: "image/svg+xml" }],
-    apple: [{ url: "/sello-fatima.jpg" }],
+    apple: [{ url: "/sello-fatima.png" }],
   },
   other: {
     "geo.region": "UY-MO",

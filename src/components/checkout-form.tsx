@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useMemo, useState } from "react";
+import { cloneElement, useMemo, useState } from "react";
 
 import { useCart } from "@/components/cart-provider";
 import { Icon } from "@/components/icon";
@@ -21,6 +21,15 @@ import { buildOrderMessage, itemTotal, orderTotals, waLink, zoneById } from "@/l
 
 type Touched = Partial<Record<keyof OrderDetails, boolean>>;
 
+/** Para poder llevar el foco al primer campo que falta. */
+const FIELD_IDS: Partial<Record<keyof OrderDetails, string>> = {
+  name: "nombre",
+  phone: "telefono",
+  date: "fecha",
+  zoneId: "zona",
+  address: "direccion",
+};
+
 export function CheckoutForm() {
   const { items, settings, leadTimeHours, clear, ready } = useCart();
   const router = useRouter();
@@ -31,7 +40,9 @@ export function CheckoutForm() {
     name: "",
     phone: "",
     date: minDate,
-    mode: "envio",
+    // Retiro por defecto: es sin costo. Preseleccionar envío le sumaba $ 100 al
+    // total antes de que la clienta eligiera nada.
+    mode: "retiro",
     zoneId: ZONES[0]?.id,
     address: "",
     apartment: "",
@@ -184,26 +195,26 @@ export function CheckoutForm() {
           <div className="anim-fade flex flex-col gap-5 rounded-[18px] border border-dashed border-line-300 bg-cream-50 p-5">
             <p className="eyebrow">Datos del envío</p>
 
-            <Field label="Zona" htmlFor="zona" error={showError("zoneId")}>
-              <span className="relative block">
-                <select
-                  id="zona"
-                  className="fp-input"
-                  value={details.zoneId}
-                  onChange={(event) => set("zoneId", event.target.value)}
-                  onBlur={() => markTouched("zoneId")}
-                >
-                  {ZONES.map((item) => (
-                    <option key={item.id} value={item.id}>
-                      {item.name}
-                      {item.cost === null ? " — a coordinar" : ` — ${formatPrice(settings.shippingCost)}`}
-                    </option>
-                  ))}
-                </select>
-                <span className="pointer-events-none absolute top-1/2 right-4 flex -translate-y-1/2 text-brown-500">
-                  <Icon name="chevron-down" size={18} />
-                </span>
-              </span>
+            <Field
+              label="Zona"
+              htmlFor="zona"
+              help="La tarifa aparece al elegir la zona."
+              error={showError("zoneId")}
+            >
+              <select
+                id="zona"
+                className="fp-input"
+                value={details.zoneId}
+                onChange={(event) => set("zoneId", event.target.value)}
+                onBlur={() => markTouched("zoneId")}
+              >
+                {ZONES.map((item) => (
+                  <option key={item.id} value={item.id}>
+                    {item.name}
+                    {item.cost === null ? " — a coordinar" : ` — ${formatPrice(settings.shippingCost)}`}
+                  </option>
+                ))}
+              </select>
             </Field>
 
             {zone?.cost === null ? (
@@ -334,13 +345,21 @@ export function CheckoutForm() {
             Enviar pedido por WhatsApp
           </a>
         ) : (
+          // No lleva `disabled` nativo: así el botón sigue en el orden de
+          // tabulación y al tocarlo marca los campos que faltan y lleva el foco
+          // al primero, en lugar de no hacer nada.
           <button
             type="button"
-            disabled
+            aria-disabled="true"
             className="fp-btn fp-btn--whatsapp fp-btn--lg fp-btn--block"
-            onClick={() =>
-              setTouched({ name: true, phone: true, date: true, address: true, zoneId: true })
-            }
+            onClick={() => {
+              setTouched({ name: true, phone: true, date: true, address: true, zoneId: true });
+              const firstInvalid = (
+                ["name", "phone", "date", "zoneId", "address"] as (keyof OrderDetails)[]
+              ).find((field) => errors[field]);
+              const id = firstInvalid ? FIELD_IDS[firstInvalid] : undefined;
+              if (id) document.getElementById(id)?.focus();
+            }}
           >
             <Icon name="whatsapp" size={18} />
             Enviar pedido por WhatsApp
@@ -368,6 +387,11 @@ function Row({ label, value }: { label: string; value: string }) {
   );
 }
 
+/**
+ * Envoltorio de campo. La ayuda y el error se atan al input con
+ * `aria-describedby`, así un lector de pantalla los lee junto con la etiqueta
+ * en lugar de dejarlos sueltos en la página.
+ */
 function Field({
   label,
   htmlFor,
@@ -381,21 +405,25 @@ function Field({
   help?: string;
   error?: string;
   optional?: boolean;
-  children: React.ReactNode;
+  children: React.ReactElement<{ "aria-describedby"?: string }>;
 }) {
+  const describedBy = error ? `${htmlFor}-error` : help ? `${htmlFor}-help` : undefined;
+
   return (
     <div className="flex flex-col gap-2">
       <label className="fp-label" htmlFor={htmlFor}>
         {label} {optional ? <span className="font-normal text-brown-500">(opcional)</span> : null}
       </label>
-      {children}
+      {describedBy ? cloneElement(children, { "aria-describedby": describedBy }) : children}
       {error ? (
-        <p className="fp-error" role="alert">
+        <p className="fp-error" id={`${htmlFor}-error`} role="alert">
           <Icon name="alert" size={16} className="shrink-0" />
           {error}
         </p>
       ) : help ? (
-        <p className="fp-help">{help}</p>
+        <p className="fp-help" id={`${htmlFor}-help`}>
+          {help}
+        </p>
       ) : null}
     </div>
   );

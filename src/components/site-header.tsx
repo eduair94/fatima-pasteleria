@@ -93,7 +93,7 @@ export function SiteHeader() {
             <Icon name="bag" size={22} />
             {count > 0 ? (
               <span
-                className="absolute top-1 right-0.5 flex h-[18px] min-w-[18px] items-center justify-center rounded-full bg-berry-500 px-1 text-[11px] font-semibold text-cream-50"
+                className="absolute top-1 right-0.5 flex h-[18px] min-w-[18px] items-center justify-center rounded-full bg-berry-700 px-1 text-[11px] font-semibold text-cream-50"
                 aria-hidden="true"
               >
                 {count}

@@ -32,6 +32,7 @@
   --color-berry-500: #d97a86;
   --color-berry-600: #c0616d;
   --color-berry-700: #a34b57;
+  --color-berry-800: #8a3d48;
   --color-berry-200: #f2cfd4;
   --color-berry-100: #fae9eb;
 
@@ -84,6 +85,7 @@
   --berry-500: var(--color-berry-500);
   --berry-600: var(--color-berry-600);
   --berry-700: var(--color-berry-700);
+  --berry-800: var(--color-berry-800);
   --berry-200: var(--color-berry-200);
   --berry-100: var(--color-berry-100);
 
@@ -380,15 +382,18 @@
     background: var(--brown-800);
   }
 
+  /* El rosa de marca `--berry-500` da 2.9:1 con el crema: no llega a AA como
+     relleno de botón. El CTA usa `--berry-700` (5.6:1), que es el mismo rosa
+     que el sistema ya admite para texto. Ver DESIGN.md. */
   .fp-btn--secondary,
   .fp-btn--whatsapp {
-    background: var(--berry-500);
+    background: var(--berry-700);
     color: var(--cream-50);
   }
 
   .fp-btn--secondary:hover,
   .fp-btn--whatsapp:hover {
-    background: var(--berry-600);
+    background: var(--berry-800);
   }
 
   .fp-btn--gold {
@@ -425,10 +430,13 @@
     transform: scale(var(--press-scale));
   }
 
+  /* El deshabilitado es un estado de larga vida —el botón de enviar el pedido
+     nace apagado— así que tiene que leerse: `--brown-700` da 6.9:1 sobre
+     `--cream-300`. */
   .fp-btn:disabled,
   .fp-btn[aria-disabled="true"] {
     background: var(--cream-300);
-    color: var(--brown-300);
+    color: var(--brown-700);
     border-color: transparent;
     cursor: not-allowed;
     transform: none;
@@ -506,7 +514,7 @@
 
   .fp-badge--berry {
     background: var(--berry-100);
-    color: var(--berry-700);
+    color: var(--berry-800);
     border-color: var(--berry-200);
   }
 
@@ -532,7 +540,8 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    min-height: 38px;
+    /* 44px de objetivo de toque en mobile; los 38px del sistema son de desktop. */
+    min-height: var(--hit-min);
     padding-inline: 16px;
     border-radius: 999px;
     border: 1px solid var(--border-strong);
@@ -549,17 +558,23 @@
     color: var(--text-body);
   }
 
+  @media (min-width: 768px) {
+    .fp-chip {
+      min-height: 38px;
+    }
+  }
+
   .fp-chip[aria-pressed="true"],
   .fp-chip[aria-selected="true"] {
-    background: var(--berry-500);
-    border-color: var(--berry-500);
+    background: var(--berry-700);
+    border-color: var(--berry-700);
     color: var(--cream-50);
   }
 
   .fp-chip[aria-pressed="true"]:hover,
   .fp-chip[aria-selected="true"]:hover {
-    background: var(--berry-600);
-    border-color: var(--berry-600);
+    background: var(--berry-800);
+    border-color: var(--berry-800);
   }
 
   /* ------------------------------------------------------------ Card --- */
@@ -634,10 +649,15 @@
     line-height: 1.5;
   }
 
+  /* La flecha va como fondo —es el mismo chevron de Lucide que usa Icon— para
+     que el <select> pueda ser hijo directo del campo y recibir aria-describedby. */
   select.fp-input {
     appearance: none;
     -webkit-appearance: none;
     padding-right: 44px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='%237D6553' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
   }
 
   /* ------------------------------------------------- Radio en tarjeta --- */
@@ -786,6 +806,16 @@
   .fp-prod:hover {
     box-shadow: var(--shadow-raised);
     transform: var(--lift-hover);
+  }
+
+  /* En touch no hay hover: el press tiene que devolver algo igual. */
+  .fp-prod:active {
+    transform: scale(var(--press-scale));
+    box-shadow: var(--shadow-raised);
+  }
+
+  .fp-prod:focus-within {
+    box-shadow: var(--shadow-raised);
   }
 
   .fp-prod:hover .fp-prod__img {

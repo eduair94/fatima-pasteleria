@@ -57,14 +57,15 @@ export default async function HomePage() {
       <section className="relative">
         <div className="relative aspect-4/5 w-full overflow-hidden bg-cream-300 sm:aspect-16/10 lg:aspect-21/9">
           <Image
-            src="/fotos/02_carrot_cake_01.jpg"
-            alt="Corte de carrot cake con tres capas de bizcocho, frosting de queso crema y nuez picada en el borde"
+            src="/fotos/02_carrot_cake_02.webp"
+            alt="Carrot cake con el frosting de queso crema en espiral, nuez picada y tres capas de bizcocho a la vista"
             fill
             priority
             sizes="100vw"
+            quality={82}
             // El corte apaisado tiene que dejar ver las capas y la nuez, que
             // están en la mitad inferior de la foto.
-            className="object-cover object-[center_62%]"
+            className="object-cover object-[center_58%]"
           />
           <div className="scrim-bottom absolute inset-0" />
           <div
@@ -283,9 +284,9 @@ export default async function HomePage() {
           <ul className="m-0 grid list-none gap-4 p-0 md:grid-cols-3 md:gap-6">
             {TESTIMONIALS.map((testimonial) => (
               <li key={testimonial.quote} className="fp-card flex flex-col gap-4 p-6">
-                <span className="font-serif text-4xl leading-none text-gold-600" aria-hidden="true">
-                  &ldquo;
-                </span>
+                {/* Filete dorado en lugar de una comilla: el dorado es ornamento,
+                    nunca color de texto sobre crema. Ver DESIGN.md. */}
+                <hr className="rule-gold" />
                 <blockquote className="t-quote m-0 text-brown-900">{testimonial.quote}</blockquote>
                 <footer className="mt-auto flex items-center gap-2 text-sm text-brown-500">
                   <span>{testimonial.source}</span>
@@ -390,6 +391,43 @@ export default async function HomePage() {
             sub="Lo que preguntan siempre por mensaje."
           />
           <Accordion items={FAQ} />
+        </div>
+      </section>
+
+      {/* ------------------------------------------------------- cierre */}
+      {/* El sello es el único activo de marca que existe y va sobre crema:
+          nunca sobre foto ni sobre marrón. Ver DESIGN.md. */}
+      <section className="section" aria-labelledby="titulo-cierre">
+        <div className="wrap flex flex-col items-center gap-6 text-center">
+          <Image
+            src="/sello-fatima.png"
+            alt="Sello de Fátima, Pastelería Artesanal: un batidor y un bol dibujados a línea, con la leyenda El sabor de lo hecho en casa"
+            width={200}
+            height={200}
+            sizes="(min-width: 768px) 200px, 168px"
+            className="h-42 w-42 md:h-50 md:w-50"
+          />
+          <h2 id="titulo-cierre" className="t-h2 max-w-[20ch]">
+            {SITE.motto}
+          </h2>
+          <p className="max-w-[34rem] leading-relaxed text-brown-700">
+            Contame qué querés y para cuándo, con {settings.leadTimeHours} hs de anticipación. Te
+            confirmo disponibilidad y la entrega, a partir de las {settings.deliveryFromHour} h.
+          </p>
+          <div className="flex w-full max-w-[26rem] flex-col gap-3 sm:w-auto sm:flex-row">
+            <a
+              href={waConsultLink(settings.whatsappE164)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="fp-btn fp-btn--whatsapp fp-btn--lg fp-btn--block sm:w-auto!"
+            >
+              <Icon name="whatsapp" size={18} />
+              Escribime al {settings.whatsappDisplay}
+            </a>
+            <Link href="/catalogo" className="fp-btn fp-btn--ghost fp-btn--lg fp-btn--block sm:w-auto!">
+              Ver el catálogo
+            </Link>
+          </div>
         </div>
       </section>
     </>

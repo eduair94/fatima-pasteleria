@@ -14,8 +14,8 @@ export function bakeryJsonLd(products: Product[], settings: Settings) {
     description:
       "Pastelería artesanal por encargo en Montevideo. Cheesecakes, scones, tortas y galletería caseras, sin conservantes ni colorantes.",
     url: SITE.url,
-    image: absolute("/fotos/02_carrot_cake_01.jpg"),
-    logo: absolute("/sello-fatima.jpg"),
+    image: absolute("/og.jpg"),
+    logo: absolute("/sello-fatima.png"),
     telephone: `+${settings.whatsappE164}`,
     slogan: SITE.motto,
     priceRange: "$$",

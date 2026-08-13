@@ -49,8 +49,16 @@ misma fuente de verdad.
 **Reglas duras de color**
 
 - El **dorado nunca es color de texto sobre crema** (2.3:1, no llega a AA). Vive en filetes,
-  anillos y bordes de badge. Sobre marrón sí, en `--gold-200`.
-- El **rosa en texto** sólo en `--berry-700`. `--berry-500` es fondo.
+  anillos y bordes de badge. Sobre marrón sí, en `--gold-200`. Esto incluye los glifos
+  tipográficos: donde pedía una comilla dorada va un filete.
+- El **rosa en texto** sólo en `--berry-700`. `--berry-500` es fondo… **con una corrección**:
+  `--berry-500` con tinta crema encima da 2.9:1, así que tampoco sirve como relleno de un
+  botón o de un chip seleccionado. El CTA de WhatsApp, el chip activo y el contador del
+  carrito usan `--berry-700` (5.6:1) y hover `--berry-800` (7.3:1). `--berry-500` queda para
+  superficies sin texto encima: el punto del mapa de zonas, el borde de la tarjeta abierta.
+- El **deshabilitado se lee**: `--brown-700` sobre `--cream-300` da 6.9:1. El botón de enviar
+  el pedido nace apagado y se queda así hasta que el formulario esté completo, así que es un
+  estado de larga vida, no un parpadeo.
 - **Como máximo dos fondos por página**: crema y su alterna. El marrón queda para la barra
   de pedido y el pie.
 - Sin gradientes decorativos. El único gradiente del sistema es `--scrim-bottom`, para
@@ -92,7 +100,10 @@ rebota. Press `scale(.985)`. **Nunca se usa opacidad para el hover.** Con
   Se usa de verdad: el botón de enviar el pedido está apagado hasta tener nombre, teléfono,
   fecha y —si es envío— zona y dirección.
 - **Toque:** 44 px mínimo en mobile, 52 px el CTA principal, 64 px la barra de pedido. Los
-  botones de 36 px existen sólo en desktop.
+  botones de 36 px y los chips de 38 px existen **sólo en desktop**: por debajo de 768 px el
+  chip crece a 44 px.
+- **Press:** en touch no hay hover, así que `.fp-prod` responde también a `:active` y a
+  `:focus-within` con la elevación levantada. Sin eso, tocar una tarjeta no devuelve nada.
 
 ## Componentes
 
