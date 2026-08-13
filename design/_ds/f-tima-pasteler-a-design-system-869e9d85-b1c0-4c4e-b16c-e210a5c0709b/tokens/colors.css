@@ -1,0 +1,94 @@
+:root{
+  /* --- Base ramp: crema / marfil --- */
+  --cream-50:#FFFDF9;   /* marfil, superficie de tarjeta sobre crema */
+  --cream-100:#FBF6EE;  /* crema de marca, fondo de página */
+  --cream-200:#F5EDE0;  /* superficie alterna, bandas de sección */
+  --cream-300:#EDE1CE;  /* relleno suave, skeletons */
+  --line-200:#E7DCC9;   /* borde sutil */
+  --line-300:#DACBB2;   /* borde de énfasis / inputs */
+
+  /* --- Base ramp: marrón chocolate (texto) --- */
+  --brown-900:#3A2A20;  /* marrón de marca, texto principal */
+  --brown-800:#4A362A;
+  --brown-700:#5C4536;  /* texto secundario */
+  --brown-500:#7D6553;  /* texto atenuado (AA sobre crema) */
+  --brown-300:#A89179;  /* deshabilitado, placeholder */
+
+  /* --- Acento: dorado apagado --- */
+  --gold-600:#C9A227;   /* dorado de marca: filetes, sellos, iconos decorativos */
+  --gold-700:#A8871C;   /* dorado oscuro para bordes sobre crema */
+  --gold-200:#EBD9A0;   /* dorado lavado, fondos de badge */
+  --gold-100:#F6EDD2;
+
+  /* --- Acento: rosa frutilla --- */
+  --berry-500:#D97A86;  /* CTA secundario, estados activos */
+  --berry-600:#C0616D;  /* hover del CTA secundario */
+  --berry-700:#A34B57;  /* texto rosa sobre crema (AA) */
+  --berry-200:#F2CFD4;
+  --berry-100:#FAE9EB;
+
+  /* --- Semánticos de sistema --- */
+  --green-700:#4F6B44;  /* disponible / confirmado */
+  --green-100:#E8EFE2;
+  --amber-700:#8A5A15;  /* anticipación, avisos */
+  --amber-100:#F7EBD6;
+  --red-700:#9B3B33;    /* error de formulario */
+  --red-100:#F7E3E0;
+
+  /* --- Alias semánticos: superficies --- */
+  --surface-page:var(--cream-100);
+  --surface-card:var(--cream-50);
+  --surface-alt:var(--cream-200);
+  --surface-sunken:var(--cream-300);
+  --surface-inverse:var(--brown-900);
+  --surface-scrim:rgba(58,42,32,.44);
+
+  /* --- Alias semánticos: texto --- */
+  --text-body:var(--brown-900);
+  --text-secondary:var(--brown-700);
+  --text-muted:var(--brown-500);
+  --text-disabled:var(--brown-300);
+  --text-inverse:var(--cream-50);
+  --text-price:var(--brown-900);
+  --text-link:var(--berry-700);
+  --text-link-hover:var(--brown-900);
+
+  /* --- Alias semánticos: bordes --- */
+  --border-subtle:var(--line-200);
+  --border-strong:var(--line-300);
+  --border-gold:var(--gold-700);
+  --border-focus:var(--berry-600);
+
+  /* --- Alias semánticos: acciones --- */
+  --action-primary-bg:var(--brown-900);
+  --action-primary-bg-hover:var(--brown-800);
+  --action-primary-fg:var(--cream-50);
+  --action-secondary-bg:var(--berry-500);
+  --action-secondary-bg-hover:var(--berry-600);
+  --action-secondary-fg:var(--cream-50);
+  --action-ghost-fg:var(--brown-900);
+  --action-ghost-bg-hover:var(--cream-200);
+  --action-disabled-bg:var(--cream-300);
+  --action-disabled-fg:var(--brown-300);
+
+  /* --- Alias semánticos: estado --- */
+  --state-ok-fg:var(--green-700);
+  --state-ok-bg:var(--green-100);
+  --state-warn-fg:var(--amber-700);
+  --state-warn-bg:var(--amber-100);
+  --state-error-fg:var(--red-700);
+  --state-error-bg:var(--red-100);
+
+  /* --- Muestreados del sello original (assets/brand/logo-sello.jpg) ---
+     El sello no usa el dorado mostaza del brief: usa un cobre cálido y un rosa
+     terracota. Se conservan como tokens propios del logotipo. Ver readme. */
+  --logo-cream:#FDF5EA;   /* fondo del sello */
+  --logo-copper:#B5743A;  /* filetes, batidor, hojas, mayúsculas del arco */
+  --logo-copper-deep:#A0733A;
+  --logo-blush:#C98C6F;   /* corazones */
+  --logo-ink:#2A1A0E;     /* FÁTIMA y el script */
+
+  /* Dorado decorativo únicamente: nunca como color de texto de cuerpo. */
+  --accent-gold:var(--gold-600);
+  --accent-gold-wash:var(--gold-100);
+}

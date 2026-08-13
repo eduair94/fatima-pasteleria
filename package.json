@@ -1,0 +1,35 @@
+{
+  "name": "fatima-pasteleria",
+  "version": "1.0.0",
+  "private": false,
+  "license": "MIT",
+  "description": "Sitio de pedidos de Fátima — Pastelería Artesanal (Montevideo, Uruguay). Catálogo, carrito y cierre por WhatsApp.",
+  "author": "Eduardo Airaudo <https://www.linkedin.com/in/eduardo-airaudo/>",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "next": "16.3.0",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "server-only": "^0.0.1"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
+    "eslint": "^9.39.0",
+    "eslint-config-next": "16.3.0",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  }
+}

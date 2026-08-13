@@ -1,0 +1,10 @@
+:root{
+  /* Bordes redondeados suaves, nunca cuadrados duros. */
+  --radius-xs:4px;
+  --radius-sm:8px;
+  --radius-md:12px;   /* inputs, botones */
+  --radius-lg:18px;   /* tarjetas de producto */
+  --radius-xl:26px;   /* modales, bloques full-bleed */
+  --radius-pill:999px;/* badges, chips, botones pill */
+  --radius-circle:50%;/* sello, avatares de reseña */
+}

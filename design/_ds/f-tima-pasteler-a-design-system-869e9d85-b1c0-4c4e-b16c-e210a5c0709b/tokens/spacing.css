@@ -1,0 +1,39 @@
+:root{
+  /* Escala de 4px. Mucho aire: el salto de sección arranca en --space-9. */
+  --space-0:0;
+  --space-1:4px;
+  --space-2:8px;
+  --space-3:12px;
+  --space-4:16px;
+  --space-5:20px;
+  --space-6:24px;
+  --space-7:32px;
+  --space-8:40px;
+  --space-9:56px;
+  --space-10:72px;
+  --space-11:96px;
+  --space-12:128px;
+
+  /* Alias de layout */
+  --gutter-mobile:var(--space-5);   /* 20px de margen lateral en mobile */
+  --gutter-desktop:var(--space-8);
+  --section-y-mobile:var(--space-9);
+  --section-y-desktop:var(--space-11);
+  --stack-tight:var(--space-2);
+  --stack:var(--space-4);
+  --stack-loose:var(--space-6);
+  --card-pad:var(--space-5);
+  --card-pad-lg:var(--space-6);
+
+  /* Contenedores */
+  --container-max:1200px;
+  --container-narrow:720px;
+
+  /* Alturas mínimas de toque (mobile) */
+  --hit-min:44px;
+  --hit-lg:52px;
+
+  /* Elementos fijos */
+  --header-h:56px;
+  --cartbar-h:64px;
+}

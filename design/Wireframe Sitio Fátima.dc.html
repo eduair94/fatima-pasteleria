@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="design_doc_mode" content="canvas">
+<link rel="stylesheet" href="_ds/f-tima-pasteler-a-design-system-869e9d85-b1c0-4c4e-b16c-e210a5c0709b/tokens/fonts.css">
+<link rel="stylesheet" href="_ds/f-tima-pasteler-a-design-system-869e9d85-b1c0-4c4e-b16c-e210a5c0709b/tokens/colors.css">
+<link rel="stylesheet" href="_ds/f-tima-pasteler-a-design-system-869e9d85-b1c0-4c4e-b16c-e210a5c0709b/tokens/typography.css">
+<link rel="stylesheet" href="_ds/f-tima-pasteler-a-design-system-869e9d85-b1c0-4c4e-b16c-e210a5c0709b/tokens/spacing.css">
+<link rel="stylesheet" href="_ds/f-tima-pasteler-a-design-system-869e9d85-b1c0-4c4e-b16c-e210a5c0709b/tokens/radii.css">
+<link rel="stylesheet" href="_ds/f-tima-pasteler-a-design-system-869e9d85-b1c0-4c4e-b16c-e210a5c0709b/tokens/elevation.css">
+<link rel="stylesheet" href="_ds/f-tima-pasteler-a-design-system-869e9d85-b1c0-4c4e-b16c-e210a5c0709b/tokens/motion.css">
+<link rel="stylesheet" href="_ds/f-tima-pasteler-a-design-system-869e9d85-b1c0-4c4e-b16c-e210a5c0709b/tokens/base.css">
+<link rel="stylesheet" href="_ds/f-tima-pasteler-a-design-system-869e9d85-b1c0-4c4e-b16c-e210a5c0709b/components/components.css">
+<link rel="stylesheet" href="_ds/f-tima-pasteler-a-design-system-869e9d85-b1c0-4c4e-b16c-e210a5c0709b/styles.css">
+<script src="_ds/f-tima-pasteler-a-design-system-869e9d85-b1c0-4c4e-b16c-e210a5c0709b/_ds_bundle.js"></script>
+<style>
+body{background:var(--cream-200)}
+a{color:var(--text-link)}
+a:hover{color:var(--text-link-hover)}
+</style>
+</helmet>
+
+<div style="min-height:100vh;background:var(--cream-200);padding:56px 64px 120px;font-family:var(--font-sans-body);color:var(--text-body)">
+
+<div style="display:flex;align-items:flex-end;justify-content:space-between;gap:40px;flex-wrap:wrap;max-width:1440px">
+<div style="display:flex;flex-direction:column;gap:8px">
+<span style="font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--brown-500)">Wireframe de baja fidelidad</span>
+<span style="font-family:var(--font-serif-display);font-size:40px;line-height:1.08;letter-spacing:-0.02em">Fátima — Pastelería Artesanal</span>
+<span style="font-size:14px;color:var(--brown-500);max-width:34rem">Sitio público de pedidos. Estructura, jerarquía y flujo sobre la escala tipográfica, el espaciado y los radios del sistema. Sin fotografía ni color pleno: el color sólo aparece en los CTA y en los estados.</span>
+</div>
+<div style="display:flex;gap:20px;align-items:center;flex-wrap:wrap">
+<div style="display:flex;align-items:center;gap:8px"><span style="width:28px;height:20px;border-radius:4px;border:1px dashed var(--line-300);background:repeating-linear-gradient(45deg,#E8E4DD 0 8px,#E2DCD3 8px 16px)"></span><span style="font-size:12px;color:var(--brown-500)">Bloque de imagen</span></div>
+<div style="display:flex;align-items:center;gap:8px"><span style="width:28px;height:20px;border-radius:999px;background:var(--brown-900)"></span><span style="font-size:12px;color:var(--brown-500)">CTA primario</span></div>
+<div style="display:flex;align-items:center;gap:8px"><span style="width:28px;height:20px;border-radius:999px;background:var(--berry-500)"></span><span style="font-size:12px;color:var(--brown-500)">CTA WhatsApp</span></div>
+<div style="display:flex;align-items:center;gap:8px"><span style="width:28px;height:20px;border-radius:4px;background:var(--state-error-bg);border:1px solid var(--red-700)"></span><span style="font-size:12px;color:var(--brown-500)">Estado de error</span></div>
+</div>
+</div>
+
+<sc-if value="{{ verMobile }}" hint-placeholder-val="{{ true }}">
+<div style="margin-top:64px;display:flex;align-items:baseline;gap:12px">
+<span style="font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--brown-500)">Mobile · 375</span>
+<span style="flex:1;height:1px;background:var(--line-300)"></span>
+</div>
+
+<div style="display:flex;align-items:flex-start;gap:48px;margin-top:28px">
+
+<!-- ============ 1. HOME ============ -->
+<div style="display:flex;flex-direction:column;gap:12px;flex:0 0 auto">
+<div style="display:flex;align-items:baseline;gap:10px">
+<span style="font-size:12px;font-weight:600;letter-spacing:.14em;color:var(--brown-500)">01</span>
+<span style="font-family:var(--font-serif-display);font-size:19px">Home</span>
+</div>
+<div style="position:relative;width:375px;background:var(--cream-100);border:1px solid var(--line-300);border-radius:20px;overflow:hidden">
+
+<div style="display:flex;align-items:center;justify-content:space-between;height:56px;padding:0 8px 0 8px;border-bottom:1px solid var(--line-200);background:var(--cream-100)">
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.IconButton" icon="menu" label="Menú" hint-size="44px,44px"></x-import>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Wordmark" size="19" tagline="Pastelería Artesanal" hint-size="120px,32px"></x-import>
+<div style="position:relative;width:44px;height:44px">
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.IconButton" icon="shopping-bag" label="Pedido" hint-size="44px,44px"></x-import>
+<span style="position:absolute;top:4px;right:2px;min-width:18px;height:18px;padding:0 4px;display:flex;align-items:center;justify-content:center;border-radius:999px;background:var(--berry-500);color:var(--cream-50);font-size:11px;font-weight:600">2</span>
+</div>
+</div>
+
+<div style="position:relative">
+<div style="aspect-ratio:4/5;display:flex;align-items:flex-end;background:repeating-linear-gradient(45deg,#E8E4DD 0 10px,#E2DCD3 10px 20px)">
+<span style="position:absolute;top:16px;left:20px;font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--brown-500)">Foto hero · corte de carrot cake · 4:5</span>
+<div style="width:100%;padding:24px 20px;display:flex;flex-direction:column;gap:8px;background:linear-gradient(to top,rgba(58,42,32,.62),rgba(58,42,32,0))">
+<span style="font-family:var(--font-serif-display);font-size:40px;line-height:1.08;letter-spacing:-0.02em;color:var(--cream-50)">Fátima</span>
+<span style="font-size:17px;line-height:1.5;color:var(--cream-50)">Cheesecakes, scones y tortas caseras. Montevideo.</span>
+</div>
+</div>
+</div>
+<div style="padding:20px">
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Button" variant="primary" size="lg" block="true" icon-right="arrow-right" hint-size="100%,52px">Ver catálogo</x-import>
+</div>
+
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:20px;background:var(--cream-200);border-top:1px solid var(--line-200);border-bottom:1px solid var(--line-200)">
+<div style="display:flex;flex-direction:column;gap:6px">
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Icon" name="calendar" size="20" hint-size="20px,20px"></x-import>
+<span style="font-size:14px;font-weight:600;line-height:1.3">Por encargo</span>
+<span style="font-size:12px;color:var(--brown-500);line-height:1.4">48 hs de anticipación</span>
+</div>
+<div style="display:flex;flex-direction:column;gap:6px">
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Icon" name="truck" size="20" hint-size="20px,20px"></x-import>
+<span style="font-size:14px;font-weight:600;line-height:1.3">Entrega en zona</span>
+<span style="font-size:12px;color:var(--brown-500);line-height:1.4">Envío $ 100 · retiro sin costo</span>
+</div>
+<div style="display:flex;flex-direction:column;gap:6px">
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Icon" name="heart" size="20" hint-size="20px,20px"></x-import>
+<span style="font-size:14px;font-weight:600;line-height:1.3">Artesanal</span>
+<span style="font-size:12px;color:var(--brown-500);line-height:1.4">Sin conservantes ni colorantes</span>
+</div>
+</div>
+
+<div style="padding:56px 20px 0;display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<span style="font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--brown-500)">Catálogo</span>
+<span style="font-family:var(--font-serif-display);font-size:24px;line-height:1.22;letter-spacing:-0.01em">Qué se puede pedir</span>
+<hr style="width:56px;height:1px;background:var(--accent-gold);border:0;margin:4px 0 0">
+</div>
+<div style="display:flex;flex-direction:column;gap:16px">
+<article style="background:var(--cream-50);border:1px solid var(--line-200);border-radius:18px;overflow:hidden">
+<div style="aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;text-align:center;padding:10px;background:repeating-linear-gradient(45deg,#E8E4DD 0 10px,#E2DCD3 10px 20px);font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--brown-500)">Foto categoría · cheesecake entero</div>
+<div style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px">
+<div style="display:flex;flex-direction:column;gap:2px">
+<span style="font-family:var(--font-serif-display);font-size:19px;line-height:1.22">Cheesecakes</span>
+<span style="font-size:14px;color:var(--brown-500)">Desde $ 200 la porción</span>
+</div>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Icon" name="chevron-right" size="20" hint-size="20px,20px"></x-import>
+</div>
+</article>
+<article style="background:var(--cream-50);border:1px solid var(--line-200);border-radius:18px;overflow:hidden">
+<div style="aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;text-align:center;padding:10px;background:repeating-linear-gradient(45deg,#E8E4DD 0 10px,#E2DCD3 10px 20px);font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--brown-500)">Foto categoría · scones de queso</div>
+<div style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px">
+<div style="display:flex;flex-direction:column;gap:2px">
+<span style="font-family:var(--font-serif-display);font-size:19px;line-height:1.22">Scones</span>
+<span style="font-size:14px;color:var(--brown-500)">Desde $ 30 la unidad</span>
+</div>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Icon" name="chevron-right" size="20" hint-size="20px,20px"></x-import>
+</div>
+</article>
+<article style="background:var(--cream-50);border:1px solid var(--line-200);border-radius:18px;overflow:hidden">
+<div style="aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;text-align:center;padding:10px;background:repeating-linear-gradient(45deg,#E8E4DD 0 10px,#E2DCD3 10px 20px);font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--brown-500)">Foto categoría · lemon pie</div>
+<div style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px">
+<div style="display:flex;flex-direction:column;gap:2px">
+<span style="font-family:var(--font-serif-display);font-size:19px;line-height:1.22">Tortas caseras</span>
+<span style="font-size:14px;color:var(--brown-500)">Desde $ 140 la porción</span>
+</div>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Icon" name="chevron-right" size="20" hint-size="20px,20px"></x-import>
+</div>
+</article>
+</div>
+</div>
+
+<div style="padding:56px 0 0;display:flex;flex-direction:column;gap:20px">
+<div style="padding:0 20px;display:flex;flex-direction:column;gap:12px">
+<span style="font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--brown-500)">Reseñas</span>
+<span style="font-family:var(--font-serif-display);font-size:24px;line-height:1.22;letter-spacing:-0.01em">Lo que dicen las clientas</span>
+<hr style="width:56px;height:1px;background:var(--accent-gold);border:0;margin:4px 0 0">
+</div>
+<div style="position:relative;display:flex;gap:12px;padding:0 0 0 20px;overflow:hidden">
+<span style="position:absolute;top:0;right:0;bottom:0;width:36px;background:linear-gradient(to right,rgba(251,246,238,0),var(--cream-100));pointer-events:none"></span>
+<div style="flex:0 0 275px">
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.ReviewCard" text="Llegó puntual y estaba impecable." author="Carolina P." meta="La Comercial" rating="5" hint-size="275px,160px"></x-import>
+</div>
+<div style="flex:0 0 275px">
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.ReviewCard" text="El cheesecake voló en casa." author="Sofía M." meta="Aguada" rating="5" hint-size="275px,160px"></x-import>
+</div>
+</div>
+<div style="display:flex;justify-content:center;gap:6px">
+<span style="width:7px;height:7px;border-radius:50%;background:var(--brown-900)"></span>
+<span style="width:7px;height:7px;border-radius:50%;background:var(--line-300)"></span>
+<span style="width:7px;height:7px;border-radius:50%;background:var(--line-300)"></span>
+</div>
+</div>
+
+<div style="margin-top:56px;padding:32px 20px;background:var(--cream-200);border-top:1px solid var(--line-200);border-bottom:1px solid var(--line-200);display:flex;flex-direction:column;gap:16px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<span style="font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--brown-500)">Zona de entrega</span>
+<span style="font-family:var(--font-serif-display);font-size:24px;line-height:1.22;letter-spacing:-0.01em">Dónde llego</span>
+</div>
+<div style="aspect-ratio:16/10;border-radius:18px;display:flex;align-items:center;justify-content:center;text-align:center;padding:10px;background:repeating-linear-gradient(45deg,#E8E4DD 0 10px,#E2DCD3 10px 20px);border:1px dashed var(--line-300);font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--brown-500)">Mapa simplificado · 6 barrios marcados</div>
+<div style="display:flex;flex-wrap:wrap;gap:8px">
+<span class="fp-badge fp-badge--neutral">La Comercial</span>
+<span class="fp-badge fp-badge--neutral">Aguada</span>
+<span class="fp-badge fp-badge--neutral">Tres Cruces</span>
+<span class="fp-badge fp-badge--neutral">Nuevo Centro</span>
+<span class="fp-badge fp-badge--neutral">Av. Italia</span>
+<span class="fp-badge fp-badge--neutral">Parque Batlle</span>
+</div>
+<span style="font-size:14px;color:var(--brown-700);line-height:1.5">Envío $ 100 a esas zonas. Retiro sin costo en Aguada o La Comercial. Otras zonas de Montevideo, a coordinar.</span>
+</div>
+
+<div style="padding:56px 20px 0;display:flex;flex-direction:column;gap:16px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<span style="font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--brown-500)">Preguntas</span>
+<span style="font-family:var(--font-serif-display);font-size:24px;line-height:1.22;letter-spacing:-0.01em">Antes de pedir</span>
+</div>
+<div class="fp-acc">
+<div class="fp-acc__item">
+<button type="button" class="fp-acc__btn" aria-expanded="true">¿Con cuánta anticipación tengo que pedir?<span class="fp-acc__caret"><x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Icon" name="chevron-down" size="20" hint-size="20px,20px"></x-import></span></button>
+<div class="fp-acc__panel">48 hs para todo el catálogo. Te confirmo la entrega a partir de las 19 h.</div>
+</div>
+<div class="fp-acc__item">
+<button type="button" class="fp-acc__btn" aria-expanded="false">¿Cómo se paga?<span class="fp-acc__caret"><x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Icon" name="chevron-down" size="20" hint-size="20px,20px"></x-import></span></button>
+</div>
+<div class="fp-acc__item">
+<button type="button" class="fp-acc__btn" aria-expanded="false">¿Hay que dejar seña?<span class="fp-acc__caret"><x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Icon" name="chevron-down" size="20" hint-size="20px,20px"></x-import></span></button>
+</div>
+<div class="fp-acc__item">
+<button type="button" class="fp-acc__btn" aria-expanded="false">¿Cómo se conserva?<span class="fp-acc__caret"><x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Icon" name="chevron-down" size="20" hint-size="20px,20px"></x-import></span></button>
+</div>
+</div>
+</div>
+
+<div style="margin-top:56px;padding:32px 20px 96px;background:var(--surface-inverse);color:var(--text-inverse);display:flex;flex-direction:column;gap:20px">
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Wordmark" size="24" inverse="true" tagline="Pastelería Artesanal" hint-size="120px,40px"></x-import>
+<div style="display:flex;flex-direction:column;gap:12px">
+<span style="display:flex;align-items:center;gap:8px;font-size:14px;color:var(--cream-50)"><x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Icon" name="instagram" size="16" hint-size="16px,16px"></x-import>@faticastro001</span>
+<span style="display:flex;align-items:center;gap:8px;font-size:14px;color:var(--cream-50)"><x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Icon" name="whatsapp" size="16" hint-size="16px,16px"></x-import>096 247 822</span>
+<span style="display:flex;align-items:center;gap:8px;font-size:14px;color:var(--cream-50)"><x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Icon" name="map-pin" size="16" hint-size="16px,16px"></x-import>Aguada y La Comercial, Montevideo</span>
+</div>
+<span style="font-size:12px;line-height:1.5;color:var(--gold-200);max-width:24rem">Los pedidos se coordinan por WhatsApp. El sitio arma el mensaje; la confirmación llega por ese medio.</span>
+</div>
+
+<sc-if value="{{ verBarra }}" hint-placeholder-val="{{ true }}">
+<div style="position:absolute;left:0;right:0;bottom:0;display:flex;align-items:center;gap:16px;min-height:64px;padding:12px 20px;background:var(--surface-inverse);color:var(--text-inverse);border-top:1px solid rgba(251,246,238,.16)">
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Icon" name="shopping-bag" size="22" color="var(--gold-200)" hint-size="22px,22px"></x-import>
+<span style="display:flex;flex-direction:column;line-height:1.25">
+<span style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-200)">2 ítems</span>
+<span style="font-size:17px;font-weight:600;font-variant-numeric:tabular-nums">$ 1.280</span>
+</span>
+<span style="margin-left:auto"><x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Button" variant="gold" hint-size="120px,44px">Ver pedido</x-import></span>
+</div>
+</sc-if>
+
+</div>
+<sc-if value="{{ verNotas }}" hint-placeholder-val="{{ true }}">
+<ul style="width:375px;margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px;font-size:12px;line-height:1.5;color:var(--brown-500)">
+<li>Header pegajoso de 56 px, crema al 92% con blur. El contador aparece recién con el primer ítem.</li>
+<li>La barra de pedido es fija sobre el viewport y sólo existe con el carrito cargado.</li>
+<li>Reseñas: van los tres textos reales de la historia destacada. Falta pedir nombre y permiso a las clientas.</li>
+<li>FAQ: pago, seña y conservación no tienen respuesta publicada. Definir con Fátima antes de escribirlas.</li>
+</ul>
+</sc-if>
+</div>
+
+<!-- ============ 2. CATÁLOGO ============ -->
+<div style="display:flex;flex-direction:column;gap:12px;flex:0 0 auto">
+<div style="display:flex;align-items:baseline;gap:10px">
+<span style="font-size:12px;font-weight:600;letter-spacing:.14em;color:var(--brown-500)">02</span>
+<span style="font-family:var(--font-serif-display);font-size:19px">Catálogo</span>
+</div>
+<div style="position:relative;width:375px;background:var(--cream-100);border:1px solid var(--line-300);border-radius:20px;overflow:hidden">
+<div style="display:flex;align-items:center;justify-content:space-between;height:56px;padding:0 8px;border-bottom:1px solid var(--line-200)">
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.IconButton" icon="menu" label="Menú" hint-size="44px,44px"></x-import>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Wordmark" size="19" tagline="Pastelería Artesanal" hint-size="120px,32px"></x-import>
+<div style="position:relative;width:44px;height:44px">
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.IconButton" icon="shopping-bag" label="Pedido" hint-size="44px,44px"></x-import>
+<span style="position:absolute;top:4px;right:2px;min-width:18px;height:18px;padding:0 4px;display:flex;align-items:center;justify-content:center;border-radius:999px;background:var(--berry-500);color:var(--cream-50);font-size:11px;font-weight:600">2</span>
+</div>
+</div>
+<div style="padding:20px 20px 12px;display:flex;flex-direction:column;gap:12px">
+<span style="font-size:12px;color:var(--brown-500)">Inicio&nbsp;/&nbsp;Catálogo</span>
+<span style="font-family:var(--font-serif-display);font-size:32px;line-height:1.08;letter-spacing:-0.02em">Catálogo</span>
+</div>
+<div style="position:relative;display:flex;gap:8px;padding:4px 0 16px 20px;overflow:hidden">
+<span style="position:absolute;top:0;right:0;bottom:16px;width:32px;background:linear-gradient(to right,rgba(251,246,238,0),var(--cream-100));pointer-events:none"></span>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Chip" selected="true" hint-size="70px,38px">Todo</x-import>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Chip" hint-size="110px,38px">Cheesecakes</x-import>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Chip" hint-size="80px,38px">Scones</x-import>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Chip" hint-size="120px,38px">Tortas caseras</x-import>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:0 20px 96px">
+
+<article style="display:flex;flex-direction:column;background:var(--cream-50);border:1px solid var(--line-200);border-radius:18px;overflow:hidden">
+<div style="aspect-ratio:4/5;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px;background:repeating-linear-gradient(45deg,#E8E4DD 0 10px,#E2DCD3 10px 20px);font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--brown-500)">Foto · cheesecake</div>
+<div style="display:flex;flex-direction:column;gap:4px;padding:12px">
+<span style="font-family:var(--font-serif-display);font-size:16px;line-height:1.22">Cheesecake de dulce de leche</span>
+<span style="font-size:12px;color:var(--brown-500)">48 hs de anticipación</span>
+<div style="display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:4px">
+<span style="font-size:15px;font-weight:600;font-variant-numeric:tabular-nums">Desde $ 200</span>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.IconButton" icon="plus" label="Agregar" variant="outline" size="sm" hint-size="36px,36px"></x-import>
+</div>
+</div>
+</article>
+
+<article style="display:flex;flex-direction:column;background:var(--cream-50);border:1px solid var(--line-200);border-radius:18px;overflow:hidden">
+<div style="aspect-ratio:4/5;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px;background:repeating-linear-gradient(45deg,#E8E4DD 0 10px,#E2DCD3 10px 20px);font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--brown-500)">Foto · lemon pie</div>
+<div style="display:flex;flex-direction:column;gap:4px;padding:12px">
+<span style="font-family:var(--font-serif-display);font-size:16px;line-height:1.22">Lemon pie</span>
+<span style="font-size:12px;color:var(--brown-500)">48 hs de anticipación</span>
+<div style="display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:4px">
+<span style="font-size:15px;font-weight:600;font-variant-numeric:tabular-nums">Desde $ 140</span>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.IconButton" icon="plus" label="Agregar" variant="outline" size="sm" hint-size="36px,36px"></x-import>
+</div>
+</div>
+</article>
+
+<article style="display:flex;flex-direction:column;background:var(--cream-50);border:1px solid var(--line-200);border-radius:18px;overflow:hidden">
+<div style="aspect-ratio:4/5;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px;background:repeating-linear-gradient(45deg,#E8E4DD 0 10px,#E2DCD3 10px 20px);font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--brown-500)">Foto · carrot cake</div>
+<div style="display:flex;flex-direction:column;gap:4px;padding:12px">
+<span style="font-family:var(--font-serif-display);font-size:16px;line-height:1.22">Carrot cake</span>
+<span style="font-size:12px;color:var(--brown-500)">48 hs de anticipación</span>
+<div style="display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:4px">
+<span style="font-size:15px;font-weight:600;font-variant-numeric:tabular-nums">$ 1.200</span>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.IconButton" icon="plus" label="Agregar" variant="outline" size="sm" hint-size="36px,36px"></x-import>
+</div>
+</div>
+</article>
+
+<article style="display:flex;flex-direction:column;background:var(--cream-50);border:1px solid var(--line-200);border-radius:18px;overflow:hidden">
+<div style="position:relative;aspect-ratio:4/5;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px;background:repeating-linear-gradient(45deg,#E8E4DD 0 10px,#E2DCD3 10px 20px);font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--brown-500)">Foto · scones de queso<span style="position:absolute;top:12px;left:12px"><span class="fp-badge fp-badge--gold">Cantidad limitada</span></span></div>
+<div style="display:flex;flex-direction:column;gap:4px;padding:12px">
+<span style="font-family:var(--font-serif-display);font-size:16px;line-height:1.22">Scones de queso</span>
+<span style="font-size:12px;color:var(--brown-500)">48 hs de anticipación</span>
+<div style="display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:4px">
+<span style="font-size:15px;font-weight:600;font-variant-numeric:tabular-nums">6 por $ 100</span>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.IconButton" icon="plus" label="Agregar" variant="outline" size="sm" hint-size="36px,36px"></x-import>
+</div>
+</div>
+</article>
+
+<article style="display:flex;flex-direction:column;background:var(--cream-50);border:1px solid var(--line-200);border-radius:18px;overflow:hidden">
+<div style="aspect-ratio:4/5;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px;background:repeating-linear-gradient(45deg,#E8E4DD 0 10px,#E2DCD3 10px 20px);font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--brown-500)">Foto · alfajores</div>
+<div style="display:flex;flex-direction:column;gap:4px;padding:12px">
+<span style="font-family:var(--font-serif-display);font-size:16px;line-height:1.22">Alfajores de maicena</span>
+<span style="font-size:12px;color:var(--brown-500)">48 hs de anticipación</span>
+<div style="display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:4px">
+<span style="font-size:15px;font-weight:600;font-variant-numeric:tabular-nums">$ 30 c/u</span>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.IconButton" icon="plus" label="Agregar" variant="outline" size="sm" hint-size="36px,36px"></x-import>
+</div>
+</div>
+</article>
+
+<article style="display:flex;flex-direction:column;background:var(--cream-50);border:1px solid var(--line-200);border-radius:18px;overflow:hidden">
+<div style="aspect-ratio:4/5;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px;background:repeating-linear-gradient(45deg,#E8E4DD 0 10px,#E2DCD3 10px 20px);font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--brown-500)">Foto · tiramisú</div>
+<div style="display:flex;flex-direction:column;gap:4px;padding:12px">
+<span style="font-family:var(--font-serif-display);font-size:16px;line-height:1.22">Tiramisú</span>
+<span style="font-size:12px;color:var(--brown-500)">48 hs de anticipación</span>
+<div style="display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:4px">
+<span style="font-size:15px;font-weight:600;color:var(--brown-500)">Consultar</span>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.IconButton" icon="whatsapp" label="Consultar por WhatsApp" variant="outline" size="sm" hint-size="36px,36px"></x-import>
+</div>
+</div>
+</article>
+
+</div>
+<sc-if value="{{ verBarra }}" hint-placeholder-val="{{ true }}">
+<div style="position:absolute;left:0;right:0;bottom:0;display:flex;align-items:center;gap:16px;min-height:64px;padding:12px 20px;background:var(--surface-inverse);color:var(--text-inverse)">
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Icon" name="shopping-bag" size="22" color="var(--gold-200)" hint-size="22px,22px"></x-import>
+<span style="display:flex;flex-direction:column;line-height:1.25">
+<span style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-200)">2 ítems</span>
+<span style="font-size:17px;font-weight:600;font-variant-numeric:tabular-nums">$ 1.280</span>
+</span>
+<span style="margin-left:auto"><x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Button" variant="gold" hint-size="120px,44px">Ver pedido</x-import></span>
+</div>
+</sc-if>
+</div>
+<sc-if value="{{ verNotas }}" hint-placeholder-val="{{ true }}">
+<ul style="width:375px;margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px;font-size:12px;line-height:1.5;color:var(--brown-500)">
+<li>Chips de categoría con scroll horizontal. Un solo filtro activo por vez; "Todo" es el estado inicial.</li>
+<li>Precio "desde" cuando el producto tiene entero y porción; "Consultar" con acceso a WhatsApp cuando no hay precio publicado.</li>
+<li>Cada tarjeta abre la ficha; el botón + agrega la variante por defecto sin abrirla.</li>
+</ul>
+</sc-if>
+</div>
+
+<!-- ============ 2b. SIN RESULTADOS ============ -->
+<div style="display:flex;flex-direction:column;gap:12px;flex:0 0 auto">
+<div style="display:flex;align-items:baseline;gap:10px">
+<span style="font-size:12px;font-weight:600;letter-spacing:.14em;color:var(--brown-500)">02b</span>
+<span style="font-family:var(--font-serif-display);font-size:19px">Catálogo sin resultados</span>
+</div>
+<div style="position:relative;width:375px;background:var(--cream-100);border:1px solid var(--line-300);border-radius:20px;overflow:hidden">
+<div style="display:flex;align-items:center;justify-content:space-between;height:56px;padding:0 8px;border-bottom:1px solid var(--line-200)">
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.IconButton" icon="chevron-left" label="Volver" hint-size="44px,44px"></x-import>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Wordmark" size="19" tagline="Pastelería Artesanal" hint-size="120px,32px"></x-import>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.IconButton" icon="shopping-bag" label="Pedido" hint-size="44px,44px"></x-import>
+</div>
+<div style="padding:20px 20px 12px;display:flex;flex-direction:column;gap:12px">
+<span style="font-size:12px;color:var(--brown-500)">Inicio&nbsp;/&nbsp;Catálogo</span>
+<span style="font-family:var(--font-serif-display);font-size:32px;line-height:1.08;letter-spacing:-0.02em">Catálogo</span>
+</div>
+<div style="position:relative;display:flex;gap:8px;padding:4px 0 16px 20px;overflow:hidden">
+<span style="position:absolute;top:0;right:0;bottom:16px;width:32px;background:linear-gradient(to right,rgba(251,246,238,0),var(--cream-100));pointer-events:none"></span>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Chip" hint-size="70px,38px">Todo</x-import>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Chip" hint-size="110px,38px">Cheesecakes</x-import>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Chip" selected="true" hint-size="80px,38px">Scones</x-import>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Chip" hint-size="120px,38px">Tortas caseras</x-import>
+</div>
+<div style="margin:0 20px 40px;padding:40px 24px;border:1px dashed var(--line-300);border-radius:18px;background:var(--cream-50);display:flex;flex-direction:column;align-items:center;text-align:center;gap:12px">
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Icon" name="cookie" size="24" color="var(--brown-300)" hint-size="24px,24px"></x-import>
+<span style="font-family:var(--font-serif-display);font-size:19px;line-height:1.22">Esta semana no hay scones</span>
+<span style="font-size:14px;color:var(--brown-500);line-height:1.5;max-width:24rem">Se hornean en cantidad limitada. Escribime y te aviso cuando vuelven.</span>
+<div style="display:flex;flex-direction:column;gap:8px;width:100%;margin-top:4px">
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Button" variant="ghost" block="true" hint-size="100%,44px">Ver todo el catálogo</x-import>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Button" variant="secondary" block="true" icon-left="whatsapp" hint-size="100%,44px">Consultar por WhatsApp</x-import>
+</div>
+</div>
+</div>
+<sc-if value="{{ verNotas }}" hint-placeholder-val="{{ true }}">
+<ul style="width:375px;margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px;font-size:12px;line-height:1.5;color:var(--brown-500)">
+<li>El estado vacío no es un error: ofrece salida al catálogo completo y a WhatsApp.</li>
+<li>Los chips quedan visibles para poder cambiar de filtro sin volver atrás.</li>
+</ul>
+</sc-if>
+</div>
+
+<!-- ============ 3. FICHA (hoja inferior) ============ -->
+<div style="display:flex;flex-direction:column;gap:12px;flex:0 0 auto">
+<div style="display:flex;align-items:baseline;gap:10px">
+<span style="font-size:12px;font-weight:600;letter-spacing:.14em;color:var(--brown-500)">03</span>
+<span style="font-family:var(--font-serif-display);font-size:19px">Ficha de producto</span>
+<span style="font-size:12px;color:var(--brown-300)">hoja inferior</span>
+</div>
+<div style="position:relative;width:375px;background:var(--cream-100);border:1px solid var(--line-300);border-radius:20px;overflow:hidden">
+<div style="position:relative;height:180px;overflow:hidden;filter:blur(1px);opacity:.5">
+<div style="display:flex;align-items:center;justify-content:space-between;height:56px;padding:0 8px;border-bottom:1px solid var(--line-200)">
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.IconButton" icon="menu" label="Menú" hint-size="44px,44px"></x-import>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Wordmark" size="19" tagline="Pastelería Artesanal" hint-size="120px,32px"></x-import>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.IconButton" icon="shopping-bag" label="Pedido" hint-size="44px,44px"></x-import>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:20px">
+<div style="aspect-ratio:4/5;border-radius:18px;background:repeating-linear-gradient(45deg,#E8E4DD 0 10px,#E2DCD3 10px 20px)"></div>
+<div style="aspect-ratio:4/5;border-radius:18px;background:repeating-linear-gradient(45deg,#E8E4DD 0 10px,#E2DCD3 10px 20px)"></div>
+</div>
+</div>
+<div style="position:absolute;left:0;right:0;top:0;height:180px;background:var(--surface-scrim)"></div>
+<div style="position:relative;margin-top:-16px;display:flex;flex-direction:column;background:var(--cream-50);border-radius:26px 26px 0 0;box-shadow:0 -18px 40px -24px rgba(58,42,32,.4)">
+<div style="position:relative">
+<div style="aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;text-align:center;padding:10px;background:repeating-linear-gradient(45deg,#E8E4DD 0 10px,#E2DCD3 10px 20px);font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--brown-500)">Galería · foto 1 de 3 · 4:3</div>
+<span style="position:absolute;top:12px;right:12px"><x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.IconButton" icon="x" label="Cerrar" variant="solid" size="sm" hint-size="36px,36px"></x-import></span>
+<div style="position:absolute;left:0;right:0;bottom:12px;display:flex;justify-content:center;gap:6px">
+<span style="width:7px;height:7px;border-radius:50%;background:var(--brown-900)"></span>
+<span style="width:7px;height:7px;border-radius:50%;background:var(--cream-50);opacity:.8"></span>
+<span style="width:7px;height:7px;border-radius:50%;background:var(--cream-50);opacity:.8"></span>
+</div>
+</div>
+<div style="padding:20px 20px 8px;display:flex;flex-direction:column;gap:16px">
+<div style="display:flex;flex-direction:column;gap:6px">
+<span style="font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--brown-500)">Cheesecakes</span>
+<span style="font-family:var(--font-serif-display);font-size:24px;line-height:1.22;letter-spacing:-0.01em">Cheesecake de dulce de leche</span>
+<span style="font-size:14px;line-height:1.5;color:var(--brown-700)">Base de galletitas, relleno cremoso y una capa de dulce de leche. Se hace por encargo, sin conservantes.</span>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px">
+<span style="font-size:14px;font-weight:600">Tamaño</span>
+<div style="display:flex;gap:12px">
+<label class="fp-check fp-check--card" style="flex:1 1 0"><input type="radio" name="wf-size" checked><span class="fp-check__box fp-check__box--radio"><span class="fp-check__dot"></span></span><span><span class="fp-check__label">Entero</span><span class="fp-check__desc">$ 1.100 · 10 porciones</span></span></label>
+<label class="fp-check fp-check--card" style="flex:1 1 0"><input type="radio" name="wf-size"><span class="fp-check__box fp-check__box--radio"><span class="fp-check__dot"></span></span><span><span class="fp-check__label">Porción</span><span class="fp-check__desc">$ 200 c/u</span></span></label>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px">
+<span style="font-size:14px;font-weight:600">Sabor <span style="font-weight:400;color:var(--brown-500)">(sólo si el producto tiene variantes)</span></span>
+<div style="display:flex;gap:8px;flex-wrap:wrap">
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Chip" selected="true" hint-size="130px,38px">Dulce de leche</x-import>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Chip" hint-size="90px,38px">Frutilla</x-import>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Chip" hint-size="80px,38px">Limón</x-import>
+</div>
+</div>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Textarea" label="Nota para este ítem" optional="true" rows="2" placeholder="Dedicatoria, sin azúcar, alergias" hint-size="100%,110px"></x-import>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.LeadTimeNote" hours="48" hint-size="100%,44px"></x-import>
+</div>
+<div style="display:flex;align-items:center;gap:12px;padding:16px 20px 20px;background:var(--cream-50);border-top:1px solid var(--line-200)">
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.QuantityStepper" value="1" size="sm" hint-size="110px,36px"></x-import>
+<span style="flex:1"><x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Button" variant="primary" size="lg" block="true" hint-size="100%,52px">Agregar · $ 1.100</x-import></span>
+</div>
+</div>
+</div>
+<sc-if value="{{ verNotas }}" hint-placeholder-val="{{ true }}">
+<ul style="width:375px;margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px;font-size:12px;line-height:1.5;color:var(--brown-500)">
+<li>Hoja inferior al 92% de alto, entra desde abajo 16 px. En desktop el mismo contenido va en panel lateral (ver fila desktop).</li>
+<li>El precio del botón se actualiza con tamaño y cantidad.</li>
+<li>La misma ficha tiene URL propia indexable, con slug en español.</li>
+</ul>
+</sc-if>
+</div>
+
+<!-- ============ 4. CARRITO ============ -->
+<div style="display:flex;flex-direction:column;gap:12px;flex:0 0 auto">
+<div style="display:flex;align-items:baseline;gap:10px">
+<span style="font-size:12px;font-weight:600;letter-spacing:.14em;color:var(--brown-500)">04</span>
+<span style="font-family:var(--font-serif-display);font-size:19px">Carrito</span>
+</div>
+<div style="position:relative;width:375px;background:var(--cream-50);border:1px solid var(--line-300);border-radius:20px;overflow:hidden">
+<div style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:20px 12px 12px 20px;border-bottom:1px solid var(--line-200)">
+<span style="font-family:var(--font-serif-display);font-size:24px;line-height:1.22">Tu pedido</span>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.IconButton" icon="x" label="Cerrar" hint-size="44px,44px"></x-import>
+</div>
+<div style="padding:4px 20px 0">
+
+<div style="display:grid;grid-template-columns:64px 1fr auto;gap:16px;padding:16px 0;border-bottom:1px solid var(--line-200)">
+<span style="width:64px;height:64px;border-radius:12px;background:repeating-linear-gradient(45deg,#E8E4DD 0 8px,#E2DCD3 8px 16px)"></span>
+<div style="display:flex;flex-direction:column;gap:2px;min-width:0">
+<span style="font-family:var(--font-serif-display);font-size:17px">Cheesecake de dulce de leche</span>
+<span style="font-size:14px;color:var(--brown-500)">Entero · dulce de leche</span>
+<span style="font-size:14px;color:var(--brown-500)">Nota: sin azúcar agregada</span>
+<span style="display:inline-flex;align-items:center;gap:8px;margin-top:4px;font-size:14px;color:var(--text-link);text-decoration:underline;text-underline-offset:2px">Editar nota</span>
+<div style="margin-top:12px"><x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.QuantityStepper" value="1" size="sm" hint-size="100px,34px"></x-import></div>
+</div>
+<div style="display:flex;flex-direction:column;align-items:flex-end;justify-content:space-between;gap:8px">
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.IconButton" icon="trash-2" label="Quitar" size="sm" hint-size="36px,36px"></x-import>
+<span style="font-weight:600;font-variant-numeric:tabular-nums">$ 1.100</span>
+</div>
+</div>
+
+<div style="display:grid;grid-template-columns:64px 1fr auto;gap:16px;padding:16px 0;border-bottom:1px solid var(--line-200)">
+<span style="width:64px;height:64px;border-radius:12px;background:repeating-linear-gradient(45deg,#E8E4DD 0 8px,#E2DCD3 8px 16px)"></span>
+<div style="display:flex;flex-direction:column;gap:2px;min-width:0">
+<span style="font-family:var(--font-serif-display);font-size:17px">Alfajores de maicena</span>
+<span style="font-size:14px;color:var(--brown-500)">Por unidad</span>
+<span style="display:inline-flex;align-items:center;gap:8px;margin-top:4px;font-size:14px;color:var(--text-link);text-decoration:underline;text-underline-offset:2px">Agregar nota</span>
+<div style="margin-top:12px"><x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.QuantityStepper" value="6" size="sm" hint-size="100px,34px"></x-import></div>
+</div>
+<div style="display:flex;flex-direction:column;align-items:flex-end;justify-content:space-between;gap:8px">
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.IconButton" icon="trash-2" label="Quitar" size="sm" hint-size="36px,36px"></x-import>
+<span style="font-weight:600;font-variant-numeric:tabular-nums">$ 180</span>
+</div>
+</div>
+
+<div style="padding:20px 0 0;display:flex;flex-direction:column;gap:12px">
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.DateField" label="Fecha de entrega" min-lead-days="2" help="Primera fecha disponible: 14 de agosto (48 h de anticipación)." hint-size="100%,96px"></x-import>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Alert" tone="info" hint-size="100%,64px">Las fechas anteriores quedan bloqueadas por el ítem de mayor plazo del pedido.</x-import>
+</div>
+
+<div style="display:flex;align-items:center;justify-content:space-between;padding:20px 0;margin-top:8px;border-top:1px solid var(--line-200)">
+<span style="font-size:17px">Subtotal</span>
+<span style="font-size:17px;font-weight:600;font-variant-numeric:tabular-nums">$ 1.280</span>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px;padding:16px 20px 20px;border-top:1px solid var(--line-200)">
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Button" variant="primary" size="lg" block="true" hint-size="100%,52px">Continuar con el pedido</x-import>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Button" variant="ghost" block="true" hint-size="100%,44px">Seguir eligiendo</x-import>
+</div>
+</div>
+<sc-if value="{{ verNotas }}" hint-placeholder-val="{{ true }}">
+<ul style="width:375px;margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px;font-size:12px;line-height:1.5;color:var(--brown-500)">
+<li>El panel abre desde la barra fija. La fecha se elige acá y viaja al checkout.</li>
+<li>La anticipación mínima del pedido la fija el ítem de mayor plazo.</li>
+<li>El carrito persiste entre visitas.</li>
+</ul>
+</sc-if>
+</div>
+
+<!-- ============ 4b. CARRITO VACÍO ============ -->
+<div style="display:flex;flex-direction:column;gap:12px;flex:0 0 auto">
+<div style="display:flex;align-items:baseline;gap:10px">
+<span style="font-size:12px;font-weight:600;letter-spacing:.14em;color:var(--brown-500)">04b</span>
+<span style="font-family:var(--font-serif-display);font-size:19px">Carrito vacío</span>
+</div>
+<div style="width:375px;background:var(--cream-50);border:1px solid var(--line-300);border-radius:20px;overflow:hidden">
+<div style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:20px 12px 12px 20px;border-bottom:1px solid var(--line-200)">
+<span style="font-family:var(--font-serif-display);font-size:24px;line-height:1.22">Tu pedido</span>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.IconButton" icon="x" label="Cerrar" hint-size="44px,44px"></x-import>
+</div>
+<div style="padding:56px 20px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:12px">
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Icon" name="shopping-bag" size="24" color="var(--brown-300)" hint-size="24px,24px"></x-import>
+<span style="font-family:var(--font-serif-display);font-size:19px;line-height:1.22">Todavía no agregaste nada</span>
+<span style="font-size:14px;color:var(--brown-500);line-height:1.5">Elegí del catálogo y armá tu pedido. Se coordina por WhatsApp con 48 hs de anticipación.</span>
+<span style="width:100%;margin-top:8px"><x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Button" variant="primary" size="lg" block="true" hint-size="100%,52px">Ver catálogo</x-import></span>
+</div>
+</div>
+<sc-if value="{{ verNotas }}" hint-placeholder-val="{{ true }}">
+<ul style="width:375px;margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px;font-size:12px;line-height:1.5;color:var(--brown-500)">
+<li>Con el carrito vacío la barra fija no existe: no hay nada que resumir.</li>
+</ul>
+</sc-if>
+</div>
+
+<!-- ============ 5. CHECKOUT ============ -->
+<div style="display:flex;flex-direction:column;gap:12px;flex:0 0 auto">
+<div style="display:flex;align-items:baseline;gap:10px">
+<span style="font-size:12px;font-weight:600;letter-spacing:.14em;color:var(--brown-500)">05</span>
+<span style="font-family:var(--font-serif-display);font-size:19px">Checkout</span>
+<span style="font-size:12px;color:var(--brown-300)">un solo paso</span>
+</div>
+<div style="width:375px;background:var(--cream-100);border:1px solid var(--line-300);border-radius:20px;overflow:hidden">
+<div style="display:flex;align-items:center;gap:8px;height:56px;padding:0 8px;border-bottom:1px solid var(--line-200)">
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.IconButton" icon="chevron-left" label="Volver" hint-size="44px,44px"></x-import>
+<span style="font-size:14px;font-weight:600">Datos del pedido</span>
+</div>
+<div style="padding:24px 20px 20px;display:flex;flex-direction:column;gap:20px">
+<span style="font-family:var(--font-serif-display);font-size:32px;line-height:1.08;letter-spacing:-0.02em">Tus datos</span>
+
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Input" label="Nombre y apellido" placeholder="Carolina Píriz" hint-size="100%,80px"></x-import>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Input" label="Teléfono" type="tel" placeholder="099 123 456" help="Para coordinar la entrega por WhatsApp." hint-size="100%,96px"></x-import>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.DateField" label="Fecha de entrega" min-lead-days="2" help="Primera fecha disponible: 14 de agosto. Entregas a partir de las 19 h." hint-size="100%,96px"></x-import>
+
+<div style="display:flex;flex-direction:column;gap:8px">
+<span style="font-size:14px;font-weight:600">Retiro o envío</span>
+<div style="display:flex;gap:12px">
+<label class="fp-check fp-check--card" style="flex:1 1 0"><input type="radio" name="wf-mode"><span class="fp-check__box fp-check__box--radio"><span class="fp-check__dot"></span></span><span><span class="fp-check__label">Retiro</span><span class="fp-check__desc">Sin costo</span></span></label>
+<label class="fp-check fp-check--card" style="flex:1 1 0"><input type="radio" name="wf-mode" checked><span class="fp-check__box fp-check__box--radio"><span class="fp-check__dot"></span></span><span><span class="fp-check__label">Envío</span><span class="fp-check__desc">$ 100</span></span></label>
+</div>
+</div>
+
+<div style="padding:16px;border:1px dashed var(--line-300);border-radius:18px;background:var(--cream-50);display:flex;flex-direction:column;gap:16px">
+<span style="font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--brown-500)">Sólo si elige envío</span>
+<div class="fp-field">
+<label class="fp-field__label" for="wf-zona">Zona</label>
+<span class="fp-selectwrap">
+<select id="wf-zona" class="fp-input">
+<option>La Comercial — $ 100</option>
+<option>Aguada — $ 100</option>
+<option>Tres Cruces — $ 100</option>
+<option>Nuevo Centro — $ 100</option>
+<option>Av. Italia — $ 100</option>
+<option>Parque Batlle — $ 100</option>
+<option>Otra zona de Montevideo — a coordinar</option>
+</select>
+<span class="fp-selectwrap__caret"><x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Icon" name="chevron-down" size="18" hint-size="18px,18px"></x-import></span>
+</span>
+<span class="fp-field__help">La tarifa aparece al elegir la zona.</span>
+</div>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Input" label="Dirección" placeholder="Calle y número" hint-size="100%,80px"></x-import>
+<div style="display:flex;gap:12px">
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Input" label="Apartamento" optional="true" placeholder="302" style="flex:1 1 0" hint-size="100%,80px"></x-import>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Input" label="Referencia" optional="true" placeholder="Timbre, esquina" style="flex:1 1 0" hint-size="100%,80px"></x-import>
+</div>
+</div>
+
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Textarea" label="Comentarios" optional="true" rows="2" placeholder="Algo más que tenga que saber" hint-size="100%,110px"></x-import>
+
+<div style="border:1px solid var(--line-200);border-radius:18px;background:var(--cream-50);overflow:hidden">
+<div style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px;min-height:52px">
+<span style="font-size:17px;font-weight:500">Resumen del pedido</span>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Icon" name="chevron-down" size="20" hint-size="20px,20px"></x-import>
+</div>
+<div style="padding:0 16px 16px;display:flex;flex-direction:column;gap:8px;border-top:1px solid var(--line-200);padding-top:16px">
+<div style="display:flex;justify-content:space-between;font-size:14px;color:var(--brown-700)"><span>1 × Cheesecake entero</span><span style="font-variant-numeric:tabular-nums">$ 1.100</span></div>
+<div style="display:flex;justify-content:space-between;font-size:14px;color:var(--brown-700)"><span>6 × Alfajores de maicena</span><span style="font-variant-numeric:tabular-nums">$ 180</span></div>
+<div style="display:flex;justify-content:space-between;font-size:14px;color:var(--brown-700);padding-top:8px;border-top:1px solid var(--line-200)"><span>Subtotal</span><span style="font-variant-numeric:tabular-nums">$ 1.280</span></div>
+<div style="display:flex;justify-content:space-between;font-size:14px;color:var(--brown-700)"><span>Envío · La Comercial</span><span style="font-variant-numeric:tabular-nums">$ 100</span></div>
+<div style="display:flex;justify-content:space-between;font-size:17px;font-weight:600;padding-top:8px;border-top:1px solid var(--line-200)"><span>Total</span><span style="font-variant-numeric:tabular-nums">$ 1.380</span></div>
+</div>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:12px">
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Button" variant="whatsapp" size="lg" block="true" icon-left="whatsapp" hint-size="100%,52px">Enviar pedido por WhatsApp</x-import>
+<span style="font-size:14px;line-height:1.5;color:var(--brown-500)">Se abre WhatsApp con el pedido ya redactado. Fátima confirma disponibilidad y entrega por ese mismo chat. No se paga en el sitio.</span>
+</div>
+</div>
+</div>
+<sc-if value="{{ verNotas }}" hint-placeholder-val="{{ true }}">
+<ul style="width:375px;margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px;font-size:12px;line-height:1.5;color:var(--brown-500)">
+<li>Un solo paso, sin cuenta ni pago en línea. El bloque punteado sólo se muestra con "Envío" elegido.</li>
+<li>El CTA queda deshabilitado hasta tener nombre, teléfono, fecha y —si es envío— dirección y zona.</li>
+<li>El resumen viene plegado; se despliega sin salir de la pantalla.</li>
+</ul>
+</sc-if>
+</div>
+
+<!-- ============ 6. CONFIRMACIÓN ============ -->
+<div style="display:flex;flex-direction:column;gap:12px;flex:0 0 auto">
+<div style="display:flex;align-items:baseline;gap:10px">
+<span style="font-size:12px;font-weight:600;letter-spacing:.14em;color:var(--brown-500)">06</span>
+<span style="font-family:var(--font-serif-display);font-size:19px">Confirmación</span>
+</div>
+<div style="width:375px;background:var(--cream-100);border:1px solid var(--line-300);border-radius:20px;overflow:hidden">
+<div style="display:flex;align-items:center;justify-content:center;height:56px;border-bottom:1px solid var(--line-200)">
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Wordmark" size="19" tagline="Pastelería Artesanal" hint-size="120px,32px"></x-import>
+</div>
+<div style="padding:40px 20px 32px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:12px">
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Icon" name="circle-check-big" size="32" color="var(--green-700)" hint-size="32px,32px"></x-import>
+<span style="font-family:var(--font-serif-display);font-size:32px;line-height:1.08;letter-spacing:-0.02em">Pedido enviado</span>
+<span style="font-size:16px;line-height:1.5;color:var(--brown-700)">Se abrió WhatsApp con el detalle. Fátima confirma disponibilidad y la entrega por ese chat.</span>
+<span class="fp-badge fp-badge--neutral" style="margin-top:4px">Referencia FP-140825-07</span>
+</div>
+<div style="margin:0 20px;padding:16px;background:var(--cream-50);border:1px solid var(--line-200);border-radius:18px;display:flex;flex-direction:column;gap:8px">
+<span style="font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--brown-500)">Resumen</span>
+<div style="display:flex;justify-content:space-between;font-size:14px;color:var(--brown-700)"><span>1 × Cheesecake entero</span><span style="font-variant-numeric:tabular-nums">$ 1.100</span></div>
+<div style="display:flex;justify-content:space-between;font-size:14px;color:var(--brown-700)"><span>6 × Alfajores de maicena</span><span style="font-variant-numeric:tabular-nums">$ 180</span></div>
+<div style="display:flex;justify-content:space-between;font-size:14px;color:var(--brown-700)"><span>Envío · La Comercial</span><span style="font-variant-numeric:tabular-nums">$ 100</span></div>
+<div style="display:flex;justify-content:space-between;font-size:17px;font-weight:600;padding-top:8px;border-top:1px solid var(--line-200)"><span>Total</span><span style="font-variant-numeric:tabular-nums">$ 1.380</span></div>
+<div style="display:flex;justify-content:space-between;font-size:14px;color:var(--brown-500);padding-top:8px;border-top:1px solid var(--line-200)"><span>Entrega</span><span>Viernes 14 de agosto, desde las 19 h</span></div>
+</div>
+<div style="padding:32px 20px;display:flex;flex-direction:column;gap:16px">
+<span style="font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--brown-500)">Próximos pasos</span>
+<div style="display:flex;gap:12px"><span style="flex:0 0 auto;width:22px;height:22px;border-radius:50%;background:var(--cream-300);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600">1</span><span style="font-size:14px;line-height:1.5;color:var(--brown-700)">Fátima te responde por WhatsApp y confirma disponibilidad.</span></div>
+<div style="display:flex;gap:12px"><span style="flex:0 0 auto;width:22px;height:22px;border-radius:50%;background:var(--cream-300);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600">2</span><span style="font-size:14px;line-height:1.5;color:var(--brown-700)">Coordinan la hora de entrega y la forma de pago.</span></div>
+<div style="display:flex;gap:12px"><span style="flex:0 0 auto;width:22px;height:22px;border-radius:50%;background:var(--cream-300);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600">3</span><span style="font-size:14px;line-height:1.5;color:var(--brown-700)">El pedido se entrega el viernes, a partir de las 19 h.</span></div>
+</div>
+<div style="padding:0 20px 32px;display:flex;flex-direction:column;gap:8px">
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Button" variant="ghost" block="true" hint-size="100%,44px">Volver al catálogo</x-import>
+</div>
+</div>
+<sc-if value="{{ verNotas }}" hint-placeholder-val="{{ true }}">
+<ul style="width:375px;margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px;font-size:12px;line-height:1.5;color:var(--brown-500)">
+<li>La referencia es local: sirve para que cliente y Fátima hablen del mismo pedido en el chat.</li>
+<li>Al llegar acá el carrito se vacía.</li>
+</ul>
+</sc-if>
+</div>
+
+</div>
+</sc-if>
+
+<sc-if value="{{ verDesktop }}" hint-placeholder-val="{{ true }}">
+<div style="margin-top:72px;display:flex;align-items:baseline;gap:12px">
+<span style="font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--brown-500)">Desktop · 1440</span>
+<span style="flex:1;height:1px;background:var(--line-300)"></span>
+</div>
+
+<div style="display:flex;align-items:flex-start;gap:64px;margin-top:28px">
+
+<!-- ============ D1. HOME DESKTOP ============ -->
+<div style="display:flex;flex-direction:column;gap:12px;flex:0 0 auto">
+<div style="display:flex;align-items:baseline;gap:10px">
+<span style="font-size:12px;font-weight:600;letter-spacing:.14em;color:var(--brown-500)">01 · D</span>
+<span style="font-family:var(--font-serif-display);font-size:19px">Home</span>
+</div>
+<div style="width:1440px;background:var(--cream-100);border:1px solid var(--line-300);border-radius:20px;overflow:hidden">
+
+<div style="display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:24px;height:72px;padding:0 40px;border-bottom:1px solid var(--line-200)">
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Wordmark" size="22" layout="row" tagline="Pastelería Artesanal" hint-size="220px,32px"></x-import>
+<div style="display:flex;gap:32px;font-size:16px">
+<span>Catálogo</span><span>Zonas de entrega</span><span>Reseñas</span><span>Preguntas</span>
+</div>
+<div style="display:flex;align-items:center;justify-content:flex-end;gap:12px">
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Button" variant="ghost" size="sm" icon-left="whatsapp" hint-size="150px,36px">096 247 822</x-import>
+<div style="position:relative;width:44px;height:44px">
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.IconButton" icon="shopping-bag" label="Pedido" hint-size="44px,44px"></x-import>
+<span style="position:absolute;top:4px;right:2px;min-width:18px;height:18px;padding:0 4px;display:flex;align-items:center;justify-content:center;border-radius:999px;background:var(--berry-500);color:var(--cream-50);font-size:11px;font-weight:600">2</span>
+</div>
+</div>
+</div>
+
+<div style="position:relative;height:560px;display:flex;align-items:center;background:repeating-linear-gradient(45deg,#E8E4DD 0 14px,#E2DCD3 14px 28px)">
+<span style="position:absolute;top:24px;left:40px;font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--brown-500)">Foto hero full-bleed · corte de carrot cake · 1440 × 560</span>
+<div style="position:absolute;inset:0;background:linear-gradient(to right,rgba(58,42,32,.66),rgba(58,42,32,.12) 60%)"></div>
+<div style="position:relative;padding:0 40px;max-width:720px;display:flex;flex-direction:column;gap:20px">
+<span style="font-family:var(--font-serif-display);font-size:64px;line-height:1.08;letter-spacing:-0.02em;color:var(--cream-50)">Fátima</span>
+<span style="font-size:19px;line-height:1.5;color:var(--cream-50)">Cheesecakes, scones y tortas caseras. Montevideo.</span>
+<div style="display:flex;gap:12px;margin-top:8px">
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Button" variant="primary" size="lg" icon-right="arrow-right" hint-size="180px,52px">Ver catálogo</x-import>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Button" variant="secondary" size="lg" icon-left="whatsapp" hint-size="200px,52px">Escribir por WhatsApp</x-import>
+</div>
+</div>
+</div>
+
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:40px;padding:32px 40px;background:var(--cream-200);border-bottom:1px solid var(--line-200)">
+<div style="display:flex;align-items:flex-start;gap:12px">
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Icon" name="calendar" size="24" hint-size="24px,24px"></x-import>
+<div style="display:flex;flex-direction:column;gap:2px"><span style="font-size:17px;font-weight:600">Por encargo</span><span style="font-size:14px;color:var(--brown-500)">48 hs de anticipación, todo el catálogo</span></div>
+</div>
+<div style="display:flex;align-items:flex-start;gap:12px">
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Icon" name="truck" size="24" hint-size="24px,24px"></x-import>
+<div style="display:flex;flex-direction:column;gap:2px"><span style="font-size:17px;font-weight:600">Entrega en zona</span><span style="font-size:14px;color:var(--brown-500)">Envío $ 100 · retiro sin costo</span></div>
+</div>
+<div style="display:flex;align-items:flex-start;gap:12px">
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Icon" name="heart" size="24" hint-size="24px,24px"></x-import>
+<div style="display:flex;flex-direction:column;gap:2px"><span style="font-size:17px;font-weight:600">Elaboración artesanal</span><span style="font-size:14px;color:var(--brown-500)">Sin conservantes ni colorantes</span></div>
+</div>
+</div>
+
+<div style="padding:96px 40px 0">
+<div style="max-width:1200px;margin:0 auto;display:flex;flex-direction:column;gap:32px">
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.SectionHeading" eyebrow="Catálogo" title="Qué se puede pedir" sub="Tres grupos. Todo se hace por encargo, con 48 hs de anticipación." hint-size="100%,120px"></x-import>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px">
+<article style="background:var(--cream-50);border:1px solid var(--line-200);border-radius:18px;overflow:hidden">
+<div style="aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;background:repeating-linear-gradient(45deg,#E8E4DD 0 12px,#E2DCD3 12px 24px);font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--brown-500)">Foto · cheesecake entero</div>
+<div style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:24px">
+<div style="display:flex;flex-direction:column;gap:4px"><span style="font-family:var(--font-serif-display);font-size:24px;line-height:1.22">Cheesecakes</span><span style="font-size:14px;color:var(--brown-500)">Desde $ 200 la porción</span></div>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Icon" name="arrow-right" size="20" hint-size="20px,20px"></x-import>
+</div>
+</article>
+<article style="background:var(--cream-50);border:1px solid var(--line-200);border-radius:18px;overflow:hidden">
+<div style="aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;background:repeating-linear-gradient(45deg,#E8E4DD 0 12px,#E2DCD3 12px 24px);font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--brown-500)">Foto · scones de queso</div>
+<div style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:24px">
+<div style="display:flex;flex-direction:column;gap:4px"><span style="font-family:var(--font-serif-display);font-size:24px;line-height:1.22">Scones</span><span style="font-size:14px;color:var(--brown-500)">Desde $ 30 la unidad</span></div>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Icon" name="arrow-right" size="20" hint-size="20px,20px"></x-import>
+</div>
+</article>
+<article style="background:var(--cream-50);border:1px solid var(--line-200);border-radius:18px;overflow:hidden">
+<div style="aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;background:repeating-linear-gradient(45deg,#E8E4DD 0 12px,#E2DCD3 12px 24px);font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--brown-500)">Foto · lemon pie</div>
+<div style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:24px">
+<div style="display:flex;flex-direction:column;gap:4px"><span style="font-family:var(--font-serif-display);font-size:24px;line-height:1.22">Tortas caseras</span><span style="font-size:14px;color:var(--brown-500)">Desde $ 140 la porción</span></div>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Icon" name="arrow-right" size="20" hint-size="20px,20px"></x-import>
+</div>
+</article>
+</div>
+</div>
+</div>
+
+<div style="padding:96px 40px 0">
+<div style="max-width:1200px;margin:0 auto;display:flex;flex-direction:column;gap:32px">
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.SectionHeading" eyebrow="Reseñas" title="Lo que dicen las clientas" hint-size="100%,96px"></x-import>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px">
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.ReviewCard" text="Llegó puntual y estaba impecable." author="Carolina P." meta="La Comercial" rating="5" hint-size="100%,180px"></x-import>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.ReviewCard" text="El cheesecake voló en casa." author="Sofía M." meta="Aguada" rating="5" hint-size="100%,180px"></x-import>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.ReviewCard" text="Se nota que es casero." author="Valentina R." meta="Tres Cruces" rating="5" hint-size="100%,180px"></x-import>
+</div>
+</div>
+</div>
+
+<div style="margin-top:96px;padding:72px 40px;background:var(--cream-200);border-top:1px solid var(--line-200);border-bottom:1px solid var(--line-200)">
+<div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center">
+<div style="display:flex;flex-direction:column;gap:24px">
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.SectionHeading" eyebrow="Zona de entrega" title="Dónde llego" hint-size="100%,96px"></x-import>
+<div style="display:flex;flex-wrap:wrap;gap:8px">
+<span class="fp-badge fp-badge--neutral">La Comercial</span>
+<span class="fp-badge fp-badge--neutral">Aguada</span>
+<span class="fp-badge fp-badge--neutral">Tres Cruces</span>
+<span class="fp-badge fp-badge--neutral">Nuevo Centro</span>
+<span class="fp-badge fp-badge--neutral">Av. Italia</span>
+<span class="fp-badge fp-badge--neutral">Parque Batlle</span>
+</div>
+<span style="font-size:16px;line-height:1.65;color:var(--brown-700);max-width:34rem">Envío $ 100 a esas zonas, con entrega a partir de las 19 h. Retiro sin costo en Aguada o La Comercial. Otras zonas de Montevideo, a coordinar por WhatsApp.</span>
+</div>
+<div style="aspect-ratio:16/10;border-radius:26px;display:flex;align-items:center;justify-content:center;background:repeating-linear-gradient(45deg,#E8E4DD 0 12px,#E2DCD3 12px 24px);border:1px dashed var(--line-300);font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--brown-500)">Mapa simplificado · 6 barrios marcados</div>
+</div>
+</div>
+
+<div style="padding:96px 40px">
+<div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:380px 1fr;gap:56px;align-items:start">
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.SectionHeading" eyebrow="Preguntas" title="Antes de pedir" sub="Lo que preguntan siempre por mensaje." hint-size="100%,140px"></x-import>
+<div class="fp-acc">
+<div class="fp-acc__item">
+<button type="button" class="fp-acc__btn" aria-expanded="true">¿Con cuánta anticipación tengo que pedir?<span class="fp-acc__caret"><x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Icon" name="chevron-down" size="20" hint-size="20px,20px"></x-import></span></button>
+<div class="fp-acc__panel">48 hs para todo el catálogo. Te confirmo la entrega a partir de las 19 h.</div>
+</div>
+<div class="fp-acc__item"><button type="button" class="fp-acc__btn" aria-expanded="false">¿Cómo se paga?<span class="fp-acc__caret"><x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Icon" name="chevron-down" size="20" hint-size="20px,20px"></x-import></span></button></div>
+<div class="fp-acc__item"><button type="button" class="fp-acc__btn" aria-expanded="false">¿Hay que dejar seña?<span class="fp-acc__caret"><x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Icon" name="chevron-down" size="20" hint-size="20px,20px"></x-import></span></button></div>
+<div class="fp-acc__item"><button type="button" class="fp-acc__btn" aria-expanded="false">¿Cómo se conserva?<span class="fp-acc__caret"><x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Icon" name="chevron-down" size="20" hint-size="20px,20px"></x-import></span></button></div>
+</div>
+</div>
+</div>
+
+<div style="padding:56px 40px;background:var(--surface-inverse);color:var(--text-inverse)">
+<div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px;align-items:start">
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Wordmark" size="28" inverse="true" tagline="Pastelería Artesanal" hint-size="160px,48px"></x-import>
+<div style="display:flex;flex-direction:column;gap:12px">
+<span style="display:flex;align-items:center;gap:8px;font-size:14px;color:var(--cream-50)"><x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Icon" name="instagram" size="16" hint-size="16px,16px"></x-import>@faticastro001</span>
+<span style="display:flex;align-items:center;gap:8px;font-size:14px;color:var(--cream-50)"><x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Icon" name="whatsapp" size="16" hint-size="16px,16px"></x-import>096 247 822</span>
+<span style="display:flex;align-items:center;gap:8px;font-size:14px;color:var(--cream-50)"><x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Icon" name="map-pin" size="16" hint-size="16px,16px"></x-import>Aguada y La Comercial, Montevideo</span>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px">
+<span style="font-size:14px;color:var(--cream-50);line-height:1.5">Zona de cobertura: La Comercial, Aguada, Tres Cruces, Nuevo Centro, Av. Italia y Parque Batlle.</span>
+<span style="font-size:12px;line-height:1.5;color:var(--gold-200)">Los pedidos se coordinan por WhatsApp. El sitio arma el mensaje; la confirmación llega por ese medio.</span>
+</div>
+</div>
+</div>
+
+</div>
+<sc-if value="{{ verNotas }}" hint-placeholder-val="{{ true }}">
+<ul style="width:1200px;margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px;font-size:12px;line-height:1.5;color:var(--brown-500)">
+<li>Margen lateral 40 px, contenido acotado a 1200 px. Entre secciones, 96 px.</li>
+<li>El hero pasa a 1440 × 560 con el texto sobre el degradado de protección; en mobile es 4:5.</li>
+<li>Las reseñas dejan de ser carrusel y entran las tres a la vez.</li>
+</ul>
+</sc-if>
+</div>
+
+<!-- ============ D2. CATÁLOGO DESKTOP + PANEL ============ -->
+<div style="display:flex;flex-direction:column;gap:12px;flex:0 0 auto">
+<div style="display:flex;align-items:baseline;gap:10px">
+<span style="font-size:12px;font-weight:600;letter-spacing:.14em;color:var(--brown-500)">02 · D</span>
+<span style="font-family:var(--font-serif-display);font-size:19px">Catálogo con ficha en panel lateral</span>
+</div>
+<div style="width:1440px;background:var(--cream-100);border:1px solid var(--line-300);border-radius:20px;overflow:hidden">
+<div style="display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:24px;height:72px;padding:0 40px;border-bottom:1px solid var(--line-200)">
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Wordmark" size="22" layout="row" tagline="Pastelería Artesanal" hint-size="220px,32px"></x-import>
+<div style="display:flex;gap:32px;font-size:16px"><span>Catálogo</span><span>Zonas de entrega</span><span>Reseñas</span><span>Preguntas</span></div>
+<div style="display:flex;align-items:center;justify-content:flex-end;gap:12px">
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Button" variant="ghost" size="sm" icon-left="whatsapp" hint-size="150px,36px">096 247 822</x-import>
+<div style="position:relative;width:44px;height:44px">
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.IconButton" icon="shopping-bag" label="Pedido" hint-size="44px,44px"></x-import>
+<span style="position:absolute;top:4px;right:2px;min-width:18px;height:18px;padding:0 4px;display:flex;align-items:center;justify-content:center;border-radius:999px;background:var(--berry-500);color:var(--cream-50);font-size:11px;font-weight:600">2</span>
+</div>
+</div>
+</div>
+
+<div style="display:grid;grid-template-columns:1fr 420px;gap:0;align-items:start">
+<div style="padding:40px">
+<div style="display:flex;flex-direction:column;gap:12px;margin-bottom:24px">
+<span style="font-size:12px;color:var(--brown-500)">Inicio&nbsp;/&nbsp;Catálogo</span>
+<span style="font-family:var(--font-serif-display);font-size:48px;line-height:1.08;letter-spacing:-0.02em">Catálogo</span>
+</div>
+<div style="display:flex;gap:8px;margin-bottom:32px">
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Chip" selected="true" hint-size="70px,38px">Todo</x-import>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Chip" hint-size="110px,38px">Cheesecakes</x-import>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Chip" hint-size="80px,38px">Scones</x-import>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Chip" hint-size="120px,38px">Tortas caseras</x-import>
+</div>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px">
+
+<article style="display:flex;flex-direction:column;background:var(--cream-50);border:1px solid var(--berry-500);border-radius:18px;overflow:hidden">
+<div style="aspect-ratio:4/5;display:flex;align-items:center;justify-content:center;background:repeating-linear-gradient(45deg,#E8E4DD 0 12px,#E2DCD3 12px 24px);font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--brown-500)">Foto · cheesecake</div>
+<div style="display:flex;flex-direction:column;gap:6px;padding:16px">
+<span style="font-family:var(--font-serif-display);font-size:19px;line-height:1.22">Cheesecake de dulce de leche</span>
+<span style="font-size:12px;color:var(--brown-500)">48 hs de anticipación</span>
+<div style="display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:4px"><span style="font-size:17px;font-weight:600;font-variant-numeric:tabular-nums">Desde $ 200</span><x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.IconButton" icon="plus" label="Agregar" variant="outline" size="sm" hint-size="36px,36px"></x-import></div>
+</div>
+</article>
+
+<article style="display:flex;flex-direction:column;background:var(--cream-50);border:1px solid var(--line-200);border-radius:18px;overflow:hidden">
+<div style="aspect-ratio:4/5;display:flex;align-items:center;justify-content:center;background:repeating-linear-gradient(45deg,#E8E4DD 0 12px,#E2DCD3 12px 24px);font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--brown-500)">Foto · lemon pie</div>
+<div style="display:flex;flex-direction:column;gap:6px;padding:16px">
+<span style="font-family:var(--font-serif-display);font-size:19px;line-height:1.22">Lemon pie</span>
+<span style="font-size:12px;color:var(--brown-500)">48 hs de anticipación</span>
+<div style="display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:4px"><span style="font-size:17px;font-weight:600;font-variant-numeric:tabular-nums">Desde $ 140</span><x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.IconButton" icon="plus" label="Agregar" variant="outline" size="sm" hint-size="36px,36px"></x-import></div>
+</div>
+</article>
+
+<article style="display:flex;flex-direction:column;background:var(--cream-50);border:1px solid var(--line-200);border-radius:18px;overflow:hidden">
+<div style="aspect-ratio:4/5;display:flex;align-items:center;justify-content:center;background:repeating-linear-gradient(45deg,#E8E4DD 0 12px,#E2DCD3 12px 24px);font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--brown-500)">Foto · carrot cake</div>
+<div style="display:flex;flex-direction:column;gap:6px;padding:16px">
+<span style="font-family:var(--font-serif-display);font-size:19px;line-height:1.22">Carrot cake</span>
+<span style="font-size:12px;color:var(--brown-500)">48 hs de anticipación</span>
+<div style="display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:4px"><span style="font-size:17px;font-weight:600;font-variant-numeric:tabular-nums">$ 1.200</span><x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.IconButton" icon="plus" label="Agregar" variant="outline" size="sm" hint-size="36px,36px"></x-import></div>
+</div>
+</article>
+
+<article style="display:flex;flex-direction:column;background:var(--cream-50);border:1px solid var(--line-200);border-radius:18px;overflow:hidden">
+<div style="position:relative;aspect-ratio:4/5;display:flex;align-items:center;justify-content:center;background:repeating-linear-gradient(45deg,#E8E4DD 0 12px,#E2DCD3 12px 24px);font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--brown-500)">Foto · scones de queso<span style="position:absolute;top:12px;left:12px"><span class="fp-badge fp-badge--gold">Cantidad limitada</span></span></div>
+<div style="display:flex;flex-direction:column;gap:6px;padding:16px">
+<span style="font-family:var(--font-serif-display);font-size:19px;line-height:1.22">Scones de queso</span>
+<span style="font-size:12px;color:var(--brown-500)">48 hs de anticipación</span>
+<div style="display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:4px"><span style="font-size:17px;font-weight:600;font-variant-numeric:tabular-nums">6 por $ 100</span><x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.IconButton" icon="plus" label="Agregar" variant="outline" size="sm" hint-size="36px,36px"></x-import></div>
+</div>
+</article>
+
+<article style="display:flex;flex-direction:column;background:var(--cream-50);border:1px solid var(--line-200);border-radius:18px;overflow:hidden">
+<div style="aspect-ratio:4/5;display:flex;align-items:center;justify-content:center;background:repeating-linear-gradient(45deg,#E8E4DD 0 12px,#E2DCD3 12px 24px);font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--brown-500)">Foto · alfajores</div>
+<div style="display:flex;flex-direction:column;gap:6px;padding:16px">
+<span style="font-family:var(--font-serif-display);font-size:19px;line-height:1.22">Alfajores de maicena</span>
+<span style="font-size:12px;color:var(--brown-500)">48 hs de anticipación</span>
+<div style="display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:4px"><span style="font-size:17px;font-weight:600;font-variant-numeric:tabular-nums">$ 30 c/u</span><x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.IconButton" icon="plus" label="Agregar" variant="outline" size="sm" hint-size="36px,36px"></x-import></div>
+</div>
+</article>
+
+<article style="display:flex;flex-direction:column;background:var(--cream-50);border:1px solid var(--line-200);border-radius:18px;overflow:hidden">
+<div style="aspect-ratio:4/5;display:flex;align-items:center;justify-content:center;background:repeating-linear-gradient(45deg,#E8E4DD 0 12px,#E2DCD3 12px 24px);font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--brown-500)">Foto · tiramisú</div>
+<div style="display:flex;flex-direction:column;gap:6px;padding:16px">
+<span style="font-family:var(--font-serif-display);font-size:19px;line-height:1.22">Tiramisú</span>
+<span style="font-size:12px;color:var(--brown-500)">48 hs de anticipación</span>
+<div style="display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:4px"><span style="font-size:17px;font-weight:600;color:var(--brown-500)">Consultar</span><x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.IconButton" icon="whatsapp" label="Consultar" variant="outline" size="sm" hint-size="36px,36px"></x-import></div>
+</div>
+</article>
+
+</div>
+</div>
+
+<aside style="align-self:stretch;background:var(--cream-50);border-left:1px solid var(--line-200);display:flex;flex-direction:column">
+<div style="position:relative">
+<div style="aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;background:repeating-linear-gradient(45deg,#E8E4DD 0 12px,#E2DCD3 12px 24px);font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--brown-500)">Galería · foto 1 de 3 · 4:3</div>
+<span style="position:absolute;top:16px;right:16px"><x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.IconButton" icon="x" label="Cerrar" variant="solid" size="sm" hint-size="36px,36px"></x-import></span>
+<div style="position:absolute;left:0;right:0;bottom:12px;display:flex;justify-content:center;gap:6px">
+<span style="width:7px;height:7px;border-radius:50%;background:var(--brown-900)"></span>
+<span style="width:7px;height:7px;border-radius:50%;background:var(--cream-50)"></span>
+<span style="width:7px;height:7px;border-radius:50%;background:var(--cream-50)"></span>
+</div>
+</div>
+<div style="padding:24px;display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:8px">
+<span style="font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--brown-500)">Cheesecakes</span>
+<span style="font-family:var(--font-serif-display);font-size:32px;line-height:1.22;letter-spacing:-0.01em">Cheesecake de dulce de leche</span>
+<span style="font-size:16px;line-height:1.5;color:var(--brown-700)">Base de galletitas, relleno cremoso y una capa de dulce de leche. Se hace por encargo, sin conservantes.</span>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px">
+<span style="font-size:14px;font-weight:600">Tamaño</span>
+<div style="display:flex;gap:12px">
+<label class="fp-check fp-check--card" style="flex:1 1 0"><input type="radio" name="wf-size-d" checked><span class="fp-check__box fp-check__box--radio"><span class="fp-check__dot"></span></span><span><span class="fp-check__label">Entero</span><span class="fp-check__desc">$ 1.100 · 10 porciones</span></span></label>
+<label class="fp-check fp-check--card" style="flex:1 1 0"><input type="radio" name="wf-size-d"><span class="fp-check__box fp-check__box--radio"><span class="fp-check__dot"></span></span><span><span class="fp-check__label">Porción</span><span class="fp-check__desc">$ 200 c/u</span></span></label>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px">
+<span style="font-size:14px;font-weight:600">Sabor</span>
+<div style="display:flex;gap:8px;flex-wrap:wrap">
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Chip" selected="true" hint-size="130px,38px">Dulce de leche</x-import>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Chip" hint-size="90px,38px">Frutilla</x-import>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Chip" hint-size="80px,38px">Limón</x-import>
+</div>
+</div>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Textarea" label="Nota para este ítem" optional="true" rows="2" placeholder="Dedicatoria, sin azúcar, alergias" hint-size="100%,110px"></x-import>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.LeadTimeNote" hours="48" hint-size="100%,44px"></x-import>
+<div style="display:flex;align-items:center;gap:12px">
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.QuantityStepper" value="1" hint-size="130px,44px"></x-import>
+<span style="flex:1"><x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Button" variant="primary" size="lg" block="true" hint-size="100%,52px">Agregar · $ 1.100</x-import></span>
+</div>
+</div>
+</aside>
+</div>
+</div>
+<sc-if value="{{ verNotas }}" hint-placeholder-val="{{ true }}">
+<ul style="width:1200px;margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px;font-size:12px;line-height:1.5;color:var(--brown-500)">
+<li>En desktop la ficha es panel lateral de 420 px: el catálogo queda visible y la tarjeta abierta se marca con borde rosa.</li>
+<li>Grid de tres columnas; en mobile son dos. La misma ficha vive además en su URL propia.</li>
+<li>Sin barra fija: el pedido se ve desde el ícono del header.</li>
+</ul>
+</sc-if>
+</div>
+
+<!-- ============ D3. CHECKOUT DESKTOP ============ -->
+<div style="display:flex;flex-direction:column;gap:12px;flex:0 0 auto">
+<div style="display:flex;align-items:baseline;gap:10px">
+<span style="font-size:12px;font-weight:600;letter-spacing:.14em;color:var(--brown-500)">05 · D</span>
+<span style="font-family:var(--font-serif-display);font-size:19px">Checkout</span>
+</div>
+<div style="width:1440px;background:var(--cream-100);border:1px solid var(--line-300);border-radius:20px;overflow:hidden">
+<div style="display:flex;align-items:center;justify-content:space-between;gap:24px;height:72px;padding:0 40px;border-bottom:1px solid var(--line-200)">
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Wordmark" size="22" layout="row" tagline="Pastelería Artesanal" hint-size="220px,32px"></x-import>
+<span style="font-size:14px;color:var(--brown-500)">Catálogo&nbsp;/&nbsp;Pedido&nbsp;/&nbsp;Datos</span>
+</div>
+<div style="padding:56px 40px 72px">
+<div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 420px;gap:56px;align-items:start">
+
+<div style="display:flex;flex-direction:column;gap:24px;max-width:720px">
+<span style="font-family:var(--font-serif-display);font-size:48px;line-height:1.08;letter-spacing:-0.02em">Tus datos</span>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:20px">
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Input" label="Nombre y apellido" placeholder="Carolina Píriz" hint-size="100%,80px"></x-import>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Input" label="Teléfono" type="tel" placeholder="099 123 456" help="Para coordinar la entrega por WhatsApp." hint-size="100%,96px"></x-import>
+</div>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.DateField" label="Fecha de entrega" min-lead-days="2" help="Primera fecha disponible: 14 de agosto. Entregas a partir de las 19 h." hint-size="100%,96px"></x-import>
+<div style="display:flex;flex-direction:column;gap:8px">
+<span style="font-size:14px;font-weight:600">Retiro o envío</span>
+<div style="display:flex;gap:12px">
+<label class="fp-check fp-check--card" style="flex:1 1 0"><input type="radio" name="wf-mode-d"><span class="fp-check__box fp-check__box--radio"><span class="fp-check__dot"></span></span><span><span class="fp-check__label">Retiro</span><span class="fp-check__desc">Sin costo · Aguada o La Comercial</span></span></label>
+<label class="fp-check fp-check--card" style="flex:1 1 0"><input type="radio" name="wf-mode-d" checked><span class="fp-check__box fp-check__box--radio"><span class="fp-check__dot"></span></span><span><span class="fp-check__label">Envío</span><span class="fp-check__desc">$ 100 en zona</span></span></label>
+</div>
+</div>
+<div style="padding:24px;border:1px dashed var(--line-300);border-radius:18px;background:var(--cream-50);display:flex;flex-direction:column;gap:20px">
+<span style="font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--brown-500)">Sólo si elige envío</span>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:20px">
+<div class="fp-field">
+<label class="fp-field__label" for="wf-zona-d">Zona</label>
+<span class="fp-selectwrap">
+<select id="wf-zona-d" class="fp-input">
+<option>La Comercial — $ 100</option>
+<option>Aguada — $ 100</option>
+<option>Tres Cruces — $ 100</option>
+<option>Nuevo Centro — $ 100</option>
+<option>Av. Italia — $ 100</option>
+<option>Parque Batlle — $ 100</option>
+<option>Otra zona de Montevideo — a coordinar</option>
+</select>
+<span class="fp-selectwrap__caret"><x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Icon" name="chevron-down" size="18" hint-size="18px,18px"></x-import></span>
+</span>
+<span class="fp-field__help">La tarifa aparece al elegir la zona.</span>
+</div>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Input" label="Dirección" placeholder="Calle y número" hint-size="100%,80px"></x-import>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Input" label="Apartamento" optional="true" placeholder="302" hint-size="100%,80px"></x-import>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Input" label="Referencia" optional="true" placeholder="Timbre, esquina" hint-size="100%,80px"></x-import>
+</div>
+</div>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Textarea" label="Comentarios" optional="true" rows="3" placeholder="Algo más que tenga que saber" hint-size="100%,130px"></x-import>
+</div>
+
+<div style="position:sticky;top:24px;background:var(--cream-50);border:1px solid var(--line-200);border-radius:18px;padding:24px;display:flex;flex-direction:column;gap:16px">
+<span style="font-family:var(--font-serif-display);font-size:24px;line-height:1.22">Resumen del pedido</span>
+<div style="display:flex;flex-direction:column;gap:12px">
+<div style="display:flex;gap:12px;align-items:center">
+<span style="width:48px;height:48px;border-radius:8px;background:repeating-linear-gradient(45deg,#E8E4DD 0 8px,#E2DCD3 8px 16px)"></span>
+<span style="flex:1;font-size:14px;line-height:1.4">1 × Cheesecake entero<span style="display:block;color:var(--brown-500)">Sin azúcar agregada</span></span>
+<span style="font-size:14px;font-weight:600;font-variant-numeric:tabular-nums">$ 1.100</span>
+</div>
+<div style="display:flex;gap:12px;align-items:center">
+<span style="width:48px;height:48px;border-radius:8px;background:repeating-linear-gradient(45deg,#E8E4DD 0 8px,#E2DCD3 8px 16px)"></span>
+<span style="flex:1;font-size:14px;line-height:1.4">6 × Alfajores de maicena</span>
+<span style="font-size:14px;font-weight:600;font-variant-numeric:tabular-nums">$ 180</span>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px;padding-top:16px;border-top:1px solid var(--line-200)">
+<div style="display:flex;justify-content:space-between;font-size:14px;color:var(--brown-700)"><span>Subtotal</span><span style="font-variant-numeric:tabular-nums">$ 1.280</span></div>
+<div style="display:flex;justify-content:space-between;font-size:14px;color:var(--brown-700)"><span>Envío · La Comercial</span><span style="font-variant-numeric:tabular-nums">$ 100</span></div>
+<div style="display:flex;justify-content:space-between;font-size:19px;font-weight:600;padding-top:8px;border-top:1px solid var(--line-200)"><span>Total</span><span style="font-variant-numeric:tabular-nums">$ 1.380</span></div>
+</div>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.LeadTimeNote" hint-size="100%,44px">Entrega el viernes 14 de agosto, a partir de las 19 h</x-import>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Button" variant="whatsapp" size="lg" block="true" icon-left="whatsapp" hint-size="100%,52px">Enviar pedido por WhatsApp</x-import>
+<span style="font-size:14px;line-height:1.5;color:var(--brown-500)">Se abre WhatsApp con el pedido ya redactado. Fátima confirma disponibilidad y entrega por ese mismo chat. No se paga en el sitio.</span>
+</div>
+
+</div>
+</div>
+</div>
+<sc-if value="{{ verNotas }}" hint-placeholder-val="{{ true }}">
+<ul style="width:1200px;margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px;font-size:12px;line-height:1.5;color:var(--brown-500)">
+<li>El resumen deja de ser desplegable: queda fijo a la derecha con el CTA dentro.</li>
+<li>Mismo formulario de un solo paso que en mobile, en dos columnas.</li>
+</ul>
+</sc-if>
+</div>
+
+</div>
+</sc-if>
+
+<sc-if value="{{ verEstados }}" hint-placeholder-val="{{ true }}">
+<div style="margin-top:72px;display:flex;align-items:baseline;gap:12px">
+<span style="font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--brown-500)">Estados · Mobile 375</span>
+<span style="flex:1;height:1px;background:var(--line-300)"></span>
+</div>
+
+<div style="display:flex;align-items:flex-start;gap:48px;margin-top:28px">
+
+<div style="display:flex;flex-direction:column;gap:12px;flex:0 0 auto">
+<div style="display:flex;align-items:baseline;gap:10px">
+<span style="font-size:12px;font-weight:600;letter-spacing:.14em;color:var(--brown-500)">E1</span>
+<span style="font-family:var(--font-serif-display);font-size:19px">Fecha inválida</span>
+</div>
+<div style="width:375px;padding:20px;background:var(--cream-100);border:1px solid var(--line-300);border-radius:20px;display:flex;flex-direction:column;gap:16px">
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.DateField" label="Fecha de entrega" value="2026-08-13" error="Necesito 48 hs. La primera fecha posible es el 14 de agosto." hint-size="100%,96px"></x-import>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Alert" tone="warn" hint-size="100%,80px">El cheesecake del pedido pide 48 hs. Las fechas anteriores al 14 de agosto quedan bloqueadas en el calendario.</x-import>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Button" variant="whatsapp" size="lg" block="true" icon-left="whatsapp" disabled="true" hint-size="100%,52px">Enviar pedido por WhatsApp</x-import>
+</div>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:12px;flex:0 0 auto">
+<div style="display:flex;align-items:baseline;gap:10px">
+<span style="font-size:12px;font-weight:600;letter-spacing:.14em;color:var(--brown-500)">E2</span>
+<span style="font-family:var(--font-serif-display);font-size:19px">Zona fuera de cobertura</span>
+</div>
+<div style="width:375px;padding:20px;background:var(--cream-100);border:1px solid var(--line-300);border-radius:20px;display:flex;flex-direction:column;gap:16px">
+<div class="fp-field">
+<label class="fp-field__label" for="wf-zona-2">Zona</label>
+<span class="fp-selectwrap">
+<select id="wf-zona-2" class="fp-input">
+<option>Otra zona de Montevideo — a coordinar</option>
+</select>
+<span class="fp-selectwrap__caret"><x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Icon" name="chevron-down" size="18" hint-size="18px,18px"></x-import></span>
+</span>
+</div>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Alert" tone="info" title="El envío queda a coordinar" hint-size="100%,96px">Fuera de las seis zonas fijas te confirmo el costo por WhatsApp antes de cerrar el pedido. El total todavía no incluye el envío.</x-import>
+<div style="display:flex;justify-content:space-between;font-size:17px;font-weight:600;padding-top:8px;border-top:1px solid var(--line-200)"><span>Total</span><span style="font-variant-numeric:tabular-nums">$ 1.280 + envío</span></div>
+</div>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:12px;flex:0 0 auto">
+<div style="display:flex;align-items:baseline;gap:10px">
+<span style="font-size:12px;font-weight:600;letter-spacing:.14em;color:var(--brown-500)">E3</span>
+<span style="font-family:var(--font-serif-display);font-size:19px">Campo requerido sin completar</span>
+</div>
+<div style="width:375px;padding:20px;background:var(--cream-100);border:1px solid var(--line-300);border-radius:20px;display:flex;flex-direction:column;gap:16px">
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Input" label="Nombre y apellido" placeholder="Carolina Píriz" error="Necesito tu nombre para el pedido." hint-size="100%,88px"></x-import>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Input" label="Teléfono" type="tel" placeholder="099 123 456" error="Necesito un teléfono para coordinar." hint-size="100%,88px"></x-import>
+<x-import component-from-global-scope="FTimaPastelerADesignSystem_869e9d.Button" variant="whatsapp" size="lg" block="true" icon-left="whatsapp" disabled="true" hint-size="100%,52px">Enviar pedido por WhatsApp</x-import>
+<span style="font-size:14px;color:var(--brown-500);line-height:1.5">El botón se habilita cuando están nombre, teléfono, fecha y —si es envío— dirección y zona.</span>
+</div>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:12px;flex:0 0 auto">
+<div style="display:flex;align-items:baseline;gap:10px">
+<span style="font-size:12px;font-weight:600;letter-spacing:.14em;color:var(--brown-500)">E4</span>
+<span style="font-family:var(--font-serif-display);font-size:19px">Mensaje de WhatsApp generado</span>
+</div>
+<div style="width:420px;padding:20px;background:var(--cream-100);border:1px solid var(--line-300);border-radius:20px;display:flex;flex-direction:column;gap:12px">
+<span style="font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--brown-500)">Texto que se envía al 096 247 822</span>
+<pre style="margin:0;padding:16px;background:var(--cream-50);border:1px solid var(--line-200);border-radius:12px;font-family:var(--font-mono);font-size:12px;line-height:1.6;color:var(--brown-700);white-space:pre-wrap">Hola Fátima, quiero hacer un pedido.
+
+Nombre: Carolina Píriz
+Teléfono: 099 123 456
+
+Pedido:
+· 1 x Cheesecake de dulce de leche (entero) — sin azúcar agregada — $ 1.100
+· 6 x Alfajores de maicena — $ 180
+
+Subtotal: $ 1.280
+Envío (La Comercial): $ 100
+Total: $ 1.380
+
+Fecha de entrega: viernes 14 de agosto
+Modalidad: Envío
+Dirección: Nueva York 1234, apto 302 (La Comercial)
+Comentarios: Timbre 302.</pre>
+<span style="font-size:12px;color:var(--brown-500);line-height:1.5">Orden fijo: encabezado, ítems, subtotal, envío, total, fecha, modalidad, dirección, comentarios. Es el único dato que sale del sitio.</span>
+</div>
+</div>
+
+</div>
+</sc-if>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;vista&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Todo&quot;,&quot;Solo mobile&quot;,&quot;Solo desktop&quot;,&quot;Solo estados&quot;],&quot;default&quot;:&quot;Todo&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Board&quot;},&quot;mostrarNotas&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Board&quot;},&quot;mostrarBarraPedido&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Board&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const v = this.props.vista ?? "Todo";
+    return {
+      verMobile: v === "Todo" || v === "Solo mobile",
+      verDesktop: v === "Todo" || v === "Solo desktop",
+      verEstados: v === "Todo" || v === "Solo estados",
+      verNotas: this.props.mostrarNotas ?? true,
+      verBarra: this.props.mostrarBarraPedido ?? true,
+    };
+  }
+}
+</script>
+</body>
+</html>

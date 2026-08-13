@@ -1,0 +1,43 @@
+:root{
+  /* Familias */
+  --font-serif-display:"Prata",Georgia,"Times New Roman",serif;
+  --font-sans-body:"Instrument Sans","Helvetica Neue",Arial,sans-serif;
+  --font-mono:ui-monospace,SFMono-Regular,Menlo,monospace;
+
+  /* Escala mobile-first (base 16px) */
+  --text-display:2.5rem;   /* 40px — hero */
+  --text-h1:2rem;          /* 32px */
+  --text-h2:1.5rem;        /* 24px — títulos de categoría */
+  --text-h3:1.1875rem;     /* 19px — nombre de producto */
+  --text-body-lg:1.0625rem;/* 17px */
+  --text-body:1rem;        /* 16px — cuerpo, precio */
+  --text-sm:0.875rem;      /* 14px — meta, notas */
+  --text-xs:0.75rem;       /* 12px — badges, legales */
+
+  /* Escala desktop (>=768px, ver base.css) */
+  --text-display-lg:4rem;  /* 64px */
+  --text-h1-lg:3rem;       /* 48px */
+  --text-h2-lg:2rem;       /* 32px */
+
+  /* Pesos: Prata sólo 400. Instrument Sans 400/500/600/700 */
+  --weight-regular:400;
+  --weight-medium:500;
+  --weight-semibold:600;
+  --weight-bold:700;
+
+  /* Interlineado */
+  --leading-tight:1.08;   /* display serif */
+  --leading-snug:1.22;    /* títulos */
+  --leading-normal:1.5;   /* cuerpo */
+  --leading-loose:1.65;   /* párrafos largos, FAQ */
+
+  /* Tracking: el serif de alto contraste respira mejor con tracking negativo */
+  --tracking-display:-0.02em;
+  --tracking-title:-0.01em;
+  --tracking-body:0;
+  --tracking-caps:0.14em;  /* eyebrow / etiquetas en mayúsculas */
+
+  /* Medida de lectura */
+  --measure-prose:34rem;
+  --measure-narrow:24rem;
+}

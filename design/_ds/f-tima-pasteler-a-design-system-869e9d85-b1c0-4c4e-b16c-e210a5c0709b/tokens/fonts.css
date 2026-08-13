@@ -1,0 +1,6 @@
+/* Fátima — webfonts.
+   No font binaries were provided with the brand materials, so both families are
+   loaded from Google Fonts. Prata = high-contrast serif (títulos, nombres de producto).
+   Instrument Sans = sans neutra (cuerpo, precios, formularios).
+   Swap this file for local @font-face rules if licensed files arrive. */
+@import url("https://fonts.googleapis.com/css2?family=Prata&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
