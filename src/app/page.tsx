@@ -193,7 +193,7 @@ export default async function HomePage() {
                       src={photo.src}
                       alt={photo.alt}
                       fill
-                      sizes="(min-width: 768px) 33vw, 100vw"
+                      sizes="(min-width: 768px) 33vw, calc(100vw - 40px)"
                       className="fp-prod__img object-cover"
                     />
                   </div>
@@ -288,7 +288,7 @@ export default async function HomePage() {
               src="/fotos/09_scones_queso_01.webp"
               alt="Scones de queso recién horneados sobre una tabla de madera, con la luz de la tarde entrando de costado"
               fill
-              sizes="(min-width: 768px) 40vw, 100vw"
+              sizes="(min-width: 768px) 40vw, calc(100vw - 40px)"
               className="object-cover"
             />
           </div>
@@ -438,7 +438,7 @@ export default async function HomePage() {
                     src={photo.src}
                     alt={photo.alt}
                     fill
-                    sizes="(min-width: 768px) 16vw, 46vw"
+                    sizes="(min-width: 768px) 16vw, calc(46vw - 18px)"
                     className="object-cover transition-transform duration-300 hover:scale-[1.03]"
                   />
                 </a>
