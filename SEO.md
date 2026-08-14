@@ -69,27 +69,78 @@ Mismo cambio en la primera foto de las fichas.
 
 ---
 
-## Rendimiento: qué se midió y qué no
+## Lighthouse: dónde está cada página
 
-**Verificado, y no depende del cronómetro:**
+Medido contra producción con Lighthouse 13.
 
-- La request del hero pasó de `initialPriority: Low` a `High` en mobile (leído por CDP). En
-  desktop ya salía en `High`, que es por qué el problema no se veía ahí.
-- La auditoría `lcp-discovery-insight` de Lighthouse pasó de fallar a dar score 1.
-- **CLS = 0** en las cinco corridas, sin elementos culpables.
-- INP de las interacciones muestreadas (stepper de cantidad, menú hamburguesa): 16-48 ms.
+| Página | Escritorio | Móvil (rendimiento) |
+| --- | --- | --- |
+| Portada | **100 / 100 / 100 / 100** | 93-98 |
+| Catálogo y las tres categorías | **100 / 100 / 100 / 100** | 95-98 |
+| Fichas de producto | **100 / 100 / 100 / 100** | 94-98 |
+| `/pedido` y `/pedido/enviado` | 100 / 100 / 100 · SEO 66 | 99 |
 
-**No verificado, y conviene no inventarlo.** No hay un número de ahorro en milisegundos. Cuatro
-corridas de Lighthouse sobre el sitio ya corregido dieron 2154, 2314, 2817 y 2823 ms de LCP:
-mediana 2565 ms, pero con 669 ms de dispersión (±31%) porque la máquina tenía decenas de procesos
-de Chrome compitiendo por CPU. La medición previa al cambio fue **una sola corrida** (2224 ms) y
-cae dentro de ese mismo rango, así que un antes/contra/después de una muestra cada uno no puede
-resolver un efecto de esta magnitud. Se hizo el cambio porque es la práctica recomendada para la
-imagen LCP y porque el mecanismo quedó comprobado, no porque haya un número que lo respalde.
+En escritorio está todo en 100. En móvil, **accesibilidad, buenas prácticas y SEO están en 100 en
+todas las páginas públicas**; lo que se mueve es rendimiento.
 
-El número que va a valer es el de campo: **CrUX / PageSpeed Insights, una vez que el sitio tenga
-tráfico real.** La API sin key devolvió `429` (cuota diaria agotada en el pool de IPs compartido)
-y CrUX pide key registrada, así que hoy no hay percentil 75 de usuarios reales que consultar.
+### Lo que se arregló
+
+**Accesibilidad, de 82 a 100 en las fichas.** Cuatro problemas de marcado reales: la tira de
+miniaturas tenía `role="tablist"` sobre un `<ul>`, lo que rompía tres auditorías a la vez (los
+`<li>` no son hijos válidos de un tablist y a la vez perdían su lista); el `<dl>` tenía los
+`<dt>`/`<dd>` dos niveles abajo; los chips de categoría usaban `aria-pressed`, que no existe en
+enlaces; y el logo tenía una etiqueta que no contenía su propio texto visible. La galería quedó
+además con navegación por flechas, Home y End.
+
+**CLS de `/pedido`, de 0,191 a 0.** El carrito vive en localStorage, así que el HTML
+prerenderizado no puede saber si hay ítems y siempre sale con el formulario. Al hidratar con el
+carrito vacío el formulario se reemplazaba por el cartel de «pedido vacío», la página se encogía
+1018 px y el pie subía a la vista. Se resolvió con un alto mínimo de un viewport: el pie arranca
+debajo del pliegue y sigue debajo, así que no salta ni con el carrito vacío ni con ítems.
+
+**Prioridad de red de la imagen LCP.** Salía en `Low` en móvil porque `priority` de `next/image`
+genera el preload pero no marca `fetchpriority`. Ahora va explícito.
+
+### Lo que se probó y se descartó, con la medición
+
+- **Incrustar el CSS en el `<head>`** (`experimental.inlineCss`). Es la recomendación genérica
+  para «eliminar el CSS que bloquea el render», y **empeora**: la portada bajó de 97 a 90, el HTML
+  pasó de 22 a 34 KiB y el bloqueo del hilo principal de 130 a 310 ms. La hoja es del mismo origen
+  y viaja por una conexión HTTP/2 ya abierta, así que ese «viaje extra» no paga ni DNS ni TLS.
+  Se revirtió.
+- **`browserslist` para sacar los polyfills.** No hay nada que sacar: Next 16 ya compila para
+  `chrome 111 / safari 16.4`, y el bundle de core-js de 110 KiB se sirve con `nomodule`, así que
+  ningún navegador lo descarga (verificado por md5 y por tres listas de requests). Poner
+  `browserslist` sólo puede hacer que Next transpile **más**.
+- **El «JS sin usar» (26 KiB).** Está entero dentro de react-dom. No sale con ningún cambio a
+  nivel de aplicación.
+- Los avisos de `render-blocking`, `network-dependency-tree` y `forced-reflow` son falsos
+  positivos: Lighthouse les asigna 0 ms de ahorro, la «cadena crítica» son dos niveles —documento
+  y CSS, el mínimo posible— y el reflow aparece como `[unattributed]`, sin ningún layout anidado
+  dentro de JS en seis rutas.
+
+### Por qué el 100 de rendimiento en móvil no se persigue más
+
+Lo único que separa de 100 es el LCP, y su desglose es TTFB 238 ms + espera para iniciar la
+descarga 229 ms + descarga 91 ms + pintado 173 ms. La foto ya pesa 33 KiB en AVIF y sale con
+prioridad alta: bajarle bytes rinde milisegundos. Llegar a 100 exigiría un LCP por debajo de
+~1,2 s bajo la simulación de Lighthouse (1,6 Mbps y 150 ms de latencia), que para una página cuyo
+elemento principal es una fotografía significa sacar la foto. En un sitio de pastelería la foto
+**es** el producto: sería cambiar una venta por un número.
+
+**Sobre la confiabilidad del número.** La misma página sin ningún cambio dio 98 y 94 en dos
+corridas seguidas, con Speed Index de 1,3 s y 4,0 s. La máquina de medición tiene decenas de
+procesos de Chrome compitiendo por CPU y Lighthouse escala los tiempos según el equipo. Cualquier
+diferencia menor a ~5 puntos en esta tabla es ruido, no una mejora ni una regresión. **El número
+que va a valer es el de campo (CrUX), cuando el sitio tenga tráfico real**: la API sin key
+devuelve `429` y CrUX pide key registrada, así que hoy no hay percentil 75 que consultar.
+
+### El 66 de SEO en `/pedido` es a propósito
+
+Esas dos páginas llevan `noindex` y Lighthouse lo penaliza en la categoría de SEO. Es correcto que
+lo lleven: son el formulario de datos y la confirmación, no tienen contenido por el que nadie
+busque, e indexarlas sólo sumaría páginas delgadas. Sacar el `noindex` pondría el 100 y no traería
+una sola visita. Se deja como está.
 
 ---
 
