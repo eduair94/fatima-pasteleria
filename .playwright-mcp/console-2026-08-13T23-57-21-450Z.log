@@ -1,0 +1,5 @@
+[  105881ms] [WARNING] Deprecated API for given entry type. @ :4
+[  112145ms] [WARNING] Deprecated API for given entry type. @ :4
+[  118238ms] [WARNING] The resource https://fatima-pasteleria-woad.vercel.app/_next/image?url=%2Ffotos%2F09_scones_queso_01.webp&w=256&q=75&dpl=dpl_ESsbt58f8RbRdB9s1pG3rntit9aV was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://fatima-pasteleria-woad.vercel.app/catalogo:0
+[  118238ms] [WARNING] The resource https://fatima-pasteleria-woad.vercel.app/_next/image?url=%2Ffotos%2F01_lemon_pie_01.webp&w=256&q=75&dpl=dpl_ESsbt58f8RbRdB9s1pG3rntit9aV was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://fatima-pasteleria-woad.vercel.app/catalogo:0
+[  118240ms] [WARNING] Deprecated API for given entry type. @ :4

@@ -15,7 +15,15 @@ export const revalidate = 120;
 
 export default function CheckoutPage() {
   return (
-    <div className="wrap flex flex-col gap-8 py-8 pb-28 md:py-14 md:pb-24">
+    // El carrito vive en localStorage, así que el HTML prerenderizado no puede
+    // saber si hay ítems: sale el formulario y, al hidratar con el carrito
+    // vacío, se reemplaza por el cartel de «pedido vacío». Eso encogía la
+    // página y subía el pie a la vista: 0,184 de CLS medido.
+    // Con el alto mínimo, el pie arranca debajo del pliegue y sigue debajo
+    // después del cambio, así que no hay desplazamiento visible en ninguno de
+    // los dos casos —ni con el carrito vacío ni con ítems—, que es mejor que
+    // elegir a cuál de los dos hacerle pagar el salto.
+    <div className="wrap flex min-h-svh flex-col gap-8 py-8 pb-28 md:py-14 md:pb-24">
       <div className="flex flex-col gap-4">
         <nav aria-label="Miga de pan" className="text-xs text-brown-500">
           <Link href="/catalogo" className="text-brown-500 no-underline hover:text-brown-900">
