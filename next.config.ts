@@ -1,19 +1,6 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /**
-   * El único recurso que bloqueaba el render era la hoja de estilos: 10,7 KiB
-   * que costaban un viaje de red entero antes de poder pintar nada. Al ir
-   * incrustada en el `<head>`, los estilos llegan con el HTML.
-   *
-   * La contrapartida es que quien vuelve al sitio la vuelve a descargar en vez
-   * de tomarla de la caché. A este tamaño el cambio conviene: Tailwind genera
-   * sólo las clases usadas, y acá lo que importa es la primera visita, que es
-   * como llega la gente desde la búsqueda y desde Instagram.
-   */
-  experimental: {
-    inlineCss: true,
-  },
   images: {
     formats: ["image/avif", "image/webp"],
     remotePatterns: [
