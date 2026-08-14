@@ -1,0 +1,409 @@
+- generic [active] [ref=f110e1]:
+  - banner [ref=f110e2]:
+    - generic [ref=f110e4]:
+      - button "Back" [ref=f110e5]
+      - button "Language" [ref=f110e10] [cursor=pointer]
+      - button "Currency" [ref=f110e15] [cursor=pointer]
+      - generic [ref=f110e19] [cursor=pointer]:
+        - checkbox "Dark" [checked] [ref=f110e20]
+        - generic [ref=f110e24]: Dark
+    - navigation [ref=f110e25]:
+      - generic [ref=f110e26]:
+        - link [ref=f110e27] [cursor=pointer]:
+          - /url: /
+          - img "tld:list" [ref=f110e28]
+        - list [ref=f110e29]:
+          - listitem [ref=f110e30]:
+            - button "TLDs" [ref=f110e32] [cursor=pointer]
+          - listitem [ref=f110e36]:
+            - link "Promo Codes" [ref=f110e37] [cursor=pointer]:
+              - /url: /promo-codes
+          - listitem [ref=f110e38]:
+            - link "Registrars" [ref=f110e39] [cursor=pointer]:
+              - /url: /registrars
+          - listitem [ref=f110e40]:
+            - link "Blog" [ref=f110e41] [cursor=pointer]:
+              - /url: /blog
+          - listitem [ref=f110e42]:
+            - link "Alerts" [ref=f110e43] [cursor=pointer]:
+              - /url: /alerts
+        - generic [ref=f110e44]:
+          - button "Settings" [ref=f110e45]
+          - button [ref=f110e49]
+  - main [ref=f110e52]:
+    - generic [ref=f110e54]:
+      - generic [ref=f110e55]:
+        - paragraph [ref=f110e56]: .com
+        - generic [ref=f110e57]:
+          - heading "Compare .com domain prices" [level=1] [ref=f110e58]
+          - generic [ref=f110e59]: Prices updated –
+        - list [ref=f110e60]:
+          - listitem [ref=f110e61]:
+            - link "tld:list" [ref=f110e62] [cursor=pointer]:
+              - /url: /
+            - text: /
+          - listitem [ref=f110e63]:
+            - link "Original Generic" [ref=f110e64] [cursor=pointer]:
+              - /url: /tld-categories/generic-original
+            - text: /
+          - listitem [ref=f110e65]:
+            - generic [ref=f110e66]: .com
+        - paragraph [ref=f110e68]: The .com domain extension is one of the original and most widely used domain name extensions in the world. It stands for "commercial," indicating its initial purpose for commercial organizations, but it's now used for a broad range of websites including personal, commercial, and non-profit. Acquiring a .com domain extension adds to the credibility of a website and boosts its visibility in search engine results. Many internet users tend to trust .com websites because they're more familiar and commonly used. It's administered by Verisign and can be registered through any domain registrar.
+      - generic [ref=f110e69]:
+        - generic [ref=f110e70]:
+          - heading "Check .com domain availability" [level=2] [ref=f110e71]
+          - paragraph [ref=f110e72]: Find out if a .com domain is available for registration.
+        - generic [ref=f110e74]:
+          - textbox "Enter domain name" [ref=f110e75]
+          - generic [ref=f110e76]: .com
+    - navigation [ref=f110e79]:
+      - button "Overview" [ref=f110e80] [cursor=pointer]
+      - button "Technical Details" [ref=f110e81] [cursor=pointer]
+      - button "Launch Details" [ref=f110e82] [cursor=pointer]
+    - generic [ref=f110e83]:
+      - generic [ref=f110e85]:
+        - generic [ref=f110e86]:
+          - generic [ref=f110e87]:
+            - heading "Registrars (56)" [level=2] [ref=f110e88]
+            - button "Columns" [ref=f110e91] [cursor=pointer]
+          - table [ref=f110e96]:
+            - rowgroup [ref=f110e97]:
+              - row [ref=f110e98]:
+                - columnheader "Registrar" [ref=f110e99]
+                - columnheader "Registration" [ref=f110e105]
+                - columnheader "Renewal" [ref=f110e111]
+                - columnheader "Transfer" [ref=f110e117]
+                - columnheader "WHOIS privacy" [ref=f110e123]
+                - columnheader "Payment" [ref=f110e129]
+            - rowgroup [ref=f110e132]:
+              - row [ref=f110e133]:
+                - cell [ref=f110e134]:
+                  - button "Spaceship" [ref=f110e136] [cursor=pointer]
+                - cell "$9.08 $3.92 COM67" [ref=f110e142]:
+                  - generic [ref=f110e143]:
+                    - generic [ref=f110e144]: $9.08
+                    - generic [ref=f110e145]: $3.92
+                    - generic [ref=f110e147]: COM67
+                - cell "$10.18" [ref=f110e151]
+                - cell "$9.68 $3.94 SPSCOMTR" [ref=f110e155]:
+                  - generic [ref=f110e156]:
+                    - generic [ref=f110e157]: $9.68
+                    - generic [ref=f110e158]: $3.94
+                    - generic [ref=f110e160]: SPSCOMTR
+                - cell "$0.00" [ref=f110e164]
+                - cell "Credit Card Paypal Bitcoin Google Pay Apple Pay Alipay" [ref=f110e168]:
+                  - generic [ref=f110e169]:
+                    - generic [ref=f110e170]: Credit Card
+                    - generic [ref=f110e172]: Paypal
+                    - generic [ref=f110e174]: Bitcoin
+                    - generic [ref=f110e176]: Google Pay
+                    - generic [ref=f110e178]: Apple Pay
+                    - generic [ref=f110e180]: Alipay
+              - row [ref=f110e182]:
+                - cell [ref=f110e183]:
+                  - button "Wix" [ref=f110e185] [cursor=pointer]
+                - cell "$7.90 $3.95 DOM50" [ref=f110e191]:
+                  - generic [ref=f110e192]:
+                    - generic [ref=f110e193]: $7.90
+                    - generic [ref=f110e194]: $3.95
+                    - generic [ref=f110e196]: DOM50
+                - cell "$21.35" [ref=f110e200]
+                - cell "$7.90 $3.95 DOM50" [ref=f110e204]:
+                  - generic [ref=f110e205]:
+                    - generic [ref=f110e206]: $7.90
+                    - generic [ref=f110e207]: $3.95
+                    - generic [ref=f110e209]: DOM50
+                - cell "Unsupported" [ref=f110e213]
+                - cell "Credit Card Paypal" [ref=f110e214]:
+                  - generic [ref=f110e215]:
+                    - generic [ref=f110e216]: Credit Card
+                    - generic [ref=f110e218]: Paypal
+              - row [ref=f110e220]:
+                - cell [ref=f110e221]:
+                  - button "Nameslink" [ref=f110e223] [cursor=pointer]
+                - cell "$10.88 $5.49 NLCOM529" [ref=f110e229]:
+                  - generic [ref=f110e230]:
+                    - generic [ref=f110e231]: $10.88
+                    - generic [ref=f110e232]: $5.49
+                    - generic [ref=f110e234]: NLCOM529
+                - cell "$11.48" [ref=f110e238]
+                - cell "$11.48" [ref=f110e242]
+                - cell "$0.00" [ref=f110e246]
+                - cell "Credit Card Alipay Bank Transfer" [ref=f110e250]:
+                  - generic [ref=f110e251]:
+                    - generic [ref=f110e252]: Credit Card
+                    - generic [ref=f110e254]: Alipay
+                    - generic [ref=f110e256]: Bank Transfer
+              - row [ref=f110e258]:
+                - cell "Namecheap $0.20 ICANN fee added" [ref=f110e259]:
+                  - generic [ref=f110e260]:
+                    - button "Namecheap" [ref=f110e261] [cursor=pointer]
+                    - generic [ref=f110e267]: $0.20 ICANN fee added
+                - cell "$15.18 $6.99 NEWCOM679" [ref=f110e268]:
+                  - generic [ref=f110e269]:
+                    - generic [ref=f110e270]: $15.18
+                    - generic [ref=f110e271]: $6.99
+                    - generic [ref=f110e273]: NEWCOM679
+                - cell "$18.68" [ref=f110e277]
+                - cell "$15.18 $11.68" [ref=f110e281]:
+                  - generic [ref=f110e282]:
+                    - generic [ref=f110e283]: $15.18
+                    - generic [ref=f110e284]: $11.68
+                - cell "$0.00" [ref=f110e286]
+                - cell "Bitcoin Credit Card Paypal Dwolla" [ref=f110e290]:
+                  - generic [ref=f110e291]:
+                    - generic [ref=f110e292]: Bitcoin
+                    - generic [ref=f110e294]: Credit Card
+                    - generic [ref=f110e296]: Paypal
+                    - generic [ref=f110e298]: Dwolla
+              - row [ref=f110e300]:
+                - cell [ref=f110e301]:
+                  - button "Sav" [ref=f110e303] [cursor=pointer]
+                - cell "$7.95" [ref=f110e309]
+                - cell "$10.15" [ref=f110e313]
+                - cell "$9.65" [ref=f110e317]
+                - cell "$0.00" [ref=f110e321]
+                - cell "Credit Card Paypal" [ref=f110e325]:
+                  - generic [ref=f110e326]:
+                    - generic [ref=f110e327]: Credit Card
+                    - generic [ref=f110e329]: Paypal
+              - row [ref=f110e331]:
+                - cell [ref=f110e332]:
+                  - button "Truehost.com" [ref=f110e334] [cursor=pointer]
+                - cell "$8.50" [ref=f110e340]
+                - cell "$11.45" [ref=f110e344]
+                - cell "$11.45" [ref=f110e348]
+                - cell "$0.00" [ref=f110e352]
+                - cell "Credit Card" [ref=f110e356]
+              - row [ref=f110e360]:
+                - cell [ref=f110e361]:
+                  - button "Cosmotown" [ref=f110e363] [cursor=pointer]
+                - cell "$8.59" [ref=f110e369]
+                - cell "$11.35" [ref=f110e373]
+                - cell "$11.35" [ref=f110e377]
+                - cell "$0.00" [ref=f110e381]
+                - cell "Paypal Credit Card" [ref=f110e385]:
+                  - generic [ref=f110e386]:
+                    - generic [ref=f110e387]: Paypal
+                    - generic [ref=f110e389]: Credit Card
+              - row [ref=f110e391]:
+                - cell "Hostinger $0.20 ICANN fee added" [ref=f110e392]:
+                  - generic [ref=f110e393]:
+                    - button "Hostinger" [ref=f110e394] [cursor=pointer]
+                    - generic [ref=f110e400]: $0.20 ICANN fee added
+                - cell "$10.19 $8.69 TLDLIST15" [ref=f110e401]:
+                  - generic [ref=f110e402]:
+                    - generic [ref=f110e403]: $10.19
+                    - generic [ref=f110e404]: $8.69
+                    - generic [ref=f110e406]: TLDLIST15
+                - cell "$20.19" [ref=f110e410]
+                - cell "$10.19" [ref=f110e414]
+                - cell "$0.00" [ref=f110e418]
+                - cell "Credit Card Paypal Bitcoin" [ref=f110e422]:
+                  - generic [ref=f110e423]:
+                    - generic [ref=f110e424]: Credit Card
+                    - generic [ref=f110e426]: Paypal
+                    - generic [ref=f110e428]: Bitcoin
+              - row [ref=f110e430]:
+                - cell [ref=f110e431]:
+                  - button "Blacknight" [ref=f110e433] [cursor=pointer]
+                - cell "$16.08 € → $9.21" [ref=f110e439]:
+                  - generic [ref=f110e440]:
+                    - generic [ref=f110e441]: $16.08
+                    - generic [ref=f110e442]:
+                      - generic [ref=f110e443]: € →
+                      - generic [ref=f110e444]: $9.21
+                - cell "€ → $230,473.39" [ref=f110e445]:
+                  - generic [ref=f110e447]:
+                    - generic [ref=f110e448]: € →
+                    - generic [ref=f110e449]: $230,473.39
+                - cell "€ → $9,220.31" [ref=f110e450]:
+                  - generic [ref=f110e452]:
+                    - generic [ref=f110e453]: € →
+                    - generic [ref=f110e454]: $9,220.31
+                - cell "€ → $5.75" [ref=f110e455]:
+                  - generic [ref=f110e457]:
+                    - generic [ref=f110e458]: € →
+                    - generic [ref=f110e459]: $5.75
+                - cell "Credit Card Paypal Check" [ref=f110e460]:
+                  - generic [ref=f110e461]:
+                    - generic [ref=f110e462]: Credit Card
+                    - generic [ref=f110e464]: Paypal
+                    - generic [ref=f110e466]: Check
+              - row [ref=f110e468]:
+                - cell [ref=f110e469]:
+                  - button "DreamHost" [ref=f110e471] [cursor=pointer]
+                - cell "$9.99" [ref=f110e477]
+                - cell "$19.99" [ref=f110e481]
+                - cell "$9.99" [ref=f110e485]
+                - cell "$0.00" [ref=f110e489]
+                - cell "Credit Card" [ref=f110e493]
+        - generic [ref=f110e497]:
+          - generic [ref=f110e499]:
+            - button [disabled] [ref=f110e500]
+            - button "1" [ref=f110e503] [cursor=pointer]
+            - button "2" [ref=f110e504] [cursor=pointer]
+            - button "3" [ref=f110e505] [cursor=pointer]
+            - button "4" [ref=f110e506] [cursor=pointer]
+            - button "5" [ref=f110e507] [cursor=pointer]
+            - generic [ref=f110e508]: ...
+            - button "6" [ref=f110e509] [cursor=pointer]
+            - button [ref=f110e510] [cursor=pointer]
+          - button "10 /page" [ref=f110e514] [cursor=pointer]
+        - generic [ref=f110e518]:
+          - generic [ref=f110e519]:
+            - paragraph [ref=f110e520]: Registration prices from $3.92 to $56.00
+            - paragraph [ref=f110e524]: Cheapest price
+          - paragraph [ref=f110e526]: All prices in USD. Prices include ICANN and setup fees. Registration/renewal/transfer prices are for a 1 year period.
+      - generic [ref=f110e528]:
+        - heading "About the .com domain" [level=2] [ref=f110e529]
+        - generic [ref=f110e530]:
+          - generic [ref=f110e531]:
+            - generic [ref=f110e532]:
+              - paragraph [ref=f110e533]: Entity/Country
+              - paragraph [ref=f110e534]: The represented geographical region or entity.
+            - paragraph [ref=f110e536]: commercial
+          - generic [ref=f110e537]:
+            - generic [ref=f110e538]:
+              - paragraph [ref=f110e539]: Intended usage
+              - paragraph [ref=f110e540]: General information about how the TLD is expected to be used by registrants.
+            - paragraph [ref=f110e542]: Commerce entities
+          - generic [ref=f110e543]:
+            - generic [ref=f110e544]:
+              - paragraph [ref=f110e545]: Categories
+              - paragraph [ref=f110e546]: Classification groups the domain belongs to.
+            - paragraph [ref=f110e548]: Original Generic
+          - generic [ref=f110e549]:
+            - generic [ref=f110e550]:
+              - paragraph [ref=f110e551]: Domain level
+              - paragraph [ref=f110e552]: The number of dot-separated labels in the full domain extension.
+            - paragraph [ref=f110e554]: Top-level domain
+          - generic [ref=f110e555]:
+            - generic [ref=f110e556]:
+              - paragraph [ref=f110e557]: Type
+              - paragraph [ref=f110e558]: The type of domain (gTLD/ccTLD/grTLD/sTLD/infrastructure/test)
+            - paragraph [ref=f110e560]: gTLD
+          - generic [ref=f110e561]:
+            - generic [ref=f110e562]:
+              - paragraph [ref=f110e563]: New gTLD
+              - paragraph [ref=f110e564]: If this is considered a new generic top-level domain (i.e. launched by ICANN sometime after 2013).
+            - paragraph [ref=f110e566]: "No"
+      - generic [ref=f110e568]:
+        - heading "All you need to know about .com domains" [level=2] [ref=f110e569]
+        - generic [ref=f110e570]:
+          - generic [ref=f110e571]:
+            - button [ref=f110e572] [cursor=pointer]:
+              - heading ".com facts" [level=3] [ref=f110e573]
+            - generic: The .com domain extension is one of the oldest on the internet and was introduced in 1985 as one of the original top-level domains. It was initially intended for commercial organizations, hence the abbreviation "com," but it has since evolved to include all types of websites. The first .com domain name ever registered was symbolics.com by the Symbolics Computer Corp. Around a third of all websites still use this domain extension, which highlights its lasting relevance. Moreover, according to Verisign, over 160 million .com domain names have been registered globally.
+          - generic [ref=f110e577]:
+            - button [ref=f110e578] [cursor=pointer]:
+              - heading ".com benefits" [level=3] [ref=f110e579]
+            - generic: Owning a .com domain name conveys the sense of a legitimate business or organization as it is instantly recognized and trusted by internet users worldwide. It is widely recognized and trusted by users worldwide, which can support your overall online presence. Not only does it make the website easily accessible, but it also provides international exposure, because unlike other extensions, .com doesn't limit your scope to specific regions or countries. The .com domain name can enhance your brand, making your site memorable and catchy to potential visitors. It also reduces the risk of users misremembering an unfamiliar domain extension and failing to reach your site.
+          - generic [ref=f110e583]:
+            - button [ref=f110e584] [cursor=pointer]:
+              - heading ".com uses" [level=3] [ref=f110e585]
+            - generic: The .com domain extension is highly versatile and can be used by both individuals and businesses for a variety of purposes. For instance, a business may use it to establish their official online presence, which is especially crucial in today's digital age where customers often look up products and services online before making a purchase. It can also be utilized by individuals who want to create a personal website or blog to share their portfolio, travels, thoughts, and more. Furthermore, it acts as a credible extension globally due to its widespread recognition, potentially aiding in reaching international audiences. Overall, a .com domain can help establish credibility, enhance online presence, and improve reach for both individuals and businesses.
+      - generic [ref=f110e590]:
+        - heading ".com frequently asked questions" [level=2] [ref=f110e591]
+        - generic [ref=f110e592]:
+          - generic [ref=f110e593]:
+            - button [ref=f110e594] [cursor=pointer]:
+              - heading "What is a .com domain name?" [level=3] [ref=f110e595]
+            - generic: A .com domain name is a website address that typically represents a commercial entity. It is part of the top-level domains (TLDs) in the internet Domain Name System. It's the most widely used and globally recognized domain extension.
+          - generic [ref=f110e599]:
+            - button [ref=f110e600] [cursor=pointer]:
+              - heading "Why should I use a .com extension?" [level=3] [ref=f110e601]
+            - generic: Using a .com domain name extension is commonly recommended as it's widely recognized and trusted worldwide. It can help to boost your business credibility and is often the domain of choice for commercial entities. Additionally, users often default to typing ".com" when searching for a website, which can potentially increase your website traffic.
+          - generic [ref=f110e605]:
+            - button [ref=f110e606] [cursor=pointer]:
+              - heading "Who is able to buy a .com domain name?" [level=3] [ref=f110e607]
+            - generic: Anyone who wants to build a website can buy a .com domain name. This includes individuals, businesses, and organizations. The domain name must also be available and not already registered by someone else.
+          - generic [ref=f110e611]:
+            - button [ref=f110e612] [cursor=pointer]:
+              - heading "Where can I buy a .com domain name?" [level=3] [ref=f110e613]
+            - generic [ref=f110e616]:
+              - text: A .com domain name can be purchased from any of the providers in the
+              - link "Registrars list" [ref=f110e617] [cursor=pointer]:
+                - /url: "#registrars"
+              - text: .
+      - generic [ref=f110e619]:
+        - heading "Sources" [level=2] [ref=f110e620]
+        - list [ref=f110e621]:
+          - listitem [ref=f110e622]:
+            - link "https://en.wikipedia.org/wiki/List_of_Internet_top-level_domains" [ref=f110e623] [cursor=pointer]:
+              - /url: https://en.wikipedia.org/wiki/List_of_Internet_top-level_domains
+          - listitem [ref=f110e624]:
+            - link "https://www.iana.org/domains/root/db/com.html" [ref=f110e625] [cursor=pointer]:
+              - /url: https://www.iana.org/domains/root/db/com.html
+  - generic [ref=f110e627]:
+    - generic [ref=f110e628]: tld:list newsletter
+    - paragraph [ref=f110e629]: Sign up for the email newsletter to receive updates on new features, site news, and bug fixes.
+    - generic [ref=f110e631]:
+      - textbox "Email address..." [ref=f110e632]
+      - button "Subscribe" [ref=f110e633] [cursor=pointer]
+  - contentinfo [ref=f110e634]:
+    - generic [ref=f110e635]:
+      - generic [ref=f110e636]:
+        - generic [ref=f110e637]:
+          - generic [ref=f110e638]: Lists
+          - list [ref=f110e639]:
+            - listitem [ref=f110e640]:
+              - link "TLDs From A-Z" [ref=f110e641] [cursor=pointer]:
+                - /url: /tlds-from-a-z
+            - listitem [ref=f110e642]:
+              - link "TLD Categories" [ref=f110e643] [cursor=pointer]:
+                - /url: /tld-categories
+            - listitem [ref=f110e644]:
+              - link "TLD Launch Schedule" [ref=f110e645] [cursor=pointer]:
+                - /url: /launch-schedule
+            - listitem [ref=f110e646]:
+              - link "Internationalized Domain Names" [ref=f110e647] [cursor=pointer]:
+                - /url: /internationalized-domain-names
+            - listitem [ref=f110e648]:
+              - link "Cheapest Domain Extensions" [ref=f110e649] [cursor=pointer]:
+                - /url: /cheapest-domain-extensions
+        - generic [ref=f110e650]:
+          - generic [ref=f110e651]: tld:list
+          - list [ref=f110e652]:
+            - listitem [ref=f110e653]:
+              - link "Alerts" [ref=f110e654] [cursor=pointer]:
+                - /url: /alerts
+            - listitem [ref=f110e655]:
+              - link "API" [ref=f110e656] [cursor=pointer]:
+                - /url: /docs-api
+            - listitem [ref=f110e657]:
+              - link "Promo Codes" [ref=f110e658] [cursor=pointer]:
+                - /url: /promo-codes
+            - listitem [ref=f110e659]:
+              - link "Registrars" [ref=f110e660] [cursor=pointer]:
+                - /url: /registrars
+        - generic [ref=f110e661]:
+          - generic [ref=f110e662]: Resources
+          - list [ref=f110e663]:
+            - listitem [ref=f110e664]:
+              - link "Advertise" [ref=f110e665] [cursor=pointer]:
+                - /url: /advertise
+            - listitem [ref=f110e666]:
+              - link "Terms of Service" [ref=f110e667] [cursor=pointer]:
+                - /url: /tos
+            - listitem [ref=f110e668]:
+              - link "Privacy Policy" [ref=f110e669] [cursor=pointer]:
+                - /url: /privacy-policy
+        - generic [ref=f110e670]:
+          - generic [ref=f110e671]: About
+          - list [ref=f110e672]:
+            - listitem [ref=f110e673]:
+              - link "Blog" [ref=f110e674] [cursor=pointer]:
+                - /url: /blog
+        - generic [ref=f110e675]:
+          - generic [ref=f110e676]: Contact
+          - list [ref=f110e677]:
+            - listitem [ref=f110e678]:
+              - text: "Email:"
+              - link "contact@tld-list.com" [ref=f110e679] [cursor=pointer]:
+                - /url: mailto:contact@tld-list.com
+            - listitem [ref=f110e680]:
+              - text: "Twitter:"
+              - link "@tldlist" [ref=f110e681] [cursor=pointer]:
+                - /url: https://twitter.com/tldlist
+      - paragraph [ref=f110e683]: Copyright © 2015 - 2026 tld:list

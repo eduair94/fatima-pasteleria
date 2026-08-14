@@ -1,0 +1,319 @@
+- generic [active] [ref=f152e1]:
+  - banner [ref=f152e2]:
+    - banner [ref=f152e3]:
+      - link "Saltar al contenido principal" [ref=f152e4] [cursor=pointer]:
+        - /url: "#main-content"
+      - generic [ref=f152e7]:
+        - generic [ref=f152e8]:
+          - link [ref=f152e10] [cursor=pointer]:
+            - /url: https://www.godaddy.com/es
+            - figure "GoDaddy" [ref=f152e11]
+          - navigation "Navigation" [ref=f152e14]:
+            - button "Open Menu" [ref=f152e15] [cursor=pointer]
+            - generic [ref=f152e17]:
+              - generic [ref=f152e18]:
+                - link [ref=f152e21] [cursor=pointer]:
+                  - /url: https://www.godaddy.com/es
+                  - figure "GoDaddy" [ref=f152e22]
+                - list [ref=f152e25]:
+                  - listitem [ref=f152e26] [cursor=pointer]:
+                    - button [ref=f152e27]:
+                      - generic [ref=f152e28]: Dominios
+                  - listitem [ref=f152e30] [cursor=pointer]:
+                    - button [ref=f152e31]:
+                      - generic [ref=f152e32]: Sitios web
+                  - listitem [ref=f152e34] [cursor=pointer]:
+                    - link [ref=f152e35]:
+                      - /url: https://www.godaddy.com/es/email
+                      - text: Correo electrónico
+                  - listitem [ref=f152e36] [cursor=pointer]:
+                    - button [ref=f152e37]:
+                      - generic [ref=f152e38]: Hosting
+                  - listitem [ref=f152e40] [cursor=pointer]:
+                    - button [ref=f152e41]:
+                      - generic [ref=f152e42]: Marketing
+                  - listitem [ref=f152e44] [cursor=pointer]:
+                    - button [ref=f152e45]:
+                      - generic [ref=f152e46]: Comercio
+                  - listitem [ref=f152e48] [cursor=pointer]:
+                    - link [ref=f152e49]:
+                      - /url: https://www.godaddy.com/es/seguridad-web/certificado-ssl
+                      - text: Certificados SSL
+                  - listitem [ref=f152e50] [cursor=pointer]:
+                    - link [ref=f152e51]:
+                      - /url: https://www.godaddy.com/es/airo/ai-builder
+                      - text: Airo AI Builder
+                  - listitem [ref=f152e52] [cursor=pointer]:
+                    - link [ref=f152e53]:
+                      - /url: https://www.godaddy.com/es/precios
+                      - text: Precios
+              - button "Close" [ref=f152e54] [cursor=pointer]: ×
+        - group [ref=f152e57]:
+          - generic "Inicio de sesión" [ref=f152e58] [cursor=pointer]
+  - main [ref=f152e61]:
+    - generic [ref=f152e65]:
+      - generic [ref=f152e66]:
+        - generic [ref=f152e68]:
+          - generic [ref=f152e78]:
+            - combobox "Encuentra tu dominio perfecto" [ref=f152e80]: pasteleriafatima.com
+            - button "Buscar pasteleriafatima.com" [ref=f152e82] [cursor=pointer]
+          - generic [ref=f152e84]:
+            - link "Ver los resultados de búsqueda" [ref=f152e85] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=f152e87]: resultados
+            - link "Ver el historial de búsqueda" [ref=f152e90] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=f152e92]: historial
+            - link "Ver favoritos" [ref=f152e95] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=f152e97]: favoritos
+            - link "Dominios premium" [ref=f152e100] [cursor=pointer]:
+              - /url: "#"
+        - separator [ref=f152e105]
+      - generic [ref=f152e109]:
+        - generic [ref=f152e112]:
+          - generic [ref=f152e116]:
+            - button "Agregar pasteleriafatima.com a favoritos" [ref=f152e118] [cursor=pointer]
+            - generic [ref=f152e119]:
+              - heading "EXCELENTE NOMBRE" [level=3] [ref=f152e122]
+              - heading "pasteleriafatima .com" [level=2] [ref=f152e123]:
+                - generic [ref=f152e124]:
+                  - text: pasteleriafatima
+                  - generic [ref=f152e125]: .com
+              - generic [ref=f152e126]:
+                - generic [ref=f152e131]:
+                  - generic [ref=f152e133]:
+                    - generic [ref=f152e134]:
+                      - generic [ref=f152e135]: $0.01
+                      - deletion [ref=f152e136]: $22.99
+                    - generic [ref=f152e137]: por el primer año
+                  - generic [ref=f152e139]: con un registro de 3 año(s) (33 % de ahorro)
+                - button "Agregar pasteleriafatima.com al carrito" [ref=f152e148] [cursor=pointer]:
+                  - generic: Compralo ya
+          - generic [ref=f152e149]:
+            - generic [ref=f152e151]:
+              - generic [ref=f152e152]: Los dominios incluyen Protección de privacidad gratis para siempre.
+              - button "Abrir sugerencias de herramientas" [ref=f152e153] [cursor=pointer]
+            - generic [ref=f152e155]:
+              - generic [ref=f152e156]: Hemos encontrado 554 terminaciones de dominio para "pasteleriafatima"
+              - generic [ref=f152e157] [cursor=pointer]:
+                - checkbox "Ver todos los TLD" [ref=f152e158]
+                - generic [ref=f152e159]: Ver todos los TLD
+          - generic: exactMatchBlock.available
+        - generic [ref=f152e165]:
+          - generic [ref=f152e166]: Explora las terminaciones de
+          - list [ref=f152e170]:
+            - listitem [ref=f152e171]:
+              - generic [ref=f152e174]:
+                - button "Agregar pasteleriafatima.org a favoritos" [ref=f152e175] [cursor=pointer]
+                - generic [ref=f152e177]:
+                  - generic [ref=f152e178]:
+                    - heading ".org" [level=2] [ref=f152e182]
+                    - generic [ref=f152e185]:
+                      - generic [ref=f152e189]:
+                        - generic [ref=f152e190]: $9.99
+                        - deletion [ref=f152e192]: $23.99
+                      - generic [ref=f152e193]:
+                        - generic [ref=f152e194]: por el primer año
+                        - button "Abrir sugerencias de herramientas de precios para pasteleriafatima.org" [ref=f152e196] [cursor=pointer]
+                  - button "Agregar pasteleriafatima.org al carrito" [ref=f152e201] [cursor=pointer]
+            - listitem [ref=f152e202]:
+              - generic [ref=f152e205]:
+                - button "Agregar pasteleriafatima.ai a favoritos" [ref=f152e206] [cursor=pointer]
+                - generic [ref=f152e208]:
+                  - generic [ref=f152e209]:
+                    - heading ".ai" [level=2] [ref=f152e213]
+                    - generic [ref=f152e216]:
+                      - generic [ref=f152e220]:
+                        - generic [ref=f152e221]: $49.99
+                        - deletion [ref=f152e223]: $159.99
+                      - generic [ref=f152e224]:
+                        - generic [ref=f152e225]: Únicamente el primer año con un plazo de 2 años
+                        - button "Abrir sugerencias de herramientas de precios para pasteleriafatima.ai" [ref=f152e227] [cursor=pointer]
+                  - button "Agregar pasteleriafatima.ai al carrito" [ref=f152e232] [cursor=pointer]
+            - listitem [ref=f152e233]:
+              - generic [ref=f152e236]:
+                - button "Agregar pasteleriafatima.com a favoritos" [ref=f152e237] [cursor=pointer]
+                - generic [ref=f152e239]:
+                  - generic [ref=f152e240]:
+                    - heading ".com" [level=2] [ref=f152e244]
+                    - generic [ref=f152e247]:
+                      - generic [ref=f152e251]:
+                        - generic [ref=f152e252]: $0.01
+                        - deletion [ref=f152e254]: $22.99
+                      - generic [ref=f152e255]:
+                        - generic [ref=f152e256]: Únicamente el primer año con un plazo de 3 años
+                        - button "Abrir sugerencias de herramientas de precios para pasteleriafatima.com" [ref=f152e258] [cursor=pointer]
+                  - button "Agregar pasteleriafatima.com al carrito" [ref=f152e263] [cursor=pointer]
+            - listitem [ref=f152e264]:
+              - generic [ref=f152e267]:
+                - button "Agregar pasteleriafatima.net a favoritos" [ref=f152e268] [cursor=pointer]
+                - generic [ref=f152e270]:
+                  - generic [ref=f152e271]:
+                    - heading ".net" [level=2] [ref=f152e275]
+                    - generic [ref=f152e278]:
+                      - generic [ref=f152e282]:
+                        - generic [ref=f152e283]: $0.01
+                        - deletion [ref=f152e285]: $24.99
+                      - generic [ref=f152e286]:
+                        - generic [ref=f152e287]: Únicamente el primer año con un plazo de 3 años
+                        - button "Abrir sugerencias de herramientas de precios para pasteleriafatima.net" [ref=f152e289] [cursor=pointer]
+                  - button "Agregar pasteleriafatima.net al carrito" [ref=f152e294] [cursor=pointer]
+            - listitem [ref=f152e295]:
+              - generic [ref=f152e298]:
+                - button "Agregar pasteleriafatima.org a favoritos" [ref=f152e299] [cursor=pointer]
+                - generic [ref=f152e301]:
+                  - generic [ref=f152e302]:
+                    - heading ".org" [level=2] [ref=f152e306]
+                    - generic [ref=f152e309]:
+                      - generic [ref=f152e313]:
+                        - generic [ref=f152e314]: $9.99
+                        - deletion [ref=f152e316]: $23.99
+                      - generic [ref=f152e317]:
+                        - generic [ref=f152e318]: por el primer año
+                        - button "Abrir sugerencias de herramientas de precios para pasteleriafatima.org" [ref=f152e320] [cursor=pointer]
+                  - button "Agregar pasteleriafatima.org al carrito" [ref=f152e325] [cursor=pointer]
+            - listitem [ref=f152e326]:
+              - generic [ref=f152e329]:
+                - button "Agregar pasteleriafatima.ai a favoritos" [ref=f152e330] [cursor=pointer]
+                - generic [ref=f152e332]:
+                  - generic [ref=f152e333]:
+                    - heading ".ai" [level=2] [ref=f152e337]
+                    - generic [ref=f152e340]:
+                      - generic [ref=f152e344]:
+                        - generic [ref=f152e345]: $49.99
+                        - deletion [ref=f152e347]: $159.99
+                      - generic [ref=f152e348]:
+                        - generic [ref=f152e349]: Únicamente el primer año con un plazo de 2 años
+                        - button "Abrir sugerencias de herramientas de precios para pasteleriafatima.ai" [ref=f152e351] [cursor=pointer]
+                  - button "Agregar pasteleriafatima.ai al carrito" [ref=f152e356] [cursor=pointer]
+            - listitem [ref=f152e357]:
+              - generic [ref=f152e360]:
+                - button "Agregar pasteleriafatima.com a favoritos" [ref=f152e361] [cursor=pointer]
+                - generic [ref=f152e363]:
+                  - generic [ref=f152e364]:
+                    - heading ".com" [level=2] [ref=f152e368]
+                    - generic [ref=f152e371]:
+                      - generic [ref=f152e375]:
+                        - generic [ref=f152e376]: $0.01
+                        - deletion [ref=f152e378]: $22.99
+                      - generic [ref=f152e379]:
+                        - generic [ref=f152e380]: Únicamente el primer año con un plazo de 3 años
+                        - button "Abrir sugerencias de herramientas de precios para pasteleriafatima.com" [ref=f152e382] [cursor=pointer]
+                  - button "Agregar pasteleriafatima.com al carrito" [ref=f152e387] [cursor=pointer]
+            - listitem [ref=f152e388]:
+              - generic [ref=f152e391]:
+                - button "Agregar pasteleriafatima.net a favoritos" [ref=f152e392] [cursor=pointer]
+                - generic [ref=f152e394]:
+                  - generic [ref=f152e395]:
+                    - heading ".net" [level=2] [ref=f152e399]
+                    - generic [ref=f152e402]:
+                      - generic [ref=f152e406]:
+                        - generic [ref=f152e407]: $0.01
+                        - deletion [ref=f152e409]: $24.99
+                      - generic [ref=f152e410]:
+                        - generic [ref=f152e411]: Únicamente el primer año con un plazo de 3 años
+                        - button "Abrir sugerencias de herramientas de precios para pasteleriafatima.net" [ref=f152e413] [cursor=pointer]
+                  - button "Agregar pasteleriafatima.net al carrito" [ref=f152e418] [cursor=pointer]
+          - list [ref=f152e419]:
+            - listitem [ref=f152e420]:
+              - button "•" [ref=f152e421] [cursor=pointer]
+            - listitem [ref=f152e422]:
+              - button "•" [ref=f152e423] [cursor=pointer]
+            - listitem [ref=f152e424]:
+              - button "•" [ref=f152e425] [cursor=pointer]
+            - listitem [ref=f152e426]:
+              - button "•" [ref=f152e427] [cursor=pointer]
+        - generic [ref=f152e429]:
+          - generic [ref=f152e430] [cursor=pointer]:
+            - generic [ref=f152e431]: Ver más
+            - generic [ref=f152e433]:
+              - generic [ref=f152e434]: Todo lo que necesitas, gratis con un dominio de GoDaddy
+              - generic [ref=f152e435]:
+                - generic [ref=f152e436]: Privacidad de dominio
+                - generic [ref=f152e439]: Creador de logos de IA
+                - generic [ref=f152e442]: Prueba del Creador de páginas web
+                - generic [ref=f152e445]: Registro de LLC
+                - generic [ref=f152e448]: Reenvío de dominio
+                - generic [ref=f152e451]: GoDaddy Payments
+                - generic [ref=f152e454]: 4 más
+          - generic [ref=f152e457]:
+            - generic [ref=f152e459]:
+              - heading "Legitima tu negocio" [level=6] [ref=f152e460]
+              - generic [ref=f152e464]:
+                - text: "Privacidad de dominio: La privacidad de dominio limita la información de contacto mostrada en nuestro"
+                - link "directorio público WHOIS de GoDaddy." [ref=f152e465] [cursor=pointer]:
+                  - /url: https://www.godaddy.com/es/whois
+              - generic [ref=f152e466]: "Seguridad DMARC automática: \"Autenticación, informes y cumplimiento de mensajes basados en dominio\" te permite decidir si los correos electrónicos sospechosos son monitoreados, puestos en cuarentena o bloqueados."
+              - generic [ref=f152e470]: "DNSSEC: Las Extensiones de Seguridad del Sistema de Nombres de Dominio ayudan a prevenir que los cibercriminales redirijan el tráfico de internet a sitios web maliciosos."
+              - generic [ref=f152e474]: "Configuración sencilla: Activa instantáneamente correos electrónicos y sitios web, además de obtener ayuda con la configuración de productos externos."
+              - generic [ref=f152e478]: "Registro de LLC: Registro para establecerte a ti y a tu negocio como entidades separadas, y ayudar a proteger tus activos personales."
+            - generic [ref=f152e483]:
+              - heading "Construye, desarrolla tu marca y comienza a ganar" [level=6] [ref=f152e484]
+              - generic [ref=f152e485]: "Redirección de dominio: La redirección de dominio redirige a los visitantes a cualquier sitio web que elijas."
+              - generic [ref=f152e489]: "Creador de logos de IA: Usa inteligencia artificial para crear un nuevo logo para tu negocio en segundos."
+              - generic [ref=f152e493]: "Prueba del Creador de páginas web: Publica un sitio web gratuito y apto para dispositivos móviles rápidamente usando nuestras plantillas profesionales."
+              - generic [ref=f152e497]: "Aplicación de GoDaddy: Diseña publicaciones de marketing, logos y anuncios para ayudar a expandir tu presencia en línea y comenzar a vender más."
+              - generic [ref=f152e501]: "GoDaddy Payments: GoDaddy Payments es una puerta de enlace de pago que permite a tu negocio aceptar cualquier tarjeta de crédito o débito importante."
+  - contentinfo [ref=f152e505]:
+    - contentinfo [ref=f152e506]:
+      - link "Saltar al contenido principal" [ref=f152e507] [cursor=pointer]:
+        - /url: "#main-content"
+      - generic [ref=f152e510]:
+        - navigation [ref=f152e511]:
+          - list [ref=f152e512]:
+            - listitem [ref=f152e513]:
+              - button "Acerca de GoDaddy +" [ref=f152e515] [cursor=pointer]
+            - listitem [ref=f152e516]:
+              - button "Asistencia técnica +" [ref=f152e518] [cursor=pointer]
+            - listitem [ref=f152e519]:
+              - button "Recursos +" [ref=f152e521] [cursor=pointer]
+            - listitem [ref=f152e522]:
+              - button "Programas de socios +" [ref=f152e524] [cursor=pointer]
+            - listitem [ref=f152e525]:
+              - button "Cuenta +" [ref=f152e527] [cursor=pointer]
+            - listitem [ref=f152e528]:
+              - button "Compras +" [ref=f152e530] [cursor=pointer]
+        - generic [ref=f152e531]:
+          - link "GoDaddy Home Page" [ref=f152e532] [cursor=pointer]:
+            - /url: /
+          - separator [ref=f152e535]
+          - generic [ref=f152e536]:
+            - button "Selector de idioma de contenido. La selección actual es Estados Unidos - Español." [ref=f152e539] [cursor=pointer]: Estados Unidos - Español
+            - button "Selector de divisas. La selección actual es USD $." [ref=f152e543] [cursor=pointer]: USD $
+          - list [ref=f152e546]:
+            - listitem [ref=f152e547]:
+              - link "GoDaddy en Facebook" [ref=f152e548] [cursor=pointer]:
+                - /url: https://www.facebook.com/godaddy
+            - listitem [ref=f152e550]:
+              - link "GoDaddy en Instagram" [ref=f152e551] [cursor=pointer]:
+                - /url: https://www.instagram.com/godaddy
+            - listitem [ref=f152e553]:
+              - link "GoDaddy en TikTok" [ref=f152e554] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@godaddy?lang=en
+            - listitem [ref=f152e556]:
+              - link "GoDaddy en Twitter" [ref=f152e557] [cursor=pointer]:
+                - /url: https://www.twitter.com/godaddy
+            - listitem [ref=f152e559]:
+              - link "GoDaddy en YouTube" [ref=f152e560] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UCgH_SmWw9WianYyOB5Y6tEA
+        - generic [ref=f152e562]:
+          - navigation [ref=f152e563]:
+            - list [ref=f152e564]:
+              - listitem [ref=f152e565]:
+                - link "Legal" [ref=f152e566] [cursor=pointer]:
+                  - /url: https://www.godaddy.com/es/legal/agreements
+              - listitem [ref=f152e567]:
+                - link "Política de privacidad" [ref=f152e568] [cursor=pointer]:
+                  - /url: https://www.godaddy.com/es/legal/agreements/privacy-policy
+              - listitem [ref=f152e569]:
+                - link "Cookies" [ref=f152e570] [cursor=pointer]:
+                  - /url: https://www.godaddy.com/es/legal/agreements/cookie-policy
+          - link "No venda mi información personal" [ref=f152e572] [cursor=pointer]:
+            - /url: https://www.godaddy.com/es/legal/agreements/cookie-policy
+          - generic [ref=f152e573]: Copyright © 1999 - 2026 GoDaddy Operating Company, LLC. Todos los derechos reservados. La marca GoDaddy es una marca registrada de GoDaddy Operating Company, LLC en los EE. UU. y otros países. El logo “GO” es una marca comercial registrada de GoDaddy.com, LLC en los EE. UU.
+          - paragraph [ref=f152e575]:
+            - text: El uso de este sitio está sujeto a las condiciones de uso expresas. Al utilizar este sitio, tú indicas que aceptas cumplir con estos
+            - link "Términos universales del servicio" [ref=f152e576] [cursor=pointer]:
+              - /url: https://www.godaddy.com/legal/agreements/universal-terms-of-service-agreement
+            - text: .

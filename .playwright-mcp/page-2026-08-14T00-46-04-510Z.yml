@@ -1,0 +1,116 @@
+- generic [ref=f20e1]:
+  - banner [ref=f20e8]:
+    - generic [ref=f20e11]:
+      - generic [ref=f20e12]:
+        - link "Skip to main content":
+          - /url: "#body"
+        - link "Spaceship" [ref=f20e13] [cursor=pointer]:
+          - /url: /
+      - navigation "Top navigation menu" [ref=f20e16]:
+        - button "Open Menu" [ref=f20e17] [cursor=pointer]
+        - text:                
+        - button "Launchpad. Quick access to your account settings, products and tools." [ref=f20e21] [cursor=pointer]
+        - button "Shopping cart status. You currently have 0 items in your cart." [ref=f20e25] [cursor=pointer]
+        - button "Select this option for a drop-down menu with actions for logged out user" [ref=f20e29] [cursor=pointer]
+  - generic [ref=f20e35]:
+    - generic [ref=f20e36]:
+      - generic [ref=f20e37]:
+        - navigation [ref=f20e39]:
+          - separator [ref=f20e40]
+          - button "Left" [disabled]
+          - tablist [ref=f20e42]:
+            - tab "Domains" [selected] [ref=f20e43] [cursor=pointer]
+            - tab "Pricing" [ref=f20e45] [cursor=pointer]
+            - tab "Beast mode" [ref=f20e48] [cursor=pointer]
+          - button "Right" [ref=f20e54] [cursor=pointer]
+        - textbox "Search" [active] [ref=f20e61]:
+          - /placeholder: Search for a domain name here...
+        - paragraph [ref=f20e68]: Start typing above to search for a domain name.
+      - img "Empty state" [ref=f20e69]
+    - region "Notifications alt+T"
+  - generic [ref=f20e74]:
+    - generic [ref=f20e75]:
+      - paragraph [ref=f20e76]: Join the Spaceship universe
+      - paragraph [ref=f20e77]: Subscribe to keep up with everything happening on Spaceship, from deals and promotions to product launches.
+    - generic [ref=f20e80]:
+      - textbox "Email address for newsletter" [ref=f20e82]:
+        - /placeholder: Enter your email here
+      - button "Subscribe to newsletter" [ref=f20e83] [cursor=pointer]
+  - generic [ref=f20e90]:
+    - separator [ref=f20e91]
+    - contentinfo "More on Spaceship" [ref=f20e92]:
+      - generic [ref=f20e93]:
+        - navigation [ref=f20e94]:
+          - list [ref=f20e96]:
+            - listitem [ref=f20e97]:
+              - button "Domains" [ref=f20e98]
+            - listitem [ref=f20e102]:
+              - button "Hosting" [ref=f20e103]
+            - listitem [ref=f20e107]:
+              - button "Email" [ref=f20e108]
+            - listitem [ref=f20e112]:
+              - button "Starlight™ Cloud" [ref=f20e113]
+            - listitem [ref=f20e117]:
+              - button "Security" [ref=f20e118]
+          - button "Transfer to Us" [ref=f20e123]
+          - button "Why Spaceship" [ref=f20e128]
+          - button "About Spaceship" [ref=f20e133]
+          - button "Customer Service" [ref=f20e138]
+        - generic [ref=f20e142]:
+          - separator [ref=f20e144]
+          - generic [ref=f20e145]:
+            - paragraph [ref=f20e146]: Payment Options
+            - 'figure "Display of available payment options: Visa, Mastercard, American Express, PayPal, Bitcoin" [ref=f20e147]':
+              - generic [ref=f20e148]:
+                - img "Visa" [ref=f20e149]
+                - img "Mastercard" [ref=f20e150]
+                - img "American express" [ref=f20e151]
+                - img "Discover" [ref=f20e152]
+                - img "Dinersclub" [ref=f20e153]
+                - img "JCB" [ref=f20e154]
+                - img "UnionPay" [ref=f20e155]
+                - img "Bitcoin" [ref=f20e156]
+                - img "Paypal" [ref=f20e157]
+                - img "GooglePay" [ref=f20e158]
+                - img "ApplePay" [ref=f20e159]
+                - img "Alipay" [ref=f20e160]
+              - paragraph [ref=f20e161]: We protect and save your data.
+          - generic [ref=f20e162]:
+            - paragraph [ref=f20e163]: Certified By
+            - generic [ref=f20e164]:
+              - list [ref=f20e166]:
+                - listitem [ref=f20e167]:
+                  - img "icann" [ref=f20e168]
+                  - paragraph [ref=f20e169]: We are an ICANN-accredited registrar. Serving customers since 2022.
+                - listitem [ref=f20e170]:
+                  - img "Sectigo" [ref=f20e171]
+              - link [ref=f20e173] [cursor=pointer]:
+                - /url: https://www.producthunt.com/posts/spaceship-3?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-spaceship-3
+                - img "Spaceship.com - The future of domain, website, and digital product management | Product Hunt" [ref=f20e174]
+          - separator [ref=f20e176]
+        - generic [ref=f20e177]:
+          - generic [ref=f20e179]:
+            - img "Spaceship" [ref=f20e180]
+            - generic [ref=f20e181]:
+              - paragraph [ref=f20e182]: The entirety of this site is protected by copyright © 2019–2026 Spaceship, Inc
+              - paragraph [ref=f20e183]: 4600 East Washington Street, Suite 300, Phoenix, AZ 85034, USA
+          - list [ref=f20e185]:
+            - listitem [ref=f20e186]:
+              - link "Facebook" [ref=f20e187] [cursor=pointer]:
+                - /url: https://www.facebook.com/spaceship
+            - listitem [ref=f20e191]:
+              - link "Twitter" [ref=f20e192] [cursor=pointer]:
+                - /url: https://twitter.com/spaceship
+            - listitem [ref=f20e196]:
+              - link "Instagram" [ref=f20e197] [cursor=pointer]:
+                - /url: https://www.instagram.com/spaceship
+            - listitem [ref=f20e201]:
+              - link "Linkedin" [ref=f20e202] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/spaceshipcom/
+  - generic [ref=f20e208]:
+    - heading "Hello! Want to change your language?" [level=6] [ref=f20e209]
+    - generic [ref=f20e210]: Do you speak Español?
+    - generic [ref=f20e211]: You can change your preferences to use Spaceship in Español.
+    - generic [ref=f20e212]:
+      - button "No, don't change" [ref=f20e213] [cursor=pointer]
+      - button "Yes, change my preferences" [ref=f20e215] [cursor=pointer]

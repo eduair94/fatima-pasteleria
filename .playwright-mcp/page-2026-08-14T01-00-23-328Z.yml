@@ -1,0 +1,25 @@
+- generic [active] [ref=f159e1]:
+  - link "Skip to content":
+    - /url: "#geist-skip-nav"
+  - generic [ref=f159e2]:
+    - banner [ref=f159e3]:
+      - generic [ref=f159e5]:
+        - link [ref=f159e6] [cursor=pointer]:
+          - /url: /home
+          - img "Vercel Logo" [ref=f159e7]
+        - link "Domains" [ref=f159e11] [cursor=pointer]:
+          - /url: /domains
+      - searchbox "Search" [ref=f159e16]
+      - generic [ref=f159e24]:
+        - button "Cart" [ref=f159e25] [cursor=pointer]
+        - navigation [ref=f159e31]:
+          - link [ref=f159e32] [cursor=pointer]:
+            - /url: /login?next=%2Fdomains%2Fsearch%3Fquery%3Dpasteleriafatima.com
+            - paragraph [ref=f159e34]: Login
+          - link [ref=f159e35] [cursor=pointer]:
+            - /url: /signup?next=%2Fdomains%2Fsearch%3Fquery%3Dpasteleriafatima.com
+            - paragraph [ref=f159e37]: Sign Up
+    - main [ref=f159e38]:
+      - generic [ref=f159e40]:
+        - heading "Begin your search" [level=2] [ref=f159e44]
+        - paragraph [ref=f159e45]: Enter a domain name, keyword, or prompt to find available domains for your next project

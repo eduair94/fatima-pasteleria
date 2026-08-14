@@ -1,0 +1,303 @@
+- main [ref=f71e2]:
+  - navigation [ref=f71e4]:
+    - generic [ref=f71e5]:
+      - link "Squarespace Logo" [ref=f71e6] [cursor=pointer]:
+        - /url: /
+        - img "Squarespace Logo" [ref=f71e7]
+      - button "Abrir menú" [ref=f71e13] [cursor=pointer]:
+        - img "Abrir menú" [ref=f71e14]
+    - generic [ref=f71e18]:
+      - button "Cerrar menú" [ref=f71e19] [cursor=pointer]:
+        - img "Cerrar menú"
+      - generic [ref=f71e20]:
+        - link "Transfiere un dominio" [ref=f71e21] [cursor=pointer]:
+          - /url: /es/transfer-a-domain
+        - link "Crea un sitio web" [ref=f71e22] [cursor=pointer]:
+          - /url: https://squarespace.com
+      - generic [ref=f71e23]:
+        - link "Iniciar sesión" [ref=f71e24] [cursor=pointer]:
+          - /url: /auth/protected-redirect/login?location=https://domains.squarespace.com/es/
+        - link "Busca un dominio" [ref=f71e25] [cursor=pointer]:
+          - /url: /
+  - generic [ref=f71e27]:
+    - heading "Compra el dominio de tus sueños" [level=1] [ref=f71e29]
+    - paragraph [ref=f71e31]: Todos los sueños necesitan un dominio. Empieza a crear el tuyo con Squarespace.
+    - generic [ref=f71e32]:
+      - textbox "Start your search here" [ref=f71e33]
+      - button "Search" [disabled] [ref=f71e34] [cursor=pointer]
+    - paragraph [ref=f71e38]:
+      - text: ¿Necesitas inspiración?
+      - link "Genera un dominio usando la IA" [ref=f71e39] [cursor=pointer]:
+        - /url: /tools/domain-name-generator
+  - generic [ref=f71e40]:
+    - generic [ref=f71e41]:
+      - heading "Precios transparentes con todo incluido" [level=2] [ref=f71e42]
+      - paragraph [ref=f71e43]: "El precio que ves es el que pagas. Tu dominio viene con todo lo que necesitas: se incluyen todas las funciones, herramientas, incluso los impuestos y cargos, por lo que no habrá sorpresas al finalizar la compra."
+    - table [ref=f71e44]:
+      - rowgroup [ref=f71e45]:
+        - row [ref=f71e46]:
+          - columnheader [ref=f71e47]:
+            - paragraph [ref=f71e48]: Funciones
+          - columnheader [ref=f71e49]:
+            - paragraph [ref=f71e50]: SQSP
+          - columnheader [ref=f71e51]:
+            - paragraph [ref=f71e52]: Otros
+      - rowgroup [ref=f71e53]:
+        - row [ref=f71e54]:
+          - cell "Privacidad de WHOIS Information" [ref=f71e55]:
+            - paragraph [ref=f71e56]:
+              - generic [ref=f71e57]: Privacidad de WHOIS
+            - button [ref=f71e60] [cursor=pointer]:
+              - img "Information" [ref=f71e61]
+          - cell [ref=f71e65]
+          - cell [ref=f71e68]
+        - row [ref=f71e71]:
+          - cell "Certificado SSL Information" [ref=f71e72]:
+            - paragraph [ref=f71e73]:
+              - generic [ref=f71e74]: Certificado SSL
+            - button [ref=f71e77] [cursor=pointer]:
+              - img "Information" [ref=f71e78]
+          - cell [ref=f71e82]
+          - cell [ref=f71e85]
+        - row [ref=f71e88]:
+          - cell "DNS premium Information" [ref=f71e89]:
+            - paragraph [ref=f71e90]:
+              - generic [ref=f71e91]: DNS premium
+            - button [ref=f71e94] [cursor=pointer]:
+              - img "Information" [ref=f71e95]
+          - cell [ref=f71e99]
+          - cell [ref=f71e102]
+        - row [ref=f71e105]:
+          - cell "Redirección de correos electrónicos Information" [ref=f71e106]:
+            - paragraph [ref=f71e107]:
+              - generic [ref=f71e108]: Redirección de correos electrónicos
+            - button [ref=f71e111] [cursor=pointer]:
+              - img "Information" [ref=f71e112]
+          - cell [ref=f71e116]
+          - cell [ref=f71e119]
+        - row [ref=f71e122]:
+          - cell "Páginas de parking sin spam Information" [ref=f71e123]:
+            - paragraph [ref=f71e124]:
+              - generic [ref=f71e125]: Páginas de parking sin spam
+            - button [ref=f71e128] [cursor=pointer]:
+              - img "Information" [ref=f71e129]
+          - cell [ref=f71e133]
+          - cell [ref=f71e136]
+        - row [ref=f71e139]:
+          - cell "Autenticación en dos pasos Information" [ref=f71e140]:
+            - paragraph [ref=f71e141]:
+              - generic [ref=f71e142]: Autenticación en dos pasos
+            - button [ref=f71e145] [cursor=pointer]:
+              - img "Information" [ref=f71e146]
+          - cell [ref=f71e150]
+          - cell [ref=f71e153]
+        - row [ref=f71e156]:
+          - cell "Redirección de URL o dominio Information" [ref=f71e157]:
+            - paragraph [ref=f71e158]:
+              - generic [ref=f71e159]: Redirección de URL o dominio
+            - button [ref=f71e162] [cursor=pointer]:
+              - img "Information" [ref=f71e163]
+          - cell [ref=f71e167]
+          - cell [ref=f71e170]
+        - row [ref=f71e173]:
+          - cell "Atención al cliente las 24 horas, todos los días de la semana Information" [ref=f71e174]:
+            - paragraph [ref=f71e175]:
+              - generic [ref=f71e176]: Atención al cliente las 24 horas, todos los días de la semana
+            - button [ref=f71e179] [cursor=pointer]:
+              - img "Information" [ref=f71e180]
+          - cell [ref=f71e184]
+          - cell [ref=f71e187]
+        - row [ref=f71e190]:
+          - cell [ref=f71e191]:
+            - paragraph [ref=f71e192]: Valor total
+          - cell [ref=f71e193]:
+            - paragraph [ref=f71e194]: Incluido
+          - cell [ref=f71e195]:
+            - paragraph [ref=f71e196]: 11 USD - 130 USD
+  - generic [ref=f71e197]:
+    - generic [ref=f71e198]:
+      - heading "¿Por qué elegir Squarespace?" [level=2] [ref=f71e199]
+      - paragraph [ref=f71e200]: "Durante más de 20 años, Squarespace ha ayudado a los emprendedores a hacer realidad sus sueños. Aquí, crear una presencia en línea es sencillo porque tu dominio incluye todo lo que debería: seguridad y protección de privacidad eficientes e integradas, un premiado servicio de atención al cliente y herramientas que te ayudan a crecer, por un precio transparente."
+    - generic [ref=f71e202]:
+      - generic [ref=f71e204]:
+        - generic [ref=f71e205]:
+          - heading "Privacidad" [level=3] [ref=f71e206]
+          - paragraph [ref=f71e207]: La privacidad de WHOIS está incluida en todos los dominios elegibles.
+        - button "Reproducir video" [ref=f71e213] [cursor=pointer]
+      - generic [ref=f71e218]:
+        - heading "Redirección de correos electrónicos" [level=3] [ref=f71e219]
+        - paragraph [ref=f71e220]: Redirecciona hasta 100 direcciones de correo electrónico sin coste adicional.
+      - generic [ref=f71e225]:
+        - heading "Seguridad" [level=3] [ref=f71e226]
+        - paragraph [ref=f71e227]:
+          - text: Tu sitio cuenta con la seguridad del certificado SSL/TLS gratuito de
+          - link "Let's Encrypt" [ref=f71e228] [cursor=pointer]:
+            - /url: https://letsencrypt.org/
+          - text: que se actualiza automáticamente.
+      - generic [ref=f71e232]:
+        - generic [ref=f71e233]:
+          - heading "Redirección de URL" [level=3] [ref=f71e234]
+          - paragraph [ref=f71e235]: Conecta tu dominio personalizado con tu sitio web de Squarespace o redirecciona la URL gratuitamente para dirigir a los visitantes a la experiencia de aterrizaje que tú elijas (por ejemplo, tu Bio Site o tu perfil en redes sociales).
+        - button "Reproducir video" [ref=f71e241] [cursor=pointer]
+  - generic [ref=f71e244]:
+    - generic [ref=f71e245]:
+      - heading "Seguridad sin concesiones" [level=2] [ref=f71e246]
+      - paragraph [ref=f71e247]: Obtener tu dominio no debería costarte más y, con Squarespace, eso no sucede. Todos los dominios de Squarespace incluyen protección de privacidad y seguridad avanzada.
+    - generic [ref=f71e248]:
+      - heading "Seguridad integrada, respaldada por los mejores" [level=3] [ref=f71e250]
+      - paragraph [ref=f71e251]: Cifrado de extremo a extremo con DNSSEC impulsado por CloudDNS y certificados SSL para mantener tu conexión segura, gratis con cada dominio.
+      - heading "Más seguridad, donde más la necesitas" [level=3] [ref=f71e253]
+      - paragraph [ref=f71e254]: Las opciones de autenticación en dos pasos ofrecen una capa adicional de protección para tu cuenta y tu configuración de dominio más importante.
+      - heading "Protección de privacidad gratis" [level=3] [ref=f71e256]
+      - paragraph [ref=f71e257]: Todos los dominios elegibles incluyen privacidad de WHOIS, por lo que tu información privada permanece privada.
+      - heading "Recibe información y protección" [level=3] [ref=f71e259]
+      - paragraph [ref=f71e260]: El registro de actividad de tu dominio hace un seguimiento de los cambios que los propietarios y administradores realizan en tu dominio para fines de información y protección.
+  - generic [ref=f71e262]:
+    - generic [ref=f71e263]:
+      - heading "Compra un dominio y haz realidad tu visión" [level=2] [ref=f71e264]
+      - paragraph [ref=f71e265]: Registra tu dominio personalizado o transfiere un dominio existente a Squarespace y gestiona todo en un solo lugar. Crea tu sitio web en minutos con herramientas de IA potentes y plantillas personalizadas o agrega un correo electrónico empresarial personalizado con Google Workspace. Aprovecha al máximo tu dominio y hazlo todo con Squarespace.
+    - generic [ref=f71e267]:
+      - link [ref=f71e270] [cursor=pointer]:
+        - /url: /es/transfer-a-domain
+        - paragraph [ref=f71e271]: ¿Ya tienes un dominio?
+        - paragraph [ref=f71e272]: Transfiere un dominio existente
+        - paragraph [ref=f71e273]: →
+      - link [ref=f71e276] [cursor=pointer]:
+        - /url: https://es.squarespace.com/correo-profesional
+        - paragraph [ref=f71e277]: Comunica con confianza
+        - paragraph [ref=f71e278]: Correo electrónico privado y profesional de Google Workspace
+        - paragraph [ref=f71e279]: →
+      - link [ref=f71e282] [cursor=pointer]:
+        - /url: https://squarespace.com
+        - paragraph [ref=f71e283]: Amplía tu marca
+        - paragraph [ref=f71e284]: Empieza a crear tu propio sitio web
+        - paragraph [ref=f71e285]: →
+  - generic [ref=f71e292]:
+    - generic [ref=f71e293]:
+      - heading "Registra un dominio entre más de 400 extensiones" [level=2] [ref=f71e294]
+      - paragraph [ref=f71e295]: Squarespace brinda una amplia gama de dominios de nivel superior, lo que te permite personalizar tu presencia en línea para que se adapte a tu marca o negocio.
+    - generic [ref=f71e296]:
+      - link "Go to .com page" [ref=f71e297] [cursor=pointer]:
+        - /url: /tlds/com-domain
+        - paragraph [ref=f71e299]: .com
+      - link "Go to .net page" [ref=f71e300] [cursor=pointer]:
+        - /url: /tlds/net-domain
+        - paragraph [ref=f71e302]: .net
+      - link "Go to .org page" [ref=f71e303] [cursor=pointer]:
+        - /url: /tlds/org-domain
+        - paragraph [ref=f71e305]: .org
+      - link "Go to .io page" [ref=f71e306] [cursor=pointer]:
+        - /url: /tlds/io-domain
+        - paragraph [ref=f71e308]: .io
+      - link "Go to .co page" [ref=f71e309] [cursor=pointer]:
+        - /url: /tlds/co-domain
+        - paragraph [ref=f71e311]: .co
+      - link "Go to .xyz page" [ref=f71e312] [cursor=pointer]:
+        - /url: /tlds/xyz-domain
+        - paragraph [ref=f71e314]: .xyz
+      - link "Go to .me page" [ref=f71e315] [cursor=pointer]:
+        - /url: /tlds/me-domain
+        - paragraph [ref=f71e317]: .me
+      - link "Go to .music page" [ref=f71e318] [cursor=pointer]:
+        - /url: /tlds/music-domain
+        - paragraph [ref=f71e320]: .music
+      - link "Go to .tech page" [ref=f71e321] [cursor=pointer]:
+        - /url: /tlds/tech-domain
+        - paragraph [ref=f71e323]: .tech
+      - link "Go to .site page" [ref=f71e324] [cursor=pointer]:
+        - /url: /tlds/site-domain
+        - paragraph [ref=f71e326]: .site
+      - link "Go to .shop page" [ref=f71e327] [cursor=pointer]:
+        - /url: /tlds/shop-domain
+        - paragraph [ref=f71e329]: .shop
+      - link "Go to .store page" [ref=f71e330] [cursor=pointer]:
+        - /url: /tlds/store-domain
+        - paragraph [ref=f71e332]: .store
+    - link "Explorar todas las opciones" [ref=f71e334] [cursor=pointer]:
+      - /url: /es/tlds
+      - text: Explorar todas las opciones
+      - generic [ref=f71e335]: →
+  - generic [ref=f71e336]:
+    - heading "¿Vienes de Google Domains?" [level=2] [ref=f71e338]
+    - generic [ref=f71e339]:
+      - button "Reproducir video" [ref=f71e345] [cursor=pointer]
+      - generic [ref=f71e348]:
+        - heading "Experiencia familiar e intuitiva" [level=3] [ref=f71e349]
+        - paragraph [ref=f71e350]: "Squarespace Domains incluye lo mejor de Google Domains: un precio justo que incluye funciones premium como la redirección de correos electrónicos y una interfaz intuitiva y fácil de usar."
+        - heading "Registro de dominios de primer nivel" [level=3] [ref=f71e351]
+        - paragraph [ref=f71e352]: Registra un dominio con o sin un sitio web de Squarespace. Vincula fácilmente tu dominio con cualquier proveedor de correo electrónico, servicio de alojamiento web o aplicación personalizada.
+        - link "Más información" [ref=f71e354] [cursor=pointer]:
+          - /url: /es/google-domains
+          - text: Más información
+          - generic [ref=f71e355]: →
+  - generic [ref=f71e357]:
+    - heading "Cómo buscar y comprar dominios disponibles" [level=2] [ref=f71e359]
+    - list [ref=f71e360]:
+      - listitem [ref=f71e361]:
+        - paragraph [ref=f71e363]: Ingresa el dominio deseado en nuestra herramienta de búsqueda de dominios o usa nuestro generador de nombres de dominio impulsado por IA para obtener ideas.
+      - listitem [ref=f71e364]:
+        - paragraph [ref=f71e366]: Verifica la disponibilidad de los nombres de dominio entre una amplia variedad de TLD, códigos de país y extensiones de dominio.
+      - listitem [ref=f71e367]:
+        - paragraph [ref=f71e369]: "Selecciona uno o más dominios y extensiones de dominio: registra errores ortográficos y dominios alternativos para proteger tu marca."
+      - listitem [ref=f71e370]:
+        - paragraph [ref=f71e372]: Completa el registro de tu dominio con Squarespace para que puedas gestionarlos desde un único lugar.
+      - listitem [ref=f71e373]:
+        - paragraph [ref=f71e375]: Finaliza la compra y paga.
+  - generic [ref=f71e377]:
+    - heading "Preguntas frecuentes" [level=2] [ref=f71e379]
+    - generic [ref=f71e380]:
+      - button [ref=f71e382] [cursor=pointer]:
+        - heading "¿Qué es un dominio?" [level=3] [ref=f71e383]
+      - button [ref=f71e388] [cursor=pointer]:
+        - heading "¿Qué es el registro de dominios?" [level=3] [ref=f71e389]
+      - button [ref=f71e394] [cursor=pointer]:
+        - heading "¿Cómo elijo un registrador de dominios?" [level=3] [ref=f71e395]
+      - button [ref=f71e400] [cursor=pointer]:
+        - heading "¿Debo usar otros servicios de Squarespace para usar Squarespace Domains para mis dominios?" [level=3] [ref=f71e401]
+      - button [ref=f71e406] [cursor=pointer]:
+        - heading "¿Cómo puedo obtener un correo electrónico para mi dominio?" [level=3] [ref=f71e407]
+      - button [ref=f71e412] [cursor=pointer]:
+        - heading "¿Qué dominios de nivel superior están disponibles en Squarespace?" [level=3] [ref=f71e413]
+      - button [ref=f71e418] [cursor=pointer]:
+        - heading "¿Tendré privacidad de dominio o WHOIS?" [level=3] [ref=f71e419]
+      - button [ref=f71e424] [cursor=pointer]:
+        - heading "¿Los dominios de Squarespace incluyen un certificado SSL?" [level=3] [ref=f71e425]
+      - button [ref=f71e430] [cursor=pointer]:
+        - heading "¿Cómo elijo el nombre de mi dominio?" [level=3] [ref=f71e431]
+      - button [ref=f71e436] [cursor=pointer]:
+        - heading "¿Cómo me aseguro de que ninguna otra persona quiera usar mi dominio?" [level=3] [ref=f71e437]
+      - button [ref=f71e442] [cursor=pointer]:
+        - heading "¿Squarespace ofrece dominios gratis?" [level=3] [ref=f71e443]
+      - button [ref=f71e448] [cursor=pointer]:
+        - heading "Si compro un dominio, pero mi sitio no está listo, ¿qué sucede?" [level=3] [ref=f71e449]
+      - button [ref=f71e454] [cursor=pointer]:
+        - heading "¿Puedo vender Squarespace Domains con mi negocio?" [level=3] [ref=f71e455]
+  - generic [ref=f71e459]:
+    - paragraph [ref=f71e460]: Encuentra el dominio perfecto para tu web
+    - generic [ref=f71e461]:
+      - textbox "Start your search here" [ref=f71e462]
+      - button "Search" [disabled] [ref=f71e463] [cursor=pointer]
+    - paragraph [ref=f71e466]:
+      - text: ¿Ya tienes un dominio?
+      - link "Transfiérelo ahora." [ref=f71e467] [cursor=pointer]:
+        - /url: /transfer-a-domain
+  - generic [ref=f71e468]:
+    - list [ref=f71e469]:
+      - listitem [ref=f71e470]:
+        - button "Productos" [ref=f71e471] [cursor=pointer]:
+          - generic [ref=f71e473]: ↓
+      - listitem [ref=f71e474]:
+        - button "Terminaciones de dominios" [ref=f71e475] [cursor=pointer]:
+          - generic [ref=f71e477]: ↓
+      - listitem [ref=f71e478]:
+        - button "Recursos" [ref=f71e479] [cursor=pointer]:
+          - generic [ref=f71e481]: ↓
+      - listitem [ref=f71e482]:
+        - button "Compañía" [ref=f71e483] [cursor=pointer]:
+          - generic [ref=f71e485]: ↓
+    - generic [ref=f71e486]:
+      - link "Squarespace Logo" [ref=f71e487] [cursor=pointer]:
+        - /url: /
+        - img "Squarespace Logo" [ref=f71e488]
+      - button "Select your language" [ref=f71e494] [cursor=pointer]: Español ↓
+      - generic [ref=f71e495]: Registrador de dominios acreditado por ICANN.

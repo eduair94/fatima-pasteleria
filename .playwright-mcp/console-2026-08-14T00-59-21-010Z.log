@@ -1,0 +1,12 @@
+[     991ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://domains.squarespace.com/domain-name-search?query=pasteleriafatima:0
+[    1515ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://domains.squarespace.com/api/me:0
+[    1515ms] [ERROR] Error: Request failed with status code 401
+    at e (https://static1.squarespace.com/static/ta/64b94eec332d3714c74d9334/430/scripts/pages/home/index.js:1:59706)
+    at e (https://static1.squarespace.com/static/ta/64b94eec332d3714c74d9334/430/scripts/pages/home/index.js:1:62159)
+    at XMLHttpRequest.b (https://static1.squarespace.com/static/ta/64b94eec332d3714c74d9334/430/scripts/pages/home/index.js:1:54968) @ https://static1.squarespace.com/static/ta/64b94eec332d3714c74d9334/430/scripts/pages/home/index.js:0
+[    2498ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://domains.squarespace.com/api/me:0
+[    2500ms] [ERROR] Error: Request failed with status code 401
+    at e (https://static1.squarespace.com/static/ta/64b94eec332d3714c74d9334/430/scripts/pages/search/index.js:1:616795)
+    at e (https://static1.squarespace.com/static/ta/64b94eec332d3714c74d9334/430/scripts/pages/search/index.js:1:619248)
+    at XMLHttpRequest._ (https://static1.squarespace.com/static/ta/64b94eec332d3714c74d9334/430/scripts/pages/search/index.js:1:612057) @ https://static1.squarespace.com/static/ta/64b94eec332d3714c74d9334/430/scripts/pages/search/index.js:0
+[    2629ms] [LOG] [AAT] Region explicitly set to EU @ https://static1.squarespace.com/static/ta/64b94eec332d3714c74d9334/430/scripts/pages/search/index.js:0

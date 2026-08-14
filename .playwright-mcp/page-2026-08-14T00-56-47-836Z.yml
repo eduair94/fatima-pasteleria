@@ -1,0 +1,121 @@
+- generic [ref=f118e1]:
+  - banner [ref=f118e8]:
+    - generic [ref=f118e11]:
+      - generic [ref=f118e12]:
+        - link "Skip to main content":
+          - /url: "#body"
+        - link "Spaceship" [ref=f118e13] [cursor=pointer]:
+          - /url: /
+      - navigation "Top navigation menu" [ref=f118e16]:
+        - button "Open Menu" [ref=f118e17] [cursor=pointer]
+        - text:                
+        - button "Launchpad. Quick access to your account settings, products and tools." [ref=f118e21] [cursor=pointer]
+        - button "Shopping cart status. You currently have 0 items in your cart." [ref=f118e25] [cursor=pointer]
+        - button "Select this option for a drop-down menu with actions for logged out user" [ref=f118e29] [cursor=pointer]
+  - generic [ref=f118e35]:
+    - generic [ref=f118e37]:
+      - navigation [ref=f118e39]:
+        - separator [ref=f118e40]
+        - button "Left" [disabled]
+        - tablist [ref=f118e42]:
+          - tab "Domains" [ref=f118e43] [cursor=pointer]
+          - tab "Pricing" [selected] [ref=f118e45] [cursor=pointer]
+          - tab "Beast mode" [ref=f118e48] [cursor=pointer]
+        - button "Right" [ref=f118e54] [cursor=pointer]
+      - textbox "Search" [active] [ref=f118e61]:
+        - /placeholder: Search for a domain name here...
+      - generic [ref=f118e62]:
+        - paragraph [ref=f118e68]: Start typing above to search for a domain name.
+        - generic [ref=f118e70]:
+          - generic [ref=f118e71]:
+            - textbox "TLD search input" [ref=f118e73]:
+              - /placeholder: Search a TLD
+            - button "Refine" [ref=f118e75] [cursor=pointer]
+          - button "Price Range" [ref=f118e80] [cursor=pointer]
+    - region "Notifications alt+T"
+  - generic [ref=f118e95]:
+    - generic [ref=f118e96]:
+      - paragraph [ref=f118e97]: Join the Spaceship universe
+      - paragraph [ref=f118e98]: Subscribe to keep up with everything happening on Spaceship, from deals and promotions to product launches.
+    - generic [ref=f118e101]:
+      - textbox "Email address for newsletter" [ref=f118e103]:
+        - /placeholder: Enter your email here
+      - button "Subscribe to newsletter" [ref=f118e104] [cursor=pointer]
+  - generic [ref=f118e111]:
+    - separator [ref=f118e112]
+    - contentinfo "More on Spaceship" [ref=f118e113]:
+      - generic [ref=f118e114]:
+        - navigation [ref=f118e115]:
+          - list [ref=f118e117]:
+            - listitem [ref=f118e118]:
+              - button "Domains" [ref=f118e119]
+            - listitem [ref=f118e123]:
+              - button "Hosting" [ref=f118e124]
+            - listitem [ref=f118e128]:
+              - button "Email" [ref=f118e129]
+            - listitem [ref=f118e133]:
+              - button "Starlight™ Cloud" [ref=f118e134]
+            - listitem [ref=f118e138]:
+              - button "Security" [ref=f118e139]
+          - button "Transfer to Us" [ref=f118e144]
+          - button "Why Spaceship" [ref=f118e149]
+          - button "About Spaceship" [ref=f118e154]
+          - button "Customer Service" [ref=f118e159]
+        - generic [ref=f118e163]:
+          - separator [ref=f118e165]
+          - generic [ref=f118e166]:
+            - paragraph [ref=f118e167]: Payment Options
+            - 'figure "Display of available payment options: Visa, Mastercard, American Express, PayPal, Bitcoin" [ref=f118e168]':
+              - generic [ref=f118e169]:
+                - img "Visa" [ref=f118e170]
+                - img "Mastercard" [ref=f118e171]
+                - img "American express" [ref=f118e172]
+                - img "Discover" [ref=f118e173]
+                - img "Dinersclub" [ref=f118e174]
+                - img "JCB" [ref=f118e175]
+                - img "UnionPay" [ref=f118e176]
+                - img "Bitcoin" [ref=f118e177]
+                - img "Paypal" [ref=f118e178]
+                - img "GooglePay" [ref=f118e179]
+                - img "ApplePay" [ref=f118e180]
+                - img "Alipay" [ref=f118e181]
+              - paragraph [ref=f118e182]: We protect and save your data.
+          - generic [ref=f118e183]:
+            - paragraph [ref=f118e184]: Certified By
+            - generic [ref=f118e185]:
+              - list [ref=f118e187]:
+                - listitem [ref=f118e188]:
+                  - img "icann" [ref=f118e189]
+                  - paragraph [ref=f118e190]: We are an ICANN-accredited registrar. Serving customers since 2022.
+                - listitem [ref=f118e191]:
+                  - img "Sectigo" [ref=f118e192]
+              - link [ref=f118e194] [cursor=pointer]:
+                - /url: https://www.producthunt.com/posts/spaceship-3?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-spaceship-3
+                - img "Spaceship.com - The future of domain, website, and digital product management | Product Hunt" [ref=f118e195]
+          - separator [ref=f118e197]
+        - generic [ref=f118e198]:
+          - generic [ref=f118e200]:
+            - img "Spaceship" [ref=f118e201]
+            - generic [ref=f118e202]:
+              - paragraph [ref=f118e203]: The entirety of this site is protected by copyright © 2019–2026 Spaceship, Inc
+              - paragraph [ref=f118e204]: 4600 East Washington Street, Suite 300, Phoenix, AZ 85034, USA
+          - list [ref=f118e206]:
+            - listitem [ref=f118e207]:
+              - link "Facebook" [ref=f118e208] [cursor=pointer]:
+                - /url: https://www.facebook.com/spaceship
+            - listitem [ref=f118e212]:
+              - link "Twitter" [ref=f118e213] [cursor=pointer]:
+                - /url: https://twitter.com/spaceship
+            - listitem [ref=f118e217]:
+              - link "Instagram" [ref=f118e218] [cursor=pointer]:
+                - /url: https://www.instagram.com/spaceship
+            - listitem [ref=f118e222]:
+              - link "Linkedin" [ref=f118e223] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/spaceshipcom/
+  - generic [ref=f118e229]:
+    - heading "Hello! Want to change your language?" [level=6] [ref=f118e230]
+    - generic [ref=f118e231]: Do you speak Español?
+    - generic [ref=f118e232]: You can change your preferences to use Spaceship in Español.
+    - generic [ref=f118e233]:
+      - button "No, don't change" [ref=f118e234] [cursor=pointer]
+      - button "Yes, change my preferences" [ref=f118e236] [cursor=pointer]

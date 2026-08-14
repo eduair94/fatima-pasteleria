@@ -1,0 +1,41 @@
+- main [ref=f139e2]:
+  - navigation [ref=f139e4]:
+    - generic [ref=f139e5]:
+      - link "Squarespace Logo" [ref=f139e6] [cursor=pointer]:
+        - /url: /
+        - img "Squarespace Logo" [ref=f139e7]
+      - button "Open menu" [ref=f139e13] [cursor=pointer]:
+        - img "Open menu" [ref=f139e14]
+    - generic [ref=f139e18]:
+      - button "Close menu" [ref=f139e19] [cursor=pointer]:
+        - img "Close menu"
+      - generic [ref=f139e20]:
+        - link "Transfer a domain" [ref=f139e21] [cursor=pointer]:
+          - /url: /transfer-a-domain
+        - link "Build a website" [ref=f139e22] [cursor=pointer]:
+          - /url: https://squarespace.com
+      - generic [ref=f139e23]:
+        - link "Log In" [ref=f139e24] [cursor=pointer]:
+          - /url: /auth/protected-redirect/login?location=https://domains.squarespace.com/domain-search?query=pasteleriafatima
+        - link "Find a domain" [ref=f139e25] [cursor=pointer]:
+          - /url: /
+  - generic [ref=f139e26]:
+    - list [ref=f139e27]:
+      - listitem [ref=f139e28]:
+        - button "Products" [ref=f139e29] [cursor=pointer]:
+          - generic [ref=f139e31]: ↓
+      - listitem [ref=f139e32]:
+        - button "Domain Endings" [ref=f139e33] [cursor=pointer]:
+          - generic [ref=f139e35]: ↓
+      - listitem [ref=f139e36]:
+        - button "Resources" [ref=f139e37] [cursor=pointer]:
+          - generic [ref=f139e39]: ↓
+      - listitem [ref=f139e40]:
+        - button "Company" [ref=f139e41] [cursor=pointer]:
+          - generic [ref=f139e43]: ↓
+    - generic [ref=f139e44]:
+      - link "Squarespace Logo" [ref=f139e45] [cursor=pointer]:
+        - /url: /
+        - img "Squarespace Logo" [ref=f139e46]
+      - button "Select your language" [ref=f139e52] [cursor=pointer]: English ↓
+      - generic [ref=f139e53]: We are an ICANN accredited registrar.

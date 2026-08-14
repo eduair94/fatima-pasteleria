@@ -1,0 +1,428 @@
+- generic [active] [ref=f132e1]:
+  - banner [ref=f132e2]:
+    - generic [ref=f132e4]:
+      - button "Back" [ref=f132e5]
+      - button "Language" [ref=f132e10] [cursor=pointer]
+      - button "Currency" [ref=f132e15] [cursor=pointer]
+      - generic [ref=f132e19] [cursor=pointer]:
+        - checkbox "Dark" [checked] [ref=f132e20]
+        - generic [ref=f132e24]: Dark
+    - navigation [ref=f132e25]:
+      - generic [ref=f132e26]:
+        - link [ref=f132e27] [cursor=pointer]:
+          - /url: /
+          - img "tld:list" [ref=f132e28]
+        - list [ref=f132e29]:
+          - listitem [ref=f132e30]:
+            - button "TLDs" [ref=f132e32] [cursor=pointer]
+          - listitem [ref=f132e36]:
+            - link "Promo Codes" [ref=f132e37] [cursor=pointer]:
+              - /url: /promo-codes
+          - listitem [ref=f132e38]:
+            - link "Registrars" [ref=f132e39] [cursor=pointer]:
+              - /url: /registrars
+          - listitem [ref=f132e40]:
+            - link "Blog" [ref=f132e41] [cursor=pointer]:
+              - /url: /blog
+          - listitem [ref=f132e42]:
+            - link "Alerts" [ref=f132e43] [cursor=pointer]:
+              - /url: /alerts
+        - generic [ref=f132e44]:
+          - button "Settings" [ref=f132e45]
+          - button [ref=f132e49]
+  - main [ref=f132e52]:
+    - generic [ref=f132e54]:
+      - generic [ref=f132e56]:
+        - heading "Cloudflare domains" [level=1] [ref=f132e57]
+        - heading "Find the cheapest domain among 363 TLDs on Cloudflare" [level=2] [ref=f132e58]
+      - generic [ref=f132e59]:
+        - img "Cloudflare" [ref=f132e61]
+        - navigation [ref=f132e62]:
+          - button "Cloudflare TLD list" [ref=f132e63] [cursor=pointer]
+          - button "Registrar Profile" [ref=f132e64] [cursor=pointer]
+          - link "Promotions" [ref=f132e65] [cursor=pointer]:
+            - /url: /registrars/cloudflare/promos
+    - generic [ref=f132e69]:
+      - generic [ref=f132e70]:
+        - generic [ref=f132e71]:
+          - textbox "Search domain availability..." [ref=f132e73]
+          - button "Categories" [ref=f132e79]
+          - button "Filter" [ref=f132e84] [cursor=pointer]
+          - generic [ref=f132e88]: 363 matched domains
+          - button "Columns" [ref=f132e91] [cursor=pointer]
+        - table [ref=f132e96]:
+          - rowgroup [ref=f132e97]:
+            - row [ref=f132e98]:
+              - columnheader "Domain" [ref=f132e99]
+              - columnheader "Cheapest Registration" [ref=f132e105]
+              - columnheader "Cheapest Renewal" [ref=f132e111]
+              - columnheader "Cheapest Transfer" [ref=f132e117]
+              - columnheader "Popularity" [ref=f132e123]
+              - columnheader "Best 3 Year Value" [ref=f132e129]
+          - rowgroup [ref=f132e135]:
+            - row [ref=f132e136]:
+              - cell [ref=f132e137]:
+                - link ".com" [ref=f132e139] [cursor=pointer]:
+                  - /url: /tld/com
+              - cell "$9.08 $3.92 Spaceship COM67" [ref=f132e145]:
+                - generic [ref=f132e146]:
+                  - generic [ref=f132e147]: $9.08
+                  - generic [ref=f132e148]:
+                    - generic [ref=f132e149]: $3.92
+                    - button "Spaceship" [ref=f132e150] [cursor=pointer]
+                  - generic [ref=f132e156]: COM67
+              - cell "$10.15 Sav" [ref=f132e160]:
+                - generic [ref=f132e162]:
+                  - generic [ref=f132e163]: $10.15
+                  - button "Sav" [ref=f132e164] [cursor=pointer]
+              - cell "$9.68 $3.94 Spaceship SPSCOMTR" [ref=f132e170]:
+                - generic [ref=f132e171]:
+                  - generic [ref=f132e172]: $9.68
+                  - generic [ref=f132e173]:
+                    - generic [ref=f132e174]: $3.94
+                    - button "Spaceship" [ref=f132e175] [cursor=pointer]
+                  - generic [ref=f132e181]: SPSCOMTR
+              - cell [ref=f132e185]
+              - cell "OVHcloud Registration - $11.75 Renewal - $13.99" [ref=f132e197]:
+                - generic [ref=f132e198]:
+                  - button "OVHcloud" [ref=f132e199] [cursor=pointer]
+                  - generic [ref=f132e205]: Registration - $11.75
+                  - generic [ref=f132e206]: Renewal - $13.99
+            - row [ref=f132e207]:
+              - cell [ref=f132e208]:
+                - link ".net" [ref=f132e210] [cursor=pointer]:
+                  - /url: /tld/net
+              - cell "$11.40 $4.98 Spaceship NET19" [ref=f132e216]:
+                - generic [ref=f132e217]:
+                  - generic [ref=f132e218]: $11.40
+                  - generic [ref=f132e219]:
+                    - generic [ref=f132e220]: $4.98
+                    - button "Spaceship" [ref=f132e221] [cursor=pointer]
+                  - generic [ref=f132e227]: NET19
+              - cell "$11.11 Above.com" [ref=f132e231]:
+                - generic [ref=f132e233]:
+                  - generic [ref=f132e234]: $11.11
+                  - button "Above.com" [ref=f132e235] [cursor=pointer]
+              - cell "$11.40 $5.94 Spaceship SPST25" [ref=f132e241]:
+                - generic [ref=f132e242]:
+                  - generic [ref=f132e243]: $11.40
+                  - generic [ref=f132e244]:
+                    - generic [ref=f132e245]: $5.94
+                    - button "Spaceship" [ref=f132e246] [cursor=pointer]
+                  - generic [ref=f132e252]: SPST25
+              - cell [ref=f132e256]
+              - cell "OVHcloud Registration - $12.19 Renewal - $16.89" [ref=f132e268]:
+                - generic [ref=f132e269]:
+                  - button "OVHcloud" [ref=f132e270] [cursor=pointer]
+                  - generic [ref=f132e276]: Registration - $12.19
+                  - generic [ref=f132e277]: Renewal - $16.89
+            - row [ref=f132e278]:
+              - cell [ref=f132e279]:
+                - link ".co" [ref=f132e281] [cursor=pointer]:
+                  - /url: /tld/co
+              - cell "$4.98 $3.98 Spaceship DOM80" [ref=f132e287]:
+                - generic [ref=f132e288]:
+                  - generic [ref=f132e289]: $4.98
+                  - generic [ref=f132e290]:
+                    - generic [ref=f132e291]: $3.98
+                    - button "Spaceship" [ref=f132e292] [cursor=pointer]
+                  - generic [ref=f132e298]: DOM80
+              - cell "$24.90 Sav" [ref=f132e302]:
+                - generic [ref=f132e304]:
+                  - generic [ref=f132e305]: $24.90
+                  - button "Sav" [ref=f132e306] [cursor=pointer]
+              - cell "$14.90 $7.45 Wix DOM50" [ref=f132e312]:
+                - generic [ref=f132e313]:
+                  - generic [ref=f132e314]: $14.90
+                  - generic [ref=f132e315]:
+                    - generic [ref=f132e316]: $7.45
+                    - button "Wix" [ref=f132e317] [cursor=pointer]
+                  - generic [ref=f132e323]: DOM50
+              - cell [ref=f132e327]
+              - cell "Porkbun Registration - $9.58 Renewal - $25.03" [ref=f132e339]:
+                - generic [ref=f132e340]:
+                  - button "Porkbun" [ref=f132e341] [cursor=pointer]
+                  - generic [ref=f132e347]: Registration - $9.58
+                  - generic [ref=f132e348]: Renewal - $25.03
+            - row [ref=f132e349]:
+              - cell [ref=f132e350]:
+                - link ".xyz" [ref=f132e352] [cursor=pointer]:
+                  - /url: /tld/xyz
+              - cell "$2.06 $0.95 Spaceship XYZ52" [ref=f132e358]:
+                - generic [ref=f132e359]:
+                  - generic [ref=f132e360]: $2.06
+                  - generic [ref=f132e361]:
+                    - generic [ref=f132e362]: $0.95
+                    - button "Spaceship" [ref=f132e363] [cursor=pointer]
+                  - generic [ref=f132e369]: XYZ52
+              - cell "$11.20 Cloudflare" [ref=f132e373]:
+                - generic [ref=f132e375]:
+                  - generic [ref=f132e376]: $11.20
+                  - button "Cloudflare" [ref=f132e377] [cursor=pointer]
+              - cell "$12.72 $7.96 Spaceship SPST25" [ref=f132e383]:
+                - generic [ref=f132e384]:
+                  - generic [ref=f132e385]: $12.72
+                  - generic [ref=f132e386]:
+                    - generic [ref=f132e387]: $7.96
+                    - button "Spaceship" [ref=f132e388] [cursor=pointer]
+                  - generic [ref=f132e394]: SPST25
+              - cell [ref=f132e398]
+              - cell "OVHcloud Registration - $2.12 Renewal - $14.29" [ref=f132e410]:
+                - generic [ref=f132e411]:
+                  - button "OVHcloud" [ref=f132e412] [cursor=pointer]
+                  - generic [ref=f132e418]: Registration - $2.12
+                  - generic [ref=f132e419]: Renewal - $14.29
+            - row [ref=f132e420]:
+              - cell [ref=f132e421]:
+                - link ".org" [ref=f132e423] [cursor=pointer]:
+                  - /url: /tld/org
+              - cell "$6.85 $3.45 Spaceship SPSR86" [ref=f132e429]:
+                - generic [ref=f132e430]:
+                  - generic [ref=f132e431]: $6.85
+                  - generic [ref=f132e432]:
+                    - generic [ref=f132e433]: $3.45
+                    - button "Spaceship" [ref=f132e434] [cursor=pointer]
+                  - generic [ref=f132e440]: SPSR86
+              - cell "$10.15 Sav" [ref=f132e444]:
+                - generic [ref=f132e446]:
+                  - generic [ref=f132e447]: $10.15
+                  - button "Sav" [ref=f132e448] [cursor=pointer]
+              - cell "$11.29 $3.44 Spaceship SPST25" [ref=f132e454]:
+                - generic [ref=f132e455]:
+                  - generic [ref=f132e456]: $11.29
+                  - generic [ref=f132e457]:
+                    - generic [ref=f132e458]: $3.44
+                    - button "Spaceship" [ref=f132e459] [cursor=pointer]
+                  - generic [ref=f132e465]: SPST25
+              - cell [ref=f132e469]
+              - cell "OVHcloud Registration - $10.49 Renewal - $14.49" [ref=f132e481]:
+                - generic [ref=f132e482]:
+                  - button "OVHcloud" [ref=f132e483] [cursor=pointer]
+                  - generic [ref=f132e489]: Registration - $10.49
+                  - generic [ref=f132e490]: Renewal - $14.49
+            - row [ref=f132e491]:
+              - cell [ref=f132e492]:
+                - link ".io" [ref=f132e494] [cursor=pointer]:
+                  - /url: /tld/io
+              - cell "$31.98 $14.98 Spaceship IO85" [ref=f132e500]:
+                - generic [ref=f132e501]:
+                  - generic [ref=f132e502]: $31.98
+                  - generic [ref=f132e503]:
+                    - generic [ref=f132e504]: $14.98
+                    - button "Spaceship" [ref=f132e505] [cursor=pointer]
+                  - generic [ref=f132e511]: IO85
+              - cell "$38.95 Sav" [ref=f132e515]:
+                - generic [ref=f132e517]:
+                  - generic [ref=f132e518]: $38.95
+                  - button "Sav" [ref=f132e519] [cursor=pointer]
+              - cell "$34.90 $17.45 Wix DOM50" [ref=f132e525]:
+                - generic [ref=f132e526]:
+                  - generic [ref=f132e527]: $34.90
+                  - generic [ref=f132e528]:
+                    - generic [ref=f132e529]: $17.45
+                    - button "Wix" [ref=f132e530] [cursor=pointer]
+                  - generic [ref=f132e536]: DOM50
+              - cell [ref=f132e540]
+              - cell "Netim Registration - $44.00 Renewal - $44.00" [ref=f132e552]:
+                - generic [ref=f132e553]:
+                  - button "Netim" [ref=f132e554] [cursor=pointer]
+                  - generic [ref=f132e560]: Registration - $44.00
+                  - generic [ref=f132e561]: Renewal - $44.00
+            - row [ref=f132e562]:
+              - cell [ref=f132e563]:
+                - link ".me" [ref=f132e565] [cursor=pointer]:
+                  - /url: /tld/me
+              - cell "$8.70 $1.98 Spaceship SPSR86" [ref=f132e571]:
+                - generic [ref=f132e572]:
+                  - generic [ref=f132e573]: $8.70
+                  - generic [ref=f132e574]:
+                    - generic [ref=f132e575]: $1.98
+                    - button "Spaceship" [ref=f132e576] [cursor=pointer]
+                  - generic [ref=f132e582]: SPSR86
+              - cell "$15.53 Spaceship" [ref=f132e586]:
+                - generic [ref=f132e588]:
+                  - generic [ref=f132e589]: $15.53
+                  - button "Spaceship" [ref=f132e590] [cursor=pointer]
+              - cell "$15.53 $8.96 Spaceship SPST25" [ref=f132e596]:
+                - generic [ref=f132e597]:
+                  - generic [ref=f132e598]: $15.53
+                  - generic [ref=f132e599]:
+                    - generic [ref=f132e600]: $8.96
+                    - button "Spaceship" [ref=f132e601] [cursor=pointer]
+                  - generic [ref=f132e607]: SPST25
+              - cell [ref=f132e611]
+              - cell "Porkbun Registration - $7.58 Renewal - $16.06" [ref=f132e623]:
+                - generic [ref=f132e624]:
+                  - button "Porkbun" [ref=f132e625] [cursor=pointer]
+                  - generic [ref=f132e631]: Registration - $7.58
+                  - generic [ref=f132e632]: Renewal - $16.06
+            - row [ref=f132e633]:
+              - cell [ref=f132e634]:
+                - link ".ai" [ref=f132e636] [cursor=pointer]:
+                  - /url: /tld/ai
+              - cell "$79.98 Namecheap" [ref=f132e642]:
+                - generic [ref=f132e644]:
+                  - generic [ref=f132e645]: $79.98
+                  - button "Namecheap" [ref=f132e646] [cursor=pointer]
+              - cell "$79.98 Spaceship" [ref=f132e652]:
+                - generic [ref=f132e654]:
+                  - generic [ref=f132e655]: $79.98
+                  - button "Spaceship" [ref=f132e656] [cursor=pointer]
+              - cell "$79.98 Spaceship" [ref=f132e662]:
+                - generic [ref=f132e664]:
+                  - generic [ref=f132e665]: $79.98
+                  - button "Spaceship" [ref=f132e666] [cursor=pointer]
+              - cell [ref=f132e672]
+              - cell "Netim Registration - $86.50 Renewal - $86.50" [ref=f132e684]:
+                - generic [ref=f132e685]:
+                  - button "Netim" [ref=f132e686] [cursor=pointer]
+                  - generic [ref=f132e692]: Registration - $86.50
+                  - generic [ref=f132e693]: Renewal - $86.50
+            - row [ref=f132e694]:
+              - cell [ref=f132e695]:
+                - link ".info" [ref=f132e697] [cursor=pointer]:
+                  - /url: /tld/info
+              - cell "$3.31 $2.73 Spaceship SPSR86" [ref=f132e703]:
+                - generic [ref=f132e704]:
+                  - generic [ref=f132e705]: $3.31
+                  - generic [ref=f132e706]:
+                    - generic [ref=f132e707]: $2.73
+                    - button "Spaceship" [ref=f132e708] [cursor=pointer]
+                  - generic [ref=f132e714]: SPSR86
+              - cell "$13.17 Dotology" [ref=f132e718]:
+                - generic [ref=f132e720]:
+                  - generic [ref=f132e721]: $13.17
+                  - button "Dotology" [ref=f132e722] [cursor=pointer]
+              - cell "$21.94 $8.46 Spaceship SPST25" [ref=f132e728]:
+                - generic [ref=f132e729]:
+                  - generic [ref=f132e730]: $21.94
+                  - generic [ref=f132e731]:
+                    - generic [ref=f132e732]: $8.46
+                    - button "Spaceship" [ref=f132e733] [cursor=pointer]
+                  - generic [ref=f132e739]: SPST25
+              - cell [ref=f132e743]
+              - cell "OVHcloud Registration - $4.37 Renewal - $24.29" [ref=f132e755]:
+                - generic [ref=f132e756]:
+                  - button "OVHcloud" [ref=f132e757] [cursor=pointer]
+                  - generic [ref=f132e763]: Registration - $4.37
+                  - generic [ref=f132e764]: Renewal - $24.29
+            - row [ref=f132e765]:
+              - cell [ref=f132e766]:
+                - link ".dev" [ref=f132e768] [cursor=pointer]:
+                  - /url: /tld/dev
+              - cell "$8.48 $6.44 Spaceship SPSR86" [ref=f132e774]:
+                - generic [ref=f132e775]:
+                  - generic [ref=f132e776]: $8.48
+                  - generic [ref=f132e777]:
+                    - generic [ref=f132e778]: $6.44
+                    - button "Spaceship" [ref=f132e779] [cursor=pointer]
+                  - generic [ref=f132e785]: SPSR86
+              - cell "$11.62 Truehost.com" [ref=f132e789]:
+                - generic [ref=f132e791]:
+                  - generic [ref=f132e792]: $11.62
+                  - button "Truehost.com" [ref=f132e793] [cursor=pointer]
+              - cell "$12.62 $6.44 Spaceship SPST25" [ref=f132e799]:
+                - generic [ref=f132e800]:
+                  - generic [ref=f132e801]: $12.62
+                  - generic [ref=f132e802]:
+                    - generic [ref=f132e803]: $6.44
+                    - button "Spaceship" [ref=f132e804] [cursor=pointer]
+                  - generic [ref=f132e810]: SPST25
+              - cell [ref=f132e814]
+              - cell "OVHcloud Registration - $7.47 Renewal - $17.19" [ref=f132e826]:
+                - generic [ref=f132e827]:
+                  - button "OVHcloud" [ref=f132e828] [cursor=pointer]
+                  - generic [ref=f132e834]: Registration - $7.47
+                  - generic [ref=f132e835]: Renewal - $17.19
+      - generic [ref=f132e836]:
+        - generic [ref=f132e838]:
+          - button [disabled] [ref=f132e839]
+          - button "1" [ref=f132e842] [cursor=pointer]
+          - button "2" [ref=f132e843] [cursor=pointer]
+          - button "3" [ref=f132e844] [cursor=pointer]
+          - button "4" [ref=f132e845] [cursor=pointer]
+          - button "5" [ref=f132e846] [cursor=pointer]
+          - generic [ref=f132e847]: ...
+          - button "37" [ref=f132e848] [cursor=pointer]
+          - button [ref=f132e849] [cursor=pointer]
+        - button "10 /page" [ref=f132e853] [cursor=pointer]
+        - generic [ref=f132e857]:
+          - generic [ref=f132e858]: "Go to:"
+          - spinbutton [ref=f132e859]
+    - generic [ref=f132e862]:
+      - text: Advertisement
+      - link [ref=f132e863] [cursor=pointer]:
+        - /url: https://www.spaceship.com/domains/cctld/ai/?utm_source=tld-list.com&utm_campaign=tlbanner&utm_medium=referral
+        - img "Spaceship - Save by transfering" [ref=f132e864]
+  - generic [ref=f132e866]:
+    - generic [ref=f132e867]: tld:list newsletter
+    - paragraph [ref=f132e868]: Sign up for the email newsletter to receive updates on new features, site news, and bug fixes.
+    - generic [ref=f132e870]:
+      - textbox "Email address..." [ref=f132e871]
+      - button "Subscribe" [ref=f132e872] [cursor=pointer]
+  - contentinfo [ref=f132e873]:
+    - generic [ref=f132e874]:
+      - generic [ref=f132e875]:
+        - generic [ref=f132e876]:
+          - generic [ref=f132e877]: Lists
+          - list [ref=f132e878]:
+            - listitem [ref=f132e879]:
+              - link "TLDs From A-Z" [ref=f132e880] [cursor=pointer]:
+                - /url: /tlds-from-a-z
+            - listitem [ref=f132e881]:
+              - link "TLD Categories" [ref=f132e882] [cursor=pointer]:
+                - /url: /tld-categories
+            - listitem [ref=f132e883]:
+              - link "TLD Launch Schedule" [ref=f132e884] [cursor=pointer]:
+                - /url: /launch-schedule
+            - listitem [ref=f132e885]:
+              - link "Internationalized Domain Names" [ref=f132e886] [cursor=pointer]:
+                - /url: /internationalized-domain-names
+            - listitem [ref=f132e887]:
+              - link "Cheapest Domain Extensions" [ref=f132e888] [cursor=pointer]:
+                - /url: /cheapest-domain-extensions
+        - generic [ref=f132e889]:
+          - generic [ref=f132e890]: tld:list
+          - list [ref=f132e891]:
+            - listitem [ref=f132e892]:
+              - link "Alerts" [ref=f132e893] [cursor=pointer]:
+                - /url: /alerts
+            - listitem [ref=f132e894]:
+              - link "API" [ref=f132e895] [cursor=pointer]:
+                - /url: /docs-api
+            - listitem [ref=f132e896]:
+              - link "Promo Codes" [ref=f132e897] [cursor=pointer]:
+                - /url: /promo-codes
+            - listitem [ref=f132e898]:
+              - link "Registrars" [ref=f132e899] [cursor=pointer]:
+                - /url: /registrars
+        - generic [ref=f132e900]:
+          - generic [ref=f132e901]: Resources
+          - list [ref=f132e902]:
+            - listitem [ref=f132e903]:
+              - link "Advertise" [ref=f132e904] [cursor=pointer]:
+                - /url: /advertise
+            - listitem [ref=f132e905]:
+              - link "Terms of Service" [ref=f132e906] [cursor=pointer]:
+                - /url: /tos
+            - listitem [ref=f132e907]:
+              - link "Privacy Policy" [ref=f132e908] [cursor=pointer]:
+                - /url: /privacy-policy
+        - generic [ref=f132e909]:
+          - generic [ref=f132e910]: About
+          - list [ref=f132e911]:
+            - listitem [ref=f132e912]:
+              - link "Blog" [ref=f132e913] [cursor=pointer]:
+                - /url: /blog
+        - generic [ref=f132e914]:
+          - generic [ref=f132e915]: Contact
+          - list [ref=f132e916]:
+            - listitem [ref=f132e917]:
+              - text: "Email:"
+              - link "contact@tld-list.com" [ref=f132e918] [cursor=pointer]:
+                - /url: mailto:contact@tld-list.com
+            - listitem [ref=f132e919]:
+              - text: "Twitter:"
+              - link "@tldlist" [ref=f132e920] [cursor=pointer]:
+                - /url: https://twitter.com/tldlist
+      - paragraph [ref=f132e922]: Copyright © 2015 - 2026 tld:list

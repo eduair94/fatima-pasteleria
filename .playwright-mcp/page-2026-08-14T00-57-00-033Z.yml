@@ -1,0 +1,524 @@
+- generic [ref=f123e3]:
+  - navigation [ref=f123e4]:
+    - generic [ref=f123e5]:
+      - link "Dynadot homepage" [ref=f123e7] [cursor=pointer]:
+        - /url: /
+      - text:     
+      - generic [ref=f123e19]:
+        - generic: 
+        - button "Login" [ref=f123e22] [cursor=pointer]:
+          - generic [ref=f123e23]: 
+        - link "Cart" [ref=f123e25] [cursor=pointer]:
+          - /url: /order/cart
+          - button "Cart" [ref=f123e26]:
+            - generic [ref=f123e27]: 
+            - text: 
+        - button "Open menu" [ref=f123e30] [cursor=pointer]:
+          - generic [ref=f123e31]: 
+  - main [ref=f123e32]:
+    - generic [ref=f123e33]:
+      - generic [ref=f123e37]:
+        - heading "Domain Prices" [level=1] [ref=f123e39]
+        - generic [ref=f123e40]: See our domain registration, transfer, and renewal pricing for all our available domain extensions.
+        - generic [ref=f123e43]:
+          - textbox "Find Your Domain Name" [ref=f123e44]
+          - button "Search domains" [ref=f123e45] [cursor=pointer]:
+            - generic [ref=f123e46]: 
+        - generic [ref=f123e48]:
+          - generic [ref=f123e49] [cursor=pointer]:
+            - generic [ref=f123e50]: See our domain prices
+            - generic [ref=f123e51]: 
+          - generic [ref=f123e52] [cursor=pointer]:
+            - link "See our domain sales" [ref=f123e54]:
+              - /url: /domain/sales
+            - generic [ref=f123e55]: 
+          - generic [ref=f123e56] [cursor=pointer]:
+            - generic [ref=f123e57]: See our spending rewards
+            - generic [ref=f123e58]: 
+      - generic [ref=f123e59]:
+        - generic [ref=f123e60]:
+          - heading "Acquire your domains for less" [level=2] [ref=f123e62]
+          - generic [ref=f123e63]:
+            - text: Discover prices for domain registrations, transfers, and renewals across our extensive TLD roster. Want bonus rewards for spending more? Explore our
+            - button "bulk and super bulk benefits" [ref=f123e64] [cursor=pointer]
+            - text: .
+        - generic [ref=f123e65]:
+          - generic [ref=f123e66]: "All domains include:"
+          - generic [ref=f123e67]:
+            - generic [ref=f123e68]:
+              - img "Free website builder icon" [ref=f123e70]
+              - link "Free Website Builder" [ref=f123e71] [cursor=pointer]:
+                - /url: /website-builder
+            - generic [ref=f123e72]:
+              - img "Free custom email address icon" [ref=f123e74]
+              - link "Free Custom Email Address" [ref=f123e75] [cursor=pointer]:
+                - /url: /email
+            - generic [ref=f123e76]:
+              - img "Free domain privacy icon" [ref=f123e78]
+              - link "Free Domain Privacy" [ref=f123e79] [cursor=pointer]:
+                - /url: /help/question/add-privacy
+      - generic [ref=f123e81]:
+        - generic [ref=f123e83]:
+          - generic [ref=f123e84] [cursor=pointer]: Regular
+          - generic [ref=f123e85] [cursor=pointer]: Reseller
+        - generic [ref=f123e87]:
+          - generic [ref=f123e88]:
+            - generic [ref=f123e89]:
+              - generic [ref=f123e90] [cursor=pointer]: Current
+              - generic [ref=f123e91] [cursor=pointer]: Launching
+            - generic [ref=f123e94]:
+              - generic [ref=f123e95] [cursor=pointer]: 
+              - textbox "keyword search" [ref=f123e96]
+            - generic [ref=f123e97]:
+              - button "Download Tld CSV" [ref=f123e99] [cursor=pointer]:
+                - generic [ref=f123e100]: 
+              - button " 10 " [ref=f123e103] [cursor=pointer]:
+                - generic [ref=f123e104]: 
+                - generic [ref=f123e105]: "10"
+                - generic [ref=f123e106]: 
+          - generic [ref=f123e107]:
+            - text:                   
+            - generic [ref=f123e109]:
+              - generic [ref=f123e110]:
+                - table:
+                  - text:      
+                  - rowgroup
+              - text:    
+          - generic [ref=f123e113]:
+            - generic [ref=f123e114]: 
+            - generic [ref=f123e115]: "Note: Pricing may vary based on fluctuations in currency exchange rates."
+      - generic [ref=f123e116]:
+        - generic [ref=f123e118]:
+          - heading "Unlock spending benefits" [level=2] [ref=f123e120]
+          - generic [ref=f123e122]:
+            - text: Want to get more for spending more? Our bulk and super bulk account levels offer bonuses to help you save and manage your domain portfolio.
+            - link "Prepay" [ref=f123e123] [cursor=pointer]:
+              - /url: /prepay
+            - text: can be used to access these discount pricing tiers.
+        - text:           
+        - generic [ref=f123e124]:
+          - generic [ref=f123e126]:
+            - generic [ref=f123e127]:
+              - generic [ref=f123e128]: 
+              - text: Regular
+            - generic [ref=f123e129]:
+              - generic [ref=f123e130]:
+                - generic [ref=f123e131]: Spending Requirement
+                - generic [ref=f123e132]: $0
+              - generic [ref=f123e133]:
+                - generic [ref=f123e134]: Domain Appraisals (Daily)
+                - generic [ref=f123e135]: "10"
+              - generic [ref=f123e136]:
+                - generic [ref=f123e137]: Bulk Searches (Daily)
+                - generic [ref=f123e138]: 1,000
+          - generic [ref=f123e140]:
+            - generic [ref=f123e141]:
+              - generic [ref=f123e142]: 
+              - text: Bulk
+            - generic [ref=f123e143]:
+              - generic [ref=f123e144]:
+                - generic [ref=f123e145]: Spending Requirement
+                - generic [ref=f123e146]: $500
+              - generic [ref=f123e147]:
+                - generic [ref=f123e148]: Domain Appraisals (Daily)
+                - generic [ref=f123e149]: "100"
+              - generic [ref=f123e150]:
+                - generic [ref=f123e151]: Bulk Searches (Daily)
+                - generic [ref=f123e152]: 2,000
+              - generic [ref=f123e153]:
+                - generic [ref=f123e154]: 
+                - text: Exclusive Dynadot Event Access
+          - generic [ref=f123e156]:
+            - generic [ref=f123e157]:
+              - generic [ref=f123e158]: 
+              - text: Superbulk
+            - generic [ref=f123e159]:
+              - generic [ref=f123e160]:
+                - generic [ref=f123e161]: Spending Requirement
+                - generic [ref=f123e162]: $5000
+              - generic [ref=f123e163]:
+                - generic [ref=f123e164]: Domain Appraisals (Daily)
+                - generic [ref=f123e165]: 1,000
+              - generic [ref=f123e166]:
+                - generic [ref=f123e167]: Bulk Searches (Daily)
+                - generic [ref=f123e168]: 5,000
+              - generic [ref=f123e169]:
+                - generic [ref=f123e170]: 
+                - text: Exclusive Dynadot Event Access
+              - generic [ref=f123e171]:
+                - generic [ref=f123e172]: 
+                - text: Exclusive Marketplace Features
+              - generic [ref=f123e173]:
+                - generic [ref=f123e174]: 
+                - text: Get Sales Early Access
+              - generic [ref=f123e175]:
+                - generic [ref=f123e176]: 
+                - text: Receive Prepay Bonuses
+              - generic [ref=f123e177]:
+                - generic [ref=f123e178]: 
+                - text: Prioritized API Calls
+              - generic [ref=f123e179]:
+                - generic [ref=f123e180]: 
+                - text: Dedicated Account Manager
+              - generic [ref=f123e181]:
+                - generic [ref=f123e182]: 
+                - text: Prioritized Chat Support
+      - generic [ref=f123e183]:
+        - generic [ref=f123e185]:
+          - generic [ref=f123e186]: Let us help you save more
+          - generic [ref=f123e187]: Our low-price strategy ensures you get affordable domain names by offering some of the lowest prices in the industry. We achieve this by optimizing our operations and developing all our products and services in-house, eliminating extra costs for our customers.
+        - generic [ref=f123e189]:
+          - generic [ref=f123e190]:
+            - generic [ref=f123e191]: Currencies Supported
+            - generic [ref=f123e192]:
+              - generic [ref=f123e193]:
+                - img "united states flag icon"
+                - generic [ref=f123e194]: USD
+                - generic [ref=f123e195]: $
+              - generic [ref=f123e196]:
+                - img "european union flag icon"
+                - generic [ref=f123e197]: EUR
+                - generic [ref=f123e198]: €
+              - generic [ref=f123e199]:
+                - img "china flag icon"
+                - generic [ref=f123e200]: CNY
+                - generic [ref=f123e201]: ¥
+              - generic [ref=f123e202]:
+                - img "canada flag icon"
+                - generic [ref=f123e203]: CAD
+                - generic [ref=f123e204]: C$
+              - generic [ref=f123e205]:
+                - img "mexico flag icon"
+                - generic [ref=f123e206]: MXN
+                - generic [ref=f123e207]: MX$
+              - generic [ref=f123e208]:
+                - img "united kingdom flag icon"
+                - generic [ref=f123e209]: GBP
+                - generic [ref=f123e210]: £
+              - generic [ref=f123e211]:
+                - img "brazil flag icon"
+                - generic [ref=f123e212]: BRL
+                - generic [ref=f123e213]: R$
+              - generic [ref=f123e214]:
+                - img "india flag icon"
+                - generic [ref=f123e215]: INR
+                - generic [ref=f123e216]: Rs.
+              - generic [ref=f123e217]:
+                - img "indonesia flag icon"
+                - generic [ref=f123e218]: IDR
+                - generic [ref=f123e219]: Rp
+          - generic [ref=f123e220]:
+            - generic [ref=f123e221]: Payment Options
+            - generic [ref=f123e222]:
+              - generic [ref=f123e223]:
+                - img "paypal logo"
+                - generic [ref=f123e224]: Paypal
+              - generic [ref=f123e225]:
+                - img "account credit icon"
+                - generic [ref=f123e226]: Account Credit
+              - generic [ref=f123e227]:
+                - img "alipay logo"
+                - generic [ref=f123e228]: Alipay
+              - generic [ref=f123e229]:
+                - img "banking icon"
+                - generic [ref=f123e230]: Bank Wire
+              - generic [ref=f123e231]:
+                - img "credit card icon"
+                - generic [ref=f123e232]: Credit Card
+              - generic [ref=f123e233]:
+                - img "debit card icon"
+                - generic [ref=f123e234]: Debit Card
+              - generic [ref=f123e235]:
+                - img "ecash icon"
+                - generic [ref=f123e236]: eCash
+      - generic [ref=f123e238]:
+        - generic [ref=f123e239]:
+          - heading "Why Choose Us?" [level=2] [ref=f123e240]
+          - text: Explore what makes Dynadot different
+        - generic [ref=f123e241]:
+          - generic [ref=f123e242]:
+            - generic [ref=f123e243]:
+              - img "transparent prices eye icon"
+            - heading "Transparency" [level=3] [ref=f123e244]
+            - generic [ref=f123e245]: Our domain pricing has no hidden fees and no upselling at checkout.
+          - generic [ref=f123e246]:
+            - generic [ref=f123e247]:
+              - img "on sales low price tag icon"
+            - heading "Low Prices" [level=3] [ref=f123e248]
+            - generic [ref=f123e249]:
+              - text: Whether you're
+              - link "registering" [ref=f123e250] [cursor=pointer]:
+                - /url: /domain/search
+              - text: ","
+              - link "transferring" [ref=f123e251] [cursor=pointer]:
+                - /url: /domain/transfer
+              - text: ", or renewing, we push to help you save more."
+          - generic [ref=f123e252]:
+            - generic [ref=f123e253]:
+              - img "spinning gear management icon"
+            - heading "Optimized Control Panel" [level=3] [ref=f123e254]
+            - generic [ref=f123e255]: Navigate, organize, and adjust all your domain settings with just a few easy clicks.
+      - generic [ref=f123e257]:
+        - generic [ref=f123e258]:
+          - 'heading "Domain Pricing Transparency: How Registrars Compare" [level=2] [ref=f123e259]'
+          - generic [ref=f123e260]: No one likes a surprise at checkout. See how clearly each registrar shows its prices up front.
+        - generic [ref=f123e262]:
+          - generic [ref=f123e264]: Dynadot
+          - generic [ref=f123e265]: Namecheap
+          - generic [ref=f123e266]: GoDaddy
+          - generic [ref=f123e267]: Squarespace
+          - generic [ref=f123e269]: Registration price visibility
+          - generic [ref=f123e270]: Listed per TLD
+          - generic [ref=f123e275]: Listed per TLD
+          - generic [ref=f123e280]: Shown through pricing or search flows
+          - generic [ref=f123e285]: Found through search or dashboard
+          - generic [ref=f123e290]: Renewal price transparency
+          - generic [ref=f123e291]: Shown alongside registration prices
+          - generic [ref=f123e296]: Shown alongside registration prices
+          - generic [ref=f123e301]: Available but less centralized than a full public table
+          - generic [ref=f123e305]: Visible in the domain dashboard (user account)
+          - generic [ref=f123e310]: Transfer price visibility
+          - generic [ref=f123e311]: Shown alongside registration prices
+          - generic [ref=f123e316]: Shown alongside registration prices
+          - generic [ref=f123e321]: Shown through transfer domain search
+          - generic [ref=f123e325]: Shown through transfer domain search
+          - generic [ref=f123e330]: Pricing table controls
+          - generic [ref=f123e331]: Searchable table with controls (TLD categories, price ranges, and search options)
+          - generic [ref=f123e336]: Searchable table with filters and controls
+          - generic [ref=f123e341]: Spread across pricing, search, transfer, account, and help flows
+          - generic [ref=f123e346]: Pricing is shown through search/dashboard/help pages
+        - generic [ref=f123e351]: Disclaimer:Comparison based on product pages and help pages on registrar's websites (reviewed in May 2026). Pricing and how it's displayed can vary by TLD, registry changes, promotions, or other. Please check each registrar's current pricing before purchasing.
+      - generic [ref=f123e355]:
+        - heading "Domain Prices FAQ" [level=2] [ref=f123e357]
+        - generic [ref=f123e362]:
+          - button [ref=f123e364] [cursor=pointer]:
+            - generic "What are domain extensions? " [ref=f123e366]:
+              - heading "What are domain extensions?" [level=3] [ref=f123e367]
+              - generic [ref=f123e368]: 
+          - button [ref=f123e370] [cursor=pointer]:
+            - generic "What kind of domain prices does this page show? " [ref=f123e372]:
+              - heading "What kind of domain prices does this page show?" [level=3] [ref=f123e373]
+              - generic [ref=f123e374]: 
+          - button [ref=f123e376] [cursor=pointer]:
+            - generic "Why is the price to register a domain different from the price to renew it? " [ref=f123e378]:
+              - heading "Why is the price to register a domain different from the price to renew it?" [level=3] [ref=f123e379]
+              - generic [ref=f123e380]: 
+          - button [ref=f123e382] [cursor=pointer]:
+            - generic "Does the promotional price apply for multiple years or only the first year? " [ref=f123e384]:
+              - heading "Does the promotional price apply for multiple years or only the first year?" [level=3] [ref=f123e385]
+              - generic [ref=f123e386]: 
+          - button [ref=f123e388] [cursor=pointer]:
+            - generic "Will domain prices change based on my location or the currency I use? " [ref=f123e390]:
+              - heading "Will domain prices change based on my location or the currency I use?" [level=3] [ref=f123e391]
+              - generic [ref=f123e392]: 
+          - button [ref=f123e394] [cursor=pointer]:
+            - generic "Why did the price of a domain I planned to purchase suddenly increased overnight? " [ref=f123e396]:
+              - heading "Why did the price of a domain I planned to purchase suddenly increased overnight?" [level=3] [ref=f123e397]
+              - generic [ref=f123e398]: 
+          - button [ref=f123e400] [cursor=pointer]:
+            - generic "How can I check which domain extensions are currently on sale? " [ref=f123e402]:
+              - heading "How can I check which domain extensions are currently on sale?" [level=3] [ref=f123e403]
+              - generic [ref=f123e404]: 
+          - button [ref=f123e406] [cursor=pointer]:
+            - 'generic "I can''t find a domain extension I''m interested in: can you add it? " [ref=f123e408]':
+              - 'heading "I can''t find a domain extension I''m interested in: can you add it?" [level=3] [ref=f123e409]'
+              - generic [ref=f123e410]: 
+          - button [ref=f123e412] [cursor=pointer]:
+            - generic "Should I register for multiple years at once, is there benefit? " [ref=f123e414]:
+              - heading "Should I register for multiple years at once, is there benefit?" [level=3] [ref=f123e415]
+              - generic [ref=f123e416]: 
+          - button [ref=f123e418] [cursor=pointer]:
+            - generic "What is the best way to sell a domain name? " [ref=f123e420]:
+              - heading "What is the best way to sell a domain name?" [level=3] [ref=f123e421]
+              - generic [ref=f123e422]: 
+          - button [ref=f123e424] [cursor=pointer]:
+            - generic "What do I need to do to become a bulk or super-bulk Dynadot account? " [ref=f123e426]:
+              - heading "What do I need to do to become a bulk or super-bulk Dynadot account?" [level=3] [ref=f123e427]
+              - generic [ref=f123e428]: 
+          - button [ref=f123e430] [cursor=pointer]:
+            - generic "Why do domain prices vary so much between extensions? " [ref=f123e432]:
+              - heading "Why do domain prices vary so much between extensions?" [level=3] [ref=f123e433]
+              - generic [ref=f123e434]: 
+          - button [ref=f123e436] [cursor=pointer]:
+            - generic "Why is the renewal price sometimes higher than the registration price? " [ref=f123e438]:
+              - heading "Why is the renewal price sometimes higher than the registration price?" [level=3] [ref=f123e439]
+              - generic [ref=f123e440]: 
+          - button [ref=f123e442] [cursor=pointer]:
+            - generic "Do domain prices include taxes or additional fees? " [ref=f123e444]:
+              - heading "Do domain prices include taxes or additional fees?" [level=3] [ref=f123e445]
+              - generic [ref=f123e446]: 
+          - button [ref=f123e448] [cursor=pointer]:
+            - generic "Can domain prices change after I register a domain? " [ref=f123e450]:
+              - heading "Can domain prices change after I register a domain?" [level=3] [ref=f123e451]
+              - generic [ref=f123e452]: 
+          - button [ref=f123e454] [cursor=pointer]:
+            - generic "Are premium domains priced differently than standard domains? " [ref=f123e456]:
+              - heading "Are premium domains priced differently than standard domains?" [level=3] [ref=f123e457]
+              - generic [ref=f123e458]: 
+      - generic [ref=f123e459]:
+        - generic [ref=f123e460]:
+          - generic [ref=f123e461]: Have a question about our domain prices?
+          - generic [ref=f123e462]: Reach out to our team and we'll help you along your savings journey.
+        - generic [ref=f123e463]:
+          - link "Go to contact page and open email popup automatically" [ref=f123e464] [cursor=pointer]:
+            - /url: /community/contact?open__email=1
+            - generic [ref=f123e465]: Email
+          - link "Open contact page and launch live chat support window" [ref=f123e468] [cursor=pointer]:
+            - /url: /community/contact?open_chat=1
+            - generic [ref=f123e469]: Chat
+  - contentinfo [ref=f123e472]:
+    - generic [ref=f123e473]:
+      - generic [ref=f123e474]:
+        - generic [ref=f123e476]:
+          - link [ref=f123e478] [cursor=pointer]:
+            - /url: /
+            - img "Dynadot Home Page" [ref=f123e479]
+          - generic [ref=f123e490]:
+            - generic [ref=f123e491] [cursor=pointer]:
+              - text: EN
+              - generic [ref=f123e492]: 
+            - generic [ref=f123e493] [cursor=pointer]:
+              - text: USD ($)
+              - generic [ref=f123e494]: 
+          - generic [ref=f123e495]:
+            - generic [ref=f123e496]:
+              - paragraph [ref=f123e497]: Stay Informed with Our Newsletter
+              - paragraph [ref=f123e498]: Get domain deals, new launches, and more delivered right to your inbox.
+            - generic [ref=f123e499]:
+              - textbox "Enter your email" [ref=f123e500]
+              - button "Join Now" [ref=f123e501] [cursor=pointer]
+          - generic [ref=f123e502]:
+            - link "Facebook" [ref=f123e503] [cursor=pointer]:
+              - /url: https://www.facebook.com/Dynadot/
+            - link "Instagram" [ref=f123e506] [cursor=pointer]:
+              - /url: https://instagram.com/dynadot/
+            - link "LinkedIn" [ref=f123e509] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/dynadot
+            - link "Twitter" [ref=f123e512] [cursor=pointer]:
+              - /url: https://www.twitter.com/dynadot
+            - link "YouTube" [ref=f123e515] [cursor=pointer]:
+              - /url: https://www.youtube.com/user/teamdynadot
+            - link "Reddit" [ref=f123e518] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/dynadot/
+          - generic [ref=f123e521]:
+            - paragraph [ref=f123e522]: "Download the app:"
+            - link "Download on App Store" [ref=f123e524] [cursor=pointer]:
+              - /url: https://apps.apple.com/us/app/dynadot-domain-search/id1209930282
+              - generic "Download on App Store" [ref=f123e525]: 
+            - link "Download on App Store" [ref=f123e527] [cursor=pointer]:
+              - /url: https://play.google.com/store/apps/details?id=com.dynadot.search
+              - generic "Download on App Store" [ref=f123e528]: 
+        - generic [ref=f123e529]:
+          - generic [ref=f123e530]:
+            - generic [ref=f123e531]: Domain
+            - generic [ref=f123e532]:
+              - link "Domain Search" [ref=f123e534] [cursor=pointer]:
+                - /url: /domain/search
+              - link "Transfer" [ref=f123e536] [cursor=pointer]:
+                - /url: /domain/transfer
+              - link "IDNs Search" [ref=f123e538] [cursor=pointer]:
+                - /url: /domain/idn-search
+              - link "TLD Prices" [ref=f123e540] [cursor=pointer]:
+                - /url: /domain/prices
+              - link "Domain Sales" [ref=f123e542] [cursor=pointer]:
+                - /url: /domain/sales
+              - link "Resellers" [ref=f123e544] [cursor=pointer]:
+                - /url: /domain/reseller-program
+              - link "Websites" [ref=f123e546] [cursor=pointer]:
+                - /url: /website-builder
+              - link "Email" [ref=f123e548] [cursor=pointer]:
+                - /url: /email
+              - link "SSL" [ref=f123e550] [cursor=pointer]:
+                - /url: /ssl
+              - link "Domain Suggestion Tool" [ref=f123e552] [cursor=pointer]:
+                - /url: /domain/suggestion-tool
+              - link "Security" [ref=f123e554] [cursor=pointer]:
+                - /url: /domain/security
+              - link "Grace Deletion" [ref=f123e556] [cursor=pointer]:
+                - /url: /domain/grace-deletion
+              - link "API" [ref=f123e558] [cursor=pointer]:
+                - /url: /domain/api
+              - link "Whois Lookup" [ref=f123e560] [cursor=pointer]:
+                - /url: /domain/whois
+              - link "Payment Plan" [ref=f123e562] [cursor=pointer]:
+                - /url: /payment-plan
+          - generic [ref=f123e563]:
+            - generic [ref=f123e564]: Aftermarket
+            - generic [ref=f123e565]:
+              - link "Aftermarket Search" [ref=f123e567] [cursor=pointer]:
+                - /url: /market/search
+              - link "Market Overview" [ref=f123e569] [cursor=pointer]:
+                - /url: /market
+              - link "Buy It Now" [ref=f123e571] [cursor=pointer]:
+                - /url: /market/user-listings
+              - link "Backorders" [ref=f123e573] [cursor=pointer]:
+                - /url: /market/backorder
+              - link "Expired Auctions" [ref=f123e575] [cursor=pointer]:
+                - /url: /market/auction
+              - link "User Auctions" [ref=f123e577] [cursor=pointer]:
+                - /url: /market/user-auction
+              - link "Backorder Auctions" [ref=f123e579] [cursor=pointer]:
+                - /url: /market/backorder-auction
+              - link "Last Chance Auctions" [ref=f123e581] [cursor=pointer]:
+                - /url: /market/last-chance-auction
+              - link "Expired Closeout" [ref=f123e583] [cursor=pointer]:
+                - /url: /market/expired-closeout
+              - link "NameClub Beta" [ref=f123e585] [cursor=pointer]:
+                - /url: https://www.nameclub.com/
+          - generic [ref=f123e586]:
+            - generic [ref=f123e587]: Support
+            - generic [ref=f123e588]:
+              - link "Blog" [ref=f123e590] [cursor=pointer]:
+                - /url: /blog
+              - link "Help Files" [ref=f123e592] [cursor=pointer]:
+                - /url: /help
+              - link "Forums" [ref=f123e594] [cursor=pointer]:
+                - /url: /forums
+              - link "Buying Domains" [ref=f123e596] [cursor=pointer]:
+                - /url: /market/buy-domains
+              - link "Selling Domains" [ref=f123e598] [cursor=pointer]:
+                - /url: /market/sell-domains
+              - link "Newsletter" [ref=f123e600] [cursor=pointer]:
+                - /url: /market/newsletter
+              - link "Prepay" [ref=f123e602] [cursor=pointer]:
+                - /url: /prepay
+              - link "Payment Options" [ref=f123e604] [cursor=pointer]:
+                - /url: /payment-options
+              - link "Report Abuse" [ref=f123e606] [cursor=pointer]:
+                - /url: /report-abuse
+          - generic [ref=f123e607]:
+            - generic [ref=f123e608]: Dynadot
+            - generic [ref=f123e609]:
+              - link "About" [ref=f123e611] [cursor=pointer]:
+                - /url: /community/about-us
+              - link "Contact" [ref=f123e613] [cursor=pointer]:
+                - /url: /community/contact
+              - link "Events" [ref=f123e615] [cursor=pointer]:
+                - /url: /community/events
+              - link "Site Map" [ref=f123e617] [cursor=pointer]:
+                - /url: /sitemap
+              - link "APP" [ref=f123e619] [cursor=pointer]:
+                - /url: /domain/dynadot-app
+              - link "Refer-a-friend" [ref=f123e621] [cursor=pointer]:
+                - /url: /community/refer-a-friend
+              - link "Affiliate" [ref=f123e623] [cursor=pointer]:
+                - /url: /affiliate
+      - generic [ref=f123e625]:
+        - generic [ref=f123e626]: Copyright © 2002-2026 Dynadot Inc. All rights reserved.
+        - generic [ref=f123e627]:
+          - link "Privacy Policy" [ref=f123e629] [cursor=pointer]:
+            - /url: https://www.dynadot.com/terms-of-use?redirect=part2
+          - link "Terms of Use" [ref=f123e631] [cursor=pointer]:
+            - /url: https://www.dynadot.com/terms-of-use
+          - link "Registrant Educational Information" [ref=f123e633] [cursor=pointer]:
+            - /url: https://www.icann.org/resources/pages/benefits-2013-09-16-en
+          - link "Registrants Benefits and Responsibilities" [ref=f123e635] [cursor=pointer]:
+            - /url: https://www.icann.org/resources/pages/approved-with-specs-2013-09-17-en#registrant
+        - generic [ref=f123e637]:
+          - img "ICANN" [ref=f123e638]
+          - link [ref=f123e648] [cursor=pointer]:
+            - /url: https://www.namepros.com/
+            - img "NamePros" [ref=f123e649]
+          - link [ref=f123e687] [cursor=pointer]:
+            - /url: https://www.domaining.com/
+            - img "Domaining" [ref=f123e688]

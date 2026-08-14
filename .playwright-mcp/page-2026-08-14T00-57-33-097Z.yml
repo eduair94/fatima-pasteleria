@@ -1,0 +1,200 @@
+- generic [active] [ref=f131e1]:
+  - generic [ref=f131e2] [cursor=pointer]
+  - generic [ref=f131e8]:
+    - generic [ref=f131e9]:
+      - banner [ref=f131e10]:
+        - generic [ref=f131e12]:
+          - generic [ref=f131e14]:
+            - button [ref=f131e15] [cursor=pointer]
+            - link [ref=f131e18] [cursor=pointer]:
+              - /url: /
+              - img "NameSilo logo" [ref=f131e19]
+          - generic [ref=f131e21]:
+            - button [ref=f131e26] [cursor=pointer]
+            - button [ref=f131e31] [cursor=pointer]
+      - generic [ref=f131e35]:
+        - generic [ref=f131e39]:
+          - heading "NameSilo Discount Program" [level=1] [ref=f131e40]
+          - generic [ref=f131e41]: At NameSilo, we are dedicated to making domain management accessible and budget-friendly for all users. That’s why we offer a Discount Program that provides even greater savings on our already competitive prices. Our program is open to everyone, allowing you to maximize your savings with ease.
+          - button "Get Started" [ref=f131e42] [cursor=pointer]
+        - generic [ref=f131e45]:
+          - generic [ref=f131e46]: How the NameSilo Discount Program Works
+          - generic [ref=f131e47]: Joining is Simple and Free
+          - generic [ref=f131e48]:
+            - generic [ref=f131e49]:
+              - generic [ref=f131e50]:
+                - generic [ref=f131e51]: Step 1
+                - generic [ref=f131e54]:
+                  - generic [ref=f131e56]: Activate the Discount Program
+                  - generic [ref=f131e57]: Easily activate the program from your dashboard.
+              - generic [ref=f131e58]:
+                - generic [ref=f131e59]: Step 2
+                - generic [ref=f131e62]:
+                  - generic [ref=f131e64]: Pre-fund Your Account
+                  - generic [ref=f131e65]: Add at least $50 to your account to get started.
+              - generic [ref=f131e66]:
+                - generic [ref=f131e67]: Step 3
+                - generic [ref=f131e70]:
+                  - generic [ref=f131e72]: Enjoy Savings
+                  - generic [ref=f131e73]: Get discounts on domain registration and renewal based on your account’s active domains.
+              - generic [ref=f131e74]:
+                - generic [ref=f131e75]: Step 4
+                - generic [ref=f131e78]:
+                  - generic [ref=f131e80]: Use Pre-loaded Funds
+                  - generic [ref=f131e81]: Pay using your previously loaded account funds.
+            - button "Start Saving Today" [ref=f131e83] [cursor=pointer]
+        - generic [ref=f131e87]:
+          - generic [ref=f131e88]: Why Choose the NameSilo Discount Program?
+          - generic [ref=f131e89]:
+            - generic [ref=f131e94]:
+              - generic [ref=f131e95]: No Fees, Just Savings
+              - generic [ref=f131e96]: There are no costs to join or leave the program.
+            - generic [ref=f131e101]:
+              - generic [ref=f131e102]: Flexible Participation
+              - generic [ref=f131e103]: Easily toggle your participation in the Discount Program through your NameSilo account settings at any time and fund your account with a minimum of $50.
+            - generic [ref=f131e108]:
+              - generic [ref=f131e109]: Maximize Your Savings
+              - generic [ref=f131e110]: Discounts increase with the number of active domains you have, so the more you own, the more you save!
+            - generic [ref=f131e115]:
+              - generic [ref=f131e116]: Transparent Pricing
+              - generic [ref=f131e117]: Enjoy points when you purchase or renew hosting services.
+            - generic [ref=f131e122]:
+              - generic [ref=f131e123]: Quality Add-Ons for Free
+              - generic [ref=f131e124]: All add-ons, such as WHOIS Privacy and DNS Management, are always free, enhancing your overall value.
+          - button "Start Saving Today" [ref=f131e125] [cursor=pointer]
+        - generic [ref=f131e128]:
+          - generic [ref=f131e129]: How You Save
+          - generic [ref=f131e130]: Each of these tiers applies to both domain registration and renewal, so no matter where you are in your domain management journey, you can be sure you’re getting the best deal possible.
+          - generic [ref=f131e131]:
+            - generic [ref=f131e133]:
+              - generic [ref=f131e134]: Starter Savings
+              - generic [ref=f131e135]: 0 - 99 Domains
+              - generic [ref=f131e136]: Even on your very first domain purchase, you can unlock discounted prices. This means that whether you’re just starting out or adding a few more domains to your portfolio, you’ll begin saving immediately. The savings apply to both registration and renewal, ensuring that every transaction counts.
+            - generic [ref=f131e138]:
+              - generic [ref=f131e139]: Growth Savings
+              - generic [ref=f131e140]: 100 - 499 Domains
+              - generic [ref=f131e141]: As your portfolio grows, so do your savings. With 100 - 499 active domains, you qualify for even better discounts, maximizing your cost-efficiency across every domain you manage.
+            - generic [ref=f131e143]:
+              - generic [ref=f131e144]: Advanced Savings
+              - generic [ref=f131e145]: 500 - 999 Domains
+              - generic [ref=f131e146]: Reaching 500 domains unlocks another tier of savings. This level is perfect for those with a substantial portfolio, offering increased discounts that make domain management more affordable than ever.
+            - generic [ref=f131e148]:
+              - generic [ref=f131e149]: Elite Savings
+              - generic [ref=f131e150]: 1000 - 2499 Domains
+              - generic [ref=f131e151]: Managing 1000 - 2499 domains? Enjoy elite savings that provide significant reductions on both registration and renewal. This tier is designed for large-scale domain investors or resellers who value the lowest possible costs.
+            - generic [ref=f131e153]:
+              - generic [ref=f131e154]: Premier Savings
+              - generic [ref=f131e155]: 2500 - 4999 Domains
+              - generic [ref=f131e156]: Experience substantial savings with our Premier Savings tier, tailored for portfolios with 2,500 to 4,999+ domains. This level offers robust discounts, ensuring you get exceptional value with every domain you manage.
+            - generic [ref=f131e158]:
+              - generic [ref=f131e159]: Top - Tier Savings
+              - generic [ref=f131e160]: 5000 + Domains
+              - generic [ref=f131e161]: At this level, your savings are unparalleled. For those managing over 5000 domains, the discounts are top-tier, ensuring that you get the best rates on every domain you own.
+          - generic [ref=f131e162]:
+            - text: Check out our
+            - link "pricing page" [ref=f131e163] [cursor=pointer]:
+              - /url: /pricing
+            - text: for the latest pricing details, promotions/promo and offer codes.
+        - generic [ref=f131e165]:
+          - generic [ref=f131e166]: Important Details About the Discount Program
+          - generic [ref=f131e170]:
+            - generic [ref=f131e171]:
+              - generic [ref=f131e172]: Payment Method
+              - generic [ref=f131e173]: Discounts apply only when checking out using Account Funds at time of purchase.
+            - generic [ref=f131e174]:
+              - generic [ref=f131e175]: Active Domains Count
+              - generic [ref=f131e176]: Discounts depend on the number of active domains in your account, which are those not expired or suspended.
+            - generic [ref=f131e177]:
+              - generic [ref=f131e178]: Minimum Fund Requirement
+              - generic [ref=f131e179]: There’s no minimum balance requirement for your account. However, when adding funds, you must add at least $50 each time during your participation in the program and for 30 days after cancellation.
+            - generic [ref=f131e180]:
+              - generic [ref=f131e181]: Coupon Restrictions
+              - generic [ref=f131e182]: Coupon codes cannot be used while enrolled in the Discount Program. Drop-catch orders made through our API do not qualify for discounts.
+        - generic [ref=f131e184]:
+          - generic [ref=f131e185]: Don’t Miss Out on the Savings!
+          - generic [ref=f131e186]: Join the NameSilo Discount Program today and start saving on your domain registrations and renewals.
+          - button "Enroll Now" [ref=f131e188] [cursor=pointer]
+        - generic [ref=f131e190]:
+          - generic [ref=f131e191]: Still have questions?
+          - generic [ref=f131e192]: Check out our frequently asked questions.
+          - generic [ref=f131e193]:
+            - button "Do I need to enroll in a discount program or activate something within my account to participate?" [ref=f131e196] [cursor=pointer]
+            - button "Is there a fee to join or leave the Discount Program?" [ref=f131e201] [cursor=pointer]
+            - button "How do I earn discounts through the Discount Program?" [ref=f131e206] [cursor=pointer]
+            - button "Can I use a promo code while participating in the Discount Program?" [ref=f131e211] [cursor=pointer]
+            - button "What is the minimum amount I can add to my account?" [ref=f131e216] [cursor=pointer]
+            - button "Do drop-catch orders qualify for discounts?" [ref=f131e221] [cursor=pointer]
+            - button "How long do my discounts last?" [ref=f131e226] [cursor=pointer]
+            - button "How can I check my current discount eligibility?" [ref=f131e231] [cursor=pointer]
+            - button "Can I change my payment method while participating in the Discount Program?" [ref=f131e236] [cursor=pointer]
+            - button "What happens if I cancel my participation in the program?" [ref=f131e241] [cursor=pointer]
+      - contentinfo [ref=f131e244]:
+        - generic [ref=f131e246]:
+          - generic [ref=f131e247]:
+            - link [ref=f131e248] [cursor=pointer]:
+              - /url: /
+              - img "NameSilo logo" [ref=f131e249]
+            - generic [ref=f131e250]: Fewer than 10 registrars worldwide manage over 5 million active domains, and we are proud to be part of this exclusive group.
+            - generic [ref=f131e251]:
+              - link [ref=f131e252] [cursor=pointer]:
+                - /url: https://twitter.com/namesilo
+              - link [ref=f131e255] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/namesilo
+              - link [ref=f131e258] [cursor=pointer]:
+                - /url: https://www.facebook.com/namesilo
+              - link [ref=f131e261] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UCvS6kaUQdpfzz9j3OaJRQ7g
+          - generic [ref=f131e264]:
+            - generic [ref=f131e265]: SHOPPING
+            - generic [ref=f131e266]:
+              - link "Loyalty Program" [ref=f131e268] [cursor=pointer]:
+                - /url: /loyalty-program
+              - link "Domains" [ref=f131e270] [cursor=pointer]:
+                - /url: /domain/search-domains
+              - link "Transfer a Domain" [ref=f131e272] [cursor=pointer]:
+                - /url: /domain/transfer-domains
+              - link "Marketplace" [ref=f131e274] [cursor=pointer]:
+                - /url: /marketplace
+              - link "Pricing" [ref=f131e276] [cursor=pointer]:
+                - /url: /pricing
+          - generic [ref=f131e277]:
+            - generic [ref=f131e278]: ACCOUNT
+            - generic [ref=f131e279]:
+              - link "Create Account" [ref=f131e281] [cursor=pointer]:
+                - /url: /sign-up
+              - link "Login" [ref=f131e283] [cursor=pointer]:
+                - /url: /login
+          - generic [ref=f131e284]:
+            - generic [ref=f131e285]: SUPPORT
+            - generic [ref=f131e286]:
+              - link "Support Catalog" [ref=f131e288] [cursor=pointer]:
+                - /url: /support/v2
+              - link "Contact Us" [ref=f131e290] [cursor=pointer]:
+                - /url: /contact-us
+              - link "RDAP Disclosure Request Form" [ref=f131e292] [cursor=pointer]:
+                - /url: /support/rdap
+              - link "WHOIS" [ref=f131e294] [cursor=pointer]:
+                - /url: /whois
+              - link "Live Chat" [ref=f131e296] [cursor=pointer]:
+                - /url: "#"
+          - generic [ref=f131e297]:
+            - link "BLOG" [ref=f131e299] [cursor=pointer]:
+              - /url: /blog
+            - link "INVESTORS" [ref=f131e301] [cursor=pointer]:
+              - /url: /investors/
+        - generic [ref=f131e302]: ©2009-2026 NameSilo, LLC · All Rights Reserved.
+        - generic [ref=f131e303]:
+          - generic [ref=f131e304]:
+            - generic [ref=f131e305]: Shopping Cart
+            - button [ref=f131e306] [cursor=pointer]
+          - generic [ref=f131e310]:
+            - generic [ref=f131e311]: Your cart is empty.
+            - link "Start Shopping" [ref=f131e312] [cursor=pointer]:
+              - /url: /domain/search-domains
+    - generic [ref=f131e315]:
+      - generic [ref=f131e317]:
+        - generic [ref=f131e318]: We value your privacy
+        - generic [ref=f131e319]: We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies.
+      - button "Customize" [ref=f131e321] [cursor=pointer]
+      - button "Accept All" [ref=f131e323] [cursor=pointer]
+      - button "Accept Necessary" [ref=f131e325] [cursor=pointer]

@@ -230,6 +230,92 @@ escritas por ella valen más que cualquier cosa que se pueda deducir del catálo
 - **Content-Security-Policy.** El sitio tiene el resto de las cabeceras de seguridad, pero no CSP.
   Agregarla en Next requiere nonces por script y hacerlo mal rompe la página, así que conviene
   hacerlo aparte y en modo `report-only` primero.
-- **Dominio propio.** Un `.vercel.app` sirve para arrancar, pero un dominio propio
-  (`fatimapasteleria.uy` o similar) es lo que conviene antes de imprimir cualquier cosa o cargar
-  la ficha de Google.
+- **Dominio propio.** Ver abajo: está decidido y tiene fecha límite.
+
+---
+
+## Dominio: qué comprar, dónde y antes de cuándo
+
+Investigado el 13 de agosto de 2026 contra fuentes primarias (registro, IANA, páginas de tarifas)
+y con una segunda pasada que corrigió cuatro cosas de la primera.
+
+### La decisión
+
+**`fatimapasteleria.com`, en Porkbun, pagando 5 años por adelantado: USD 55,40 cerrados.**
+Verificado libre hoy contra el RDAP de Verisign, que es el registro autoritativo. También está
+libre `pasteleriafatima.com`.
+
+### Por qué `.com` y no `.uy` ni `.com.uy`
+
+La razón de peso no es el precio: **en `.uy` no existe la privacidad de WHOIS, ni gratis ni
+paga.** El reglamento de nic.uy declara los datos del titular información pública y da constancia
+de titularidad a quien la pida. Nombre, domicilio y teléfono quedan expuestos. Para alguien que
+cocina en su casa y publica el barrio pero no la dirección, eso es un problema concreto, no
+teórico. En `.com` la privacidad viene gratis y activada.
+
+Lo demás refuerza pero no decide:
+
+- **No hay ventaja de posicionamiento que comprar.** Google documenta tres factores para
+  resultados locales —relevancia, distancia y prominencia— y el dominio no está entre ellos. El
+  ccTLD es una señal de SEO internacional para un problema que este negocio no tiene. Y los
+  dominios de coincidencia exacta perdieron su ventaja en 2012.
+- **Precio a 5 años:** `.com` prepago USD 55,40 contra USD 80,5 del `.uy` más barato que publica
+  su renovación, y USD 118 por ANTEL. Son unos USD 5 por año: un desempate, no un motivo.
+- **Fricción:** `.com.uy` lo vende sólo ANTEL —no hay competencia— y exige cuenta Vera. El
+  registro directo en nic.uy se paga con un documento impreso en Abitab dentro de 10 días.
+
+Lo que **no** es un impedimento, por si surge la duda: registrarlo en `.uy` no exige RUT ni
+empresa. Alcanza con cédula y domicilio en Uruguay. La opción existe; se descarta por la
+privacidad, no por imposibilidad.
+
+### La fecha límite es real
+
+El precio mayorista del `.com` sube 7% el **1 de noviembre de 2026 a las 04:00 UTC**
+(USD 10,26 → 10,97), y Porkbun ya publicó que lo traslada: su precio pasa de USD 11,08 a ~11,81,
+con subas anuales previstas hasta 2030. **Registrar y prepagar antes de esa fecha congela la
+tarifa actual por todo el término.** Porkbun admite hasta 10 años por adelantado.
+
+Corrección importante sobre un lugar común: **el `.com` tampoco tiene renovación plana a futuro.**
+Sube, sólo que menos y desde el registro, no desde el registrador. Prepagar es lo que lo vuelve un
+número cerrado.
+
+### Dónde NO comprarlo
+
+| Registrador | 5 años | Qué esconde |
+| --- | --- | --- |
+| GoDaddy | ~USD 92 | El «dominio a USD 0,01» obliga a comprar 3 años. Renovación USD 22,99. |
+| Squarespace (ex Google Domains) | USD 94 | El más caro. Google Domains ya no existe: lo compró Squarespace en 2023. |
+| Namecheap año a año | USD 86 | Entra a USD 11,28 y se queda en USD 18,68. Prepagando 5 años baja a USD 72. |
+| Intersys (`.uy`) | ? | «Gratis el primer año» atado a un plan de hosting, sin publicar la renovación. |
+
+Alternativas legítimas si Porkbun no convence: Dynadot (USD 54,40), Namesilo (USD 55,25 con su
+programa de descuento, que es gratuito y abierto a todos) o Cloudflare (~USD 52,30, el modelo más
+limpio del rubro porque cobra el costo del registro sin margen, pero obliga a usar sus nameservers
+y tiene un panel más técnico). Spaceship figura más barato (USD 49,80) pero su renovación está
+**por debajo del costo mayorista**: o la sube o la absorbe, y no conviene planificar sobre eso.
+
+**Regla para el futuro:** si un registrador no muestra el precio de renovación en la misma
+pantalla que el de alta, asumí que la renovación es cara.
+
+### No comprarlo dentro de Vercel
+
+Aunque el sitio esté ahí. El dominio es lo único verdaderamente propio de todo esto: si algún día
+conviene mudarse de hosting, con el dominio en otro lado se cambia y listo, mientras que con el
+dominio en el mismo proveedor hay que hacer una transferencia con código de autorización, 5 a 7
+días de espera y bloqueo de 60 días, justo cuando se quiere ir rápido. Apuntar un dominio externo
+a Vercel son dos registros DNS.
+
+### Al conectarlo
+
+Copiar los valores del *domain card* del proyecto en Vercel, **no** de un tutorial: la IP del
+registro A ya no es siempre `76.76.21.21` —los proyectos nuevos reciben otras IP anycast— y el
+CNAME de `www` es único por proyecto. Después: cambiar `NEXT_PUBLIC_SITE_URL` al dominio nuevo,
+actualizar el sitio en la ficha de Google y poner recordatorio de renovación a 11 meses.
+
+### Sin confirmar
+
+- Si Porkbun cobra IVA uruguayo del 22% en el checkout. En el peor caso el prepago de 5 años sería
+  USD 67,59, igual por debajo del `.uy`.
+- El precio exacto del `.com.uy` por ANTEL: su sitio devuelve HTTP 403 desde fuera. Una lectura de
+  su API de tarifas dio $948 UYU/año con IVA incluido, pero no se pudo corroborar por segunda vía.
+  No cambia la decisión.

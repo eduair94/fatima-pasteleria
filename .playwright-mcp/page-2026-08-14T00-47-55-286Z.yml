@@ -1,0 +1,1748 @@
+- generic [active] [ref=f64e1]:
+  - banner [ref=f64e2]:
+    - banner [ref=f64e3]:
+      - link "Saltar al contenido principal" [ref=f64e4] [cursor=pointer]:
+        - /url: "#main-content"
+      - generic [ref=f64e7]:
+        - generic [ref=f64e8]:
+          - link [ref=f64e10] [cursor=pointer]:
+            - /url: https://www.godaddy.com/es
+            - figure "GoDaddy" [ref=f64e11]
+          - navigation "Navigation" [ref=f64e14]:
+            - button "Open Menu" [ref=f64e15] [cursor=pointer]
+            - generic [ref=f64e17]:
+              - generic [ref=f64e18]:
+                - link [ref=f64e21] [cursor=pointer]:
+                  - /url: https://www.godaddy.com/es
+                  - figure "GoDaddy" [ref=f64e22]
+                - list [ref=f64e25]:
+                  - listitem [ref=f64e26] [cursor=pointer]:
+                    - button [ref=f64e27]:
+                      - generic [ref=f64e28]: Dominios
+                  - listitem [ref=f64e30] [cursor=pointer]:
+                    - button [ref=f64e31]:
+                      - generic [ref=f64e32]: Sitios web
+                  - listitem [ref=f64e34] [cursor=pointer]:
+                    - link [ref=f64e35]:
+                      - /url: https://www.godaddy.com/es/email
+                      - text: Correo electrónico
+                  - listitem [ref=f64e36] [cursor=pointer]:
+                    - button [ref=f64e37]:
+                      - generic [ref=f64e38]: Hosting
+                  - listitem [ref=f64e40] [cursor=pointer]:
+                    - button [ref=f64e41]:
+                      - generic [ref=f64e42]: Marketing
+                  - listitem [ref=f64e44] [cursor=pointer]:
+                    - button [ref=f64e45]:
+                      - generic [ref=f64e46]: Comercio
+                  - listitem [ref=f64e48] [cursor=pointer]:
+                    - link [ref=f64e49]:
+                      - /url: https://www.godaddy.com/es/seguridad-web/certificado-ssl
+                      - text: Certificados SSL
+                  - listitem [ref=f64e50] [cursor=pointer]:
+                    - link [ref=f64e51]:
+                      - /url: https://www.godaddy.com/es/airo/ai-builder
+                      - text: Airo AI Builder
+                  - listitem [ref=f64e52] [cursor=pointer]:
+                    - link [ref=f64e53]:
+                      - /url: https://www.godaddy.com/es/precios
+                      - text: Precios
+              - button "Close" [ref=f64e54] [cursor=pointer]: ×
+        - generic [ref=f64e56]:
+          - group [ref=f64e57]:
+            - generic "Inicio de sesión" [ref=f64e58] [cursor=pointer]
+          - button [ref=f64e63] [cursor=pointer]
+  - main [ref=f64e64]:
+    - generic [ref=f64e68]:
+      - generic [ref=f64e69]:
+        - generic [ref=f64e71]:
+          - generic [ref=f64e73]:
+            - button "Open filters" [ref=f64e74] [cursor=pointer]
+            - generic [ref=f64e81]:
+              - combobox "Encuentra tu dominio perfecto" [ref=f64e83]: pasteleriafatimauy.com
+              - button "Buscar pasteleriafatimauy.com" [ref=f64e85] [cursor=pointer]
+          - generic [ref=f64e87]:
+            - link "Ver los resultados de búsqueda" [ref=f64e88] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=f64e90]: resultados
+            - link "Ver el historial de búsqueda" [ref=f64e93] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=f64e95]: historial
+            - link "Ver favoritos" [ref=f64e98] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=f64e100]: favoritos
+            - link "Dominios premium" [ref=f64e103] [cursor=pointer]:
+              - /url: "#"
+        - separator [ref=f64e108]
+      - generic [ref=f64e112]:
+        - heading "Celebra tus antojos con pasteleriafatimauy.com" [level=5] [ref=f64e114]
+        - generic [ref=f64e115]:
+          - generic [ref=f64e117]:
+            - generic [ref=f64e119]:
+              - button "Agregar pasteleriafatimauy.com a favoritos" [ref=f64e121] [cursor=pointer]
+              - generic [ref=f64e122]:
+                - heading "EXCELENTE NOMBRE" [level=3] [ref=f64e125]
+                - heading "pasteleriafatimauy .com" [level=2] [ref=f64e126]:
+                  - generic [ref=f64e127]:
+                    - text: pasteleriafatimauy
+                    - generic [ref=f64e128]: .com
+                - generic [ref=f64e129]:
+                  - generic [ref=f64e134]:
+                    - generic [ref=f64e136]:
+                      - generic [ref=f64e137]:
+                        - generic [ref=f64e138]: $0.01
+                        - deletion [ref=f64e139]: $22.99
+                      - generic [ref=f64e140]: por el primer año
+                    - generic [ref=f64e142]: con un registro de 3 año(s) (33 % de ahorro)
+                  - button "Agregar pasteleriafatimauy.com al carrito" [ref=f64e151] [cursor=pointer]:
+                    - generic: Compralo ya
+            - generic [ref=f64e154]:
+              - heading "HAZ UN PAQUETE Y AHORRA 81%" [level=3] [ref=f64e157]
+              - heading [level=2] [ref=f64e158]:
+                - generic [ref=f64e159]:
+                  - heading "pasteleriafatimauy" [level=2] [ref=f64e161]
+                  - separator [ref=f64e163]
+                  - list [ref=f64e164]:
+                    - listitem [ref=f64e165]: .com
+                    - listitem [ref=f64e166]: .net
+                    - listitem [ref=f64e167]: .info
+                    - listitem [ref=f64e168]: .me
+                    - listitem [ref=f64e169]: .store
+              - generic [ref=f64e170]:
+                - generic [ref=f64e174]:
+                  - generic [ref=f64e178]:
+                    - generic [ref=f64e179]: $37.02
+                    - deletion [ref=f64e181]: $203.95
+                  - generic [ref=f64e182]:
+                    - generic [ref=f64e183]: por el primer año
+                    - button "Abrir sugerencias de herramientas" [ref=f64e185] [cursor=pointer]
+                - button "Agregar pasteleriafatimauy.com,pasteleriafatimauy.net,pasteleriafatimauy.info,pasteleriafatimauy.me,pasteleriafatimauy.store al carrito" [ref=f64e195] [cursor=pointer]:
+                  - generic: Compralo Ya
+          - generic [ref=f64e196]:
+            - generic [ref=f64e198]:
+              - generic [ref=f64e199]: Los dominios incluyen Protección de privacidad gratis para siempre.
+              - button "Abrir sugerencias de herramientas" [ref=f64e200] [cursor=pointer]
+            - generic [ref=f64e202]:
+              - generic [ref=f64e203]: Hemos encontrado 554 terminaciones de dominio para "pasteleriafatimauy"
+              - generic [ref=f64e204] [cursor=pointer]:
+                - checkbox "Ver todos los TLD" [ref=f64e205]
+                - generic [ref=f64e206]: Ver todos los TLD
+          - generic: exactMatchBlock.available
+        - generic [ref=f64e212]:
+          - generic [ref=f64e213]: Explora las terminaciones de
+          - list [ref=f64e217]:
+            - listitem [ref=f64e218]:
+              - generic [ref=f64e221]:
+                - button "Agregar pasteleriafatimauy.org a favoritos" [ref=f64e222] [cursor=pointer]
+                - generic [ref=f64e224]:
+                  - generic [ref=f64e225]:
+                    - heading ".org" [level=2] [ref=f64e229]
+                    - generic [ref=f64e232]:
+                      - generic [ref=f64e236]:
+                        - generic [ref=f64e237]: $9.99
+                        - deletion [ref=f64e239]: $23.99
+                      - generic [ref=f64e240]:
+                        - generic [ref=f64e241]: por el primer año
+                        - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauy.org" [ref=f64e243] [cursor=pointer]
+                  - button "Agregar pasteleriafatimauy.org al carrito" [ref=f64e248] [cursor=pointer]
+            - listitem [ref=f64e249]:
+              - generic [ref=f64e252]:
+                - button "Agregar pasteleriafatimauy.ai a favoritos" [ref=f64e253] [cursor=pointer]
+                - generic [ref=f64e255]:
+                  - generic [ref=f64e256]:
+                    - heading ".ai" [level=2] [ref=f64e260]
+                    - generic [ref=f64e263]:
+                      - generic [ref=f64e267]:
+                        - generic [ref=f64e268]: $49.99
+                        - deletion [ref=f64e270]: $159.99
+                      - generic [ref=f64e271]:
+                        - generic [ref=f64e272]: Únicamente el primer año con un plazo de 2 años
+                        - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauy.ai" [ref=f64e274] [cursor=pointer]
+                  - button "Agregar pasteleriafatimauy.ai al carrito" [ref=f64e279] [cursor=pointer]
+            - listitem [ref=f64e280]:
+              - generic [ref=f64e283]:
+                - button "Agregar pasteleriafatimauy.com a favoritos" [ref=f64e284] [cursor=pointer]
+                - generic [ref=f64e286]:
+                  - generic [ref=f64e287]:
+                    - heading ".com" [level=2] [ref=f64e291]
+                    - generic [ref=f64e294]:
+                      - generic [ref=f64e298]:
+                        - generic [ref=f64e299]: $0.01
+                        - deletion [ref=f64e301]: $22.99
+                      - generic [ref=f64e302]:
+                        - generic [ref=f64e303]: Únicamente el primer año con un plazo de 3 años
+                        - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauy.com" [ref=f64e305] [cursor=pointer]
+                  - button "Agregar pasteleriafatimauy.com al carrito" [ref=f64e310] [cursor=pointer]
+            - listitem [ref=f64e311]:
+              - generic [ref=f64e314]:
+                - button "Agregar pasteleriafatimauy.net a favoritos" [ref=f64e315] [cursor=pointer]
+                - generic [ref=f64e317]:
+                  - generic [ref=f64e318]:
+                    - heading ".net" [level=2] [ref=f64e322]
+                    - generic [ref=f64e325]:
+                      - generic [ref=f64e329]:
+                        - generic [ref=f64e330]: $0.01
+                        - deletion [ref=f64e332]: $24.99
+                      - generic [ref=f64e333]:
+                        - generic [ref=f64e334]: Únicamente el primer año con un plazo de 3 años
+                        - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauy.net" [ref=f64e336] [cursor=pointer]
+                  - button "Agregar pasteleriafatimauy.net al carrito" [ref=f64e341] [cursor=pointer]
+            - listitem [ref=f64e342]:
+              - generic [ref=f64e345]:
+                - button "Agregar pasteleriafatimauy.org a favoritos" [ref=f64e346] [cursor=pointer]
+                - generic [ref=f64e348]:
+                  - generic [ref=f64e349]:
+                    - heading ".org" [level=2] [ref=f64e353]
+                    - generic [ref=f64e356]:
+                      - generic [ref=f64e360]:
+                        - generic [ref=f64e361]: $9.99
+                        - deletion [ref=f64e363]: $23.99
+                      - generic [ref=f64e364]:
+                        - generic [ref=f64e365]: por el primer año
+                        - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauy.org" [ref=f64e367] [cursor=pointer]
+                  - button "Agregar pasteleriafatimauy.org al carrito" [ref=f64e372] [cursor=pointer]
+            - listitem [ref=f64e373]:
+              - generic [ref=f64e376]:
+                - button "Agregar pasteleriafatimauy.ai a favoritos" [ref=f64e377] [cursor=pointer]
+                - generic [ref=f64e379]:
+                  - generic [ref=f64e380]:
+                    - heading ".ai" [level=2] [ref=f64e384]
+                    - generic [ref=f64e387]:
+                      - generic [ref=f64e391]:
+                        - generic [ref=f64e392]: $49.99
+                        - deletion [ref=f64e394]: $159.99
+                      - generic [ref=f64e395]:
+                        - generic [ref=f64e396]: Únicamente el primer año con un plazo de 2 años
+                        - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauy.ai" [ref=f64e398] [cursor=pointer]
+                  - button "Agregar pasteleriafatimauy.ai al carrito" [ref=f64e403] [cursor=pointer]
+            - listitem [ref=f64e404]:
+              - generic [ref=f64e407]:
+                - button "Agregar pasteleriafatimauy.com a favoritos" [ref=f64e408] [cursor=pointer]
+                - generic [ref=f64e410]:
+                  - generic [ref=f64e411]:
+                    - heading ".com" [level=2] [ref=f64e415]
+                    - generic [ref=f64e418]:
+                      - generic [ref=f64e422]:
+                        - generic [ref=f64e423]: $0.01
+                        - deletion [ref=f64e425]: $22.99
+                      - generic [ref=f64e426]:
+                        - generic [ref=f64e427]: Únicamente el primer año con un plazo de 3 años
+                        - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauy.com" [ref=f64e429] [cursor=pointer]
+                  - button "Agregar pasteleriafatimauy.com al carrito" [ref=f64e434] [cursor=pointer]
+            - listitem [ref=f64e435]:
+              - generic [ref=f64e438]:
+                - button "Agregar pasteleriafatimauy.net a favoritos" [ref=f64e439] [cursor=pointer]
+                - generic [ref=f64e441]:
+                  - generic [ref=f64e442]:
+                    - heading ".net" [level=2] [ref=f64e446]
+                    - generic [ref=f64e449]:
+                      - generic [ref=f64e453]:
+                        - generic [ref=f64e454]: $0.01
+                        - deletion [ref=f64e456]: $24.99
+                      - generic [ref=f64e457]:
+                        - generic [ref=f64e458]: Únicamente el primer año con un plazo de 3 años
+                        - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauy.net" [ref=f64e460] [cursor=pointer]
+                  - button "Agregar pasteleriafatimauy.net al carrito" [ref=f64e465] [cursor=pointer]
+          - list [ref=f64e466]:
+            - listitem [ref=f64e467]:
+              - button "•" [ref=f64e468] [cursor=pointer]
+            - listitem [ref=f64e469]:
+              - button "•" [ref=f64e470] [cursor=pointer]
+            - listitem [ref=f64e471]:
+              - button "•" [ref=f64e472] [cursor=pointer]
+            - listitem [ref=f64e473]:
+              - button "•" [ref=f64e474] [cursor=pointer]
+        - generic [ref=f64e476]:
+          - generic [ref=f64e477] [cursor=pointer]:
+            - generic [ref=f64e478]: Ver más
+            - generic [ref=f64e480]:
+              - generic [ref=f64e481]: Todo lo que necesitas, gratis con un dominio de GoDaddy
+              - generic [ref=f64e482]:
+                - generic [ref=f64e483]: Privacidad de dominio
+                - generic [ref=f64e486]: Creador de logos de IA
+                - generic [ref=f64e489]: Prueba del Creador de páginas web
+                - generic [ref=f64e492]: Registro de LLC
+                - generic [ref=f64e495]: Reenvío de dominio
+                - generic [ref=f64e498]: GoDaddy Payments
+                - generic [ref=f64e501]: 4 más
+          - generic [ref=f64e504]:
+            - generic [ref=f64e506]:
+              - heading "Legitima tu negocio" [level=6] [ref=f64e507]
+              - generic [ref=f64e511]:
+                - text: "Privacidad de dominio: La privacidad de dominio limita la información de contacto mostrada en nuestro"
+                - link "directorio público WHOIS de GoDaddy." [ref=f64e512] [cursor=pointer]:
+                  - /url: https://www.godaddy.com/es/whois
+              - generic [ref=f64e513]: "Seguridad DMARC automática: \"Autenticación, informes y cumplimiento de mensajes basados en dominio\" te permite decidir si los correos electrónicos sospechosos son monitoreados, puestos en cuarentena o bloqueados."
+              - generic [ref=f64e517]: "DNSSEC: Las Extensiones de Seguridad del Sistema de Nombres de Dominio ayudan a prevenir que los cibercriminales redirijan el tráfico de internet a sitios web maliciosos."
+              - generic [ref=f64e521]: "Configuración sencilla: Activa instantáneamente correos electrónicos y sitios web, además de obtener ayuda con la configuración de productos externos."
+              - generic [ref=f64e525]: "Registro de LLC: Registro para establecerte a ti y a tu negocio como entidades separadas, y ayudar a proteger tus activos personales."
+            - generic [ref=f64e530]:
+              - heading "Construye, desarrolla tu marca y comienza a ganar" [level=6] [ref=f64e531]
+              - generic [ref=f64e532]: "Redirección de dominio: La redirección de dominio redirige a los visitantes a cualquier sitio web que elijas."
+              - generic [ref=f64e536]: "Creador de logos de IA: Usa inteligencia artificial para crear un nuevo logo para tu negocio en segundos."
+              - generic [ref=f64e540]: "Prueba del Creador de páginas web: Publica un sitio web gratuito y apto para dispositivos móviles rápidamente usando nuestras plantillas profesionales."
+              - generic [ref=f64e544]: "Aplicación de GoDaddy: Diseña publicaciones de marketing, logos y anuncios para ayudar a expandir tu presencia en línea y comenzar a vender más."
+              - generic [ref=f64e548]: "GoDaddy Payments: GoDaddy Payments es una puerta de enlace de pago que permite a tu negocio aceptar cualquier tarjeta de crédito o débito importante."
+        - generic [ref=f64e556]:
+          - group [ref=f64e557]:
+            - button "Agregar pasteleríafatimauy.com a favoritos pasteleríafatimauy .com $0.01 $22.99 Únicamente el primer año con un plazo de 3 años Abrir sugerencias de herramientas de precios para pasteleríafatimauy.com Más como esto Agregar pasteleríafatimauy.com al carrito" [ref=f64e559] [cursor=pointer]:
+              - generic [ref=f64e566]:
+                - button "Agregar pasteleríafatimauy.com a favoritos" [ref=f64e567]
+                - generic [ref=f64e568]:
+                  - heading "pasteleríafatimauy .com" [level=2] [ref=f64e572]:
+                    - text: pasteleríafatimauy
+                    - generic [ref=f64e573]: .com
+                  - generic [ref=f64e575]:
+                    - generic [ref=f64e579]:
+                      - generic [ref=f64e580]: $0.01
+                      - deletion [ref=f64e582]: $22.99
+                    - generic [ref=f64e583]:
+                      - generic [ref=f64e584]: Únicamente el primer año con un plazo de 3 años
+                      - button "Abrir sugerencias de herramientas de precios para pasteleríafatimauy.com" [ref=f64e586]
+                  - button "Más como esto" [ref=f64e588]
+                - button "Agregar pasteleríafatimauy.com al carrito" [ref=f64e595]
+          - group [ref=f64e596]:
+            - button "Agregar pasteleriafatimauy.com.mx a favoritos Amado por los locales pasteleriafatimauy .com.mx $0.01 $36.99 Únicamente el primer año con un plazo de 3 años Abrir sugerencias de herramientas de precios para pasteleriafatimauy.com.mx Más como esto Agregar pasteleriafatimauy.com.mx al carrito" [ref=f64e598] [cursor=pointer]:
+              - generic [ref=f64e605]:
+                - button "Agregar pasteleriafatimauy.com.mx a favoritos" [ref=f64e606]
+                - generic [ref=f64e607]:
+                  - generic [ref=f64e608]:
+                    - heading "Amado por los locales" [level=3] [ref=f64e611]
+                    - heading "pasteleriafatimauy .com.mx" [level=2] [ref=f64e614]:
+                      - text: pasteleriafatimauy
+                      - generic [ref=f64e615]: .com.mx
+                  - generic [ref=f64e617]:
+                    - generic [ref=f64e621]:
+                      - generic [ref=f64e622]: $0.01
+                      - deletion [ref=f64e624]: $36.99
+                    - generic [ref=f64e625]:
+                      - generic [ref=f64e626]: Únicamente el primer año con un plazo de 3 años
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauy.com.mx" [ref=f64e628]
+                  - button "Más como esto" [ref=f64e630]
+                - button "Agregar pasteleriafatimauy.com.mx al carrito" [ref=f64e637]
+          - group [ref=f64e638]:
+            - button "Agregar pasteleriafatimauy.shop a favoritos promocionado pasteleriafatimauy .shop $0.99 $59.99 por el primer año Abrir sugerencias de herramientas de precios para pasteleriafatimauy.shop Más como esto Agregar pasteleriafatimauy.shop al carrito" [ref=f64e640] [cursor=pointer]:
+              - generic [ref=f64e647]:
+                - button "Agregar pasteleriafatimauy.shop a favoritos" [ref=f64e648]
+                - generic [ref=f64e649]:
+                  - generic [ref=f64e650]:
+                    - heading "promocionado" [level=3] [ref=f64e655]
+                    - heading "pasteleriafatimauy .shop" [level=2] [ref=f64e658]:
+                      - text: pasteleriafatimauy
+                      - generic [ref=f64e659]: .shop
+                  - generic [ref=f64e661]:
+                    - generic [ref=f64e665]:
+                      - generic [ref=f64e666]: $0.99
+                      - deletion [ref=f64e668]: $59.99
+                    - generic [ref=f64e669]:
+                      - generic [ref=f64e670]: por el primer año
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauy.shop" [ref=f64e672]
+                  - button "Más como esto" [ref=f64e674]
+                - button "Agregar pasteleriafatimauy.shop al carrito" [ref=f64e681]
+          - group [ref=f64e682]:
+            - button "Agregar pasteleriafatimauy.xyz a favoritos promocionado pasteleriafatimauy .xyz $1.99 $25.99 por el primer año Abrir sugerencias de herramientas de precios para pasteleriafatimauy.xyz Más como esto Agregar pasteleriafatimauy.xyz al carrito" [ref=f64e684] [cursor=pointer]:
+              - generic [ref=f64e691]:
+                - button "Agregar pasteleriafatimauy.xyz a favoritos" [ref=f64e692]
+                - generic [ref=f64e693]:
+                  - generic [ref=f64e694]:
+                    - heading "promocionado" [level=3] [ref=f64e699]
+                    - heading "pasteleriafatimauy .xyz" [level=2] [ref=f64e702]:
+                      - text: pasteleriafatimauy
+                      - generic [ref=f64e703]: .xyz
+                  - generic [ref=f64e705]:
+                    - generic [ref=f64e709]:
+                      - generic [ref=f64e710]: $1.99
+                      - deletion [ref=f64e712]: $25.99
+                    - generic [ref=f64e713]:
+                      - generic [ref=f64e714]: por el primer año
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauy.xyz" [ref=f64e716]
+                  - button "Más como esto" [ref=f64e718]
+                - button "Agregar pasteleriafatimauy.xyz al carrito" [ref=f64e725]
+          - group [ref=f64e726]:
+            - button "Agregar pasteleriafatimauy.wedding a favoritos promocionado pasteleriafatimauy .wedding $49.99/año Más como esto Agregar pasteleriafatimauy.wedding al carrito" [ref=f64e728] [cursor=pointer]:
+              - generic [ref=f64e735]:
+                - button "Agregar pasteleriafatimauy.wedding a favoritos" [ref=f64e736]
+                - generic [ref=f64e737]:
+                  - generic [ref=f64e738]:
+                    - heading "promocionado" [level=3] [ref=f64e743]
+                    - heading "pasteleriafatimauy .wedding" [level=2] [ref=f64e746]:
+                      - text: pasteleriafatimauy
+                      - generic [ref=f64e747]: .wedding
+                  - generic [ref=f64e748]: $49.99/año
+                  - button "Más como esto" [ref=f64e755]
+                - button "Agregar pasteleriafatimauy.wedding al carrito" [ref=f64e762]
+          - group [ref=f64e763]:
+            - button "Agregar pasteleriafatimauy.it.com a favoritos promocionado pasteleriafatimauy .it.com $6.99 $49.99 por el primer año Abrir sugerencias de herramientas de precios para pasteleriafatimauy.it.com Más como esto Agregar pasteleriafatimauy.it.com al carrito" [ref=f64e765] [cursor=pointer]:
+              - generic [ref=f64e772]:
+                - button "Agregar pasteleriafatimauy.it.com a favoritos" [ref=f64e773]
+                - generic [ref=f64e774]:
+                  - generic [ref=f64e775]:
+                    - heading "promocionado" [level=3] [ref=f64e780]
+                    - heading "pasteleriafatimauy .it.com" [level=2] [ref=f64e783]:
+                      - text: pasteleriafatimauy
+                      - generic [ref=f64e784]: .it.com
+                  - generic [ref=f64e786]:
+                    - generic [ref=f64e790]:
+                      - generic [ref=f64e791]: $6.99
+                      - deletion [ref=f64e793]: $49.99
+                    - generic [ref=f64e794]:
+                      - generic [ref=f64e795]: por el primer año
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauy.it.com" [ref=f64e797]
+                  - button "Más como esto" [ref=f64e799]
+                - button "Agregar pasteleriafatimauy.it.com al carrito" [ref=f64e806]
+          - group [ref=f64e807]:
+            - button "Agregar fatimauy.com a favoritos fatimauy .com $0.01 $22.99 Únicamente el primer año con un plazo de 3 años Abrir sugerencias de herramientas de precios para fatimauy.com Más como esto Agregar fatimauy.com al carrito" [ref=f64e809] [cursor=pointer]:
+              - generic [ref=f64e816]:
+                - button "Agregar fatimauy.com a favoritos" [ref=f64e817]
+                - generic [ref=f64e818]:
+                  - heading "fatimauy .com" [level=2] [ref=f64e822]:
+                    - text: fatimauy
+                    - generic [ref=f64e823]: .com
+                  - generic [ref=f64e825]:
+                    - generic [ref=f64e829]:
+                      - generic [ref=f64e830]: $0.01
+                      - deletion [ref=f64e832]: $22.99
+                    - generic [ref=f64e833]:
+                      - generic [ref=f64e834]: Únicamente el primer año con un plazo de 3 años
+                      - button "Abrir sugerencias de herramientas de precios para fatimauy.com" [ref=f64e836]
+                  - button "Más como esto" [ref=f64e838]
+                - button "Agregar fatimauy.com al carrito" [ref=f64e845]
+          - group [ref=f64e846]:
+            - button "Agregar pasteleriafatimauy.mx a favoritos Amado por los locales pasteleriafatimauy .mx $0.01 $64.99 Únicamente el primer año con un plazo de 3 años Abrir sugerencias de herramientas de precios para pasteleriafatimauy.mx Más como esto Agregar pasteleriafatimauy.mx al carrito" [ref=f64e848] [cursor=pointer]:
+              - generic [ref=f64e855]:
+                - button "Agregar pasteleriafatimauy.mx a favoritos" [ref=f64e856]
+                - generic [ref=f64e857]:
+                  - generic [ref=f64e858]:
+                    - heading "Amado por los locales" [level=3] [ref=f64e861]
+                    - heading "pasteleriafatimauy .mx" [level=2] [ref=f64e864]:
+                      - text: pasteleriafatimauy
+                      - generic [ref=f64e865]: .mx
+                  - generic [ref=f64e867]:
+                    - generic [ref=f64e871]:
+                      - generic [ref=f64e872]: $0.01
+                      - deletion [ref=f64e874]: $64.99
+                    - generic [ref=f64e875]:
+                      - generic [ref=f64e876]: Únicamente el primer año con un plazo de 3 años
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauy.mx" [ref=f64e878]
+                  - button "Más como esto" [ref=f64e880]
+                - button "Agregar pasteleriafatimauy.mx al carrito" [ref=f64e887]
+          - group [ref=f64e888]:
+            - button "Agregar astrofatima.com a favoritos Premium Abrir sugerencias de herramientas astrofatima .com $1,450 +$22.99/año Abrir sugerencias de herramientas de precios para astrofatima.com Más como esto Agregar astrofatima.com al carrito" [ref=f64e890] [cursor=pointer]:
+              - generic [ref=f64e897]:
+                - button "Agregar astrofatima.com a favoritos" [ref=f64e898]
+                - generic [ref=f64e899]:
+                  - generic [ref=f64e900]:
+                    - generic [ref=f64e902]:
+                      - heading "Premium" [level=3] [ref=f64e903]
+                      - button "Abrir sugerencias de herramientas" [ref=f64e906]
+                    - heading "astrofatima .com" [level=2] [ref=f64e910]:
+                      - text: astrofatima
+                      - generic [ref=f64e911]: .com
+                  - generic [ref=f64e913]:
+                    - generic [ref=f64e914]: $1,450
+                    - generic [ref=f64e919]:
+                      - generic [ref=f64e920]: +$22.99/año
+                      - button "Abrir sugerencias de herramientas de precios para astrofatima.com" [ref=f64e922]
+                  - button "Más como esto" [ref=f64e924]
+                - button "Agregar astrofatima.com al carrito" [ref=f64e931]
+          - group [ref=f64e932]:
+            - button "Agregar pasteleriafatima.com a favoritos pasteleriafatima .com $0.01 $22.99 Únicamente el primer año con un plazo de 3 años Abrir sugerencias de herramientas de precios para pasteleriafatima.com Más como esto Agregar pasteleriafatima.com al carrito" [ref=f64e934] [cursor=pointer]:
+              - generic [ref=f64e941]:
+                - button "Agregar pasteleriafatima.com a favoritos" [ref=f64e942]
+                - generic [ref=f64e943]:
+                  - heading "pasteleriafatima .com" [level=2] [ref=f64e947]:
+                    - text: pasteleriafatima
+                    - generic [ref=f64e948]: .com
+                  - generic [ref=f64e950]:
+                    - generic [ref=f64e954]:
+                      - generic [ref=f64e955]: $0.01
+                      - deletion [ref=f64e957]: $22.99
+                    - generic [ref=f64e958]:
+                      - generic [ref=f64e959]: Únicamente el primer año con un plazo de 3 años
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatima.com" [ref=f64e961]
+                  - button "Más como esto" [ref=f64e963]
+                - button "Agregar pasteleriafatima.com al carrito" [ref=f64e970]
+          - group [ref=f64e971]:
+            - button "Agregar pasteleriasfatimauy.com a favoritos pasteleriasfatimauy .com $0.01 $22.99 Únicamente el primer año con un plazo de 3 años Abrir sugerencias de herramientas de precios para pasteleriasfatimauy.com Más como esto Agregar pasteleriasfatimauy.com al carrito" [ref=f64e973] [cursor=pointer]:
+              - generic [ref=f64e980]:
+                - button "Agregar pasteleriasfatimauy.com a favoritos" [ref=f64e981]
+                - generic [ref=f64e982]:
+                  - heading "pasteleriasfatimauy .com" [level=2] [ref=f64e986]:
+                    - text: pasteleriasfatimauy
+                    - generic [ref=f64e987]: .com
+                  - generic [ref=f64e989]:
+                    - generic [ref=f64e993]:
+                      - generic [ref=f64e994]: $0.01
+                      - deletion [ref=f64e996]: $22.99
+                    - generic [ref=f64e997]:
+                      - generic [ref=f64e998]: Únicamente el primer año con un plazo de 3 años
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriasfatimauy.com" [ref=f64e1000]
+                  - button "Más como esto" [ref=f64e1002]
+                - button "Agregar pasteleriasfatimauy.com al carrito" [ref=f64e1009]
+          - group [ref=f64e1010]:
+            - button "Agregar pasteleriafatimauy.org a favoritos pasteleriafatimauy .org $9.99 $23.99 por el primer año Abrir sugerencias de herramientas de precios para pasteleriafatimauy.org Más como esto Agregar pasteleriafatimauy.org al carrito" [ref=f64e1012] [cursor=pointer]:
+              - generic [ref=f64e1019]:
+                - button "Agregar pasteleriafatimauy.org a favoritos" [ref=f64e1020]
+                - generic [ref=f64e1021]:
+                  - heading "pasteleriafatimauy .org" [level=2] [ref=f64e1025]:
+                    - text: pasteleriafatimauy
+                    - generic [ref=f64e1026]: .org
+                  - generic [ref=f64e1028]:
+                    - generic [ref=f64e1032]:
+                      - generic [ref=f64e1033]: $9.99
+                      - deletion [ref=f64e1035]: $23.99
+                    - generic [ref=f64e1036]:
+                      - generic [ref=f64e1037]: por el primer año
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauy.org" [ref=f64e1039]
+                  - button "Más como esto" [ref=f64e1041]
+                - button "Agregar pasteleriafatimauy.org al carrito" [ref=f64e1048]
+          - group [ref=f64e1049]:
+            - button "Agregar paolafatimauy.com a favoritos paolafatimauy .com $0.01 $22.99 Únicamente el primer año con un plazo de 3 años Abrir sugerencias de herramientas de precios para paolafatimauy.com Más como esto Agregar paolafatimauy.com al carrito" [ref=f64e1051] [cursor=pointer]:
+              - generic [ref=f64e1058]:
+                - button "Agregar paolafatimauy.com a favoritos" [ref=f64e1059]
+                - generic [ref=f64e1060]:
+                  - heading "paolafatimauy .com" [level=2] [ref=f64e1064]:
+                    - text: paolafatimauy
+                    - generic [ref=f64e1065]: .com
+                  - generic [ref=f64e1067]:
+                    - generic [ref=f64e1071]:
+                      - generic [ref=f64e1072]: $0.01
+                      - deletion [ref=f64e1074]: $22.99
+                    - generic [ref=f64e1075]:
+                      - generic [ref=f64e1076]: Únicamente el primer año con un plazo de 3 años
+                      - button "Abrir sugerencias de herramientas de precios para paolafatimauy.com" [ref=f64e1078]
+                  - button "Más como esto" [ref=f64e1080]
+                - button "Agregar paolafatimauy.com al carrito" [ref=f64e1087]
+          - group [ref=f64e1088]:
+            - button "Agregar reposteriafatimauy.com a favoritos reposteriafatimauy .com $0.01 $22.99 Únicamente el primer año con un plazo de 3 años Abrir sugerencias de herramientas de precios para reposteriafatimauy.com Más como esto Agregar reposteriafatimauy.com al carrito" [ref=f64e1090] [cursor=pointer]:
+              - generic [ref=f64e1097]:
+                - button "Agregar reposteriafatimauy.com a favoritos" [ref=f64e1098]
+                - generic [ref=f64e1099]:
+                  - heading "reposteriafatimauy .com" [level=2] [ref=f64e1103]:
+                    - text: reposteriafatimauy
+                    - generic [ref=f64e1104]: .com
+                  - generic [ref=f64e1106]:
+                    - generic [ref=f64e1110]:
+                      - generic [ref=f64e1111]: $0.01
+                      - deletion [ref=f64e1113]: $22.99
+                    - generic [ref=f64e1114]:
+                      - generic [ref=f64e1115]: Únicamente el primer año con un plazo de 3 años
+                      - button "Abrir sugerencias de herramientas de precios para reposteriafatimauy.com" [ref=f64e1117]
+                  - button "Más como esto" [ref=f64e1119]
+                - button "Agregar reposteriafatimauy.com al carrito" [ref=f64e1126]
+          - group [ref=f64e1127]:
+            - button "Agregar fatimauypasteleria.com a favoritos fatimauypasteleria .com $0.01 $22.99 Únicamente el primer año con un plazo de 3 años Abrir sugerencias de herramientas de precios para fatimauypasteleria.com Más como esto Agregar fatimauypasteleria.com al carrito" [ref=f64e1129] [cursor=pointer]:
+              - generic [ref=f64e1136]:
+                - button "Agregar fatimauypasteleria.com a favoritos" [ref=f64e1137]
+                - generic [ref=f64e1138]:
+                  - heading "fatimauypasteleria .com" [level=2] [ref=f64e1142]:
+                    - text: fatimauypasteleria
+                    - generic [ref=f64e1143]: .com
+                  - generic [ref=f64e1145]:
+                    - generic [ref=f64e1149]:
+                      - generic [ref=f64e1150]: $0.01
+                      - deletion [ref=f64e1152]: $22.99
+                    - generic [ref=f64e1153]:
+                      - generic [ref=f64e1154]: Únicamente el primer año con un plazo de 3 años
+                      - button "Abrir sugerencias de herramientas de precios para fatimauypasteleria.com" [ref=f64e1156]
+                  - button "Más como esto" [ref=f64e1158]
+                - button "Agregar fatimauypasteleria.com al carrito" [ref=f64e1165]
+          - group [ref=f64e1166]:
+            - button "Agregar panaderiafatimauy.com a favoritos panaderiafatimauy .com $0.01 $22.99 Únicamente el primer año con un plazo de 3 años Abrir sugerencias de herramientas de precios para panaderiafatimauy.com Más como esto Agregar panaderiafatimauy.com al carrito" [ref=f64e1168] [cursor=pointer]:
+              - generic [ref=f64e1175]:
+                - button "Agregar panaderiafatimauy.com a favoritos" [ref=f64e1176]
+                - generic [ref=f64e1177]:
+                  - heading "panaderiafatimauy .com" [level=2] [ref=f64e1181]:
+                    - text: panaderiafatimauy
+                    - generic [ref=f64e1182]: .com
+                  - generic [ref=f64e1184]:
+                    - generic [ref=f64e1188]:
+                      - generic [ref=f64e1189]: $0.01
+                      - deletion [ref=f64e1191]: $22.99
+                    - generic [ref=f64e1192]:
+                      - generic [ref=f64e1193]: Únicamente el primer año con un plazo de 3 años
+                      - button "Abrir sugerencias de herramientas de precios para panaderiafatimauy.com" [ref=f64e1195]
+                  - button "Más como esto" [ref=f64e1197]
+                - button "Agregar panaderiafatimauy.com al carrito" [ref=f64e1204]
+          - group [ref=f64e1205]:
+            - button "Agregar pasteleriafatimauy.net a favoritos pasteleriafatimauy .net $0.01 $24.99 Únicamente el primer año con un plazo de 3 años Abrir sugerencias de herramientas de precios para pasteleriafatimauy.net Más como esto Agregar pasteleriafatimauy.net al carrito" [ref=f64e1207] [cursor=pointer]:
+              - generic [ref=f64e1214]:
+                - button "Agregar pasteleriafatimauy.net a favoritos" [ref=f64e1215]
+                - generic [ref=f64e1216]:
+                  - heading "pasteleriafatimauy .net" [level=2] [ref=f64e1220]:
+                    - text: pasteleriafatimauy
+                    - generic [ref=f64e1221]: .net
+                  - generic [ref=f64e1223]:
+                    - generic [ref=f64e1227]:
+                      - generic [ref=f64e1228]: $0.01
+                      - deletion [ref=f64e1230]: $24.99
+                    - generic [ref=f64e1231]:
+                      - generic [ref=f64e1232]: Únicamente el primer año con un plazo de 3 años
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauy.net" [ref=f64e1234]
+                  - button "Más como esto" [ref=f64e1236]
+                - button "Agregar pasteleriafatimauy.net al carrito" [ref=f64e1243]
+          - group [ref=f64e1244]:
+            - button "Agregar pasteleriafatimauy.online a favoritos pasteleriafatimauy .online $0.99 $54.99 por el primer año Abrir sugerencias de herramientas de precios para pasteleriafatimauy.online Más como esto Agregar pasteleriafatimauy.online al carrito" [ref=f64e1246] [cursor=pointer]:
+              - generic [ref=f64e1253]:
+                - button "Agregar pasteleriafatimauy.online a favoritos" [ref=f64e1254]
+                - generic [ref=f64e1255]:
+                  - heading "pasteleriafatimauy .online" [level=2] [ref=f64e1259]:
+                    - text: pasteleriafatimauy
+                    - generic [ref=f64e1260]: .online
+                  - generic [ref=f64e1262]:
+                    - generic [ref=f64e1266]:
+                      - generic [ref=f64e1267]: $0.99
+                      - deletion [ref=f64e1269]: $54.99
+                    - generic [ref=f64e1270]:
+                      - generic [ref=f64e1271]: por el primer año
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauy.online" [ref=f64e1273]
+                  - button "Más como esto" [ref=f64e1275]
+                - button "Agregar pasteleriafatimauy.online al carrito" [ref=f64e1282]
+          - group [ref=f64e1283]:
+            - button "Agregar pasteleriafatimauy.info a favoritos pasteleriafatimauy .info $5.99 $41.99 por el primer año Abrir sugerencias de herramientas de precios para pasteleriafatimauy.info Más como esto Agregar pasteleriafatimauy.info al carrito" [ref=f64e1285] [cursor=pointer]:
+              - generic [ref=f64e1292]:
+                - button "Agregar pasteleriafatimauy.info a favoritos" [ref=f64e1293]
+                - generic [ref=f64e1294]:
+                  - heading "pasteleriafatimauy .info" [level=2] [ref=f64e1298]:
+                    - text: pasteleriafatimauy
+                    - generic [ref=f64e1299]: .info
+                  - generic [ref=f64e1301]:
+                    - generic [ref=f64e1305]:
+                      - generic [ref=f64e1306]: $5.99
+                      - deletion [ref=f64e1308]: $41.99
+                    - generic [ref=f64e1309]:
+                      - generic [ref=f64e1310]: por el primer año
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauy.info" [ref=f64e1312]
+                  - button "Más como esto" [ref=f64e1314]
+                - button "Agregar pasteleriafatimauy.info al carrito" [ref=f64e1321]
+          - group [ref=f64e1322]:
+            - button "Agregar pasteleriafatimauy.store a favoritos pasteleriafatimauy .store $0.99 $83.99 por el primer año Abrir sugerencias de herramientas de precios para pasteleriafatimauy.store Más como esto Agregar pasteleriafatimauy.store al carrito" [ref=f64e1324] [cursor=pointer]:
+              - generic [ref=f64e1331]:
+                - button "Agregar pasteleriafatimauy.store a favoritos" [ref=f64e1332]
+                - generic [ref=f64e1333]:
+                  - heading "pasteleriafatimauy .store" [level=2] [ref=f64e1337]:
+                    - text: pasteleriafatimauy
+                    - generic [ref=f64e1338]: .store
+                  - generic [ref=f64e1340]:
+                    - generic [ref=f64e1344]:
+                      - generic [ref=f64e1345]: $0.99
+                      - deletion [ref=f64e1347]: $83.99
+                    - generic [ref=f64e1348]:
+                      - generic [ref=f64e1349]: por el primer año
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauy.store" [ref=f64e1351]
+                  - button "Más como esto" [ref=f64e1353]
+                - button "Agregar pasteleriafatimauy.store al carrito" [ref=f64e1360]
+          - group [ref=f64e1361]:
+            - button "Agregar pasteleriafatimauy.co a favoritos pasteleriafatimauy .co $0.01 $59.99 Únicamente el primer año con un plazo de 3 años Abrir sugerencias de herramientas de precios para pasteleriafatimauy.co Más como esto Agregar pasteleriafatimauy.co al carrito" [ref=f64e1363] [cursor=pointer]:
+              - generic [ref=f64e1370]:
+                - button "Agregar pasteleriafatimauy.co a favoritos" [ref=f64e1371]
+                - generic [ref=f64e1372]:
+                  - heading "pasteleriafatimauy .co" [level=2] [ref=f64e1376]:
+                    - text: pasteleriafatimauy
+                    - generic [ref=f64e1377]: .co
+                  - generic [ref=f64e1379]:
+                    - generic [ref=f64e1383]:
+                      - generic [ref=f64e1384]: $0.01
+                      - deletion [ref=f64e1386]: $59.99
+                    - generic [ref=f64e1387]:
+                      - generic [ref=f64e1388]: Únicamente el primer año con un plazo de 3 años
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauy.co" [ref=f64e1390]
+                  - button "Más como esto" [ref=f64e1392]
+                - button "Agregar pasteleriafatimauy.co al carrito" [ref=f64e1399]
+          - group [ref=f64e1400]:
+            - button "Agregar pasteleriafatimauy.art a favoritos pasteleriafatimauy .art $2.99 $39.99 por el primer año Abrir sugerencias de herramientas de precios para pasteleriafatimauy.art Más como esto Agregar pasteleriafatimauy.art al carrito" [ref=f64e1402] [cursor=pointer]:
+              - generic [ref=f64e1409]:
+                - button "Agregar pasteleriafatimauy.art a favoritos" [ref=f64e1410]
+                - generic [ref=f64e1411]:
+                  - heading "pasteleriafatimauy .art" [level=2] [ref=f64e1415]:
+                    - text: pasteleriafatimauy
+                    - generic [ref=f64e1416]: .art
+                  - generic [ref=f64e1418]:
+                    - generic [ref=f64e1422]:
+                      - generic [ref=f64e1423]: $2.99
+                      - deletion [ref=f64e1425]: $39.99
+                    - generic [ref=f64e1426]:
+                      - generic [ref=f64e1427]: por el primer año
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauy.art" [ref=f64e1429]
+                  - button "Más como esto" [ref=f64e1431]
+                - button "Agregar pasteleriafatimauy.art al carrito" [ref=f64e1438]
+          - group [ref=f64e1439]:
+            - button "Agregar pasteleriafatimauy.site a favoritos pasteleriafatimauy .site $0.99 $54.99 por el primer año Abrir sugerencias de herramientas de precios para pasteleriafatimauy.site Más como esto Agregar pasteleriafatimauy.site al carrito" [ref=f64e1441] [cursor=pointer]:
+              - generic [ref=f64e1448]:
+                - button "Agregar pasteleriafatimauy.site a favoritos" [ref=f64e1449]
+                - generic [ref=f64e1450]:
+                  - heading "pasteleriafatimauy .site" [level=2] [ref=f64e1454]:
+                    - text: pasteleriafatimauy
+                    - generic [ref=f64e1455]: .site
+                  - generic [ref=f64e1457]:
+                    - generic [ref=f64e1461]:
+                      - generic [ref=f64e1462]: $0.99
+                      - deletion [ref=f64e1464]: $54.99
+                    - generic [ref=f64e1465]:
+                      - generic [ref=f64e1466]: por el primer año
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauy.site" [ref=f64e1468]
+                  - button "Más como esto" [ref=f64e1470]
+                - button "Agregar pasteleriafatimauy.site al carrito" [ref=f64e1477]
+          - group [ref=f64e1478]:
+            - button "Agregar pasteleriafatimauy.life a favoritos pasteleriafatimauy .life $3.99 $55.99 por el primer año Abrir sugerencias de herramientas de precios para pasteleriafatimauy.life Más como esto Agregar pasteleriafatimauy.life al carrito" [ref=f64e1480] [cursor=pointer]:
+              - generic [ref=f64e1487]:
+                - button "Agregar pasteleriafatimauy.life a favoritos" [ref=f64e1488]
+                - generic [ref=f64e1489]:
+                  - heading "pasteleriafatimauy .life" [level=2] [ref=f64e1493]:
+                    - text: pasteleriafatimauy
+                    - generic [ref=f64e1494]: .life
+                  - generic [ref=f64e1496]:
+                    - generic [ref=f64e1500]:
+                      - generic [ref=f64e1501]: $3.99
+                      - deletion [ref=f64e1503]: $55.99
+                    - generic [ref=f64e1504]:
+                      - generic [ref=f64e1505]: por el primer año
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauy.life" [ref=f64e1507]
+                  - button "Más como esto" [ref=f64e1509]
+                - button "Agregar pasteleriafatimauy.life al carrito" [ref=f64e1516]
+          - group [ref=f64e1517]:
+            - button "Agregar pasteleriafatimauy.us a favoritos pasteleriafatimauy .us Se aplican restricciones. Abrir sugerencias de herramientas $7.99 $19.99 por el primer año Abrir sugerencias de herramientas de precios para pasteleriafatimauy.us Más como esto Agregar pasteleriafatimauy.us al carrito" [ref=f64e1519] [cursor=pointer]:
+              - generic [ref=f64e1526]:
+                - button "Agregar pasteleriafatimauy.us a favoritos" [ref=f64e1527]
+                - generic [ref=f64e1528]:
+                  - generic [ref=f64e1531]:
+                    - heading "pasteleriafatimauy .us" [level=2] [ref=f64e1532]:
+                      - text: pasteleriafatimauy
+                      - generic [ref=f64e1533]: .us
+                    - generic [ref=f64e1537]:
+                      - generic [ref=f64e1538]: Se aplican restricciones.
+                      - button "Abrir sugerencias de herramientas" [ref=f64e1539]
+                  - generic [ref=f64e1542]:
+                    - generic [ref=f64e1546]:
+                      - generic [ref=f64e1547]: $7.99
+                      - deletion [ref=f64e1549]: $19.99
+                    - generic [ref=f64e1550]:
+                      - generic [ref=f64e1551]: por el primer año
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauy.us" [ref=f64e1553]
+                  - button "Más como esto" [ref=f64e1555]
+                - button "Agregar pasteleriafatimauy.us al carrito" [ref=f64e1562]
+          - group [ref=f64e1563]:
+            - button "Agregar pasteleriafatimauy.me a favoritos pasteleriafatimauy .me $0.01 $29.99 Únicamente el primer año con un plazo de 3 años Abrir sugerencias de herramientas de precios para pasteleriafatimauy.me Más como esto Agregar pasteleriafatimauy.me al carrito" [ref=f64e1565] [cursor=pointer]:
+              - generic [ref=f64e1572]:
+                - button "Agregar pasteleriafatimauy.me a favoritos" [ref=f64e1573]
+                - generic [ref=f64e1574]:
+                  - heading "pasteleriafatimauy .me" [level=2] [ref=f64e1578]:
+                    - text: pasteleriafatimauy
+                    - generic [ref=f64e1579]: .me
+                  - generic [ref=f64e1581]:
+                    - generic [ref=f64e1585]:
+                      - generic [ref=f64e1586]: $0.01
+                      - deletion [ref=f64e1588]: $29.99
+                    - generic [ref=f64e1589]:
+                      - generic [ref=f64e1590]: Únicamente el primer año con un plazo de 3 años
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauy.me" [ref=f64e1592]
+                  - button "Más como esto" [ref=f64e1594]
+                - button "Agregar pasteleriafatimauy.me al carrito" [ref=f64e1601]
+          - group [ref=f64e1602]:
+            - button "Agregar pasteleriafatimauy.website a favoritos pasteleriafatimauy .website $0.99 $39.99 por el primer año Abrir sugerencias de herramientas de precios para pasteleriafatimauy.website Más como esto Agregar pasteleriafatimauy.website al carrito" [ref=f64e1604] [cursor=pointer]:
+              - generic [ref=f64e1611]:
+                - button "Agregar pasteleriafatimauy.website a favoritos" [ref=f64e1612]
+                - generic [ref=f64e1613]:
+                  - heading "pasteleriafatimauy .website" [level=2] [ref=f64e1617]:
+                    - text: pasteleriafatimauy
+                    - generic [ref=f64e1618]: .website
+                  - generic [ref=f64e1620]:
+                    - generic [ref=f64e1624]:
+                      - generic [ref=f64e1625]: $0.99
+                      - deletion [ref=f64e1627]: $39.99
+                    - generic [ref=f64e1628]:
+                      - generic [ref=f64e1629]: por el primer año
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauy.website" [ref=f64e1631]
+                  - button "Más como esto" [ref=f64e1633]
+                - button "Agregar pasteleriafatimauy.website al carrito" [ref=f64e1640]
+          - group [ref=f64e1641]:
+            - button "Agregar pasteleriafatimauy.blog a favoritos pasteleriafatimauy .blog $1.99 $39.99 por el primer año Abrir sugerencias de herramientas de precios para pasteleriafatimauy.blog Más como esto Agregar pasteleriafatimauy.blog al carrito" [ref=f64e1643] [cursor=pointer]:
+              - generic [ref=f64e1650]:
+                - button "Agregar pasteleriafatimauy.blog a favoritos" [ref=f64e1651]
+                - generic [ref=f64e1652]:
+                  - heading "pasteleriafatimauy .blog" [level=2] [ref=f64e1656]:
+                    - text: pasteleriafatimauy
+                    - generic [ref=f64e1657]: .blog
+                  - generic [ref=f64e1659]:
+                    - generic [ref=f64e1663]:
+                      - generic [ref=f64e1664]: $1.99
+                      - deletion [ref=f64e1666]: $39.99
+                    - generic [ref=f64e1667]:
+                      - generic [ref=f64e1668]: por el primer año
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauy.blog" [ref=f64e1670]
+                  - button "Más como esto" [ref=f64e1672]
+                - button "Agregar pasteleriafatimauy.blog al carrito" [ref=f64e1679]
+          - group [ref=f64e1680]:
+            - button "Agregar fatimatalks.com a favoritos Premium Abrir sugerencias de herramientas fatimatalks .com $1,488 +$22.99/año Abrir sugerencias de herramientas de precios para fatimatalks.com Más como esto Agregar fatimatalks.com al carrito" [ref=f64e1682] [cursor=pointer]:
+              - generic [ref=f64e1689]:
+                - button "Agregar fatimatalks.com a favoritos" [ref=f64e1690]
+                - generic [ref=f64e1691]:
+                  - generic [ref=f64e1692]:
+                    - generic [ref=f64e1694]:
+                      - heading "Premium" [level=3] [ref=f64e1695]
+                      - button "Abrir sugerencias de herramientas" [ref=f64e1698]
+                    - heading "fatimatalks .com" [level=2] [ref=f64e1702]:
+                      - text: fatimatalks
+                      - generic [ref=f64e1703]: .com
+                  - generic [ref=f64e1705]:
+                    - generic [ref=f64e1706]: $1,488
+                    - generic [ref=f64e1711]:
+                      - generic [ref=f64e1712]: +$22.99/año
+                      - button "Abrir sugerencias de herramientas de precios para fatimatalks.com" [ref=f64e1714]
+                  - button "Más como esto" [ref=f64e1716]
+                - button "Agregar fatimatalks.com al carrito" [ref=f64e1723]
+          - group [ref=f64e1724]:
+            - button "Agregar pasteleriafatimauy.digital a favoritos pasteleriafatimauy .digital $3.99 $63.99 por el primer año Abrir sugerencias de herramientas de precios para pasteleriafatimauy.digital Más como esto Agregar pasteleriafatimauy.digital al carrito" [ref=f64e1726] [cursor=pointer]:
+              - generic [ref=f64e1733]:
+                - button "Agregar pasteleriafatimauy.digital a favoritos" [ref=f64e1734]
+                - generic [ref=f64e1735]:
+                  - heading "pasteleriafatimauy .digital" [level=2] [ref=f64e1739]:
+                    - text: pasteleriafatimauy
+                    - generic [ref=f64e1740]: .digital
+                  - generic [ref=f64e1742]:
+                    - generic [ref=f64e1746]:
+                      - generic [ref=f64e1747]: $3.99
+                      - deletion [ref=f64e1749]: $63.99
+                    - generic [ref=f64e1750]:
+                      - generic [ref=f64e1751]: por el primer año
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauy.digital" [ref=f64e1753]
+                  - button "Más como esto" [ref=f64e1755]
+                - button "Agregar pasteleriafatimauy.digital al carrito" [ref=f64e1762]
+          - group [ref=f64e1763]:
+            - button "Agregar pasteleriafatimauy.biz a favoritos pasteleriafatimauy .biz $0.01 $35.99 Únicamente el primer año con un plazo de 3 años Abrir sugerencias de herramientas de precios para pasteleriafatimauy.biz Más como esto Agregar pasteleriafatimauy.biz al carrito" [ref=f64e1765] [cursor=pointer]:
+              - generic [ref=f64e1772]:
+                - button "Agregar pasteleriafatimauy.biz a favoritos" [ref=f64e1773]
+                - generic [ref=f64e1774]:
+                  - heading "pasteleriafatimauy .biz" [level=2] [ref=f64e1778]:
+                    - text: pasteleriafatimauy
+                    - generic [ref=f64e1779]: .biz
+                  - generic [ref=f64e1781]:
+                    - generic [ref=f64e1785]:
+                      - generic [ref=f64e1786]: $0.01
+                      - deletion [ref=f64e1788]: $35.99
+                    - generic [ref=f64e1789]:
+                      - generic [ref=f64e1790]: Únicamente el primer año con un plazo de 3 años
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauy.biz" [ref=f64e1792]
+                  - button "Más como esto" [ref=f64e1794]
+                - button "Agregar pasteleriafatimauy.biz al carrito" [ref=f64e1801]
+          - group [ref=f64e1802]:
+            - button "Agregar pastelfatimauy.com a favoritos pastelfatimauy .com $0.01 $22.99 Únicamente el primer año con un plazo de 3 años Abrir sugerencias de herramientas de precios para pastelfatimauy.com Más como esto Agregar pastelfatimauy.com al carrito" [ref=f64e1804] [cursor=pointer]:
+              - generic [ref=f64e1811]:
+                - button "Agregar pastelfatimauy.com a favoritos" [ref=f64e1812]
+                - generic [ref=f64e1813]:
+                  - heading "pastelfatimauy .com" [level=2] [ref=f64e1817]:
+                    - text: pastelfatimauy
+                    - generic [ref=f64e1818]: .com
+                  - generic [ref=f64e1820]:
+                    - generic [ref=f64e1824]:
+                      - generic [ref=f64e1825]: $0.01
+                      - deletion [ref=f64e1827]: $22.99
+                    - generic [ref=f64e1828]:
+                      - generic [ref=f64e1829]: Únicamente el primer año con un plazo de 3 años
+                      - button "Abrir sugerencias de herramientas de precios para pastelfatimauy.com" [ref=f64e1831]
+                  - button "Más como esto" [ref=f64e1833]
+                - button "Agregar pastelfatimauy.com al carrito" [ref=f64e1840]
+          - group [ref=f64e1841]:
+            - button "Agregar pasteleriafatimauypr.com a favoritos pasteleriafatimauypr .com $0.01 $22.99 Únicamente el primer año con un plazo de 3 años Abrir sugerencias de herramientas de precios para pasteleriafatimauypr.com Más como esto Agregar pasteleriafatimauypr.com al carrito" [ref=f64e1843] [cursor=pointer]:
+              - generic [ref=f64e1850]:
+                - button "Agregar pasteleriafatimauypr.com a favoritos" [ref=f64e1851]
+                - generic [ref=f64e1852]:
+                  - heading "pasteleriafatimauypr .com" [level=2] [ref=f64e1856]:
+                    - text: pasteleriafatimauypr
+                    - generic [ref=f64e1857]: .com
+                  - generic [ref=f64e1859]:
+                    - generic [ref=f64e1863]:
+                      - generic [ref=f64e1864]: $0.01
+                      - deletion [ref=f64e1866]: $22.99
+                    - generic [ref=f64e1867]:
+                      - generic [ref=f64e1868]: Únicamente el primer año con un plazo de 3 años
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauypr.com" [ref=f64e1870]
+                  - button "Más como esto" [ref=f64e1872]
+                - button "Agregar pasteleriafatimauypr.com al carrito" [ref=f64e1879]
+          - group [ref=f64e1880]:
+            - button "Agregar fatimauyreposteria.com a favoritos fatimauyreposteria .com $0.01 $22.99 Únicamente el primer año con un plazo de 3 años Abrir sugerencias de herramientas de precios para fatimauyreposteria.com Más como esto Agregar fatimauyreposteria.com al carrito" [ref=f64e1882] [cursor=pointer]:
+              - generic [ref=f64e1889]:
+                - button "Agregar fatimauyreposteria.com a favoritos" [ref=f64e1890]
+                - generic [ref=f64e1891]:
+                  - heading "fatimauyreposteria .com" [level=2] [ref=f64e1895]:
+                    - text: fatimauyreposteria
+                    - generic [ref=f64e1896]: .com
+                  - generic [ref=f64e1898]:
+                    - generic [ref=f64e1902]:
+                      - generic [ref=f64e1903]: $0.01
+                      - deletion [ref=f64e1905]: $22.99
+                    - generic [ref=f64e1906]:
+                      - generic [ref=f64e1907]: Únicamente el primer año con un plazo de 3 años
+                      - button "Abrir sugerencias de herramientas de precios para fatimauyreposteria.com" [ref=f64e1909]
+                  - button "Más como esto" [ref=f64e1911]
+                - button "Agregar fatimauyreposteria.com al carrito" [ref=f64e1918]
+          - group [ref=f64e1919]:
+            - button "Agregar postresfatimauy.com a favoritos postresfatimauy .com $0.01 $22.99 Únicamente el primer año con un plazo de 3 años Abrir sugerencias de herramientas de precios para postresfatimauy.com Más como esto Agregar postresfatimauy.com al carrito" [ref=f64e1921] [cursor=pointer]:
+              - generic [ref=f64e1928]:
+                - button "Agregar postresfatimauy.com a favoritos" [ref=f64e1929]
+                - generic [ref=f64e1930]:
+                  - heading "postresfatimauy .com" [level=2] [ref=f64e1934]:
+                    - text: postresfatimauy
+                    - generic [ref=f64e1935]: .com
+                  - generic [ref=f64e1937]:
+                    - generic [ref=f64e1941]:
+                      - generic [ref=f64e1942]: $0.01
+                      - deletion [ref=f64e1944]: $22.99
+                    - generic [ref=f64e1945]:
+                      - generic [ref=f64e1946]: Únicamente el primer año con un plazo de 3 años
+                      - button "Abrir sugerencias de herramientas de precios para postresfatimauy.com" [ref=f64e1948]
+                  - button "Más como esto" [ref=f64e1950]
+                - button "Agregar postresfatimauy.com al carrito" [ref=f64e1957]
+          - group [ref=f64e1958]:
+            - button "Agregar pasteleriafatimauygmail.com a favoritos pasteleriafatimauygmail .com $0.01 $22.99 Únicamente el primer año con un plazo de 3 años Abrir sugerencias de herramientas de precios para pasteleriafatimauygmail.com Más como esto Agregar pasteleriafatimauygmail.com al carrito" [ref=f64e1960] [cursor=pointer]:
+              - generic [ref=f64e1967]:
+                - button "Agregar pasteleriafatimauygmail.com a favoritos" [ref=f64e1968]
+                - generic [ref=f64e1969]:
+                  - heading "pasteleriafatimauygmail .com" [level=2] [ref=f64e1973]:
+                    - text: pasteleriafatimauygmail
+                    - generic [ref=f64e1974]: .com
+                  - generic [ref=f64e1976]:
+                    - generic [ref=f64e1980]:
+                      - generic [ref=f64e1981]: $0.01
+                      - deletion [ref=f64e1983]: $22.99
+                    - generic [ref=f64e1984]:
+                      - generic [ref=f64e1985]: Únicamente el primer año con un plazo de 3 años
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauygmail.com" [ref=f64e1987]
+                  - button "Más como esto" [ref=f64e1989]
+                - button "Agregar pasteleriafatimauygmail.com al carrito" [ref=f64e1996]
+          - group [ref=f64e1997]:
+            - button "Agregar pasteleriafatima-uy.com a favoritos pasteleriafatima-uy .com $0.01 $22.99 Únicamente el primer año con un plazo de 3 años Abrir sugerencias de herramientas de precios para pasteleriafatima-uy.com Más como esto Agregar pasteleriafatima-uy.com al carrito" [ref=f64e1999] [cursor=pointer]:
+              - generic [ref=f64e2006]:
+                - button "Agregar pasteleriafatima-uy.com a favoritos" [ref=f64e2007]
+                - generic [ref=f64e2008]:
+                  - heading "pasteleriafatima-uy .com" [level=2] [ref=f64e2012]:
+                    - text: pasteleriafatima-uy
+                    - generic [ref=f64e2013]: .com
+                  - generic [ref=f64e2015]:
+                    - generic [ref=f64e2019]:
+                      - generic [ref=f64e2020]: $0.01
+                      - deletion [ref=f64e2022]: $22.99
+                    - generic [ref=f64e2023]:
+                      - generic [ref=f64e2024]: Únicamente el primer año con un plazo de 3 años
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatima-uy.com" [ref=f64e2026]
+                  - button "Más como esto" [ref=f64e2028]
+                - button "Agregar pasteleriafatima-uy.com al carrito" [ref=f64e2035]
+          - group [ref=f64e2036]:
+            - button "Agregar pastelesfatimauy.com a favoritos pastelesfatimauy .com $0.01 $22.99 Únicamente el primer año con un plazo de 3 años Abrir sugerencias de herramientas de precios para pastelesfatimauy.com Más como esto Agregar pastelesfatimauy.com al carrito" [ref=f64e2038] [cursor=pointer]:
+              - generic [ref=f64e2045]:
+                - button "Agregar pastelesfatimauy.com a favoritos" [ref=f64e2046]
+                - generic [ref=f64e2047]:
+                  - heading "pastelesfatimauy .com" [level=2] [ref=f64e2051]:
+                    - text: pastelesfatimauy
+                    - generic [ref=f64e2052]: .com
+                  - generic [ref=f64e2054]:
+                    - generic [ref=f64e2058]:
+                      - generic [ref=f64e2059]: $0.01
+                      - deletion [ref=f64e2061]: $22.99
+                    - generic [ref=f64e2062]:
+                      - generic [ref=f64e2063]: Únicamente el primer año con un plazo de 3 años
+                      - button "Abrir sugerencias de herramientas de precios para pastelesfatimauy.com" [ref=f64e2065]
+                  - button "Más como esto" [ref=f64e2067]
+                - button "Agregar pastelesfatimauy.com al carrito" [ref=f64e2074]
+          - group [ref=f64e2075]:
+            - button "Agregar fatimauypastelerias.com a favoritos fatimauypastelerias .com $0.01 $22.99 Únicamente el primer año con un plazo de 3 años Abrir sugerencias de herramientas de precios para fatimauypastelerias.com Más como esto Agregar fatimauypastelerias.com al carrito" [ref=f64e2077] [cursor=pointer]:
+              - generic [ref=f64e2084]:
+                - button "Agregar fatimauypastelerias.com a favoritos" [ref=f64e2085]
+                - generic [ref=f64e2086]:
+                  - heading "fatimauypastelerias .com" [level=2] [ref=f64e2090]:
+                    - text: fatimauypastelerias
+                    - generic [ref=f64e2091]: .com
+                  - generic [ref=f64e2093]:
+                    - generic [ref=f64e2097]:
+                      - generic [ref=f64e2098]: $0.01
+                      - deletion [ref=f64e2100]: $22.99
+                    - generic [ref=f64e2101]:
+                      - generic [ref=f64e2102]: Únicamente el primer año con un plazo de 3 años
+                      - button "Abrir sugerencias de herramientas de precios para fatimauypastelerias.com" [ref=f64e2104]
+                  - button "Más como esto" [ref=f64e2106]
+                - button "Agregar fatimauypastelerias.com al carrito" [ref=f64e2113]
+          - group [ref=f64e2114]:
+            - button "Agregar deliciasfatimauy.com a favoritos deliciasfatimauy .com $0.01 $22.99 Únicamente el primer año con un plazo de 3 años Abrir sugerencias de herramientas de precios para deliciasfatimauy.com Más como esto Agregar deliciasfatimauy.com al carrito" [ref=f64e2116] [cursor=pointer]:
+              - generic [ref=f64e2123]:
+                - button "Agregar deliciasfatimauy.com a favoritos" [ref=f64e2124]
+                - generic [ref=f64e2125]:
+                  - heading "deliciasfatimauy .com" [level=2] [ref=f64e2129]:
+                    - text: deliciasfatimauy
+                    - generic [ref=f64e2130]: .com
+                  - generic [ref=f64e2132]:
+                    - generic [ref=f64e2136]:
+                      - generic [ref=f64e2137]: $0.01
+                      - deletion [ref=f64e2139]: $22.99
+                    - generic [ref=f64e2140]:
+                      - generic [ref=f64e2141]: Únicamente el primer año con un plazo de 3 años
+                      - button "Abrir sugerencias de herramientas de precios para deliciasfatimauy.com" [ref=f64e2143]
+                  - button "Más como esto" [ref=f64e2145]
+                - button "Agregar deliciasfatimauy.com al carrito" [ref=f64e2152]
+          - group [ref=f64e2153]:
+            - button "Agregar tortafatimauy.com a favoritos tortafatimauy .com $0.01 $22.99 Únicamente el primer año con un plazo de 3 años Abrir sugerencias de herramientas de precios para tortafatimauy.com Más como esto Agregar tortafatimauy.com al carrito" [ref=f64e2155] [cursor=pointer]:
+              - generic [ref=f64e2162]:
+                - button "Agregar tortafatimauy.com a favoritos" [ref=f64e2163]
+                - generic [ref=f64e2164]:
+                  - heading "tortafatimauy .com" [level=2] [ref=f64e2168]:
+                    - text: tortafatimauy
+                    - generic [ref=f64e2169]: .com
+                  - generic [ref=f64e2171]:
+                    - generic [ref=f64e2175]:
+                      - generic [ref=f64e2176]: $0.01
+                      - deletion [ref=f64e2178]: $22.99
+                    - generic [ref=f64e2179]:
+                      - generic [ref=f64e2180]: Únicamente el primer año con un plazo de 3 años
+                      - button "Abrir sugerencias de herramientas de precios para tortafatimauy.com" [ref=f64e2182]
+                  - button "Más como esto" [ref=f64e2184]
+                - button "Agregar tortafatimauy.com al carrito" [ref=f64e2191]
+          - group [ref=f64e2192]:
+            - button "Agregar pasteleriafatimauy.live a favoritos pasteleriafatimauy .live $3.99 $49.99 por el primer año Abrir sugerencias de herramientas de precios para pasteleriafatimauy.live Más como esto Agregar pasteleriafatimauy.live al carrito" [ref=f64e2194] [cursor=pointer]:
+              - generic [ref=f64e2201]:
+                - button "Agregar pasteleriafatimauy.live a favoritos" [ref=f64e2202]
+                - generic [ref=f64e2203]:
+                  - heading "pasteleriafatimauy .live" [level=2] [ref=f64e2207]:
+                    - text: pasteleriafatimauy
+                    - generic [ref=f64e2208]: .live
+                  - generic [ref=f64e2210]:
+                    - generic [ref=f64e2214]:
+                      - generic [ref=f64e2215]: $3.99
+                      - deletion [ref=f64e2217]: $49.99
+                    - generic [ref=f64e2218]:
+                      - generic [ref=f64e2219]: por el primer año
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauy.live" [ref=f64e2221]
+                  - button "Más como esto" [ref=f64e2223]
+                - button "Agregar pasteleriafatimauy.live al carrito" [ref=f64e2230]
+          - group [ref=f64e2231]:
+            - button "Agregar pasteleriafatimauy.work a favoritos pasteleriafatimauy .work $2.99 $19.99 por el primer año Abrir sugerencias de herramientas de precios para pasteleriafatimauy.work Más como esto Agregar pasteleriafatimauy.work al carrito" [ref=f64e2233] [cursor=pointer]:
+              - generic [ref=f64e2240]:
+                - button "Agregar pasteleriafatimauy.work a favoritos" [ref=f64e2241]
+                - generic [ref=f64e2242]:
+                  - heading "pasteleriafatimauy .work" [level=2] [ref=f64e2246]:
+                    - text: pasteleriafatimauy
+                    - generic [ref=f64e2247]: .work
+                  - generic [ref=f64e2249]:
+                    - generic [ref=f64e2253]:
+                      - generic [ref=f64e2254]: $2.99
+                      - deletion [ref=f64e2256]: $19.99
+                    - generic [ref=f64e2257]:
+                      - generic [ref=f64e2258]: por el primer año
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauy.work" [ref=f64e2260]
+                  - button "Más como esto" [ref=f64e2262]
+                - button "Agregar pasteleriafatimauy.work al carrito" [ref=f64e2269]
+          - group [ref=f64e2270]:
+            - button "Agregar pasteleriafatimauy.services a favoritos pasteleriafatimauy .services $3.99 $59.99 por el primer año Abrir sugerencias de herramientas de precios para pasteleriafatimauy.services Más como esto Agregar pasteleriafatimauy.services al carrito" [ref=f64e2272] [cursor=pointer]:
+              - generic [ref=f64e2279]:
+                - button "Agregar pasteleriafatimauy.services a favoritos" [ref=f64e2280]
+                - generic [ref=f64e2281]:
+                  - heading "pasteleriafatimauy .services" [level=2] [ref=f64e2285]:
+                    - text: pasteleriafatimauy
+                    - generic [ref=f64e2286]: .services
+                  - generic [ref=f64e2288]:
+                    - generic [ref=f64e2292]:
+                      - generic [ref=f64e2293]: $3.99
+                      - deletion [ref=f64e2295]: $59.99
+                    - generic [ref=f64e2296]:
+                      - generic [ref=f64e2297]: por el primer año
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauy.services" [ref=f64e2299]
+                  - button "Más como esto" [ref=f64e2301]
+                - button "Agregar pasteleriafatimauy.services al carrito" [ref=f64e2308]
+          - group [ref=f64e2309]:
+            - button "Agregar pasteleriafatimauy.ai a favoritos pasteleriafatimauy .ai $49.99 $159.99 Únicamente el primer año con un plazo de 2 años Abrir sugerencias de herramientas de precios para pasteleriafatimauy.ai Más como esto Agregar pasteleriafatimauy.ai al carrito" [ref=f64e2311] [cursor=pointer]:
+              - generic [ref=f64e2318]:
+                - button "Agregar pasteleriafatimauy.ai a favoritos" [ref=f64e2319]
+                - generic [ref=f64e2320]:
+                  - heading "pasteleriafatimauy .ai" [level=2] [ref=f64e2324]:
+                    - text: pasteleriafatimauy
+                    - generic [ref=f64e2325]: .ai
+                  - generic [ref=f64e2327]:
+                    - generic [ref=f64e2331]:
+                      - generic [ref=f64e2332]: $49.99
+                      - deletion [ref=f64e2334]: $159.99
+                    - generic [ref=f64e2335]:
+                      - generic [ref=f64e2336]: Únicamente el primer año con un plazo de 2 años
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauy.ai" [ref=f64e2338]
+                  - button "Más como esto" [ref=f64e2340]
+                - button "Agregar pasteleriafatimauy.ai al carrito" [ref=f64e2347]
+          - group [ref=f64e2348]:
+            - button "Agregar pasteleriafatimauy.club a favoritos pasteleriafatimauy .club $4.99 $29.99 por el primer año Abrir sugerencias de herramientas de precios para pasteleriafatimauy.club Más como esto Agregar pasteleriafatimauy.club al carrito" [ref=f64e2350] [cursor=pointer]:
+              - generic [ref=f64e2357]:
+                - button "Agregar pasteleriafatimauy.club a favoritos" [ref=f64e2358]
+                - generic [ref=f64e2359]:
+                  - heading "pasteleriafatimauy .club" [level=2] [ref=f64e2363]:
+                    - text: pasteleriafatimauy
+                    - generic [ref=f64e2364]: .club
+                  - generic [ref=f64e2366]:
+                    - generic [ref=f64e2370]:
+                      - generic [ref=f64e2371]: $4.99
+                      - deletion [ref=f64e2373]: $29.99
+                    - generic [ref=f64e2374]:
+                      - generic [ref=f64e2375]: por el primer año
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauy.club" [ref=f64e2377]
+                  - button "Más como esto" [ref=f64e2379]
+                - button "Agregar pasteleriafatimauy.club al carrito" [ref=f64e2386]
+          - group [ref=f64e2387]:
+            - button "Agregar pasteleriafatimauy.world a favoritos pasteleriafatimauy .world $3.99 $63.99 por el primer año Abrir sugerencias de herramientas de precios para pasteleriafatimauy.world Más como esto Agregar pasteleriafatimauy.world al carrito" [ref=f64e2389] [cursor=pointer]:
+              - generic [ref=f64e2396]:
+                - button "Agregar pasteleriafatimauy.world a favoritos" [ref=f64e2397]
+                - generic [ref=f64e2398]:
+                  - heading "pasteleriafatimauy .world" [level=2] [ref=f64e2402]:
+                    - text: pasteleriafatimauy
+                    - generic [ref=f64e2403]: .world
+                  - generic [ref=f64e2405]:
+                    - generic [ref=f64e2409]:
+                      - generic [ref=f64e2410]: $3.99
+                      - deletion [ref=f64e2412]: $63.99
+                    - generic [ref=f64e2413]:
+                      - generic [ref=f64e2414]: por el primer año
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauy.world" [ref=f64e2416]
+                  - button "Más como esto" [ref=f64e2418]
+                - button "Agregar pasteleriafatimauy.world al carrito" [ref=f64e2425]
+          - group [ref=f64e2426]:
+            - button "Agregar pasteleriafatimauy.cc a favoritos pasteleriafatimauy .cc $5.99 $15.99 por el primer año Abrir sugerencias de herramientas de precios para pasteleriafatimauy.cc Más como esto Agregar pasteleriafatimauy.cc al carrito" [ref=f64e2428] [cursor=pointer]:
+              - generic [ref=f64e2435]:
+                - button "Agregar pasteleriafatimauy.cc a favoritos" [ref=f64e2436]
+                - generic [ref=f64e2437]:
+                  - heading "pasteleriafatimauy .cc" [level=2] [ref=f64e2441]:
+                    - text: pasteleriafatimauy
+                    - generic [ref=f64e2442]: .cc
+                  - generic [ref=f64e2444]:
+                    - generic [ref=f64e2448]:
+                      - generic [ref=f64e2449]: $5.99
+                      - deletion [ref=f64e2451]: $15.99
+                    - generic [ref=f64e2452]:
+                      - generic [ref=f64e2453]: por el primer año
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauy.cc" [ref=f64e2455]
+                  - button "Más como esto" [ref=f64e2457]
+                - button "Agregar pasteleriafatimauy.cc al carrito" [ref=f64e2464]
+          - group [ref=f64e2465]:
+            - button "Agregar pasteleriafatimauy.app a favoritos pasteleriafatimauy .app SSL incluido. Abrir sugerencias de herramientas $15.99 $27.99 por el primer año Abrir sugerencias de herramientas de precios para pasteleriafatimauy.app Más como esto Agregar pasteleriafatimauy.app al carrito" [ref=f64e2467] [cursor=pointer]:
+              - generic [ref=f64e2474]:
+                - button "Agregar pasteleriafatimauy.app a favoritos" [ref=f64e2475]
+                - generic [ref=f64e2476]:
+                  - generic [ref=f64e2479]:
+                    - heading "pasteleriafatimauy .app" [level=2] [ref=f64e2480]:
+                      - text: pasteleriafatimauy
+                      - generic [ref=f64e2481]: .app
+                    - generic [ref=f64e2485]:
+                      - generic [ref=f64e2486]: SSL incluido.
+                      - button "Abrir sugerencias de herramientas" [ref=f64e2487]
+                  - generic [ref=f64e2490]:
+                    - generic [ref=f64e2494]:
+                      - generic [ref=f64e2495]: $15.99
+                      - deletion [ref=f64e2497]: $27.99
+                    - generic [ref=f64e2498]:
+                      - generic [ref=f64e2499]: por el primer año
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauy.app" [ref=f64e2501]
+                  - button "Más como esto" [ref=f64e2503]
+                - button "Agregar pasteleriafatimauy.app al carrito" [ref=f64e2510]
+          - group [ref=f64e2511]:
+            - button "Agregar pasteleriafatimauy.fun a favoritos pasteleriafatimauy .fun $2.99 $59.99 por el primer año Abrir sugerencias de herramientas de precios para pasteleriafatimauy.fun Más como esto Agregar pasteleriafatimauy.fun al carrito" [ref=f64e2513] [cursor=pointer]:
+              - generic [ref=f64e2520]:
+                - button "Agregar pasteleriafatimauy.fun a favoritos" [ref=f64e2521]
+                - generic [ref=f64e2522]:
+                  - heading "pasteleriafatimauy .fun" [level=2] [ref=f64e2526]:
+                    - text: pasteleriafatimauy
+                    - generic [ref=f64e2527]: .fun
+                  - generic [ref=f64e2529]:
+                    - generic [ref=f64e2533]:
+                      - generic [ref=f64e2534]: $2.99
+                      - deletion [ref=f64e2536]: $59.99
+                    - generic [ref=f64e2537]:
+                      - generic [ref=f64e2538]: por el primer año
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauy.fun" [ref=f64e2540]
+                  - button "Más como esto" [ref=f64e2542]
+                - button "Agregar pasteleriafatimauy.fun al carrito" [ref=f64e2549]
+          - group [ref=f64e2550]:
+            - button "Agregar pasteleriafatimauy.space a favoritos pasteleriafatimauy .space $0.99 $49.99 por el primer año Abrir sugerencias de herramientas de precios para pasteleriafatimauy.space Más como esto Agregar pasteleriafatimauy.space al carrito" [ref=f64e2552] [cursor=pointer]:
+              - generic [ref=f64e2559]:
+                - button "Agregar pasteleriafatimauy.space a favoritos" [ref=f64e2560]
+                - generic [ref=f64e2561]:
+                  - heading "pasteleriafatimauy .space" [level=2] [ref=f64e2565]:
+                    - text: pasteleriafatimauy
+                    - generic [ref=f64e2566]: .space
+                  - generic [ref=f64e2568]:
+                    - generic [ref=f64e2572]:
+                      - generic [ref=f64e2573]: $0.99
+                      - deletion [ref=f64e2575]: $49.99
+                    - generic [ref=f64e2576]:
+                      - generic [ref=f64e2577]: por el primer año
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauy.space" [ref=f64e2579]
+                  - button "Más como esto" [ref=f64e2581]
+                - button "Agregar pasteleriafatimauy.space al carrito" [ref=f64e2588]
+          - group [ref=f64e2589]:
+            - button "Agregar pasteleriafatimauy.tv a favoritos pasteleriafatimauy .tv $49.99/año Más como esto Agregar pasteleriafatimauy.tv al carrito" [ref=f64e2591] [cursor=pointer]:
+              - generic [ref=f64e2598]:
+                - button "Agregar pasteleriafatimauy.tv a favoritos" [ref=f64e2599]
+                - generic [ref=f64e2600]:
+                  - heading "pasteleriafatimauy .tv" [level=2] [ref=f64e2604]:
+                    - text: pasteleriafatimauy
+                    - generic [ref=f64e2605]: .tv
+                  - generic [ref=f64e2606]: $49.99/año
+                  - button "Más como esto" [ref=f64e2613]
+                - button "Agregar pasteleriafatimauy.tv al carrito" [ref=f64e2620]
+          - group [ref=f64e2621]:
+            - button "Agregar pasteleriafatimauy.io a favoritos pasteleriafatimauy .io $0.01 $89.99 Únicamente el primer año con un plazo de 3 años Abrir sugerencias de herramientas de precios para pasteleriafatimauy.io Más como esto Agregar pasteleriafatimauy.io al carrito" [ref=f64e2623] [cursor=pointer]:
+              - generic [ref=f64e2630]:
+                - button "Agregar pasteleriafatimauy.io a favoritos" [ref=f64e2631]
+                - generic [ref=f64e2632]:
+                  - heading "pasteleriafatimauy .io" [level=2] [ref=f64e2636]:
+                    - text: pasteleriafatimauy
+                    - generic [ref=f64e2637]: .io
+                  - generic [ref=f64e2639]:
+                    - generic [ref=f64e2643]:
+                      - generic [ref=f64e2644]: $0.01
+                      - deletion [ref=f64e2646]: $89.99
+                    - generic [ref=f64e2647]:
+                      - generic [ref=f64e2648]: Únicamente el primer año con un plazo de 3 años
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauy.io" [ref=f64e2650]
+                  - button "Más como esto" [ref=f64e2652]
+                - button "Agregar pasteleriafatimauy.io al carrito" [ref=f64e2659]
+          - group [ref=f64e2660]:
+            - button "Agregar pasteleriafatimauy.cloud a favoritos pasteleriafatimauy .cloud $3.99 $39.99 por el primer año Abrir sugerencias de herramientas de precios para pasteleriafatimauy.cloud Más como esto Agregar pasteleriafatimauy.cloud al carrito" [ref=f64e2662] [cursor=pointer]:
+              - generic [ref=f64e2669]:
+                - button "Agregar pasteleriafatimauy.cloud a favoritos" [ref=f64e2670]
+                - generic [ref=f64e2671]:
+                  - heading "pasteleriafatimauy .cloud" [level=2] [ref=f64e2675]:
+                    - text: pasteleriafatimauy
+                    - generic [ref=f64e2676]: .cloud
+                  - generic [ref=f64e2678]:
+                    - generic [ref=f64e2682]:
+                      - generic [ref=f64e2683]: $3.99
+                      - deletion [ref=f64e2685]: $39.99
+                    - generic [ref=f64e2686]:
+                      - generic [ref=f64e2687]: por el primer año
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauy.cloud" [ref=f64e2689]
+                  - button "Más como esto" [ref=f64e2691]
+                - button "Agregar pasteleriafatimauy.cloud al carrito" [ref=f64e2698]
+          - group [ref=f64e2699]:
+            - button "Agregar pasteleriafatimauy.pro a favoritos pasteleriafatimauy .pro $4.99 $41.99 por el primer año Abrir sugerencias de herramientas de precios para pasteleriafatimauy.pro Más como esto Agregar pasteleriafatimauy.pro al carrito" [ref=f64e2701] [cursor=pointer]:
+              - generic [ref=f64e2708]:
+                - button "Agregar pasteleriafatimauy.pro a favoritos" [ref=f64e2709]
+                - generic [ref=f64e2710]:
+                  - heading "pasteleriafatimauy .pro" [level=2] [ref=f64e2714]:
+                    - text: pasteleriafatimauy
+                    - generic [ref=f64e2715]: .pro
+                  - generic [ref=f64e2717]:
+                    - generic [ref=f64e2721]:
+                      - generic [ref=f64e2722]: $4.99
+                      - deletion [ref=f64e2724]: $41.99
+                    - generic [ref=f64e2725]:
+                      - generic [ref=f64e2726]: por el primer año
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauy.pro" [ref=f64e2728]
+                  - button "Más como esto" [ref=f64e2730]
+                - button "Agregar pasteleriafatimauy.pro al carrito" [ref=f64e2737]
+          - group [ref=f64e2738]:
+            - button "Agregar pasteleriafatimauy.global a favoritos pasteleriafatimauy .global $49.99 $149.99 por el primer año Abrir sugerencias de herramientas de precios para pasteleriafatimauy.global Más como esto Agregar pasteleriafatimauy.global al carrito" [ref=f64e2740] [cursor=pointer]:
+              - generic [ref=f64e2747]:
+                - button "Agregar pasteleriafatimauy.global a favoritos" [ref=f64e2748]
+                - generic [ref=f64e2749]:
+                  - heading "pasteleriafatimauy .global" [level=2] [ref=f64e2753]:
+                    - text: pasteleriafatimauy
+                    - generic [ref=f64e2754]: .global
+                  - generic [ref=f64e2756]:
+                    - generic [ref=f64e2760]:
+                      - generic [ref=f64e2761]: $49.99
+                      - deletion [ref=f64e2763]: $149.99
+                    - generic [ref=f64e2764]:
+                      - generic [ref=f64e2765]: por el primer año
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauy.global" [ref=f64e2767]
+                  - button "Más como esto" [ref=f64e2769]
+                - button "Agregar pasteleriafatimauy.global al carrito" [ref=f64e2776]
+          - group [ref=f64e2777]:
+            - button "Agregar pasteleriafatimauy.agency a favoritos pasteleriafatimauy .agency $3.99 $47.99 por el primer año Abrir sugerencias de herramientas de precios para pasteleriafatimauy.agency Más como esto Agregar pasteleriafatimauy.agency al carrito" [ref=f64e2779] [cursor=pointer]:
+              - generic [ref=f64e2786]:
+                - button "Agregar pasteleriafatimauy.agency a favoritos" [ref=f64e2787]
+                - generic [ref=f64e2788]:
+                  - heading "pasteleriafatimauy .agency" [level=2] [ref=f64e2792]:
+                    - text: pasteleriafatimauy
+                    - generic [ref=f64e2793]: .agency
+                  - generic [ref=f64e2795]:
+                    - generic [ref=f64e2799]:
+                      - generic [ref=f64e2800]: $3.99
+                      - deletion [ref=f64e2802]: $47.99
+                    - generic [ref=f64e2803]:
+                      - generic [ref=f64e2804]: por el primer año
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauy.agency" [ref=f64e2806]
+                  - button "Más como esto" [ref=f64e2808]
+                - button "Agregar pasteleriafatimauy.agency al carrito" [ref=f64e2815]
+          - group [ref=f64e2816]:
+            - button "Agregar pasteleriafatimauy.design a favoritos pasteleriafatimauy .design $19.99 $89.99 por el primer año Abrir sugerencias de herramientas de precios para pasteleriafatimauy.design Más como esto Agregar pasteleriafatimauy.design al carrito" [ref=f64e2818] [cursor=pointer]:
+              - generic [ref=f64e2825]:
+                - button "Agregar pasteleriafatimauy.design a favoritos" [ref=f64e2826]
+                - generic [ref=f64e2827]:
+                  - heading "pasteleriafatimauy .design" [level=2] [ref=f64e2831]:
+                    - text: pasteleriafatimauy
+                    - generic [ref=f64e2832]: .design
+                  - generic [ref=f64e2834]:
+                    - generic [ref=f64e2838]:
+                      - generic [ref=f64e2839]: $19.99
+                      - deletion [ref=f64e2841]: $89.99
+                    - generic [ref=f64e2842]:
+                      - generic [ref=f64e2843]: por el primer año
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauy.design" [ref=f64e2845]
+                  - button "Más como esto" [ref=f64e2847]
+                - button "Agregar pasteleriafatimauy.design al carrito" [ref=f64e2854]
+          - group [ref=f64e2855]:
+            - button "Agregar pasteleriafatimauy.uno a favoritos pasteleriafatimauy .uno $1.99 $39.99 por el primer año Abrir sugerencias de herramientas de precios para pasteleriafatimauy.uno Más como esto Agregar pasteleriafatimauy.uno al carrito" [ref=f64e2857] [cursor=pointer]:
+              - generic [ref=f64e2864]:
+                - button "Agregar pasteleriafatimauy.uno a favoritos" [ref=f64e2865]
+                - generic [ref=f64e2866]:
+                  - heading "pasteleriafatimauy .uno" [level=2] [ref=f64e2870]:
+                    - text: pasteleriafatimauy
+                    - generic [ref=f64e2871]: .uno
+                  - generic [ref=f64e2873]:
+                    - generic [ref=f64e2877]:
+                      - generic [ref=f64e2878]: $1.99
+                      - deletion [ref=f64e2880]: $39.99
+                    - generic [ref=f64e2881]:
+                      - generic [ref=f64e2882]: por el primer año
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauy.uno" [ref=f64e2884]
+                  - button "Más como esto" [ref=f64e2886]
+                - button "Agregar pasteleriafatimauy.uno al carrito" [ref=f64e2893]
+          - group [ref=f64e2894]:
+            - button "Agregar pasteleriafatimauy.dev a favoritos pasteleriafatimauy .dev Se requiere certificado SSL. Abrir sugerencias de herramientas $15.99 $23.99 por el primer año Abrir sugerencias de herramientas de precios para pasteleriafatimauy.dev Más como esto Agregar pasteleriafatimauy.dev al carrito" [ref=f64e2896] [cursor=pointer]:
+              - generic [ref=f64e2903]:
+                - button "Agregar pasteleriafatimauy.dev a favoritos" [ref=f64e2904]
+                - generic [ref=f64e2905]:
+                  - generic [ref=f64e2908]:
+                    - heading "pasteleriafatimauy .dev" [level=2] [ref=f64e2909]:
+                      - text: pasteleriafatimauy
+                      - generic [ref=f64e2910]: .dev
+                    - generic [ref=f64e2914]:
+                      - generic [ref=f64e2915]: Se requiere certificado SSL.
+                      - button "Abrir sugerencias de herramientas" [ref=f64e2916]
+                  - generic [ref=f64e2919]:
+                    - generic [ref=f64e2923]:
+                      - generic [ref=f64e2924]: $15.99
+                      - deletion [ref=f64e2926]: $23.99
+                    - generic [ref=f64e2927]:
+                      - generic [ref=f64e2928]: por el primer año
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauy.dev" [ref=f64e2930]
+                  - button "Más como esto" [ref=f64e2932]
+                - button "Agregar pasteleriafatimauy.dev al carrito" [ref=f64e2939]
+          - group [ref=f64e2940]:
+            - button "Agregar pasteleriafatimauy.page a favoritos pasteleriafatimauy .page Se requiere certificado SSL. Abrir sugerencias de herramientas $19.99/año Más como esto Agregar pasteleriafatimauy.page al carrito" [ref=f64e2942] [cursor=pointer]:
+              - generic [ref=f64e2949]:
+                - button "Agregar pasteleriafatimauy.page a favoritos" [ref=f64e2950]
+                - generic [ref=f64e2951]:
+                  - generic [ref=f64e2954]:
+                    - heading "pasteleriafatimauy .page" [level=2] [ref=f64e2955]:
+                      - text: pasteleriafatimauy
+                      - generic [ref=f64e2956]: .page
+                    - generic [ref=f64e2960]:
+                      - generic [ref=f64e2961]: Se requiere certificado SSL.
+                      - button "Abrir sugerencias de herramientas" [ref=f64e2962]
+                  - generic [ref=f64e2964]: $19.99/año
+                  - button "Más como esto" [ref=f64e2971]
+                - button "Agregar pasteleriafatimauy.page al carrito" [ref=f64e2978]
+          - group [ref=f64e2979]:
+            - button "Agregar pasteleriafatimauy.solutions a favoritos pasteleriafatimauy .solutions $4.99 $47.99 por el primer año Abrir sugerencias de herramientas de precios para pasteleriafatimauy.solutions Más como esto Agregar pasteleriafatimauy.solutions al carrito" [ref=f64e2981] [cursor=pointer]:
+              - generic [ref=f64e2988]:
+                - button "Agregar pasteleriafatimauy.solutions a favoritos" [ref=f64e2989]
+                - generic [ref=f64e2990]:
+                  - heading "pasteleriafatimauy .solutions" [level=2] [ref=f64e2994]:
+                    - text: pasteleriafatimauy
+                    - generic [ref=f64e2995]: .solutions
+                  - generic [ref=f64e2997]:
+                    - generic [ref=f64e3001]:
+                      - generic [ref=f64e3002]: $4.99
+                      - deletion [ref=f64e3004]: $47.99
+                    - generic [ref=f64e3005]:
+                      - generic [ref=f64e3006]: por el primer año
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauy.solutions" [ref=f64e3008]
+                  - button "Más como esto" [ref=f64e3010]
+                - button "Agregar pasteleriafatimauy.solutions al carrito" [ref=f64e3017]
+          - group [ref=f64e3018]:
+            - button "Agregar pasteleriafatimauy.rocks a favoritos pasteleriafatimauy .rocks $7.99 $33.99 por el primer año Abrir sugerencias de herramientas de precios para pasteleriafatimauy.rocks Más como esto Agregar pasteleriafatimauy.rocks al carrito" [ref=f64e3020] [cursor=pointer]:
+              - generic [ref=f64e3027]:
+                - button "Agregar pasteleriafatimauy.rocks a favoritos" [ref=f64e3028]
+                - generic [ref=f64e3029]:
+                  - heading "pasteleriafatimauy .rocks" [level=2] [ref=f64e3033]:
+                    - text: pasteleriafatimauy
+                    - generic [ref=f64e3034]: .rocks
+                  - generic [ref=f64e3036]:
+                    - generic [ref=f64e3040]:
+                      - generic [ref=f64e3041]: $7.99
+                      - deletion [ref=f64e3043]: $33.99
+                    - generic [ref=f64e3044]:
+                      - generic [ref=f64e3045]: por el primer año
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauy.rocks" [ref=f64e3047]
+                  - button "Más como esto" [ref=f64e3049]
+                - button "Agregar pasteleriafatimauy.rocks al carrito" [ref=f64e3056]
+          - group [ref=f64e3057]:
+            - button "Agregar pasteleriafatimauy.tech a favoritos pasteleriafatimauy .tech $9.99 $97.99 por el primer año Abrir sugerencias de herramientas de precios para pasteleriafatimauy.tech Más como esto Agregar pasteleriafatimauy.tech al carrito" [ref=f64e3059] [cursor=pointer]:
+              - generic [ref=f64e3066]:
+                - button "Agregar pasteleriafatimauy.tech a favoritos" [ref=f64e3067]
+                - generic [ref=f64e3068]:
+                  - heading "pasteleriafatimauy .tech" [level=2] [ref=f64e3072]:
+                    - text: pasteleriafatimauy
+                    - generic [ref=f64e3073]: .tech
+                  - generic [ref=f64e3075]:
+                    - generic [ref=f64e3079]:
+                      - generic [ref=f64e3080]: $9.99
+                      - deletion [ref=f64e3082]: $97.99
+                    - generic [ref=f64e3083]:
+                      - generic [ref=f64e3084]: por el primer año
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauy.tech" [ref=f64e3086]
+                  - button "Más como esto" [ref=f64e3088]
+                - button "Agregar pasteleriafatimauy.tech al carrito" [ref=f64e3095]
+          - group [ref=f64e3096]:
+            - button "Agregar pasteleriafatimauy.today a favoritos pasteleriafatimauy .today $3.99 $43.99 por el primer año Abrir sugerencias de herramientas de precios para pasteleriafatimauy.today Más como esto Agregar pasteleriafatimauy.today al carrito" [ref=f64e3098] [cursor=pointer]:
+              - generic [ref=f64e3105]:
+                - button "Agregar pasteleriafatimauy.today a favoritos" [ref=f64e3106]
+                - generic [ref=f64e3107]:
+                  - heading "pasteleriafatimauy .today" [level=2] [ref=f64e3111]:
+                    - text: pasteleriafatimauy
+                    - generic [ref=f64e3112]: .today
+                  - generic [ref=f64e3114]:
+                    - generic [ref=f64e3118]:
+                      - generic [ref=f64e3119]: $3.99
+                      - deletion [ref=f64e3121]: $43.99
+                    - generic [ref=f64e3122]:
+                      - generic [ref=f64e3123]: por el primer año
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauy.today" [ref=f64e3125]
+                  - button "Más como esto" [ref=f64e3127]
+                - button "Agregar pasteleriafatimauy.today al carrito" [ref=f64e3134]
+          - group [ref=f64e3135]:
+            - button "Agregar fatimauypasteles.com a favoritos fatimauypasteles .com $0.01 $22.99 Únicamente el primer año con un plazo de 3 años Abrir sugerencias de herramientas de precios para fatimauypasteles.com Más como esto Agregar fatimauypasteles.com al carrito" [ref=f64e3137] [cursor=pointer]:
+              - generic [ref=f64e3144]:
+                - button "Agregar fatimauypasteles.com a favoritos" [ref=f64e3145]
+                - generic [ref=f64e3146]:
+                  - heading "fatimauypasteles .com" [level=2] [ref=f64e3150]:
+                    - text: fatimauypasteles
+                    - generic [ref=f64e3151]: .com
+                  - generic [ref=f64e3153]:
+                    - generic [ref=f64e3157]:
+                      - generic [ref=f64e3158]: $0.01
+                      - deletion [ref=f64e3160]: $22.99
+                    - generic [ref=f64e3161]:
+                      - generic [ref=f64e3162]: Únicamente el primer año con un plazo de 3 años
+                      - button "Abrir sugerencias de herramientas de precios para fatimauypasteles.com" [ref=f64e3164]
+                  - button "Más como esto" [ref=f64e3166]
+                - button "Agregar fatimauypasteles.com al carrito" [ref=f64e3173]
+          - group [ref=f64e3174]:
+            - button "Agregar pasteleriafatimauyproperties.com a favoritos pasteleriafatimauyproperties .com $0.01 $22.99 Únicamente el primer año con un plazo de 3 años Abrir sugerencias de herramientas de precios para pasteleriafatimauyproperties.com Más como esto Agregar pasteleriafatimauyproperties.com al carrito" [ref=f64e3176] [cursor=pointer]:
+              - generic [ref=f64e3183]:
+                - button "Agregar pasteleriafatimauyproperties.com a favoritos" [ref=f64e3184]
+                - generic [ref=f64e3185]:
+                  - heading "pasteleriafatimauyproperties .com" [level=2] [ref=f64e3189]:
+                    - text: pasteleriafatimauyproperties
+                    - generic [ref=f64e3190]: .com
+                  - generic [ref=f64e3192]:
+                    - generic [ref=f64e3196]:
+                      - generic [ref=f64e3197]: $0.01
+                      - deletion [ref=f64e3199]: $22.99
+                    - generic [ref=f64e3200]:
+                      - generic [ref=f64e3201]: Únicamente el primer año con un plazo de 3 años
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauyproperties.com" [ref=f64e3203]
+                  - button "Más como esto" [ref=f64e3205]
+                - button "Agregar pasteleriafatimauyproperties.com al carrito" [ref=f64e3212]
+          - group [ref=f64e3213]:
+            - button "Agregar pasteleriafatimauyrd.com a favoritos pasteleriafatimauyrd .com $0.01 $22.99 Únicamente el primer año con un plazo de 3 años Abrir sugerencias de herramientas de precios para pasteleriafatimauyrd.com Más como esto Agregar pasteleriafatimauyrd.com al carrito" [ref=f64e3215] [cursor=pointer]:
+              - generic [ref=f64e3222]:
+                - button "Agregar pasteleriafatimauyrd.com a favoritos" [ref=f64e3223]
+                - generic [ref=f64e3224]:
+                  - heading "pasteleriafatimauyrd .com" [level=2] [ref=f64e3228]:
+                    - text: pasteleriafatimauyrd
+                    - generic [ref=f64e3229]: .com
+                  - generic [ref=f64e3231]:
+                    - generic [ref=f64e3235]:
+                      - generic [ref=f64e3236]: $0.01
+                      - deletion [ref=f64e3238]: $22.99
+                    - generic [ref=f64e3239]:
+                      - generic [ref=f64e3240]: Únicamente el primer año con un plazo de 3 años
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauyrd.com" [ref=f64e3242]
+                  - button "Más como esto" [ref=f64e3244]
+                - button "Agregar pasteleriafatimauyrd.com al carrito" [ref=f64e3251]
+          - group [ref=f64e3252]:
+            - button "Agregar pasteleriafatimaux.com a favoritos pasteleriafatimaux .com $0.01 $22.99 Únicamente el primer año con un plazo de 3 años Abrir sugerencias de herramientas de precios para pasteleriafatimaux.com Más como esto Agregar pasteleriafatimaux.com al carrito" [ref=f64e3254] [cursor=pointer]:
+              - generic [ref=f64e3261]:
+                - button "Agregar pasteleriafatimaux.com a favoritos" [ref=f64e3262]
+                - generic [ref=f64e3263]:
+                  - heading "pasteleriafatimaux .com" [level=2] [ref=f64e3267]:
+                    - text: pasteleriafatimaux
+                    - generic [ref=f64e3268]: .com
+                  - generic [ref=f64e3270]:
+                    - generic [ref=f64e3274]:
+                      - generic [ref=f64e3275]: $0.01
+                      - deletion [ref=f64e3277]: $22.99
+                    - generic [ref=f64e3278]:
+                      - generic [ref=f64e3279]: Únicamente el primer año con un plazo de 3 años
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimaux.com" [ref=f64e3281]
+                  - button "Más como esto" [ref=f64e3283]
+                - button "Agregar pasteleriafatimaux.com al carrito" [ref=f64e3290]
+          - group [ref=f64e3291]:
+            - button "Agregar fatimauypanaderia.com a favoritos fatimauypanaderia .com $0.01 $22.99 Únicamente el primer año con un plazo de 3 años Abrir sugerencias de herramientas de precios para fatimauypanaderia.com Más como esto Agregar fatimauypanaderia.com al carrito" [ref=f64e3293] [cursor=pointer]:
+              - generic [ref=f64e3300]:
+                - button "Agregar fatimauypanaderia.com a favoritos" [ref=f64e3301]
+                - generic [ref=f64e3302]:
+                  - heading "fatimauypanaderia .com" [level=2] [ref=f64e3306]:
+                    - text: fatimauypanaderia
+                    - generic [ref=f64e3307]: .com
+                  - generic [ref=f64e3309]:
+                    - generic [ref=f64e3313]:
+                      - generic [ref=f64e3314]: $0.01
+                      - deletion [ref=f64e3316]: $22.99
+                    - generic [ref=f64e3317]:
+                      - generic [ref=f64e3318]: Únicamente el primer año con un plazo de 3 años
+                      - button "Abrir sugerencias de herramientas de precios para fatimauypanaderia.com" [ref=f64e3320]
+                  - button "Más como esto" [ref=f64e3322]
+                - button "Agregar fatimauypanaderia.com al carrito" [ref=f64e3329]
+          - group [ref=f64e3330]:
+            - button "Agregar pasteleriafatimauystudio.com a favoritos pasteleriafatimauystudio .com $0.01 $22.99 Únicamente el primer año con un plazo de 3 años Abrir sugerencias de herramientas de precios para pasteleriafatimauystudio.com Más como esto Agregar pasteleriafatimauystudio.com al carrito" [ref=f64e3332] [cursor=pointer]:
+              - generic [ref=f64e3339]:
+                - button "Agregar pasteleriafatimauystudio.com a favoritos" [ref=f64e3340]
+                - generic [ref=f64e3341]:
+                  - heading "pasteleriafatimauystudio .com" [level=2] [ref=f64e3345]:
+                    - text: pasteleriafatimauystudio
+                    - generic [ref=f64e3346]: .com
+                  - generic [ref=f64e3348]:
+                    - generic [ref=f64e3352]:
+                      - generic [ref=f64e3353]: $0.01
+                      - deletion [ref=f64e3355]: $22.99
+                    - generic [ref=f64e3356]:
+                      - generic [ref=f64e3357]: Únicamente el primer año con un plazo de 3 años
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauystudio.com" [ref=f64e3359]
+                  - button "Más como esto" [ref=f64e3361]
+                - button "Agregar pasteleriafatimauystudio.com al carrito" [ref=f64e3368]
+          - group [ref=f64e3369]:
+            - button "Agregar pasteleriafatimauynews.com a favoritos pasteleriafatimauynews .com $0.01 $22.99 Únicamente el primer año con un plazo de 3 años Abrir sugerencias de herramientas de precios para pasteleriafatimauynews.com Más como esto Agregar pasteleriafatimauynews.com al carrito" [ref=f64e3371] [cursor=pointer]:
+              - generic [ref=f64e3378]:
+                - button "Agregar pasteleriafatimauynews.com a favoritos" [ref=f64e3379]
+                - generic [ref=f64e3380]:
+                  - heading "pasteleriafatimauynews .com" [level=2] [ref=f64e3384]:
+                    - text: pasteleriafatimauynews
+                    - generic [ref=f64e3385]: .com
+                  - generic [ref=f64e3387]:
+                    - generic [ref=f64e3391]:
+                      - generic [ref=f64e3392]: $0.01
+                      - deletion [ref=f64e3394]: $22.99
+                    - generic [ref=f64e3395]:
+                      - generic [ref=f64e3396]: Únicamente el primer año con un plazo de 3 años
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauynews.com" [ref=f64e3398]
+                  - button "Más como esto" [ref=f64e3400]
+                - button "Agregar pasteleriafatimauynews.com al carrito" [ref=f64e3407]
+          - group [ref=f64e3408]:
+            - button "Agregar pasteleriafatimauycr.com a favoritos pasteleriafatimauycr .com $0.01 $22.99 Únicamente el primer año con un plazo de 3 años Abrir sugerencias de herramientas de precios para pasteleriafatimauycr.com Más como esto Agregar pasteleriafatimauycr.com al carrito" [ref=f64e3410] [cursor=pointer]:
+              - generic [ref=f64e3417]:
+                - button "Agregar pasteleriafatimauycr.com a favoritos" [ref=f64e3418]
+                - generic [ref=f64e3419]:
+                  - heading "pasteleriafatimauycr .com" [level=2] [ref=f64e3423]:
+                    - text: pasteleriafatimauycr
+                    - generic [ref=f64e3424]: .com
+                  - generic [ref=f64e3426]:
+                    - generic [ref=f64e3430]:
+                      - generic [ref=f64e3431]: $0.01
+                      - deletion [ref=f64e3433]: $22.99
+                    - generic [ref=f64e3434]:
+                      - generic [ref=f64e3435]: Únicamente el primer año con un plazo de 3 años
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauycr.com" [ref=f64e3437]
+                  - button "Más como esto" [ref=f64e3439]
+                - button "Agregar pasteleriafatimauycr.com al carrito" [ref=f64e3446]
+          - group [ref=f64e3447]:
+            - button "Agregar pasteleriafatimauymail.com a favoritos pasteleriafatimauymail .com $0.01 $22.99 Únicamente el primer año con un plazo de 3 años Abrir sugerencias de herramientas de precios para pasteleriafatimauymail.com Más como esto Agregar pasteleriafatimauymail.com al carrito" [ref=f64e3449] [cursor=pointer]:
+              - generic [ref=f64e3456]:
+                - button "Agregar pasteleriafatimauymail.com a favoritos" [ref=f64e3457]
+                - generic [ref=f64e3458]:
+                  - heading "pasteleriafatimauymail .com" [level=2] [ref=f64e3462]:
+                    - text: pasteleriafatimauymail
+                    - generic [ref=f64e3463]: .com
+                  - generic [ref=f64e3465]:
+                    - generic [ref=f64e3469]:
+                      - generic [ref=f64e3470]: $0.01
+                      - deletion [ref=f64e3472]: $22.99
+                    - generic [ref=f64e3473]:
+                      - generic [ref=f64e3474]: Únicamente el primer año con un plazo de 3 años
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauymail.com" [ref=f64e3476]
+                  - button "Más como esto" [ref=f64e3478]
+                - button "Agregar pasteleriafatimauymail.com al carrito" [ref=f64e3485]
+          - group [ref=f64e3486]:
+            - button "Agregar pasteleriafatimauio.com a favoritos pasteleriafatimauio .com $0.01 $22.99 Únicamente el primer año con un plazo de 3 años Abrir sugerencias de herramientas de precios para pasteleriafatimauio.com Más como esto Agregar pasteleriafatimauio.com al carrito" [ref=f64e3488] [cursor=pointer]:
+              - generic [ref=f64e3495]:
+                - button "Agregar pasteleriafatimauio.com a favoritos" [ref=f64e3496]
+                - generic [ref=f64e3497]:
+                  - heading "pasteleriafatimauio .com" [level=2] [ref=f64e3501]:
+                    - text: pasteleriafatimauio
+                    - generic [ref=f64e3502]: .com
+                  - generic [ref=f64e3504]:
+                    - generic [ref=f64e3508]:
+                      - generic [ref=f64e3509]: $0.01
+                      - deletion [ref=f64e3511]: $22.99
+                    - generic [ref=f64e3512]:
+                      - generic [ref=f64e3513]: Únicamente el primer año con un plazo de 3 años
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauio.com" [ref=f64e3515]
+                  - button "Más como esto" [ref=f64e3517]
+                - button "Agregar pasteleriafatimauio.com al carrito" [ref=f64e3524]
+          - group [ref=f64e3525]:
+            - button "Agregar pasteleriafatimauyperu.com a favoritos pasteleriafatimauyperu .com $0.01 $22.99 Únicamente el primer año con un plazo de 3 años Abrir sugerencias de herramientas de precios para pasteleriafatimauyperu.com Más como esto Agregar pasteleriafatimauyperu.com al carrito" [ref=f64e3527] [cursor=pointer]:
+              - generic [ref=f64e3534]:
+                - button "Agregar pasteleriafatimauyperu.com a favoritos" [ref=f64e3535]
+                - generic [ref=f64e3536]:
+                  - heading "pasteleriafatimauyperu .com" [level=2] [ref=f64e3540]:
+                    - text: pasteleriafatimauyperu
+                    - generic [ref=f64e3541]: .com
+                  - generic [ref=f64e3543]:
+                    - generic [ref=f64e3547]:
+                      - generic [ref=f64e3548]: $0.01
+                      - deletion [ref=f64e3550]: $22.99
+                    - generic [ref=f64e3551]:
+                      - generic [ref=f64e3552]: Únicamente el primer año con un plazo de 3 años
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauyperu.com" [ref=f64e3554]
+                  - button "Más como esto" [ref=f64e3556]
+                - button "Agregar pasteleriafatimauyperu.com al carrito" [ref=f64e3563]
+          - group [ref=f64e3564]:
+            - button "Agregar pasteleriafatimauyacademy.com a favoritos pasteleriafatimauyacademy .com $0.01 $22.99 Únicamente el primer año con un plazo de 3 años Abrir sugerencias de herramientas de precios para pasteleriafatimauyacademy.com Más como esto Agregar pasteleriafatimauyacademy.com al carrito" [ref=f64e3566] [cursor=pointer]:
+              - generic [ref=f64e3573]:
+                - button "Agregar pasteleriafatimauyacademy.com a favoritos" [ref=f64e3574]
+                - generic [ref=f64e3575]:
+                  - heading "pasteleriafatimauyacademy .com" [level=2] [ref=f64e3579]:
+                    - text: pasteleriafatimauyacademy
+                    - generic [ref=f64e3580]: .com
+                  - generic [ref=f64e3582]:
+                    - generic [ref=f64e3586]:
+                      - generic [ref=f64e3587]: $0.01
+                      - deletion [ref=f64e3589]: $22.99
+                    - generic [ref=f64e3590]:
+                      - generic [ref=f64e3591]: Únicamente el primer año con un plazo de 3 años
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauyacademy.com" [ref=f64e3593]
+                  - button "Más como esto" [ref=f64e3595]
+                - button "Agregar pasteleriafatimauyacademy.com al carrito" [ref=f64e3602]
+          - group [ref=f64e3603]:
+            - button "Agregar pasteleriafatimauyhome.com a favoritos pasteleriafatimauyhome .com $0.01 $22.99 Únicamente el primer año con un plazo de 3 años Abrir sugerencias de herramientas de precios para pasteleriafatimauyhome.com Más como esto Agregar pasteleriafatimauyhome.com al carrito" [ref=f64e3605] [cursor=pointer]:
+              - generic [ref=f64e3612]:
+                - button "Agregar pasteleriafatimauyhome.com a favoritos" [ref=f64e3613]
+                - generic [ref=f64e3614]:
+                  - heading "pasteleriafatimauyhome .com" [level=2] [ref=f64e3618]:
+                    - text: pasteleriafatimauyhome
+                    - generic [ref=f64e3619]: .com
+                  - generic [ref=f64e3621]:
+                    - generic [ref=f64e3625]:
+                      - generic [ref=f64e3626]: $0.01
+                      - deletion [ref=f64e3628]: $22.99
+                    - generic [ref=f64e3629]:
+                      - generic [ref=f64e3630]: Únicamente el primer año con un plazo de 3 años
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauyhome.com" [ref=f64e3632]
+                  - button "Más como esto" [ref=f64e3634]
+                - button "Agregar pasteleriafatimauyhome.com al carrito" [ref=f64e3641]
+          - group [ref=f64e3642]:
+            - button "Agregar pasteleriafatimauyonline.com a favoritos pasteleriafatimauyonline .com $0.01 $22.99 Únicamente el primer año con un plazo de 3 años Abrir sugerencias de herramientas de precios para pasteleriafatimauyonline.com Más como esto Agregar pasteleriafatimauyonline.com al carrito" [ref=f64e3644] [cursor=pointer]:
+              - generic [ref=f64e3651]:
+                - button "Agregar pasteleriafatimauyonline.com a favoritos" [ref=f64e3652]
+                - generic [ref=f64e3653]:
+                  - heading "pasteleriafatimauyonline .com" [level=2] [ref=f64e3657]:
+                    - text: pasteleriafatimauyonline
+                    - generic [ref=f64e3658]: .com
+                  - generic [ref=f64e3660]:
+                    - generic [ref=f64e3664]:
+                      - generic [ref=f64e3665]: $0.01
+                      - deletion [ref=f64e3667]: $22.99
+                    - generic [ref=f64e3668]:
+                      - generic [ref=f64e3669]: Únicamente el primer año con un plazo de 3 años
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimauyonline.com" [ref=f64e3671]
+                  - button "Más como esto" [ref=f64e3673]
+                - button "Agregar pasteleriafatimauyonline.com al carrito" [ref=f64e3680]
+          - group [ref=f64e3681]:
+            - button "Agregar pasteleriavita.com a favoritos pasteleriavita .com $0.01 $22.99 Únicamente el primer año con un plazo de 3 años Abrir sugerencias de herramientas de precios para pasteleriavita.com Más como esto Agregar pasteleriavita.com al carrito" [ref=f64e3683] [cursor=pointer]:
+              - generic [ref=f64e3690]:
+                - button "Agregar pasteleriavita.com a favoritos" [ref=f64e3691]
+                - generic [ref=f64e3692]:
+                  - heading "pasteleriavita .com" [level=2] [ref=f64e3696]:
+                    - text: pasteleriavita
+                    - generic [ref=f64e3697]: .com
+                  - generic [ref=f64e3699]:
+                    - generic [ref=f64e3703]:
+                      - generic [ref=f64e3704]: $0.01
+                      - deletion [ref=f64e3706]: $22.99
+                    - generic [ref=f64e3707]:
+                      - generic [ref=f64e3708]: Únicamente el primer año con un plazo de 3 años
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriavita.com" [ref=f64e3710]
+                  - button "Más como esto" [ref=f64e3712]
+                - button "Agregar pasteleriavita.com al carrito" [ref=f64e3719]
+          - group [ref=f64e3720]:
+            - button "Agregar pasteleriafatimasuy.com a favoritos pasteleriafatimasuy .com $0.01 $22.99 Únicamente el primer año con un plazo de 3 años Abrir sugerencias de herramientas de precios para pasteleriafatimasuy.com Más como esto Agregar pasteleriafatimasuy.com al carrito" [ref=f64e3722] [cursor=pointer]:
+              - generic [ref=f64e3729]:
+                - button "Agregar pasteleriafatimasuy.com a favoritos" [ref=f64e3730]
+                - generic [ref=f64e3731]:
+                  - heading "pasteleriafatimasuy .com" [level=2] [ref=f64e3735]:
+                    - text: pasteleriafatimasuy
+                    - generic [ref=f64e3736]: .com
+                  - generic [ref=f64e3738]:
+                    - generic [ref=f64e3742]:
+                      - generic [ref=f64e3743]: $0.01
+                      - deletion [ref=f64e3745]: $22.99
+                    - generic [ref=f64e3746]:
+                      - generic [ref=f64e3747]: Únicamente el primer año con un plazo de 3 años
+                      - button "Abrir sugerencias de herramientas de precios para pasteleriafatimasuy.com" [ref=f64e3749]
+                  - button "Más como esto" [ref=f64e3751]
+                - button "Agregar pasteleriafatimasuy.com al carrito" [ref=f64e3758]
+        - iframe [ref=f64e3761]:
+          - link "Opiniones de Trustpilot. Valoración de Excelente. 4.4 sobre 5 en base a 141,350 opiniones en Trustpilot. Haz clic para ver el perfil de la empresa en Trustpilot." [ref=f66e4] [cursor=pointer]:
+            - /url: https://es.trustpilot.com/review/www.godaddy.com?utm_medium=trustbox&utm_source=Carousel
+            - generic [ref=f66e5]: Excelente
+            - img "4.4 estrella(s) de 5 en Trustpilot" [ref=f66e10]
+            - generic [ref=f66e30]:
+              - text: En base a
+              - strong [ref=f66e31]: 141,350 opiniones
+            - img "Trustpilot" [ref=f66e35]
+  - contentinfo [ref=f64e3762]:
+    - contentinfo [ref=f64e3763]:
+      - link "Saltar al contenido principal" [ref=f64e3764] [cursor=pointer]:
+        - /url: "#main-content"
+      - generic [ref=f64e3767]:
+        - navigation [ref=f64e3768]:
+          - list [ref=f64e3769]:
+            - listitem [ref=f64e3770]:
+              - button "Acerca de GoDaddy +" [ref=f64e3772] [cursor=pointer]
+            - listitem [ref=f64e3773]:
+              - button "Asistencia técnica +" [ref=f64e3775] [cursor=pointer]
+            - listitem [ref=f64e3776]:
+              - button "Recursos +" [ref=f64e3778] [cursor=pointer]
+            - listitem [ref=f64e3779]:
+              - button "Programas de socios +" [ref=f64e3781] [cursor=pointer]
+            - listitem [ref=f64e3782]:
+              - button "Cuenta +" [ref=f64e3784] [cursor=pointer]
+            - listitem [ref=f64e3785]:
+              - button "Compras +" [ref=f64e3787] [cursor=pointer]
+        - generic [ref=f64e3788]:
+          - link "GoDaddy Home Page" [ref=f64e3789] [cursor=pointer]:
+            - /url: /
+          - separator [ref=f64e3792]
+          - generic [ref=f64e3793]:
+            - button "Selector de idioma de contenido. La selección actual es Estados Unidos - Español." [ref=f64e3796] [cursor=pointer]: Estados Unidos - Español
+            - button "Selector de divisas. La selección actual es USD $." [ref=f64e3800] [cursor=pointer]: USD $
+          - list [ref=f64e3803]:
+            - listitem [ref=f64e3804]:
+              - link "GoDaddy en Facebook" [ref=f64e3805] [cursor=pointer]:
+                - /url: https://www.facebook.com/godaddy
+            - listitem [ref=f64e3807]:
+              - link "GoDaddy en Instagram" [ref=f64e3808] [cursor=pointer]:
+                - /url: https://www.instagram.com/godaddy
+            - listitem [ref=f64e3810]:
+              - link "GoDaddy en TikTok" [ref=f64e3811] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@godaddy?lang=en
+            - listitem [ref=f64e3813]:
+              - link "GoDaddy en Twitter" [ref=f64e3814] [cursor=pointer]:
+                - /url: https://www.twitter.com/godaddy
+            - listitem [ref=f64e3816]:
+              - link "GoDaddy en YouTube" [ref=f64e3817] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UCgH_SmWw9WianYyOB5Y6tEA
+        - generic [ref=f64e3819]:
+          - navigation [ref=f64e3820]:
+            - list [ref=f64e3821]:
+              - listitem [ref=f64e3822]:
+                - link "Legal" [ref=f64e3823] [cursor=pointer]:
+                  - /url: https://www.godaddy.com/es/legal/agreements
+              - listitem [ref=f64e3824]:
+                - link "Política de privacidad" [ref=f64e3825] [cursor=pointer]:
+                  - /url: https://www.godaddy.com/es/legal/agreements/privacy-policy
+              - listitem [ref=f64e3826]:
+                - link "Cookies" [ref=f64e3827] [cursor=pointer]:
+                  - /url: https://www.godaddy.com/es/legal/agreements/cookie-policy
+          - link "No venda mi información personal" [ref=f64e3829] [cursor=pointer]:
+            - /url: https://www.godaddy.com/es/legal/agreements/cookie-policy
+          - generic [ref=f64e3830]: Copyright © 1999 - 2026 GoDaddy Operating Company, LLC. Todos los derechos reservados. La marca GoDaddy es una marca registrada de GoDaddy Operating Company, LLC en los EE. UU. y otros países. El logo “GO” es una marca comercial registrada de GoDaddy.com, LLC en los EE. UU.
+          - paragraph [ref=f64e3832]:
+            - text: El uso de este sitio está sujeto a las condiciones de uso expresas. Al utilizar este sitio, tú indicas que aceptas cumplir con estos
+            - link "Términos universales del servicio" [ref=f64e3833] [cursor=pointer]:
+              - /url: https://www.godaddy.com/legal/agreements/universal-terms-of-service-agreement
+            - text: .

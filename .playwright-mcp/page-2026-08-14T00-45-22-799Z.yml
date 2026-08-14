@@ -1,0 +1,451 @@
+- generic [active] [ref=f7e1]:
+  - banner [ref=f7e5]:
+    - generic [ref=f7e6]:
+      - generic [ref=f7e9]:
+        - generic [ref=f7e10]:
+          - link "Contact us" [ref=f7e12] [cursor=pointer]:
+            - /url: https://www.namecheap.com/support/
+          - generic [ref=f7e13]:
+            - button "Sign in" [ref=f7e14] [cursor=pointer]: 
+            - text: 
+        - generic [ref=f7e16]:
+          - generic [ref=f7e17]:
+            - link "Your Cart" [ref=f7e18] [cursor=pointer]:
+              - /url: https://www.namecheap.com/shoppingcart/
+              - generic [ref=f7e19]: 
+            - text: 
+          - generic [ref=f7e20]:
+            - generic [ref=f7e21] [cursor=pointer]: $
+            - text: 
+          - text: 
+      - generic [ref=f7e23]:
+        - generic [ref=f7e25]:
+          - strong [ref=f7e27]:
+            - link [ref=f7e28] [cursor=pointer]:
+              - /url: https://www.namecheap.com/
+              - img "Namecheap" [ref=f7e29]
+          - button "Main Navigation" [ref=f7e31] [cursor=pointer]:
+            - generic [ref=f7e32]: 
+        - navigation:           
+  - generic [ref=f7e36]:
+    - 'link "Join our free webinar: Build, manage & grow your WordPress site with AI " [ref=f7e39] [cursor=pointer]':
+      - /url: https://www.easywp.com/namecheap-webinar/
+      - generic [ref=f7e40]: "Join our free webinar: Build, manage & grow your WordPress site with AI"
+      - text: 
+    - img ".com tld hero" [ref=f7e42]
+    - generic [ref=f7e43]:
+      - heading "Register your .COM domain" [level=1] [ref=f7e44]
+      - paragraph [ref=f7e45]: Get the most sought-after domain
+      - generic [ref=f7e46]:
+        - generic [ref=f7e47]:
+          - searchbox "Find your new domain name" [ref=f7e48]
+          - text: 
+          - link "" [ref=f7e49] [cursor=pointer]:
+            - /url: /domains/registration/results?type=beast&domain=
+        - button "" [ref=f7e51] [cursor=pointer]
+      - generic [ref=f7e54]:
+        - generic [ref=f7e55]: "* New customers: Get a .COM for just $6.79 with promo code"
+        - generic [ref=f7e57] [cursor=pointer]:
+          - text: 
+          - button "NEWCOM679" [ref=f7e58]
+  - generic [ref=f7e62]:
+    - navigation [ref=f7e63]:
+      - link " gTLD" [ref=f7e65] [cursor=pointer]:
+        - /url: /domains/registration/gtld/
+    - generic [ref=f7e68]:
+      - generic [ref=f7e70]:
+        - generic [ref=f7e71]:
+          - heading "Why choose a .COM domain?" [level=2] [ref=f7e72]
+          - paragraph [ref=f7e73]: Make a mighty .com your dedicated online address. One of the original top-level domains, the .com top-level domain (TLD) is the best option for building any trusted website. It’s an instant seal of approval for your brand and practically goes hand-in-hand with the Internet itself.
+          - heading "Is a .COM extension right for me?" [level=3] [ref=f7e74]
+          - paragraph [ref=f7e75]: The .com TLD is universal, known in every country and every market. Whether you’re a global brand or one person working on a local project, show you mean business with the world’s most popular domain.
+        - list [ref=f7e77]:
+          - listitem [ref=f7e78]:
+            - generic [ref=f7e79] [cursor=pointer]:
+              - paragraph [ref=f7e84]: 24/7 Customer Support
+              - paragraph [ref=f7e85]: Expert help and advice… Just in case!
+          - listitem [ref=f7e86]:
+            - generic [ref=f7e87] [cursor=pointer]:
+              - paragraph [ref=f7e92]: Personal Data Privacy
+              - paragraph [ref=f7e93]: Free lifetime privacy protection
+          - listitem [ref=f7e94]:
+            - generic [ref=f7e95] [cursor=pointer]:
+              - paragraph [ref=f7e100]: Extra Reliability and Security
+              - paragraph [ref=f7e101]: Free BasicDNS and DNSSEC for more peace of mind
+          - listitem [ref=f7e102]:
+            - generic [ref=f7e103] [cursor=pointer]:
+              - paragraph [ref=f7e108]: Free Email Address – 1 Month Trial
+              - paragraph [ref=f7e109]: Ready and waiting for you to sign up
+          - listitem [ref=f7e110]:
+            - generic [ref=f7e111] [cursor=pointer]:
+              - paragraph [ref=f7e116]: Exclusive Deals
+              - paragraph [ref=f7e117]: Great prices across security, hosting, and more
+      - generic [ref=f7e120]:
+        - generic [ref=f7e121]:
+          - text: Get your
+          - strong [ref=f7e122]: .com
+          - text: domain for just
+        - paragraph [ref=f7e123]:
+          - generic [ref=f7e124]: $11.28
+        - generic [ref=f7e125]: $14.98
+    - generic [ref=f7e129]:
+      - 'heading "New customer special: $6.79" [level=3] [ref=f7e130]'
+      - paragraph [ref=f7e131]: This promotion applies to new customer first year registrations and is limited to one domain purchase per user/household.
+    - generic [ref=f7e132]:
+      - heading "Prices for .COM domains" [level=2] [ref=f7e134]
+      - table [ref=f7e138]:
+        - rowgroup [ref=f7e139]:
+          - row [ref=f7e140]:
+            - columnheader [ref=f7e141]
+            - columnheader "1 year" [ref=f7e142]
+            - columnheader "2 years" [ref=f7e143]
+            - columnheader "3 years" [ref=f7e144]
+            - columnheader "4 years" [ref=f7e145]
+            - columnheader "5 years" [ref=f7e146]
+        - rowgroup [ref=f7e147]:
+          - row [ref=f7e148]:
+            - cell ".com registration " [ref=f7e149]:
+              - generic [ref=f7e150]:
+                - generic [ref=f7e151]: .com registration
+                - generic [ref=f7e152]: 
+            - cell "$11.28 Sale 25% off 1st year $14.98" [ref=f7e156]:
+              - generic [ref=f7e157]: $11.28
+              - generic [ref=f7e158]: Sale
+              - generic [ref=f7e160]:
+                - text: 25% off 1st year
+                - generic [ref=f7e161]: $14.98
+            - cell "$26.26 Sale 25% off 1st year $29.96" [ref=f7e162]:
+              - generic [ref=f7e163]: $26.26
+              - generic [ref=f7e164]: Sale
+              - generic [ref=f7e166]:
+                - text: 25% off 1st year
+                - generic [ref=f7e167]: $29.96
+            - cell "$41.24 Sale 25% off 1st year $44.94" [ref=f7e168]:
+              - generic [ref=f7e169]: $41.24
+              - generic [ref=f7e170]: Sale
+              - generic [ref=f7e172]:
+                - text: 25% off 1st year
+                - generic [ref=f7e173]: $44.94
+            - cell "$56.22 Sale 25% off 1st year $59.92" [ref=f7e174]:
+              - generic [ref=f7e175]: $56.22
+              - generic [ref=f7e176]: Sale
+              - generic [ref=f7e178]:
+                - text: 25% off 1st year
+                - generic [ref=f7e179]: $59.92
+            - cell "$71.20 Sale 25% off 1st year $74.90" [ref=f7e180]:
+              - generic [ref=f7e181]: $71.20
+              - generic [ref=f7e182]: Sale
+              - generic [ref=f7e184]:
+                - text: 25% off 1st year
+                - generic [ref=f7e185]: $74.90
+          - row [ref=f7e186]:
+            - cell ".com renewal " [ref=f7e187]:
+              - generic [ref=f7e188]:
+                - generic [ref=f7e189]: .com renewal
+                - generic [ref=f7e190]: 
+            - cell "$18.48" [ref=f7e194]
+            - cell "$36.96" [ref=f7e196]
+            - cell "$55.44" [ref=f7e198]
+            - cell "$73.92" [ref=f7e200]
+            - cell "$92.40" [ref=f7e202]
+          - row [ref=f7e204]:
+            - cell ".com transfer " [ref=f7e205]:
+              - generic [ref=f7e206]:
+                - generic [ref=f7e207]: .com transfer
+                - generic [ref=f7e208]: 
+            - cell "$11.48 Sale 23% OFF $14.98" [ref=f7e212]:
+              - generic [ref=f7e213]: $11.48
+              - generic [ref=f7e214]: Sale
+              - generic [ref=f7e216]:
+                - text: 23% OFF
+                - generic [ref=f7e217]: $14.98
+            - cell [ref=f7e218]
+            - cell [ref=f7e220]
+            - cell [ref=f7e222]
+            - cell [ref=f7e224]
+    - generic [ref=f7e226]:
+      - heading "Power and protect your .com" [level=2] [ref=f7e228]
+      - generic [ref=f7e229]:
+        - generic [ref=f7e231]:
+          - img "Real DNS Power" [ref=f7e233]
+          - generic [ref=f7e234]:
+            - heading "Real DNS Power" [level=4] [ref=f7e235]
+            - paragraph [ref=f7e236]: Find a .com domain at Namecheap, and your site will run smoothly. Our network of DNS servers covers Europe and the US to deliver 99.99% uptime giving you peace of mind. You’ll never miss a visitor — with URL and email forwarding, your business will keep moving forward too. Plus, we help keep your web traffic safe with DNSSEC as standard on all eligible domains.
+        - generic [ref=f7e238]:
+          - img "Domain Privacy Protection" [ref=f7e240]
+          - generic [ref=f7e241]:
+            - heading "Domain Privacy Protection" [level=4] [ref=f7e242]
+            - paragraph [ref=f7e243]: Your information will never be made public. With every eligible Namecheap domain you register, a free-for-life domain privacy service masks your personal domain data from the publicly accessible Whois database, replacing it with generated information instead. This service reduces spam and protects you against identity theft.
+    - generic [ref=f7e244]:
+      - heading "Looking for something different?" [level=2] [ref=f7e246]
+      - generic [ref=f7e247]:
+        - generic [ref=f7e249] [cursor=pointer]:
+          - generic [ref=f7e250]:
+            - text: 17%
+            - generic [ref=f7e251]: "off"
+          - generic [ref=f7e252]:
+            - link ".net" [ref=f7e253]:
+              - /url: /domains/registration/gtld/net/
+            - text: A true Internet original
+          - generic [ref=f7e255]:
+            - generic [ref=f7e256]:
+              - generic [ref=f7e257]: $14.98
+              - text: /yr
+            - generic [ref=f7e258]:
+              - generic [ref=f7e259]: $12.48
+              - text: /yr
+        - generic [ref=f7e261] [cursor=pointer]:
+          - generic [ref=f7e262]:
+            - text: 41%
+            - generic [ref=f7e263]: "off"
+          - generic [ref=f7e264]:
+            - link ".org" [ref=f7e265]:
+              - /url: /domains/registration/gtld/org/
+            - text: A trusted marker of online causes
+          - generic [ref=f7e267]:
+            - generic [ref=f7e268]:
+              - generic [ref=f7e269]: $14.48
+              - text: /yr
+            - generic [ref=f7e270]:
+              - generic [ref=f7e271]: $8.48
+              - text: /yr
+        - generic [ref=f7e273] [cursor=pointer]:
+          - generic [ref=f7e274]:
+            - text: 84%
+            - generic [ref=f7e275]: "off"
+          - generic [ref=f7e276]:
+            - link ".co" [ref=f7e277]:
+              - /url: /domains/registration/cctld/co/
+            - text: The domain for startups
+          - generic [ref=f7e279]:
+            - generic [ref=f7e280]:
+              - generic [ref=f7e281]: $38.48
+              - text: /yr
+            - generic [ref=f7e282]:
+              - generic [ref=f7e283]: $5.98
+              - text: /yr
+        - generic [ref=f7e285] [cursor=pointer]:
+          - generic [ref=f7e286]:
+            - text: 47%
+            - generic [ref=f7e287]: "off"
+          - generic [ref=f7e288]:
+            - link ".io" [ref=f7e289]:
+              - /url: /domains/registration/cctld/io/
+            - text: The tech-friendly TLD
+          - generic [ref=f7e291]:
+            - generic [ref=f7e292]:
+              - generic [ref=f7e293]: $65.98
+              - text: /yr
+            - generic [ref=f7e294]:
+              - generic [ref=f7e295]: $34.98
+              - text: /yr
+      - link "View Domains & Prices" [ref=f7e297] [cursor=pointer]:
+        - /url: /domains/
+    - generic [ref=f7e299]:
+      - heading "Boost your .com domain" [level=2] [ref=f7e301]
+      - generic [ref=f7e302]:
+        - generic [ref=f7e304]:
+          - img "Shared Hosting" [ref=f7e306]
+          - generic [ref=f7e307]:
+            - heading [level=5] [ref=f7e308]:
+              - link "Shared Hosting" [ref=f7e309] [cursor=pointer]:
+                - /url: /hosting/shared/
+            - paragraph [ref=f7e310]: Starting at $1.88/month
+            - paragraph [ref=f7e311]:
+              - text: Add Shared Hosting so you can publish your site quickly and easily. Comes with free Website Builder and your choice of content management system, such as WordPress.
+              - link "See web hosting plans" [ref=f7e312] [cursor=pointer]:
+                - /url: /hosting/shared/
+        - generic [ref=f7e314]:
+          - img "SSL Protection" [ref=f7e316]
+          - generic [ref=f7e317]:
+            - heading [level=5] [ref=f7e318]:
+              - link "SSL Protection" [ref=f7e319] [cursor=pointer]:
+                - /url: /security/ssl-certificates/
+            - paragraph [ref=f7e320]: From $5.99/year
+            - paragraph [ref=f7e321]:
+              - text: Pick from a huge range of SSL certificates to secure your site data. Perfect for websites of all sizes, from personal blogs to global e-commerce, get a great price on SSLs today.
+              - link "View SSLs" [ref=f7e322] [cursor=pointer]:
+                - /url: /security/ssl-certificates/
+      - generic [ref=f7e323]:
+        - generic [ref=f7e325]:
+          - img "Premium DNS" [ref=f7e327]
+          - generic [ref=f7e328]:
+            - heading [level=5] [ref=f7e329]:
+              - link "Premium DNS" [ref=f7e330] [cursor=pointer]:
+                - /url: /security/premiumdns/
+            - paragraph [ref=f7e331]: Just $4.88/year
+            - paragraph [ref=f7e332]:
+              - text: Protect your business from DNS DDoS attacks and data leaks without slowing your site down. Our PremiumDNS gives you speed, security, and a 100% uptime guarantee.
+              - link "Shop DNS services" [ref=f7e333] [cursor=pointer]:
+                - /url: /security/premiumdns/
+        - generic [ref=f7e335]:
+          - img "Private Email" [ref=f7e337]
+          - generic [ref=f7e338]:
+            - heading [level=5] [ref=f7e339]:
+              - link "Private Email" [ref=f7e340] [cursor=pointer]:
+                - /url: /hosting/email/
+            - paragraph [ref=f7e341]: Free trial
+            - paragraph [ref=f7e342]:
+              - text: Get professional email to match your new domain. Send emails that build trust and manage your schedule, all from one secure inbox. Try any Private Email plan free for one month.
+              - link "View our Private Email plans" [ref=f7e343] [cursor=pointer]:
+                - /url: /hosting/email/
+    - generic [ref=f7e347]:
+      - heading "Frequently asked questions" [level=2] [ref=f7e348]
+      - generic [ref=f7e349]:
+        - button "Why should I register a .com domain? " [ref=f7e351] [cursor=pointer]:
+          - generic [ref=f7e352]: Why should I register a .com domain?
+          - text: 
+        - button "How long can I register a .com domain for? " [ref=f7e357] [cursor=pointer]:
+          - generic [ref=f7e358]: How long can I register a .com domain for?
+          - text: 
+        - button "Can I keep my contact information hidden when I register? " [ref=f7e363] [cursor=pointer]:
+          - generic [ref=f7e364]: Can I keep my contact information hidden when I register?
+          - text: 
+        - button "Is it easy to renew my .com domain? " [ref=f7e369] [cursor=pointer]:
+          - generic [ref=f7e370]: Is it easy to renew my .com domain?
+          - text: 
+        - button "What happens if my domain expires? " [ref=f7e375] [cursor=pointer]:
+          - generic [ref=f7e376]: What happens if my domain expires?
+          - text: 
+        - button "How do I register a .com domain name? " [ref=f7e381] [cursor=pointer]:
+          - generic [ref=f7e382]: How do I register a .com domain name?
+          - text: 
+      - paragraph [ref=f7e386]:
+        - generic [ref=f7e387]:
+          - link "Still have questions?" [ref=f7e388] [cursor=pointer]:
+            - /url: /support/knowledgebase/category/34/domains/
+          - text: You can also
+          - link "Contact our support" [ref=f7e389] [cursor=pointer]:
+            - /url: /help-center/
+          - text: .
+    - generic [ref=f7e392]:
+      - heading "Disclaimers" [level=4] [ref=f7e393]
+      - list [ref=f7e394]:
+        - listitem [ref=f7e395]:
+          - text: • ICANN (the Internet Corporation for Assigned Names and Numbers) charges a mandatory annual fee of $0.20 for each domain registration, renewal or transfer. This will be added to the listed price for some domains, at the time of purchase.
+          - link "See full list of affected domains" [ref=f7e396] [cursor=pointer]:
+            - /url: /legal/domains/icann-fee/
+        - listitem [ref=f7e397]:
+          - text: • You'll receive a domain privacy subscription FREE with every eligible domain registration or transfer. Your subscription is provided by Withheld for Privacy and the services agreement it holds with Namecheap. Terms and conditions apply. Visit the
+          - link "Whois privacy service agreement" [ref=f7e398] [cursor=pointer]:
+            - /url: /legal/domain-privacy/whois-privacy-service-agreement/
+          - text: page for further details.
+        - listitem [ref=f7e399]:
+          - text: • Due to the registry restrictions, domain privacy is unavailable for a handful of TLDs. Check the
+          - link "Domain Privacy" [ref=f7e400] [cursor=pointer]:
+            - /url: /security/domain-privacy-service/
+          - text: page to see the full list.
+        - listitem [ref=f7e401]:
+          - text: • You receive an
+          - link "exclusive Standard SSL Certificate offer" [ref=f7e402] [cursor=pointer]:
+            - /url: /promos/exclusive-standard-ssl-offer/
+          - text: (valid for the first year only) with every new product purchase except domain renewals, or purchase or renewals of any other SSL certificates. Further restrictions may apply.
+        - listitem [ref=f7e403]: • DNS features mentioned are applicable only if your domain uses Namecheap DNS service.
+        - listitem [ref=f7e404]: • DNSSEC is available with all eligible domains as part of Basic or Premium DNS services.
+        - listitem [ref=f7e405]: • Special offer applies to new first-year registrations only and is valid for a limited time.
+        - listitem [ref=f7e406]: • Please note that premium domain names are not eligible for the promotion and prices may differ from those shown.
+        - listitem [ref=f7e407]:
+          - text: "• We recommend that you set the following domains to auto-renew at least 12 days before the expiration date: .ch, .es, .com.es, .nom.es, .org.es, .fr, .li, .pe, .com.pe, .net.pe, .org.pe, .sg, .com.sg, .com.au, .net.au, and .org.au.If your domain is not renewed or set to auto-renewal at least 12 days before the expiration date, it immediately enters the redemption period. Once in this state, it will not be possible to renew it at the regular price."
+          - link "Read more about renewal requirements" [ref=f7e408] [cursor=pointer]:
+            - /url: /support/knowledgebase/article.aspx/9296/36/how-do-i-renew-ch-es-fr-li-pe-sg-au-domains/
+          - text: .
+        - listitem [ref=f7e409]:
+          - text: "• We recommend that you set the following domains to auto-renew at least 5 days before the expiration date: .cx, .de, .eu and .nl.If your domain is not renewed or set for auto-renewal at least 5 days before the expiration date, it immediately enters the redemption period. Once in this state, your website and other related services will stop working, and it will not be possible to renew your domain at the regular price."
+          - link "Read more about renewal requirements" [ref=f7e410] [cursor=pointer]:
+            - /url: /support/knowledgebase/article.aspx/248/36/how-do-i-renew-cx-de-eu-and-nl-domains/
+          - text: .
+  - generic [ref=f7e416]:
+    - paragraph [ref=f7e418]:
+      - generic [ref=f7e419]: Need help?
+      - text: We're always here for you.
+    - link " Go to Live Chat page" [ref=f7e421] [cursor=pointer]:
+      - /url: https://www.namecheap.com/help-center/live-chat?loc=
+      - generic [ref=f7e422]: 
+      - text: Go to Live Chat page
+  - contentinfo [ref=f7e426]:
+    - generic [ref=f7e429]:
+      - img "Ukraine flag" [ref=f7e431]
+      - generic [ref=f7e432]:
+        - text: We ❤️ Ukraine. Namecheap is a US based registrar. Many of our colleagues originate from or are located within Ukraine. To support Ukraine in their time of need visit this
+        - link "page" [ref=f7e433] [cursor=pointer]:
+          - /url: https://u24.gov.ua/
+        - text: .
+    - generic [ref=f7e436]:
+      - generic [ref=f7e438]:
+        - link [ref=f7e440] [cursor=pointer]:
+          - /url: https://www.namecheap.com/
+          - img "Namecheap" [ref=f7e442]
+        - paragraph [ref=f7e443]: We make registering, hosting, and managing domains for yourself or others easy and affordable, because the internet needs people.
+        - generic [ref=f7e444]:
+          - paragraph [ref=f7e445]:
+            - link "About Namecheap " [ref=f7e446] [cursor=pointer]:
+              - /url: https://www.namecheap.com/about/
+              - generic [ref=f7e447]: About Namecheap
+              - generic [ref=f7e448]: 
+          - paragraph [ref=f7e449]:
+            - link "Read our blog " [ref=f7e450] [cursor=pointer]:
+              - /url: https://www.namecheap.com/blog/
+              - generic [ref=f7e451]: Read our blog
+              - generic [ref=f7e452]: 
+        - paragraph [ref=f7e453]:
+          - generic [ref=f7e454]: Join Our Newsletter & Marketing Communication
+          - generic [ref=f7e455]: We'll send you news and offers.
+        - generic [ref=f7e457]:
+          - textbox "Join Our Newsletter & Marketing Communication We'll send you news and offers." [ref=f7e458]:
+            - /placeholder: you@yours.com
+          - button "Join" [ref=f7e459] [cursor=pointer]
+        - list [ref=f7e461]:
+          - listitem [ref=f7e462]:
+            - link "Twitter" [ref=f7e463] [cursor=pointer]:
+              - /url: https://twitter.com/namecheap
+          - listitem [ref=f7e465]:
+            - link "Facebook" [ref=f7e466] [cursor=pointer]:
+              - /url: https://www.facebook.com/NameCheap
+          - listitem [ref=f7e468]:
+            - link "Instagram" [ref=f7e469] [cursor=pointer]:
+              - /url: https://www.instagram.com/namecheap/
+          - listitem [ref=f7e471]:
+            - link "Pinterest" [ref=f7e472] [cursor=pointer]:
+              - /url: https://www.pinterest.com/namecheap/
+      - generic [ref=f7e474]:
+        - generic [ref=f7e475]:
+          - paragraph [ref=f7e476]: The entirety of this site is protected by copyright © 2000–2026 Namecheap, Inc.
+          - paragraph [ref=f7e477]: 4600 East Washington Street, Suite 300, Phoenix, AZ 85034, USA
+        - generic [ref=f7e478]:
+          - link "Terms and Conditions" [ref=f7e479] [cursor=pointer]:
+            - /url: https://www.namecheap.com/legal/
+          - link "Privacy Policy" [ref=f7e480] [cursor=pointer]:
+            - /url: https://www.namecheap.com/legal/general/privacy-policy/
+          - link "UDRP" [ref=f7e481] [cursor=pointer]:
+            - /url: https://www.namecheap.com/legal/domains/udrp/
+          - link "Domain Registration Data Disclosure Policy" [ref=f7e483] [cursor=pointer]:
+            - /url: https://www.namecheap.com/legal/general/domain-registration-data-disclosure-policy-guide/
+          - link "Cookie Preferences" [ref=f7e484] [cursor=pointer]:
+            - /url: javascript:void(0);
+    - generic [ref=f7e487]:
+      - strong [ref=f7e489]: WE SUPPORT
+      - generic [ref=f7e490]: Electronic Frontier Foundation
+      - generic [ref=f7e492]: Fight For The Future
+    - generic [ref=f7e496]:
+      - paragraph [ref=f7e501]:
+        - generic [ref=f7e502]: We are an ICANN-accredited registrar. Serving customers since 2001.
+      - generic [ref=f7e504]:
+        - paragraph [ref=f7e505]: Payment Options
+        - list [ref=f7e506]:
+          - listitem "American Express" [ref=f7e507]
+          - listitem "Bitcoin" [ref=f7e509]
+          - listitem "MasterCard" [ref=f7e511]
+          - listitem "PayPal" [ref=f7e513]
+          - listitem "Visa" [ref=f7e515]
+          - listitem "Discover" [ref=f7e517]
+      - list [ref=f7e520]:
+        - listitem [ref=f7e521]:
+          - link [ref=f7e522] [cursor=pointer]:
+            - /url: https://secure.trust-provider.com/ttb_searcher/trustlogo?v_querytype=W&v_shortname=SECEV&v_search=http://www.namecheap.com/&x=6&y=5
+            - img "Sectigo" [ref=f7e523]
+        - listitem [ref=f7e524]:
+          - link "Android app on google play" [ref=f7e525] [cursor=pointer]:
+            - /url: https://nc1.app.link/W1qV0gjLZG
+        - listitem [ref=f7e527]:
+          - link "iOS App Store" [ref=f7e528] [cursor=pointer]:
+            - /url: https://nc1.app.link/W1qV0gjLZG

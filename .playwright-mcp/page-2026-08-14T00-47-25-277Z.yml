@@ -1,0 +1,868 @@
+- generic [active] [ref=f41e1]:
+  - banner [ref=f41e2]:
+    - link "Saltar al contenido principal" [ref=f41e3] [cursor=pointer]:
+      - /url: "#main"
+    - generic [ref=f41e6]:
+      - generic [ref=f41e7]:
+        - link [ref=f41e9] [cursor=pointer]:
+          - /url: https://www.godaddy.com/es
+          - figure "GoDaddy" [ref=f41e10]
+        - navigation "Navigation" [ref=f41e13]:
+          - button "Open Menu" [ref=f41e14] [cursor=pointer]
+          - generic [ref=f41e16]:
+            - generic [ref=f41e17]:
+              - link [ref=f41e20] [cursor=pointer]:
+                - /url: https://www.godaddy.com/es
+                - figure "GoDaddy" [ref=f41e21]
+              - list [ref=f41e24]:
+                - listitem [ref=f41e25] [cursor=pointer]:
+                  - button [ref=f41e26]:
+                    - generic [ref=f41e27]: Dominios
+                - listitem [ref=f41e29] [cursor=pointer]:
+                  - button [ref=f41e30]:
+                    - generic [ref=f41e31]: Sitios web
+                - listitem [ref=f41e33] [cursor=pointer]:
+                  - link [ref=f41e34]:
+                    - /url: https://www.godaddy.com/es/email
+                    - text: Correo electrónico
+                - listitem [ref=f41e35] [cursor=pointer]:
+                  - button [ref=f41e36]:
+                    - generic [ref=f41e37]: Hosting
+                - listitem [ref=f41e39] [cursor=pointer]:
+                  - button [ref=f41e40]:
+                    - generic [ref=f41e41]: Marketing
+                - listitem [ref=f41e43] [cursor=pointer]:
+                  - button [ref=f41e44]:
+                    - generic [ref=f41e45]: Comercio
+                - listitem [ref=f41e47] [cursor=pointer]:
+                  - link [ref=f41e48]:
+                    - /url: https://www.godaddy.com/es/seguridad-web/certificado-ssl
+                    - text: Certificados SSL
+                - listitem [ref=f41e49] [cursor=pointer]:
+                  - link [ref=f41e50]:
+                    - /url: https://www.godaddy.com/es/airo/ai-builder
+                    - text: Airo AI Builder
+                - listitem [ref=f41e51] [cursor=pointer]:
+                  - link [ref=f41e52]:
+                    - /url: https://www.godaddy.com/es/precios
+                    - text: Precios
+            - button "Close" [ref=f41e53] [cursor=pointer]: ×
+      - generic [ref=f41e55]:
+        - link "Ofertas" [ref=f41e56] [cursor=pointer]:
+          - /url: https://www.godaddy.com/es/great-deals
+        - group "Ayuda" [ref=f41e58]:
+          - generic [ref=f41e59] [cursor=pointer]
+        - group [ref=f41e61]:
+          - generic "Inicio de sesión" [ref=f41e62] [cursor=pointer]
+        - link [ref=f41e65] [cursor=pointer]:
+          - /url: https://cart.godaddy.com/
+  - main [ref=f41e68]:
+    - navigation [ref=f41e70]:
+      - generic [ref=f41e71]: Todas las opciones de dominio
+    - generic [ref=f41e78]:
+      - generic [ref=f41e82]:
+        - generic [ref=f41e84]:
+          - 'heading "Herramienta de búsqueda de nombres de dominio: encuentra y compra dominios disponibles" [level=1] [ref=f41e85]'
+          - heading "Consigue un dominio .com por solo $0.01/el primer año" [level=2] [ref=f41e86]
+          - paragraph [ref=f41e89]: Incluye GoDaddy Airo® con tecnología de IA y protección de privacidad de dominio gratis, por siempre**
+        - generic [ref=f41e96]:
+          - combobox "Escribe el dominio que deseas" [ref=f41e98]
+          - button "Search" [ref=f41e99] [cursor=pointer]
+        - generic [ref=f41e100]:
+          - button "Select .com domain extension" [ref=f41e101] [cursor=pointer]:
+            - button ".com" [ref=f41e102]
+          - button "Select .co domain extension" [ref=f41e103] [cursor=pointer]:
+            - button ".co" [ref=f41e104]
+          - button "Select .net domain extension" [ref=f41e105] [cursor=pointer]:
+            - button ".net" [ref=f41e106]
+          - button "Select .org domain extension" [ref=f41e107] [cursor=pointer]:
+            - button ".org" [ref=f41e108]
+          - button "Select .shop domain extension" [ref=f41e109] [cursor=pointer]:
+            - button ".shop" [ref=f41e110]
+          - button "Select .ai domain extension" [ref=f41e111] [cursor=pointer]:
+            - button ".ai" [ref=f41e112]
+          - button "view more" [ref=f41e113] [cursor=pointer]:
+            - link "+ Ver más" [ref=f41e114]:
+              - /url: https://www.godaddy.com/es/dominios/dominios-genericos-gtld
+        - paragraph [ref=f41e118]: Solo para nuevos clientes. Requiere validación en el pago.
+      - generic [ref=f41e120]:
+        - link "trustpilot" [ref=f41e121] [cursor=pointer]:
+          - /url: https://www.trustpilot.com/review/www.godaddy.com
+        - generic [ref=f41e143]: 4.4 de 5 estrellas, según 139,319 opiniones
+        - group [ref=f41e146]:
+          - link "Ver todo" [ref=f41e148] [cursor=pointer]:
+            - /url: https://www.trustpilot.com/review/www.godaddy.com
+    - generic [ref=f41e153]:
+      - generic [ref=f41e155]:
+        - heading "Gratis con tu dominio" [level=2] [ref=f41e156]
+        - heading "Más funciones, más valor, más formas de hacer crecer tu negocio" [level=3] [ref=f41e157]
+        - paragraph [ref=f41e160]: Un dominio de GoDaddy es una herramienta empresarial. Un dominio de cualquier otro es solo una dirección.
+        - group [ref=f41e163]:
+          - link "Ver todas las funciones gratis" [ref=f41e165] [cursor=pointer]:
+            - /url: "#"
+      - list [ref=f41e169]:
+        - listitem [ref=f41e170]:
+          - paragraph [ref=f41e175]: "Seguridad gratuita para dominios: Protección de privacidad WHOIS, protección contra suplantación de correo (DMARC), bloqueo de transferencia de registrador y más"
+        - listitem [ref=f41e176]:
+          - paragraph [ref=f41e181]: "Gestión fácil de dominios gratis: Soporte humano 24/7, supervisión de dominios en tiempo real, DNS automatizado y más"
+        - listitem [ref=f41e182]:
+          - paragraph [ref=f41e187]: "Herramientas de crecimiento gratis: Creador de logos con IA, prueba gratis de Creador de páginas web, subdominios para redes sociales, preparación de documentos LLC y más"
+    - generic [ref=f41e195]:
+      - combobox "Escribe el dominio que deseas" [ref=f41e197]
+      - button "Search" [ref=f41e198] [cursor=pointer]
+    - generic [ref=f41e200]:
+      - generic [ref=f41e202]:
+        - heading "Registra una extensión de dominio ideal para tu marca" [level=2] [ref=f41e203]
+        - paragraph [ref=f41e206]: Con tu nombre de dominio web, las personas sabrán a simple vista por qué estás en línea (y por qué eres increíble). Encuentra la extensión de dominio perfecta para destacarte en internet y atraer a más visitantes.
+      - generic [ref=f41e207]:
+        - generic [ref=f41e209]:
+          - generic [ref=f41e210]:
+            - heading ".live" [level=3] [ref=f41e211]
+            - paragraph [ref=f41e212]:
+              - paragraph [ref=f41e213]:
+                - text: Sé el centro de atención con
+                - strong [ref=f41e214]: .live
+          - generic [ref=f41e216]:
+            - generic [ref=f41e217]:
+              - paragraph [ref=f41e218]:
+                - generic [ref=f41e219]: Desde
+              - paragraph [ref=f41e220]: $49.99
+            - generic [ref=f41e221]:
+              - paragraph [ref=f41e222]: $3.99
+              - paragraph [ref=f41e224]: /primer año
+          - group [ref=f41e227]:
+            - link "Verificar disponibilidad" [ref=f41e229] [cursor=pointer]:
+              - /url: https://www.godaddy.com/es/tlds/live-domain
+        - generic [ref=f41e232]:
+          - generic [ref=f41e233]:
+            - heading ".net" [level=3] [ref=f41e234]
+            - paragraph [ref=f41e235]:
+              - paragraph [ref=f41e236]: El dominio de los emprendedores
+          - generic [ref=f41e238]:
+            - generic [ref=f41e239]:
+              - paragraph [ref=f41e240]:
+                - generic [ref=f41e241]: Desde
+              - paragraph [ref=f41e242]: $24.99
+            - generic [ref=f41e243]:
+              - paragraph [ref=f41e244]: $0.01
+              - paragraph [ref=f41e246]: /primer año
+            - paragraph [ref=f41e248]:
+              - generic [ref=f41e249]: Compra de tres años obligatoria.Año(s) adicional(es) $24.99
+          - group [ref=f41e252]:
+            - link "Verificar disponibilidad" [ref=f41e254] [cursor=pointer]:
+              - /url: https://www.godaddy.com/es/tlds/net-domain
+        - generic [ref=f41e257]:
+          - generic [ref=f41e258]:
+            - heading ".tv" [level=3] [ref=f41e259]
+            - paragraph [ref=f41e260]:
+              - paragraph [ref=f41e261]: El lugar donde se reproducen los videos
+          - generic [ref=f41e263]:
+            - paragraph [ref=f41e265]:
+              - generic [ref=f41e266]: Desde
+            - generic [ref=f41e267]:
+              - paragraph [ref=f41e268]: $49.99
+              - paragraph [ref=f41e270]: /primer año
+          - group [ref=f41e273]:
+            - link "Verificar disponibilidad" [ref=f41e275] [cursor=pointer]:
+              - /url: https://www.godaddy.com/es/tlds/tv-domain
+        - generic [ref=f41e278]:
+          - generic [ref=f41e279]:
+            - heading ".xyz" [level=3] [ref=f41e280]
+            - paragraph [ref=f41e281]:
+              - paragraph [ref=f41e282]: Crea, innova y exprésate
+          - generic [ref=f41e284]:
+            - generic [ref=f41e285]:
+              - paragraph [ref=f41e286]:
+                - generic [ref=f41e287]: Desde
+              - paragraph [ref=f41e288]: $25.99
+            - generic [ref=f41e289]:
+              - paragraph [ref=f41e290]: $1.99
+              - paragraph [ref=f41e292]: /primer año
+          - group [ref=f41e295]:
+            - link "Verificar disponibilidad" [ref=f41e297] [cursor=pointer]:
+              - /url: https://www.godaddy.com/es/tlds/xyz-domain
+        - generic [ref=f41e300]:
+          - generic [ref=f41e301]:
+            - heading ".me" [level=3] [ref=f41e302]
+            - paragraph [ref=f41e303]:
+              - paragraph [ref=f41e304]:
+                - text: Haz todo sobre ti con
+                - strong [ref=f41e305]: .me
+          - generic [ref=f41e307]:
+            - generic [ref=f41e308]:
+              - paragraph [ref=f41e309]:
+                - generic [ref=f41e310]: Desde
+              - paragraph [ref=f41e311]: $29.99
+            - generic [ref=f41e312]:
+              - paragraph [ref=f41e313]: $0.01
+              - paragraph [ref=f41e315]: /primer año
+            - paragraph [ref=f41e317]:
+              - generic [ref=f41e318]: Compra de tres años obligatoria.Año(s) adicional(es) $29.99
+          - group [ref=f41e321]:
+            - link "Verificar disponibilidad" [ref=f41e323] [cursor=pointer]:
+              - /url: https://www.godaddy.com/es/tlds/me-domain
+        - generic [ref=f41e326]:
+          - generic [ref=f41e327]:
+            - heading ".store" [level=3] [ref=f41e328]
+            - paragraph [ref=f41e329]:
+              - paragraph [ref=f41e330]:
+                - text: Mantén tu
+                - strong [ref=f41e331]: .store
+                - text: abierta 24/7.
+          - generic [ref=f41e333]:
+            - generic [ref=f41e334]:
+              - paragraph [ref=f41e335]:
+                - generic [ref=f41e336]: Desde
+              - paragraph [ref=f41e337]: $83.99
+            - generic [ref=f41e338]:
+              - paragraph [ref=f41e339]: $0.99
+              - paragraph [ref=f41e341]: /primer año
+          - group [ref=f41e344]:
+            - link "Verificar disponibilidad" [ref=f41e346] [cursor=pointer]:
+              - /url: https://www.godaddy.com/es/tlds/store-domain
+    - generic [ref=f41e356]:
+      - heading "Compra tu dominio sin preocupaciones" [level=2] [ref=f41e359]
+      - generic [ref=f41e361]:
+        - generic [ref=f41e363]:
+          - generic "gallery-item-no-link" [ref=f41e365]:
+            - img "Frame 1" [ref=f41e367]
+          - generic [ref=f41e368]:
+            - heading "Confía en el registrador de dominios más grande del mundo" [level=3] [ref=f41e369]
+            - paragraph [ref=f41e372]: Con más de treinta años como líder del sector, GoDaddy gestiona más de Más de 82 millones de dominios. Somos el registrador preferido por Más de 20 millones de clientes en todo el mundo.
+        - generic [ref=f41e374]:
+          - generic "gallery-item-no-link" [ref=f41e376]:
+            - img "Frame 4" [ref=f41e378]
+          - generic [ref=f41e379]:
+            - heading "Busca dominios libres con más de 500 extensiones" [level=3] [ref=f41e380]
+            - paragraph [ref=f41e383]: Crea un dominio fácil de recordar con .com o amplía tus horizontes y explora las cientos de extensiones de dominio. Te ayudaremos a encontrar uno perfecto para tu idea, emprendimiento o empresa.
+        - generic [ref=f41e385]:
+          - generic "gallery-item-no-link" [ref=f41e387]:
+            - img "Frame 5" [ref=f41e389]
+          - generic [ref=f41e390]:
+            - heading "Configuración simple de dominios; no se necesitan habilidades técnicas" [level=3] [ref=f41e391]
+            - paragraph [ref=f41e394]: Nuestra plataforma fácil de usar garantiza una configuración sencilla y sin problemas. Con esto, luego de comprar un dominio, puedes aparecer en línea aún más rápido.
+        - generic [ref=f41e396]:
+          - generic "gallery-item-no-link" [ref=f41e398]:
+            - img "Frame 2" [ref=f41e400]
+          - generic [ref=f41e401]:
+            - heading "Compra un dominio y crea tu presencia en línea" [level=3] [ref=f41e402]
+            - paragraph [ref=f41e405]: GoDaddy tiene todas las herramientas y la asistencia que necesitas para dar vida a tu dominio, desde un generador de logotipos y correo electrónico profesional hasta un creador de páginas web y Hosting.
+        - generic [ref=f41e407]:
+          - generic "gallery-item-no-link" [ref=f41e409]:
+            - img "Subdomains" [ref=f41e411]
+          - generic [ref=f41e412]:
+            - heading "Consigue hasta 100 subdominios" [level=3] [ref=f41e413]
+            - paragraph [ref=f41e416]: "Se incluye con tu dominio: crea direcciones web personalizadas adaptadas a tus necesidades como blog.tudominio.com para conseguir una presencia en línea más organizada y profesional."
+    - generic [ref=f41e419]:
+      - generic [ref=f41e421]:
+        - heading "Registra tu dominio y crece con GoDaddy" [level=2] [ref=f41e422]
+        - paragraph [ref=f41e425]: En cada etapa de tu trayectoria, GoDaddy te ayuda a poner en marcha, lograr el crecimiento y gestionar tu negocio.
+      - generic [ref=f41e426]:
+        - generic [ref=f41e429]:
+          - heading "Usa la IA para crear tu sitio en un abrir y cerrar de ojos" [level=3] [ref=f41e430]
+          - paragraph [ref=f41e433]: Haz que tu idea se convierta en una realidad en línea en el tiempo que toma hacerse un café. Luego, promociónala con el marketing incorporado y administra todo desde un único panel de control.
+          - group [ref=f41e436]:
+            - link "Crear un sitio web" [ref=f41e438] [cursor=pointer]:
+              - /url: https://www.godaddy.com/es/paginas-web/creador-de-paginas-web
+        - generic [ref=f41e442]:
+          - heading "Obtén un hosting rápido y confiable" [level=3] [ref=f41e443]
+          - paragraph [ref=f41e446]: Tanto si tienes una página web sencilla como si gestionas sitios web complejos para tus clientes, tenemos la opción de Hosting que necesitas, respaldada por nuestra garantía de tiempo de actividad del 99.9%*** y respaldos automáticos diarios.
+          - group [ref=f41e449]:
+            - link "Ver soluciones de hosting" [ref=f41e451] [cursor=pointer]:
+              - /url: https://www.godaddy.com/es/servicio-hosting
+        - generic [ref=f41e455]:
+          - heading "Crea un logo espectacular en minutos" [level=3] [ref=f41e456]
+          - paragraph [ref=f41e459]: Obtén rápidamente un logo que se vea bien en todas partes con Airo Plus™ Logo. Responde algunas preguntas y deja que nuestras herramientas de IA generen un logo espectacular. No necesitas habilidades de diseño.
+          - group [ref=f41e462]:
+            - link "Crea tu logo" [ref=f41e464] [cursor=pointer]:
+              - /url: https://www.godaddy.com/es/crear-logo
+        - generic [ref=f41e468]:
+          - heading "Consigue el nombre de empresa perfecto" [level=3] [ref=f41e469]
+          - paragraph [ref=f41e472]: En solo tres sencillos pasos, la herramienta Generador de nombres comerciales de GoDaddy, basada en inteligencia artificial, te ofrece un listado de nombres comerciales y de nombres de dominio seleccionados para ti.
+          - group [ref=f41e475]:
+            - link "Ideas de nombres de empresa" [ref=f41e477] [cursor=pointer]:
+              - /url: https://www.godaddy.com/es/business-name-generator
+        - generic [ref=f41e481]:
+          - heading "Subasta y oferta por dominios" [level=3] [ref=f41e482]
+          - paragraph [ref=f41e485]: Con Subastas GoDaddy, vende tu dominio al mejor precio o puja por el dominio que quieras para ti o para tus clientes.
+          - group [ref=f41e488]:
+            - link "Explorar subastas de dominios" [ref=f41e490] [cursor=pointer]:
+              - /url: https://www.godaddy.com/es/auctions/domain-auctions
+        - generic [ref=f41e494]:
+          - heading "Protege tu dominio" [level=3] [ref=f41e495]
+          - paragraph [ref=f41e498]: Del mismo modo que proteges tu sitio web de las amenazas en línea, puedes hacer lo mismo con tu dominio gracias a la Protección de dominios de GoDaddy.
+          - group [ref=f41e501]:
+            - link "Consigue la protección de dominios" [ref=f41e503] [cursor=pointer]:
+              - /url: https://www.godaddy.com/es/domains/domain-protection
+    - generic [ref=f41e507]:
+      - generic [ref=f41e509]:
+        - heading "Compra nombres de dominio para invertir" [level=2] [ref=f41e510]
+        - paragraph [ref=f41e513]: Descubre cómo invertir en dominios con GoDaddy. Te ofrecemos las herramientas y los recursos que necesitas para crear, gestionar y ampliar tu cartera de dominios.
+      - generic [ref=f41e514]:
+        - generic [ref=f41e517]:
+          - heading "Invertir en dominios" [level=3] [ref=f41e518]
+          - paragraph [ref=f41e521]: Si registras un nombre de dominio y crees que vale más de lo que pagaste por él, entra aquí para ver recursos que te ayudarán a sacar el máximo partido a tu venta. Encontrarás un montón de recursos para empezar con buen pie tu andadura en el mundo de invertir en dominios.
+          - group [ref=f41e524]:
+            - link "Conozca más sobre invertir en dominios" [ref=f41e526] [cursor=pointer]:
+              - /url: https://www.godaddy.com/es/domains/domain-investing
+              - generic [ref=f41e527]: Más información
+        - generic [ref=f41e530]:
+          - heading "Club de descuento de dominios" [level=3] [ref=f41e531]
+          - paragraph [ref=f41e534]: ¿Tienes habilidad para comprar a precio bajo y vender a precio alto? Únete al Club de descuentos de dominios y consigue ofertas sorprendentes para comprar los dominios más nuevos del mercado. Obtendrás hasta un 60% de descuento en el registro del dominio, además de herramientas muy útiles totalmente gratis.
+          - group [ref=f41e537]:
+            - link "Más información sobre el Club de descuento de dominios" [ref=f41e539] [cursor=pointer]:
+              - /url: https://www.godaddy.com/es/dominios/club-de-descuentos
+              - generic [ref=f41e540]: Más información
+        - generic [ref=f41e543]:
+          - heading "Subasta de dominios" [level=3] [ref=f41e544]
+          - paragraph [ref=f41e547]: Si tienes en tus manos un dominio codiciado, únete a nuestra subasta de dominios para asegurarte de conseguir el mejor precio del mercado abierto.
+          - group [ref=f41e550]:
+            - link "Más información sobre la subasta de dominio" [ref=f41e552] [cursor=pointer]:
+              - /url: https://auctions.godaddy.com/es
+              - generic [ref=f41e553]: Más información
+    - generic [ref=f41e556]:
+      - generic [ref=f41e558]:
+        - heading "Registra el dominio específico para ti" [level=2] [ref=f41e559]
+        - paragraph [ref=f41e562]:
+          - text: GoDaddy ofrece cientos de extensiones de dominio que puedes registrar para dar a conocer tu marca en línea. ¿No sabes qué dominio de nivel superior es mejor para ti? Puedes usar nuestro
+          - link "generador gratuito de nombres de dominio" [ref=f41e563] [cursor=pointer]:
+            - /url: https://www.godaddy.com/es/domains/domain-name-generator
+          - text: para obtener sugerencias sobre un nombre de dominio genial.
+      - generic [ref=f41e564]:
+        - link ".com" [ref=f41e570] [cursor=pointer]:
+          - /url: https://www.godaddy.com/es/tlds/com-domain
+        - link ".app" [ref=f41e576] [cursor=pointer]:
+          - /url: https://www.godaddy.com/es/tlds/app-domain
+        - link ".canal" [ref=f41e582] [cursor=pointer]:
+          - /url: https://www.godaddy.com/es/tlds/channel-domain
+        - link ".zip" [ref=f41e588] [cursor=pointer]:
+          - /url: https://www.godaddy.com/es/tlds/zip-domain
+        - link ".dev" [ref=f41e594] [cursor=pointer]:
+          - /url: https://www.godaddy.com/es/tlds/dev-domain
+        - link ".org" [ref=f41e600] [cursor=pointer]:
+          - /url: https://www.godaddy.com/es/tlds/org-domain
+        - link ".foo" [ref=f41e606] [cursor=pointer]:
+          - /url: https://www.godaddy.com/es/tlds/foo-domain
+        - link ".mov" [ref=f41e612] [cursor=pointer]:
+          - /url: https://www.godaddy.com/es/tlds/mov-domain
+    - generic [ref=f41e614]:
+      - heading "Obtén más funciones incluidas gratis con GoDaddy que con otros registradores" [level=3] [ref=f41e617]
+      - table [ref=f41e619]:
+        - rowgroup [ref=f41e620]:
+          - row [ref=f41e621]:
+            - cell [ref=f41e622]:
+              - list [ref=f41e623]:
+                - listitem [ref=f41e624]:
+                  - button [ref=f41e625] [cursor=pointer]:
+                    - paragraph [ref=f41e626]: GoDaddy
+                - listitem [ref=f41e627]:
+                  - button [ref=f41e628] [cursor=pointer]:
+                    - paragraph [ref=f41e629]: Otros proveedores
+        - rowgroup [ref=f41e630]:
+          - row
+          - row [ref=f41e631]:
+            - generic [ref=f41e632]:
+              - cell [ref=f41e633]:
+                - paragraph [ref=f41e634]: Seguridad de dominios
+              - cell [ref=f41e635]
+            - generic [ref=f41e636]:
+              - cell [ref=f41e638] [cursor=pointer]:
+                - paragraph [ref=f41e639]: Privacidad de dominio (Privacidad WHOIS)
+              - cell [ref=f41e640]
+            - cell "Ayuda a mantener tu información de contacto personal, como nombre, dirección y número telefónico, fuera del directorio público WHOIS para que los desconocidos no puedan encontrarte al registrar un dominio. (1)" [ref=f41e642]:
+              - paragraph: Ayuda a mantener tu información de contacto personal, como nombre, dirección y número telefónico, fuera del directorio público WHOIS para que los desconocidos no puedan encontrarte al registrar un dominio. (1)
+          - row [ref=f41e643]:
+            - generic [ref=f41e644]:
+              - cell [ref=f41e646] [cursor=pointer]:
+                - paragraph [ref=f41e647]: Protección contra suplantación de correo (DMARC)
+              - cell [ref=f41e648]
+            - cell "Ayuda a evitar que los estafadores envíen correos electrónicos falsos que parecen provenir de tu empresa." [ref=f41e650]:
+              - paragraph: Ayuda a evitar que los estafadores envíen correos electrónicos falsos que parecen provenir de tu empresa.
+          - row [ref=f41e651]:
+            - generic [ref=f41e652]:
+              - cell [ref=f41e654] [cursor=pointer]:
+                - paragraph [ref=f41e655]: Protección contra secuestro de dominio (DNSSEC)
+              - cell [ref=f41e656]
+            - cell "La seguridad DNS ayuda a evitar que los hackers redirijan en secreto a tus visitantes a sitios web falsos o maliciosos cuando intentan encontrarte en línea. (2)" [ref=f41e658]:
+              - paragraph: La seguridad DNS ayuda a evitar que los hackers redirijan en secreto a tus visitantes a sitios web falsos o maliciosos cuando intentan encontrarte en línea. (2)
+          - row [ref=f41e659]:
+            - generic [ref=f41e660]:
+              - cell [ref=f41e662] [cursor=pointer]:
+                - paragraph [ref=f41e663]: Bloqueo de transferencia de registrador
+              - cell [ref=f41e664]
+            - cell "Ayuda a evitar que tu dominio sea transferido a otro propietario sin tu aprobación. Se habilita automáticamente desde el momento en que lo registras. (3)" [ref=f41e666]:
+              - paragraph: Ayuda a evitar que tu dominio sea transferido a otro propietario sin tu aprobación. Se habilita automáticamente desde el momento en que lo registras. (3)
+          - row [ref=f41e667]:
+            - generic [ref=f41e668]:
+              - cell [ref=f41e670] [cursor=pointer]:
+                - paragraph [ref=f41e671]: Autenticación de dos factores (2FA)
+              - cell [ref=f41e672]
+            - cell "Agrega una segunda capa de seguridad al inicio de sesión de tu cuenta de GoDaddy, por lo que incluso si tu contraseña es robada, tu dominio permanece protegido." [ref=f41e674]:
+              - paragraph: Agrega una segunda capa de seguridad al inicio de sesión de tu cuenta de GoDaddy, por lo que incluso si tu contraseña es robada, tu dominio permanece protegido.
+          - row [ref=f41e675]:
+            - generic [ref=f41e676]:
+              - cell [ref=f41e678] [cursor=pointer]:
+                - paragraph [ref=f41e679]: SSL / HTTPS
+              - cell [ref=f41e680]
+            - cell "Ayuda a cifrar la conexión entre tu sitio web y tus visitantes, manteniendo su información más segura y mejorando los resultados de búsqueda en Google." [ref=f41e682]:
+              - paragraph: Ayuda a cifrar la conexión entre tu sitio web y tus visitantes, manteniendo su información más segura y mejorando los resultados de búsqueda en Google.
+          - row [ref=f41e683]:
+            - generic [ref=f41e684]:
+              - cell [ref=f41e685]:
+                - paragraph [ref=f41e686]: Gestión de dominios sencilla
+              - cell [ref=f41e687]
+            - generic [ref=f41e688]:
+              - cell [ref=f41e690] [cursor=pointer]:
+                - paragraph [ref=f41e691]: Agente de activación de IA
+              - cell [ref=f41e692]
+            - cell "Nuestras herramientas de IA le ayudan a conectar fácilmente correo electrónico, sitio web, redes sociales, herramientas de terceros y más." [ref=f41e694]:
+              - paragraph: Nuestras herramientas de IA le ayudan a conectar fácilmente correo electrónico, sitio web, redes sociales, herramientas de terceros y más.
+          - row [ref=f41e695]:
+            - generic [ref=f41e696]:
+              - cell [ref=f41e698] [cursor=pointer]:
+                - paragraph [ref=f41e699]: Información de dominio + acciones automatizadas
+              - cell [ref=f41e700]
+            - cell "Obtenga una vista clara de la actividad de dominio seleccionada, el estado de seguridad y los productos conectados, y luego elija entre opciones automáticas de mejora seleccionadas." [ref=f41e702]:
+              - paragraph: Obtenga una vista clara de la actividad de dominio seleccionada, el estado de seguridad y los productos conectados, y luego elija entre opciones automáticas de mejora seleccionadas.
+          - row [ref=f41e703]:
+            - generic [ref=f41e704]:
+              - cell [ref=f41e706] [cursor=pointer]:
+                - paragraph [ref=f41e707]: Centro de control de dominios
+              - cell [ref=f41e708]
+            - cell "Desde un solo panel de control, administre su dominio, configuraciones de seguridad, productos conectados y más." [ref=f41e710]:
+              - paragraph: Desde un solo panel de control, administre su dominio, configuraciones de seguridad, productos conectados y más.
+          - row [ref=f41e711]:
+            - generic [ref=f41e712]:
+              - cell [ref=f41e714] [cursor=pointer]:
+                - paragraph [ref=f41e715]: Redirección de dominio (Redirección de URL)
+              - cell [ref=f41e716]
+            - cell "Redirige a cualquier persona que visite su dominio a cualquier sitio web que usted elija (como su Instagram comercial o Yelp). Esto es especialmente útil mientras su sitio está siendo construido." [ref=f41e718]:
+              - paragraph: Redirige a cualquier persona que visite su dominio a cualquier sitio web que usted elija (como su Instagram comercial o Yelp). Esto es especialmente útil mientras su sitio está siendo construido.
+          - row [ref=f41e719]:
+            - generic [ref=f41e720]:
+              - cell [ref=f41e722] [cursor=pointer]:
+                - paragraph [ref=f41e723]: Reenvío de correo electrónico
+              - cell [ref=f41e724]
+            - cell "Reenvía automáticamente los correos enviados a la dirección de su dominio a cualquier buzón que ya use, para que nunca pierda un mensaje." [ref=f41e726]:
+              - paragraph: Reenvía automáticamente los correos enviados a la dirección de su dominio a cualquier buzón que ya use, para que nunca pierda un mensaje.
+          - row [ref=f41e727]:
+            - generic [ref=f41e728]:
+              - cell [ref=f41e730] [cursor=pointer]:
+                - paragraph [ref=f41e731]: Monitorización de dominios en tiempo real
+              - cell [ref=f41e732]
+            - cell "Ayuda a asegurar que su dominio permanezca activo mediante monitorización las 24 horas y señalando cualquier problema que surja." [ref=f41e734]:
+              - paragraph: Ayuda a asegurar que su dominio permanezca activo mediante monitorización las 24 horas y señalando cualquier problema que surja.
+          - row [ref=f41e735]:
+            - generic [ref=f41e736]:
+              - cell [ref=f41e738] [cursor=pointer]:
+                - paragraph [ref=f41e739]: Administración DNS automatizada
+              - cell [ref=f41e740]
+            - cell "Administra automáticamente la configuración técnica que conecta su dominio con su sitio web, correo y otras herramientas, sin necesidad de entender DNS." [ref=f41e742]:
+              - paragraph: Administra automáticamente la configuración técnica que conecta su dominio con su sitio web, correo y otras herramientas, sin necesidad de entender DNS.
+          - row [ref=f41e743]:
+            - generic [ref=f41e744]:
+              - cell [ref=f41e746] [cursor=pointer]:
+                - paragraph [ref=f41e747]: Billetera cripto compatible con ENS
+              - cell [ref=f41e748]
+            - cell "Vincula su dominio a una dirección de billetera de criptomonedas para que las personas puedan enviar pagos en cripto a un nombre simple y fácil de recordar como paga.sudominio.com, en lugar de una cadena larga de caracteres aleatorios. Debe tener DNSSEC habilitado por dominio." [ref=f41e750]:
+              - paragraph: Vincula su dominio a una dirección de billetera de criptomonedas para que las personas puedan enviar pagos en cripto a un nombre simple y fácil de recordar como paga.sudominio.com, en lugar de una cadena larga de caracteres aleatorios. Debe tener DNSSEC habilitado por dominio.
+          - row [ref=f41e751]:
+            - generic [ref=f41e752]:
+              - cell [ref=f41e754] [cursor=pointer]:
+                - paragraph [ref=f41e755]: (Nuevo) Recomendaciones de dominios personalizadas
+              - cell [ref=f41e756]
+            - cell "Le muestra de inmediato una lista personalizada de recomendaciones de dominios adaptadas a su negocio, presupuesto y portafolio existente, para que encontrar los nombres adecuados tome segundos, no horas." [ref=f41e758]:
+              - paragraph: Le muestra de inmediato una lista personalizada de recomendaciones de dominios adaptadas a su negocio, presupuesto y portafolio existente, para que encontrar los nombres adecuados tome segundos, no horas.
+          - row [ref=f41e759]:
+            - generic [ref=f41e760]:
+              - cell [ref=f41e762] [cursor=pointer]:
+                - paragraph [ref=f41e763]: Soporte humano 24/7
+              - cell [ref=f41e764]
+            - cell "Soporte humano real disponible 24/7 por teléfono, correo o chat en los mercados de habla inglesa. El horario de soporte y los métodos de contacto pueden variar en mercados que no sean de habla inglesa." [ref=f41e766]:
+              - paragraph: Soporte humano real disponible 24/7 por teléfono, correo o chat en los mercados de habla inglesa. El horario de soporte y los métodos de contacto pueden variar en mercados que no sean de habla inglesa.
+          - row [ref=f41e767]:
+            - generic [ref=f41e768]:
+              - cell [ref=f41e769]:
+                - paragraph [ref=f41e770]: Haga crecer su negocio y su marca
+              - cell [ref=f41e771]
+            - generic [ref=f41e772]:
+              - cell [ref=f41e774] [cursor=pointer]:
+                - paragraph [ref=f41e775]: Creador de logos con IA
+              - cell [ref=f41e776]
+            - cell "Utilice nuestras herramientas de IA para crear un logo completamente nuevo para su negocio en segundos. No se necesitan habilidades de diseño." [ref=f41e778]:
+              - paragraph: Utilice nuestras herramientas de IA para crear un logo completamente nuevo para su negocio en segundos. No se necesitan habilidades de diseño.
+          - row [ref=f41e779]:
+            - generic [ref=f41e780]:
+              - cell [ref=f41e782] [cursor=pointer]:
+                - paragraph [ref=f41e783]: Prueba gratis del Creador de páginas web
+              - cell [ref=f41e784]
+            - cell "Comience con un sitio de una página generado automáticamente y luego publique rápidamente un sitio web gratis y compatible con dispositivos móviles usando plantillas diseñadas profesionalmente. No se requiere tarjeta de crédito." [ref=f41e786]:
+              - paragraph: Comience con un sitio de una página generado automáticamente y luego publique rápidamente un sitio web gratis y compatible con dispositivos móviles usando plantillas diseñadas profesionalmente. No se requiere tarjeta de crédito.
+          - row [ref=f41e787]:
+            - generic [ref=f41e788]:
+              - cell [ref=f41e790] [cursor=pointer]:
+                - paragraph [ref=f41e791]: Hasta 500 registros DNS y subdominios con marca
+              - cell [ref=f41e792]
+            - cell "Cree direcciones web con su marca que pongan su nombre de dominio en todo, como facebook.sudominio.com para redes sociales, tienda.sudominio.com para su tienda o citas.sudominio.com para reservas, de modo que su marca aparezca en todos los lugares donde sus clientes lo encuentran." [ref=f41e794]:
+              - paragraph: Cree direcciones web con su marca que pongan su nombre de dominio en todo, como facebook.sudominio.com para redes sociales, tienda.sudominio.com para su tienda o citas.sudominio.com para reservas, de modo que su marca aparezca en todos los lugares donde sus clientes lo encuentran.
+          - row [ref=f41e795]:
+            - generic [ref=f41e796]:
+              - cell [ref=f41e798] [cursor=pointer]:
+                - paragraph [ref=f41e799]: Aplicación GoDaddy
+              - cell [ref=f41e800]
+            - cell "Diseñe publicaciones de marketing, logos y anuncios en su celular para ayudar a hacer crecer su presencia en línea y comenzar a vender más. Además, administre todo desde su celular." [ref=f41e802]:
+              - paragraph: Diseñe publicaciones de marketing, logos y anuncios en su celular para ayudar a hacer crecer su presencia en línea y comenzar a vender más. Además, administre todo desde su celular.
+          - row [ref=f41e803]:
+            - generic [ref=f41e804]:
+              - cell [ref=f41e806] [cursor=pointer]:
+                - paragraph [ref=f41e807]: Preparación de documentos para LLC
+              - cell [ref=f41e808]
+            - cell "Le ayuda a preparar documentos que establecen su empresa como una entidad legal separada de usted, lo cual puede ayudar a proteger sus bienes personales. Solo pague la tarifa requerida por su estado cuando esté listo para presentar." [ref=f41e810]:
+              - paragraph: Le ayuda a preparar documentos que establecen su empresa como una entidad legal separada de usted, lo cual puede ayudar a proteger sus bienes personales. Solo pague la tarifa requerida por su estado cuando esté listo para presentar.
+    - generic [ref=f41e812]:
+      - paragraph [ref=f41e813]:
+        - button "1, 2, 3, 4 Ver avisos legales" [ref=f41e814] [cursor=pointer]:
+          - generic:
+            - text: 1, 2, 3, 4
+            - strong: Ver avisos legales
+      - paragraph [ref=f41e815]: Nuestro equipo investigó las funciones disponibles en proveedores similares. Si encuentra alguna discrepancia con la información, háganoslo saber. Información recopilada en 7/6/2026.
+    - generic [ref=f41e819]:
+      - generic [ref=f41e821]:
+        - heading "Cómo usar la herramienta de búsqueda de nombres de dominio de GoDaddy" [level=2] [ref=f41e822]
+        - paragraph [ref=f41e825]: Con tecnología de IA, nuestra búsqueda de dominio te informará si el dominio que quieres está disponible y te mostrará otros nombres de dominios que podrían gustarte más. Para comenzar con la búsqueda de nombres de dominio y su registro, sigue estos pasos.
+      - list [ref=f41e828]:
+        - listitem [ref=f41e829]:
+          - paragraph [ref=f41e832]: Escribe tu dominio o tu idea en nuestra barra de búsqueda de dominios y mira las sugerencias.
+        - listitem [ref=f41e833]:
+          - paragraph [ref=f41e836]: Busca dominios fáciles de recordar, es decir, que sean cortos y no tengan números ni guiones.
+        - listitem [ref=f41e837]:
+          - paragraph [ref=f41e840]:
+            - text: Elige una extensión de dominio (la parte que va al final del nombre de dominio, como
+            - link ".net" [ref=f41e841] [cursor=pointer]:
+              - /url: https://www.godaddy.com/es/tlds/net-domain
+            - text: ","
+            - link ".org" [ref=f41e842] [cursor=pointer]:
+              - /url: https://www.godaddy.com/es/tlds/org-domain
+            - text: ","
+            - link ".com" [ref=f41e843] [cursor=pointer]:
+              - /url: https://www.godaddy.com/es/tlds/com-domain
+            - text: ","
+            - link ".ai" [ref=f41e844] [cursor=pointer]:
+              - /url: https://www.godaddy.com/es/tlds/ai-domain
+            - text: u otros
+            - link "gTLD disponibles" [ref=f41e845] [cursor=pointer]:
+              - /url: https://www.godaddy.com/es/dominios/dominios-genericos-gtld
+            - text: ).
+        - listitem [ref=f41e846]:
+          - paragraph [ref=f41e849]: Registra errores de ortografía y más de una extensión de dominio para proteger el nombre de tu marca.
+        - listitem [ref=f41e850]:
+          - paragraph [ref=f41e853]: Selecciona un dominio (o varios), agrégalo a tu carrito y realiza el pago.
+        - listitem [ref=f41e854]:
+          - paragraph [ref=f41e857]: Configura la renovación automática para que tu dominio no venza por accidente.
+    - generic [ref=f41e860]:
+      - generic [ref=f41e862]:
+        - heading "Obtén un dominio gratis con estos productos populares y confiables" [level=2] [ref=f41e863]
+        - paragraph [ref=f41e866]:
+          - text: Compra un
+          - link "Hospedaje web" [ref=f41e867] [cursor=pointer]:
+            - /url: https://www.godaddy.com/es/hosting/web-hosting
+          - text: anual, un plan anual de
+          - link "Hosting administrado para WordPress" [ref=f41e868] [cursor=pointer]:
+            - /url: https://www.godaddy.com/es/hosting/wordpress-hosting
+          - text: o un plan anual de
+          - link "Creador de páginas web" [ref=f41e869] [cursor=pointer]:
+            - /url: https://www.godaddy.com/es/paginas-web/creador-de-paginas-web
+          - text: de GoDaddy y calificarás automáticamente para obtener un dominio gratis.
+      - generic [ref=f41e870]:
+        - generic [ref=f41e871]:
+          - img "105668 Image 01" [ref=f41e873]
+          - generic [ref=f41e875]:
+            - heading "Hospedaje web" [level=3] [ref=f41e876]
+            - group [ref=f41e880]:
+              - link "Ver planes de hospedaje web" [ref=f41e882] [cursor=pointer]:
+                - /url: https://www.godaddy.com/es/hosting/web-hosting
+                - generic [ref=f41e883]: Ver planes
+        - generic [ref=f41e884]:
+          - img "105668 Image 02" [ref=f41e886]
+          - generic [ref=f41e888]:
+            - heading "Hosting administrado para WordPress" [level=3] [ref=f41e889]
+            - group [ref=f41e893]:
+              - link "Ver planes de Hosting administrado para WordPress" [ref=f41e895] [cursor=pointer]:
+                - /url: https://www.godaddy.com/es/hosting/wordpress-hosting
+                - generic [ref=f41e896]: Ver planes
+        - generic [ref=f41e897]:
+          - img "105668 Image 03" [ref=f41e899]
+          - generic [ref=f41e901]:
+            - heading "Creador de páginas web de GoDaddy" [level=3] [ref=f41e902]
+            - group [ref=f41e906]:
+              - link "Ver planes de Creador de páginas web" [ref=f41e908] [cursor=pointer]:
+                - /url: https://www.godaddy.com/es/paginas-web/creador-de-paginas-web
+                - generic [ref=f41e909]: Ver planes
+    - generic [ref=f41e911]:
+      - heading "Preguntas frecuentes sobre dominios" [level=2] [ref=f41e913]
+      - generic [ref=f41e915]:
+        - group [ref=f41e916] [cursor=pointer]:
+          - heading "¿Qué es un nombre de dominio y por qué necesito uno?" [level=3] [ref=f41e918]
+          - generic [ref=f41e922]:
+            - paragraph [ref=f41e923]: Un nombre de dominio es lo que las personas escriben en sus navegadores para encontrar un sitio web. Es parecido a como se utiliza la dirección de una calle para encontrar un edificio. Todos los sitios web, servidores o dispositivos digitales que estén conectados a Internet tienen una dirección IP asignada que puedes usar para verlos o visitarlos. Esta dirección IP es una larga cadena de números y letras que sería muy difícil de memorizar, por lo que un nombre de dominio es, simplemente, una versión fácil de recordar de esa dirección IP.
+            - paragraph [ref=f41e924]: Cuando escribes un nombre de dominio (como www.godaddy.com o www.google.com) en tu navegador, el sistema de nombre de dominio, o DNS, toma ese dominio y lo traduce a su dirección IP, lo que le permite encontrar el sitio web asociado.
+            - paragraph [ref=f41e925]: "Tener tu propio nombre de dominio puede ayudar a que las personas que te buscan a ti o a tu marca en línea te vean como una empresa más legítima. Con un nombre de dominio podrás:"
+            - list [ref=f41e926]:
+              - listitem [ref=f41e927]:
+                - link "Crea un sitio web" [ref=f41e928]:
+                  - /url: https://www.godaddy.com/es/paginas-web/creador-de-paginas-web
+                - text: para tu escaparate o tu negocio de comercio electrónico
+              - listitem [ref=f41e929]:
+                - link "Crea un correo electrónico profesional" [ref=f41e930]:
+                  - /url: https://www.godaddy.com/es/email/correo-empresarial
+                - text: con tu nombre de dominio
+            - paragraph [ref=f41e931]:
+              - text: Como registrador líder a nivel mundial, GoDaddy puede ayudarte a encontrar el nombre de dominio que mejor se adapte a tus necesidades. Puedes usar nuestra herramienta de búsqueda en la parte superior de la página para comprobar la disponibilidad de un nombre de dominio o usar
+              - link "GoDaddy Airo" [ref=f41e932]:
+                - /url: https://www.godaddy.com/es/airo
+              - text: para poner en marcha tu idea en línea. No importa en qué fase del proceso te encuentres, podemos ayudarte a crecer y a desarrollar tu presencia en línea. Desde
+              - link "servicios de web hosting" [ref=f41e933]:
+                - /url: https://www.godaddy.com/es/hosting/web-hosting
+              - text: (que incluyen certificados SSL gratuitos) hasta un
+              - link "Generador de logos" [ref=f41e934]:
+                - /url: https://www.godaddy.com/es/crear-logo
+              - text: que te ayudará a definir tu marca, y una
+              - link "Suite de marketing digital" [ref=f41e935]:
+                - /url: https://www.godaddy.com/es/marketing-digital/marketing-digital
+              - text: que te facilita la gestión de tus redes sociales, el SEO y mucho más. Además, para todos nuestros productos y servicios, cuentas con la ayuda de nuestro increíble (y galardonado) equipo de asistencia técnica.
+        - group [ref=f41e936] [cursor=pointer]:
+          - heading "¿Cómo saber si un dominio está disponible?" [level=3] [ref=f41e938]
+          - generic [ref=f41e942]:
+            - paragraph [ref=f41e943]: Para comprobar si un nombre de dominio está disponible, solo tienes que escribirlo en la barra de búsqueda de GoDaddy y te diremos al instante si está libre o si ya lo tiene otra persona.
+            - list [ref=f41e944]:
+              - listitem [ref=f41e945]:
+                - text: Si ya está registrado, puedes usar nuestra
+                - link "Herramienta de búsqueda de WHOIS" [ref=f41e946]:
+                  - /url: https://www.godaddy.com/es/whois
+                - text: para averiguar quién es el propietario y sus datos de contacto del nombre de dominio que te interesa, y luego intentar ponerte en contacto con él usando esa información.
+              - listitem [ref=f41e947]:
+                - text: O bien, puedes probar nuestro
+                - link "Servicio de gestor de dominios" [ref=f41e948]:
+                  - /url: https://www.godaddy.com/es/domains/domain-broker
+                - text: ", en el que negociamos la adquisición del dominio con su propietario actual en tu nombre."
+        - group [ref=f41e949] [cursor=pointer]:
+          - heading "¿Qué es el registro de nombres de dominios?" [level=3] [ref=f41e951]
+          - paragraph [ref=f41e956]:
+            - text: El registro de nombre de dominio es el proceso de buscar una dirección web (como GoDaddy.com o LilysBikes.com) y, a continuación, inscribirse para poder usarla. Técnicamente no eres el propietario del dominio, pero una vez que lo registraste será tuyo por el tiempo que quieras mientras sigas pagando la tarifa de registro anual. Si dejas que se venza el registro del dominio, el dominio pasará a estar disponible para que otros lo registren. Para evitar que se te caduque la suscripción sin querer, GoDaddy ofrece una opción de renovación automática para todos los clientes. Para una capa adicional de protección, nuestra
+            - link "Protección de dominio Ultimate" [ref=f41e957]:
+              - /url: https://www.godaddy.com/es/domains/domain-protection
+            - text: (un complemento opcional) te permite conservar tu dominio durante 90 días más tras su vencimiento.
+        - group [ref=f41e958] [cursor=pointer]:
+          - heading "¿Qué incluye el registro del dominio de GoDaddy?" [level=3] [ref=f41e960]
+          - generic [ref=f41e964]:
+            - paragraph [ref=f41e965]: "Cada dominio registrado en GoDaddy incluye las siguientes características:"
+            - list [ref=f41e966]:
+              - listitem [ref=f41e967]:
+                - strong [ref=f41e968]: "Privacidad de dominio gratis:"
+                - text: Nuestra privacidad integrada ayuda a proteger tu información personal.
+              - listitem [ref=f41e969]:
+                - strong [ref=f41e970]: "Redirección de dominio gratis:"
+                - text: Nuestras herramientas fáciles de usar te permiten redirigir tu dominio a un sitio web existente.
+              - listitem [ref=f41e971]:
+                - strong [ref=f41e972]: "DNSSEC gratis:"
+                - text: DNSSEC te brinda una capa adicional de seguridad y mejor protección contra ciberataques.
+              - listitem [ref=f41e973]:
+                - strong [ref=f41e974]: "Atención al cliente galardonada:"
+                - text: Nuestros Guías están disponibles para ayudarte con cualquier duda que tengas.
+        - group [ref=f41e975] [cursor=pointer]:
+          - heading "¿Cuánto tardo en registrar mi nombre de dominio? ¿Cómo renuevo mi dominio?" [level=3] [ref=f41e977]
+          - generic [ref=f41e981]:
+            - paragraph [ref=f41e982]:
+              - text: La duración del registro del dominio puede variar según la extensión de dominio que compres. Para la mayoría de las extensiones, los registradores de nombres de dominio permiten que los clientes registren dominios por hasta 10 años a la vez. Normalmente, los clientes registran dominios por entre uno y tres años. Algunos dominios premium y gTLD (como
+              - link ".au" [ref=f41e983]:
+                - /url: https://www.godaddy.com/es/tlds/au-domain
+              - text: "y"
+              - link ".nl" [ref=f41e984]:
+                - /url: https://www.godaddy.com/es/tlds/nl-domain
+              - text: ) tienen plazos de registro más cortos.
+            - paragraph [ref=f41e985]:
+              - text: Si quieres ampliar tu registro del dominio, renovar tu dominio con GoDaddy es muy fácil. Puedes elegir entre
+              - link "renovar manualmente" [ref=f41e986]:
+                - /url: https://www.godaddy.com/es/help/manually-renew-my-products-or-services-725
+              - text: o configurar la
+              - link "renovación automática" [ref=f41e987]:
+                - /url: https://www.godaddy.com/es/help/turn-on-auto-renew-20007
+              - text: ", lo que te ayuda a asegurarte de que el nombre de tu sitio web siga registrado a tu nombre."
+        - group [ref=f41e988] [cursor=pointer]:
+          - heading "¿Cómo obtengo un nombre de dominio gratis?" [level=3] [ref=f41e990]
+          - generic [ref=f41e994]:
+            - paragraph [ref=f41e995]:
+              - text: Contrata un plan anual
+              - link "Hospedaje web" [ref=f41e996]:
+                - /url: https://www.godaddy.com/es/hosting/web-hosting
+              - text: o cualquier plan anual
+              - link "Hosting administrado para WordPress" [ref=f41e997]:
+                - /url: https://www.godaddy.com/es/hosting/wordpress-hosting
+              - text: de GoDaddy y obtendrás automáticamente un
+              - link "dominio gratis" [ref=f41e998]:
+                - /url: https://www.godaddy.com/es/domains/free-domain
+              - text: .
+            - paragraph [ref=f41e999]: Una vez que hagas clic en Agregar al carrito para un plan de hosting o de WordPress, se te dará la opción de seleccionar plazos mensuales o anuales. Asegúrate de elegir un plazo anual si quieres obtener el dominio gratis.
+            - paragraph [ref=f41e1000]: Haz clic en Continuar con estas opciones en la parte inferior de la página para pasar al siguiente paso. Aquí verás una barra de búsqueda para buscar el nombre de dominio que deseas.
+            - paragraph [ref=f41e1001]: Una vez que hayas encontrado el nombre que deseas, solo tienes que agregar el dominio a tu carrito y continuar con el pago.
+        - group [ref=f41e1002] [cursor=pointer]:
+          - heading "¿Cómo elegir un registrador de dominios?" [level=3] [ref=f41e1004]
+          - generic [ref=f41e1008]:
+            - paragraph [ref=f41e1009]: "Cuando debas decidir si quieres registrar un dominio, ten en cuenta los siguientes puntos:"
+            - list [ref=f41e1010]:
+              - listitem [ref=f41e1011]:
+                - strong [ref=f41e1012]: "Precios:"
+                - text: presta atención tanto al precio inicial como al de la renovación.
+              - listitem [ref=f41e1013]:
+                - strong [ref=f41e1014]: "Privacidad:"
+                - text: busca un registrador que incluya la protección de la privacidad en el registro del dominio y que no la ofrezca como un servicio adicional de pago.
+              - listitem [ref=f41e1015]:
+                - strong [ref=f41e1016]: "Atención al cliente:"
+                - text: fíjate en qué canales de comunicación ofrecen (teléfono, SMS, chat, correo electrónico) y si están disponibles las 24 horas del día, los 7 días de la semana, o solo en un horario concreto.
+              - listitem [ref=f41e1017]:
+                - strong [ref=f41e1018]: "Extensiones de dominio disponibles:"
+                - text: si quieres algo más que un .com, .org o .net, fíjate en cuántos dominios de primer nivel ofrece el registrador.
+              - listitem [ref=f41e1019]:
+                - strong [ref=f41e1020]: "Servicios adicionales:"
+                - text: si quieres crear tu presencia en línea, comprueba si el registrador ofrece otros servicios, como una tienda online o un creador de páginas web, Hosting, certificados SSL, etc.
+              - listitem [ref=f41e1021]:
+                - strong [ref=f41e1022]: "Reputación:"
+                - text: la trayectoria de una empresa habla por sí sola. Echa un vistazo a las opiniones de los clientes y a las valoraciones de Trustpilot. Además, asegúrate de que la empresa esté acreditada por la ICANN.
+            - paragraph [ref=f41e1023]: Si lo piensas bien, verás que hay una razón por la que GoDaddy es el registrador de dominios preferido por millones de personas en todo el mundo.
+        - group [ref=f41e1024] [cursor=pointer]:
+          - heading "¿Por qué debería comprar un nombre de dominio en GoDaddy?" [level=3] [ref=f41e1026]
+          - generic [ref=f41e1030]:
+            - paragraph [ref=f41e1031]: "GoDaddy es el líder mundial en dominios, y contamos con la confianza de más de Más de 20 millones de clientes en todo el mundo. Pero nos destacamos como una excelente opción para la compra de tu dominio por varios motivos:"
+            - list [ref=f41e1032]:
+              - listitem [ref=f41e1033]:
+                - strong [ref=f41e1034]: "Amplia selección de extensiones de dominio:"
+                - text: siempre podemos ayudarte a registrar un dominio .com genial, pero GoDaddy también ofrece más de 500 extensiones de dominio —como
+                - link ".agency" [ref=f41e1035]:
+                  - /url: https://www.godaddy.com/es/tlds/agency-domain
+                - text: ","
+                - link ".pro" [ref=f41e1036]:
+                  - /url: https://www.godaddy.com/es/tlds/pro-domain
+                - text: o
+                - link ".store" [ref=f41e1037]:
+                  - /url: https://www.godaddy.com/es/tlds/store-domain
+                - text: "- entre las que puedes elegir para que tu marca destaque en línea."
+              - listitem [ref=f41e1038]:
+                - strong [ref=f41e1039]: "Privacidad de dominio gratuita:"
+                - text: GoDaddy protege tu información personal ofreciéndote privacidad de dominio gratuita al comprar tu dominio. Esto significa que tu información no aparecerá públicamente en la Base de datos WHOIS, sin ningún coste adicional para ti.
+              - listitem [ref=f41e1040]:
+                - strong [ref=f41e1041]: "Una amplia gama de servicios:"
+                - text: GoDaddy es más que un simple registrador de dominios. Ofrecemos una amplia gama de servicios que necesitas para triunfar en línea. Desde
+                - link "web Hosting que es hasta 40% más rápido" [ref=f41e1042]:
+                  - /url: https://www.godaddy.com/es/hosting/web-hosting
+                - text: "y"
+                - link "Certificados SSL que inspiran confianza" [ref=f41e1043]:
+                  - /url: https://www.godaddy.com/es/seguridad-web/certificado-ssl
+                - text: hasta un
+                - link "creador de páginas web fácil de usar" [ref=f41e1044]:
+                  - /url: https://www.godaddy.com/es/paginas-web/creador-de-paginas-web
+                - text: ","
+                - link "correo profesional con dominio propio" [ref=f41e1045]:
+                  - /url: https://www.godaddy.com/es/email/correo-empresarial
+                - text: ", y"
+                - link "herramientas de marketing para promocionar tu marca" [ref=f41e1046]:
+                  - /url: https://www.godaddy.com/es/marketing-digital/marketing-digital
+                - text: ", con GoDaddy encontrarás todo lo que necesitas para crecer en línea."
+              - listitem [ref=f41e1047]:
+                - strong [ref=f41e1048]: "Un servicio de atención al cliente galardonado:"
+                - text: en GoDaddy queremos asegurarnos de que tengas éxito en línea, y nuestros expertos en atención al cliente, siempre amables y eficaces, están aquí para ayudarte a conseguirlo. Aunque todavía no seas cliente, estaremos encantados de charlar contigo y ayudarte a encontrar la información que buscas.
+        - group [ref=f41e1049] [cursor=pointer]:
+          - heading "¿Debo comprar la Protección de dominios para mi nombre de dominio?" [level=3] [ref=f41e1051]
+          - generic [ref=f41e1055]:
+            - paragraph [ref=f41e1056]: Para proteger mejor tu dominio (y tu marca en Internet), GoDaddy ofrece planes de protección de dominios que protegen tu dominio frente a riesgos en línea y acciones no autorizadas. Con un plan de Protección de dominios, recibirás notificaciones cuando se realicen cambios importantes en tu dominio y podrás verificar si las solicitudes, como una transferencia de dominios, es válida o no. Con los planes de protección de dominios de GoDaddy, tendrás la tranquilidad de saber que tu presencia en línea está protegida, para que puedas centrarte en desarrollar y hacer crecer tu negocio.
+            - paragraph [ref=f41e1057]:
+              - link "Echa un vistazo a los planes de protección de dominios de GoDaddy." [ref=f41e1058]:
+                - /url: https://www.godaddy.com/es/domains/domain-protection
+        - group [ref=f41e1059] [cursor=pointer]:
+          - heading "¿Qué se incluye gratis con mi dominio?" [level=3] [ref=f41e1061]
+          - list [ref=f41e1066]:
+            - listitem [ref=f41e1067]:
+              - strong [ref=f41e1068]: "Seguridad DMARC automática y gratuita:"
+              - text: con DMARC activado, los proveedores de correo electrónico como Gmail y Yahoo reciben automáticamente la orden de bloquear o poner en cuarentena cualquier correo electrónico que no supere tus controles de seguridad, lo que significa que los correos de los estafadores nunca llegan a la bandeja de entrada del destinatario.
+            - listitem [ref=f41e1069]:
+              - strong [ref=f41e1070]: "Certificado SSL gratuito con el plan de Hosting:"
+              - text: se incluye un certificado SSL de GoDaddy de forma gratuita durante toda la vigencia de tu plan de Hosting. Nuestros certificados no tienen complicaciones y se instalan, validan y renuevan automáticamente.
+            - listitem [ref=f41e1071]:
+              - strong [ref=f41e1072]: "Redireccionamiento gratuito de URL de dominio:"
+              - text: nuestras herramientas, muy fáciles de usar, te permiten redirigir tu dominio a un sitio web ya existente.
+            - listitem [ref=f41e1073]:
+              - strong [ref=f41e1074]: "Página web con prueba gratis y plantillas profesionales:"
+              - text: prueba nuestro creador de páginas web, sin necesidad de tarjeta de crédito.
+    - paragraph [ref=f41e1077]:
+      - button "**, ***, ^ Avisos legales" [ref=f41e1078] [cursor=pointer]:
+        - generic:
+          - text: "**, ***, ^"
+          - strong: Avisos legales
+    - list [ref=f41e1080]:
+      - listitem [ref=f41e1081]:
+        - link [ref=f41e1082] [cursor=pointer]:
+          - /url: https://www.godaddy.com/es
+          - img "GoDaddy" [ref=f41e1083]
+      - listitem [ref=f41e1087]:
+        - generic [ref=f41e1088]: Dominios
+  - contentinfo [ref=f41e1089]:
+    - link "Saltar al contenido principal" [ref=f41e1090] [cursor=pointer]:
+      - /url: "#main"
+    - generic [ref=f41e1093]:
+      - navigation [ref=f41e1094]:
+        - list [ref=f41e1095]:
+          - listitem [ref=f41e1096]:
+            - button "Acerca de GoDaddy +" [ref=f41e1098] [cursor=pointer]
+          - listitem [ref=f41e1099]:
+            - button "Asistencia técnica +" [ref=f41e1101] [cursor=pointer]
+          - listitem [ref=f41e1102]:
+            - button "Recursos +" [ref=f41e1104] [cursor=pointer]
+          - listitem [ref=f41e1105]:
+            - button "Programas de socios +" [ref=f41e1107] [cursor=pointer]
+          - listitem [ref=f41e1108]:
+            - button "Cuenta +" [ref=f41e1110] [cursor=pointer]
+          - listitem [ref=f41e1111]:
+            - button "Compras +" [ref=f41e1113] [cursor=pointer]
+      - generic [ref=f41e1114]:
+        - link "GoDaddy Home Page" [ref=f41e1115] [cursor=pointer]:
+          - /url: /
+        - separator [ref=f41e1118]
+        - generic [ref=f41e1119]:
+          - button "Selector de idioma de contenido. La selección actual es Estados Unidos - Español." [ref=f41e1122] [cursor=pointer]: Estados Unidos - Español
+          - button "Selector de divisas. La selección actual es USD $." [ref=f41e1126] [cursor=pointer]: USD $
+        - list [ref=f41e1129]:
+          - listitem [ref=f41e1130]:
+            - link "GoDaddy en Facebook" [ref=f41e1131] [cursor=pointer]:
+              - /url: https://www.facebook.com/godaddy
+          - listitem [ref=f41e1133]:
+            - link "GoDaddy en Instagram" [ref=f41e1134] [cursor=pointer]:
+              - /url: https://www.instagram.com/godaddy
+          - listitem [ref=f41e1136]:
+            - link "GoDaddy en TikTok" [ref=f41e1137] [cursor=pointer]:
+              - /url: https://www.tiktok.com/@godaddy?lang=en
+          - listitem [ref=f41e1139]:
+            - link "GoDaddy en Twitter" [ref=f41e1140] [cursor=pointer]:
+              - /url: https://www.twitter.com/godaddy
+          - listitem [ref=f41e1142]:
+            - link "GoDaddy en YouTube" [ref=f41e1143] [cursor=pointer]:
+              - /url: https://www.youtube.com/channel/UCgH_SmWw9WianYyOB5Y6tEA
+      - generic [ref=f41e1145]:
+        - navigation [ref=f41e1146]:
+          - list [ref=f41e1147]:
+            - listitem [ref=f41e1148]:
+              - link "Legal" [ref=f41e1149] [cursor=pointer]:
+                - /url: https://www.godaddy.com/es/legal/agreements
+            - listitem [ref=f41e1150]:
+              - link "Política de privacidad" [ref=f41e1151] [cursor=pointer]:
+                - /url: https://www.godaddy.com/es/legal/agreements/privacy-policy
+            - listitem [ref=f41e1152]:
+              - link "Cookies" [ref=f41e1153] [cursor=pointer]:
+                - /url: https://www.godaddy.com/es/legal/agreements/cookie-policy
+        - link "No venda mi información personal" [ref=f41e1155] [cursor=pointer]:
+          - /url: https://www.godaddy.com/es/legal/agreements/cookie-policy
+        - generic [ref=f41e1156]: Copyright © 1999 - 2026 GoDaddy Operating Company, LLC. Todos los derechos reservados. La marca GoDaddy es una marca registrada de GoDaddy Operating Company, LLC en los EE. UU. y otros países. El logo “GO” es una marca comercial registrada de GoDaddy.com, LLC en los EE. UU.
+        - paragraph [ref=f41e1158]:
+          - text: El uso de este sitio está sujeto a las condiciones de uso expresas. Al utilizar este sitio, tú indicas que aceptas cumplir con estos
+          - link "Términos universales del servicio" [ref=f41e1159] [cursor=pointer]:
+            - /url: https://www.godaddy.com/legal/agreements/universal-terms-of-service-agreement
+          - text: .
+  - alert [ref=f41e1160]

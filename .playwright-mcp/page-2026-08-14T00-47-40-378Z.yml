@@ -1,0 +1,217 @@
+- generic [active] [ref=f56e1]:
+  - banner [ref=f56e2]:
+    - link "Saltar al contenido principal" [ref=f56e3] [cursor=pointer]:
+      - /url: "#main"
+    - generic [ref=f56e6]:
+      - generic [ref=f56e7]:
+        - link [ref=f56e9] [cursor=pointer]:
+          - /url: https://www.godaddy.com/es
+          - figure "GoDaddy" [ref=f56e10]
+        - navigation "Navigation" [ref=f56e13]:
+          - button "Open Menu" [ref=f56e14] [cursor=pointer]
+          - generic [ref=f56e16]:
+            - generic [ref=f56e17]:
+              - link [ref=f56e20] [cursor=pointer]:
+                - /url: https://www.godaddy.com/es
+                - figure "GoDaddy" [ref=f56e21]
+              - list [ref=f56e24]:
+                - listitem [ref=f56e25] [cursor=pointer]:
+                  - button [ref=f56e26]:
+                    - generic [ref=f56e27]: Dominios
+                - listitem [ref=f56e29] [cursor=pointer]:
+                  - button [ref=f56e30]:
+                    - generic [ref=f56e31]: Sitios web
+                - listitem [ref=f56e33] [cursor=pointer]:
+                  - link [ref=f56e34]:
+                    - /url: https://www.godaddy.com/es/email
+                    - text: Correo electrónico
+                - listitem [ref=f56e35] [cursor=pointer]:
+                  - button [ref=f56e36]:
+                    - generic [ref=f56e37]: Hosting
+                - listitem [ref=f56e39] [cursor=pointer]:
+                  - button [ref=f56e40]:
+                    - generic [ref=f56e41]: Marketing
+                - listitem [ref=f56e43] [cursor=pointer]:
+                  - button [ref=f56e44]:
+                    - generic [ref=f56e45]: Comercio
+                - listitem [ref=f56e47] [cursor=pointer]:
+                  - link [ref=f56e48]:
+                    - /url: https://www.godaddy.com/es/seguridad-web/certificado-ssl
+                    - text: Certificados SSL
+                - listitem [ref=f56e49] [cursor=pointer]:
+                  - link [ref=f56e50]:
+                    - /url: https://www.godaddy.com/es/airo/ai-builder
+                    - text: Airo AI Builder
+                - listitem [ref=f56e51] [cursor=pointer]:
+                  - link [ref=f56e52]:
+                    - /url: https://www.godaddy.com/es/precios
+                    - text: Precios
+            - button "Close" [ref=f56e53] [cursor=pointer]: ×
+      - generic [ref=f56e55]:
+        - link "Ofertas" [ref=f56e56] [cursor=pointer]:
+          - /url: https://www.godaddy.com/es/great-deals
+        - group [ref=f56e58]:
+          - generic "Inicio de sesión" [ref=f56e59] [cursor=pointer]
+        - link [ref=f56e62] [cursor=pointer]:
+          - /url: https://cart.godaddy.com/
+  - main [ref=f56e65]:
+    - generic [ref=f56e70]:
+      - heading "Página no encontrada 404" [level=1] [ref=f56e71]
+      - heading "El enlace está roto, pero aún podemos ser amigos" [level=2] [ref=f56e72]
+      - paragraph [ref=f56e75]: Mientras está aquí, consiga una gran oferta. O regrese al inicio e intente de nuevo.
+      - group [ref=f56e78]:
+        - generic [ref=f56e79]:
+          - link "Regresar a la página de ofertas de GoDaddy" [ref=f56e80] [cursor=pointer]:
+            - /url: https://www.godaddy.com/great-deals
+            - generic [ref=f56e81]: Encuentra tu oferta
+          - link "Regresar a la página principal de GoDaddy" [ref=f56e82] [cursor=pointer]:
+            - /url: https://www.godaddy.com
+            - generic [ref=f56e83]: Regresar a la página principal
+    - region "Carousel" [ref=f56e89]:
+      - generic [ref=f56e90]:
+        - heading "Today's deals" [level=2] [ref=f56e92]
+        - group "Carousel navigation"
+      - group "Slide 1 of 10" [ref=f56e93]:
+        - group "1 of 10" [ref=f56e94]
+        - group "2 of 10" [ref=f56e114]
+        - group "3 of 10" [ref=f56e134]
+        - group "4 of 10" [ref=f56e154]
+        - group "5 of 10" [ref=f56e174]
+        - group "6 of 10" [ref=f56e194]
+        - group "7 of 10" [ref=f56e214]
+        - group "8 of 10" [ref=f56e234]
+        - group "9 of 10" [ref=f56e254]
+        - group "10 of 10" [ref=f56e274]
+      - tablist "Carousel position indicators" [ref=f56e294]:
+        - tab "Slide 1 of 10" [selected] [ref=f56e295]
+        - tab "Slide 2 of 10" [ref=f56e296]
+        - tab "Slide 3 of 10" [ref=f56e297]
+        - tab "Slide 4 of 10" [ref=f56e298]
+        - tab "Slide 5 of 10" [ref=f56e299]
+        - tab "Slide 6 of 10" [ref=f56e300]
+        - tab "Slide 7 of 10" [ref=f56e301]
+        - tab "Slide 8 of 10" [ref=f56e302]
+        - tab "Slide 9 of 10" [ref=f56e303]
+        - tab "Slide 10 of 10" [ref=f56e304]
+    - region "Carousel" [ref=f56e310]:
+      - heading "Our featured partners" [level=2] [ref=f56e313]
+      - group "Slide 1 of 1" [ref=f56e314]:
+        - group "1 of 1" [ref=f56e315]:
+          - generic [ref=f56e317]:
+            - img "creative" [ref=f56e319]
+            - generic [ref=f56e320]:
+              - heading "Level Up Your Writing with Grammarly Pro" [level=3] [ref=f56e322]
+              - paragraph [ref=f56e324]: Grammarly Pro features advanced AI writing assistance with real-time feedback. Tailored suggestions ensure mistake-free communication, making it essential for professional writing every time.
+              - generic [ref=f56e326]:
+                - paragraph [ref=f56e327]: Powered by
+                - img "logo" [ref=f56e328]
+              - link "Buy Now - Level Up Your Writing with Grammarly Pro" [ref=f56e330] [cursor=pointer]:
+                - /url: https://ms.godaddy.com/r?e=eyJ2IjoiMS4xNCIsImF2Ijo1ODgwNjYyLCJhdCI6MjQ0NywiYnQiOjAsImNtIjo2NTkyNTIwMjEsImNoIjo1NDQ0NSwiY2siOnt9LCJjciI6OTE2MTI1MTQxLCJkaSI6IjY4M2ZhOTA3MGUzNjRlZGFhZTc5YWVkYzczMTE4MzljIiwiZGoiOjAsImlpIjoiMDdkNmI4ZTcyZTMzNGI1OThiMGMwMGZiZGJmM2I1MDAiLCJsZSI6WzJdLCJkbSI6MywiZmMiOjEwOTIyMzI1ODksImZsIjo4NjMzNzQ0OTEsImlwIjoiMTQ4LjIyNy4xMDUuMCIsIm53IjoxMDY2MywicGMiOjEsIm9wIjoxLCJtcCI6MSwiZWMiOjEsImdtIjowLCJlcCI6bnVsbCwicHIiOjI1MDgwNCwicnQiOjIsInJzIjo1MDAsInNhIjoiOTYiLCJzYiI6ImktMDg2NDNhMDJjMWI1MTA3ZTAiLCJzcCI6MjU4OTAxNCwic3QiOjEzMjI2NzAsInVrIjoiYzhiMWNkMGEtNWU1MC00ZTFjLWI5ZDQtM2Y4YWE5ZTM0NGMzIiwiem4iOjM3ODc0MCwiem0iOlszNzg3NDBdLCJ0cyI6MTc4NjY2ODQ1OTUzMywicG4iOiJmb3MtNDA0LXBhcnRuZXJzIiwiZ2MiOnRydWUsImdDIjp0cnVlLCJncyI6Im5vbmUiLCJ0eiI6IkFtZXJpY2EvVG9yb250byIsInVyIjoiaHR0cHM6Ly9ncmFtbWFybHkucHhmLmlvL2MvNTU3MzQ5NS8yNzUxMDM2LzMxNTUxIn0&s=dFQ2WaTg5-pxlHZgOPK6h362Xkg&omsId=baseline&psName=VERTICAL&uawVersion=1.0.3&impressionId=07d6b8e72e334b598b0c00fbdbf3b500
+                - generic [ref=f56e331]: Buy Now
+    - generic [ref=f56e335]:
+      - generic [ref=f56e337]:
+        - heading "Herramientas para tu primera idea, tu primera venta y mucho más allá." [level=2] [ref=f56e338]
+        - paragraph [ref=f56e341]: Todas las herramientas y el soporte que necesitas para dar los primeros pasos con tu negocio.
+      - generic [ref=f56e342]:
+        - generic [ref=f56e343]:
+          - img "multi feat domains 556x420 2x" [ref=f56e345]
+          - generic [ref=f56e347]:
+            - heading "Dominios" [level=3] [ref=f56e348]
+            - paragraph [ref=f56e351]: "Consigue el dominio perfecto: permite que las personas sepan de inmediato por qué estás en línea (y por qué eres increíble)."
+            - group [ref=f56e354]:
+              - link "Comienza con dominios" [ref=f56e356] [cursor=pointer]:
+                - /url: https://www.godaddy.com/es/dominios
+                - generic [ref=f56e357]: Comenzar
+        - generic [ref=f56e358]:
+          - img "multi feat websites 556x420 2x" [ref=f56e360]
+          - generic [ref=f56e362]:
+            - heading "Sitios web" [level=3] [ref=f56e363]
+            - paragraph [ref=f56e366]: Ya sea que lo diseñes tú mismo o lo dejes en manos de nuestros expertos, tenemos lo que necesitas para obtener el sitio web que quieres.
+            - group [ref=f56e369]:
+              - link "Comienza con un sitio web" [ref=f56e371] [cursor=pointer]:
+                - /url: https://www.godaddy.com/es/paginas-web
+                - generic [ref=f56e372]: Comenzar
+        - generic [ref=f56e373]:
+          - img "multi feat hosting 556x420 2x" [ref=f56e375]
+          - generic [ref=f56e377]:
+            - heading "Hosting" [level=3] [ref=f56e378]
+            - paragraph [ref=f56e381]: Dale a tu sitio el hogar que merece. Con certificado SSL gratis, tiempo de actividad garantizado del 99.9% y soporte de expertos 24/7, tu sitio no podría pedir más.
+            - group [ref=f56e384]:
+              - link "Comienza con hosting" [ref=f56e386] [cursor=pointer]:
+                - /url: https://www.godaddy.com/es/servicio-hosting
+                - generic [ref=f56e387]: Comenzar
+    - generic [ref=f56e389]:
+      - paragraph [ref=f56e390]:
+        - button "Consulta las limitaciones del producto y las políticas legales" [ref=f56e391] [cursor=pointer]:
+          - generic:
+            - strong: Consulta las limitaciones del producto y las políticas legales
+      - paragraph [ref=f56e392]: Los logotipos y marcas de terceros son marcas registradas de sus respectivos propietarios. Todos los derechos reservados.
+    - list [ref=f56e394]:
+      - listitem [ref=f56e395]:
+        - link [ref=f56e396] [cursor=pointer]:
+          - /url: https://www.godaddy.com/es
+          - img "GoDaddy" [ref=f56e397]
+      - listitem [ref=f56e401]:
+        - generic [ref=f56e402]: GoDaddy 404
+  - contentinfo [ref=f56e403]:
+    - link "Saltar al contenido principal" [ref=f56e404] [cursor=pointer]:
+      - /url: "#main"
+    - generic [ref=f56e407]:
+      - navigation [ref=f56e408]:
+        - list [ref=f56e409]:
+          - listitem [ref=f56e410]:
+            - button "Acerca de GoDaddy +" [ref=f56e412] [cursor=pointer]
+          - listitem [ref=f56e413]:
+            - button "Asistencia técnica +" [ref=f56e415] [cursor=pointer]
+          - listitem [ref=f56e416]:
+            - button "Recursos +" [ref=f56e418] [cursor=pointer]
+          - listitem [ref=f56e419]:
+            - button "Programas de socios +" [ref=f56e421] [cursor=pointer]
+          - listitem [ref=f56e422]:
+            - button "Cuenta +" [ref=f56e424] [cursor=pointer]
+          - listitem [ref=f56e425]:
+            - button "Compras +" [ref=f56e427] [cursor=pointer]
+      - generic [ref=f56e428]:
+        - link "GoDaddy Home Page" [ref=f56e429] [cursor=pointer]:
+          - /url: /
+        - separator [ref=f56e432]
+        - generic [ref=f56e433]:
+          - button "Selector de idioma de contenido. La selección actual es Estados Unidos - Español." [ref=f56e436] [cursor=pointer]: Estados Unidos - Español
+          - button "Selector de divisas. La selección actual es USD $." [ref=f56e440] [cursor=pointer]: USD $
+        - list [ref=f56e443]:
+          - listitem [ref=f56e444]:
+            - link "GoDaddy en Facebook" [ref=f56e445] [cursor=pointer]:
+              - /url: https://www.facebook.com/godaddy
+          - listitem [ref=f56e447]:
+            - link "GoDaddy en Instagram" [ref=f56e448] [cursor=pointer]:
+              - /url: https://www.instagram.com/godaddy
+          - listitem [ref=f56e450]:
+            - link "GoDaddy en TikTok" [ref=f56e451] [cursor=pointer]:
+              - /url: https://www.tiktok.com/@godaddy?lang=en
+          - listitem [ref=f56e453]:
+            - link "GoDaddy en Twitter" [ref=f56e454] [cursor=pointer]:
+              - /url: https://www.twitter.com/godaddy
+          - listitem [ref=f56e456]:
+            - link "GoDaddy en YouTube" [ref=f56e457] [cursor=pointer]:
+              - /url: https://www.youtube.com/channel/UCgH_SmWw9WianYyOB5Y6tEA
+      - generic [ref=f56e459]:
+        - navigation [ref=f56e460]:
+          - list [ref=f56e461]:
+            - listitem [ref=f56e462]:
+              - link "Legal" [ref=f56e463] [cursor=pointer]:
+                - /url: https://www.godaddy.com/es/legal/agreements
+            - listitem [ref=f56e464]:
+              - link "Política de privacidad" [ref=f56e465] [cursor=pointer]:
+                - /url: https://www.godaddy.com/es/legal/agreements/privacy-policy
+            - listitem [ref=f56e466]:
+              - link "Cookies" [ref=f56e467] [cursor=pointer]:
+                - /url: https://www.godaddy.com/es/legal/agreements/cookie-policy
+        - link "No venda mi información personal" [ref=f56e469] [cursor=pointer]:
+          - /url: https://www.godaddy.com/es/legal/agreements/cookie-policy
+        - generic [ref=f56e470]: Copyright © 1999 - 2026 GoDaddy Operating Company, LLC. Todos los derechos reservados. La marca GoDaddy es una marca registrada de GoDaddy Operating Company, LLC en los EE. UU. y otros países. El logo “GO” es una marca comercial registrada de GoDaddy.com, LLC en los EE. UU.
+        - paragraph [ref=f56e472]:
+          - text: El uso de este sitio está sujeto a las condiciones de uso expresas. Al utilizar este sitio, tú indicas que aceptas cumplir con estos
+          - link "Términos universales del servicio" [ref=f56e473] [cursor=pointer]:
+            - /url: https://www.godaddy.com/legal/agreements/universal-terms-of-service-agreement
+          - text: .
+  - alert [ref=f56e474]

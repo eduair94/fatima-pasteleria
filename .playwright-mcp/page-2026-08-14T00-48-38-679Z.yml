@@ -1,0 +1,46 @@
+- generic [active] [ref=f78e1]:
+  - link "Skip to content":
+    - /url: "#geist-skip-nav"
+  - generic [ref=f78e2]:
+    - banner [ref=f78e3]:
+      - generic [ref=f78e5]:
+        - link [ref=f78e6] [cursor=pointer]:
+          - /url: /home
+          - img "Vercel Logo" [ref=f78e7]
+        - link "Domains" [ref=f78e11] [cursor=pointer]:
+          - /url: /domains
+      - searchbox "Search" [ref=f78e15]
+      - generic [ref=f78e23]:
+        - button "Cart" [ref=f78e24] [cursor=pointer]
+        - navigation [ref=f78e30]:
+          - link [ref=f78e31] [cursor=pointer]:
+            - /url: /login?next=%2Fdomains
+            - paragraph [ref=f78e33]: Login
+          - link [ref=f78e34] [cursor=pointer]:
+            - /url: /signup?next=%2Fdomains
+            - paragraph [ref=f78e36]: Sign Up
+    - main [ref=f78e37]:
+      - generic [ref=f78e41]:
+        - generic [ref=f78e42]:
+          - paragraph [ref=f78e43]: Find a domain for
+          - paragraph [ref=f78e44]:
+            - generic "Find a domain for the next viral idea." [ref=f78e45]:
+              - generic [ref=f78e46]:
+                - generic [ref=f78e47]: t
+                - generic [ref=f78e48]: h
+                - generic [ref=f78e49]: e
+                - generic [ref=f78e51]: "n"
+                - generic [ref=f78e52]: e
+                - generic [ref=f78e53]: x
+                - generic [ref=f78e54]: t
+                - generic [ref=f78e56]: v
+                - generic [ref=f78e57]: i
+                - generic [ref=f78e58]: r
+                - generic [ref=f78e59]: a
+                - generic [ref=f78e60]: l
+                - generic [ref=f78e62]: i
+                - generic [ref=f78e63]: d
+                - generic [ref=f78e64]: e
+                - generic [ref=f78e65]: a
+                - generic [ref=f78e66]: .
+        - paragraph [ref=f78e67]: Fast. At-cost. Private.

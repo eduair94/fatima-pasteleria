@@ -1,0 +1,272 @@
+- generic [active] [ref=f18e1]:
+  - banner [ref=f18e3]:
+    - generic [ref=f18e6]:
+      - generic [ref=f18e7]:
+        - link "Skip to main content":
+          - /url: "#body"
+        - link "Spaceship" [ref=f18e8] [cursor=pointer]:
+          - /url: /
+      - navigation "Top navigation menu" [ref=f18e11]:
+        - button "Open Menu" [ref=f18e12] [cursor=pointer]
+        - text:                
+        - button "Launchpad. Quick access to your account settings, products and tools." [ref=f18e16] [cursor=pointer]
+        - button "Shopping cart status. You currently have 0 items in your cart." [ref=f18e20] [cursor=pointer]
+        - button "Select this option for a drop-down menu with actions for logged out user" [ref=f18e24] [cursor=pointer]
+  - generic [ref=f18e31]:
+    - generic [ref=f18e32]:
+      - img "planet orbit" [ref=f18e33]
+      - heading "Oops! We could not find the page you were looking for..." [level=1] [ref=f18e34]
+      - generic [ref=f18e39]:
+        - group [ref=f18e43]:
+          - generic [ref=f18e44]:
+            - button "Currently selected SEARCH form mode. Press tab to chose another form mode" [pressed] [ref=f18e45] [cursor=pointer]:
+              - generic [ref=f18e46]: Register
+            - button "Currently selected SEARCH form mode. Press enter to switch form mode to TRANSFER." [ref=f18e47] [cursor=pointer]:
+              - generic [ref=f18e48]: Transfer
+        - generic [ref=f18e50]:
+          - generic [ref=f18e51]:
+            - searchbox "Use the search bar to search for domains available for purchase." [ref=f18e53]
+            - generic: Search for a domain name…
+          - generic [ref=f18e54]:
+            - button "Beast Mode" [ref=f18e55] [cursor=pointer]
+            - button "Search" [ref=f18e58] [cursor=pointer]
+    - generic [ref=f18e61]:
+      - heading "Here's some cool stuff for you" [level=2] [ref=f18e62]
+      - generic [ref=f18e63]:
+        - generic [ref=f18e67]:
+          - group "Slide 2" [ref=f18e68]:
+            - generic [ref=f18e69]:
+              - img "Security image" [ref=f18e71]
+              - generic [ref=f18e72]:
+                - heading "Security" [level=3] [ref=f18e73]
+                - paragraph [ref=f18e74]: Keeping your domain registration info private.
+                - link "Explore Security" [ref=f18e75] [cursor=pointer]:
+                  - /url: /security/
+          - group "Slide 3" [ref=f18e77]:
+            - generic [ref=f18e78]:
+              - img "Email image" [ref=f18e80]
+              - generic [ref=f18e81]:
+                - heading "Email" [level=3] [ref=f18e82]
+                - paragraph [ref=f18e83]: Smart inside. Simple outside. Secure everywhere.
+                - link "Explore Email" [ref=f18e84] [cursor=pointer]:
+                  - /url: /email/
+          - group "Slide 0" [ref=f18e86]:
+            - generic [ref=f18e87]:
+              - img "Domains image" [ref=f18e89]
+              - generic [ref=f18e90]:
+                - heading "Domains" [level=3] [ref=f18e91]
+                - paragraph [ref=f18e92]: The beginning of your online journey and identity.
+                - link "Explore Domains" [ref=f18e93] [cursor=pointer]:
+                  - /url: /domains/
+          - group "Slide 1" [ref=f18e95]:
+            - generic [ref=f18e96]:
+              - img "Web hosting image" [ref=f18e98]
+              - generic [ref=f18e99]:
+                - heading "Web Hosting" [level=3] [ref=f18e100]
+                - paragraph [ref=f18e101]: Speed, security, stability... it’s powerfully simple and ready to go.
+                - link "Explore Hosting" [ref=f18e102] [cursor=pointer]:
+                  - /url: /hosting/shared/
+          - group "Slide 2" [ref=f18e104]:
+            - generic [ref=f18e105]:
+              - img "Security image" [ref=f18e107]
+              - generic [ref=f18e108]:
+                - heading "Security" [level=3] [ref=f18e109]
+                - paragraph [ref=f18e110]: Keeping your domain registration info private.
+                - link "Explore Security" [ref=f18e111] [cursor=pointer]:
+                  - /url: /security/
+          - group "Slide 3" [ref=f18e113]:
+            - generic [ref=f18e114]:
+              - img "Email image" [ref=f18e116]
+              - generic [ref=f18e117]:
+                - heading "Email" [level=3] [ref=f18e118]
+                - paragraph [ref=f18e119]: Smart inside. Simple outside. Secure everywhere.
+                - link "Explore Email" [ref=f18e120] [cursor=pointer]:
+                  - /url: /email/
+          - group "Slide 0" [ref=f18e122]:
+            - generic [ref=f18e123]:
+              - img "Domains image" [ref=f18e125]
+              - generic [ref=f18e126]:
+                - heading "Domains" [level=3] [ref=f18e127]
+                - paragraph [ref=f18e128]: The beginning of your online journey and identity.
+                - link "Explore Domains" [ref=f18e129] [cursor=pointer]:
+                  - /url: /domains/
+          - group "Slide 1" [ref=f18e131]:
+            - generic [ref=f18e132]:
+              - img "Web hosting image" [ref=f18e134]
+              - generic [ref=f18e135]:
+                - heading "Web Hosting" [level=3] [ref=f18e136]
+                - paragraph [ref=f18e137]: Speed, security, stability... it’s powerfully simple and ready to go.
+                - link "Explore Hosting" [ref=f18e138] [cursor=pointer]:
+                  - /url: /hosting/shared/
+        - group "Choose slide to display" [ref=f18e140]:
+          - button "Slide 0" [disabled]
+          - button "Slide 1" [ref=f18e141] [cursor=pointer]
+          - button "Slide 2" [ref=f18e142] [cursor=pointer]
+          - button "Slide 3" [ref=f18e143] [cursor=pointer]
+      - generic [ref=f18e144]:
+        - heading "Suggested for you" [level=2] [ref=f18e145]
+        - generic [ref=f18e149]:
+          - generic [ref=f18e153]:
+            - group "Slide 2":
+              - generic [ref=f18e156]:
+                - generic [ref=f18e157]:
+                  - img "Web Hosting" [ref=f18e159]
+                  - generic [ref=f18e160]: 
+                - generic [ref=f18e161]:
+                  - generic [ref=f18e163]:
+                    - paragraph [ref=f18e164]: Web Hosting
+                    - paragraph [ref=f18e165]: Essential
+                  - paragraph [ref=f18e169]: Spaceship Web Hosting has everything you need for a fast, secure, and reliable website.
+            - group "Slide 3":
+              - generic [ref=f18e174]:
+                - generic [ref=f18e175]:
+                  - img "EasyWP" [ref=f18e177]
+                  - generic [ref=f18e178]: 
+                - generic [ref=f18e179]:
+                  - generic [ref=f18e181]:
+                    - paragraph [ref=f18e182]: EasyWP
+                    - paragraph [ref=f18e183]: Starter
+                  - paragraph [ref=f18e187]: Speedy, simplified hosting for WordPress.
+            - group "Slide 0" [ref=f18e190]:
+              - generic [ref=f18e193]:
+                - generic [ref=f18e194]:
+                  - img "Spacemail" [ref=f18e196]
+                  - generic [ref=f18e197]: 
+                - generic [ref=f18e198]:
+                  - generic [ref=f18e200]:
+                    - paragraph [ref=f18e201]: Spacemail
+                    - paragraph [ref=f18e202]: Pro
+                  - paragraph [ref=f18e206]: With integrated calendar, lightning-quick AI drafts, and seamless setup.
+            - group "Slide 1" [ref=f18e209]:
+              - generic [ref=f18e212]:
+                - generic [ref=f18e213]:
+                  - img "Alf Website" [ref=f18e215]
+                  - generic [ref=f18e216]: 
+                - generic [ref=f18e217]:
+                  - generic [ref=f18e219]:
+                    - paragraph [ref=f18e220]: Alf Website
+                    - paragraph [ref=f18e221]: Standard
+                  - paragraph [ref=f18e225]: Build your dream website in minutes, no tech skills needed, just your ideas.
+            - group "Slide 2" [ref=f18e228]:
+              - generic [ref=f18e231]:
+                - generic [ref=f18e232]:
+                  - img "Web Hosting" [ref=f18e234]
+                  - generic [ref=f18e235]: 
+                - generic [ref=f18e236]:
+                  - generic [ref=f18e238]:
+                    - paragraph [ref=f18e239]: Web Hosting
+                    - paragraph [ref=f18e240]: Essential
+                  - paragraph [ref=f18e244]: Spaceship Web Hosting has everything you need for a fast, secure, and reliable website.
+            - group "Slide 3" [ref=f18e247]:
+              - generic [ref=f18e250]:
+                - generic [ref=f18e251]:
+                  - img "EasyWP" [ref=f18e253]
+                  - generic [ref=f18e254]: 
+                - generic [ref=f18e255]:
+                  - generic [ref=f18e257]:
+                    - paragraph [ref=f18e258]: EasyWP
+                    - paragraph [ref=f18e259]: Starter
+                  - paragraph [ref=f18e263]: Speedy, simplified hosting for WordPress.
+            - group "Slide 0":
+              - generic [ref=f18e268]:
+                - generic [ref=f18e269]:
+                  - img "Spacemail" [ref=f18e271]
+                  - generic [ref=f18e272]: 
+                - generic [ref=f18e273]:
+                  - generic [ref=f18e275]:
+                    - paragraph [ref=f18e276]: Spacemail
+                    - paragraph [ref=f18e277]: Pro
+                  - paragraph [ref=f18e281]: With integrated calendar, lightning-quick AI drafts, and seamless setup.
+            - group "Slide 1":
+              - generic [ref=f18e286]:
+                - generic [ref=f18e287]:
+                  - img "Alf Website" [ref=f18e289]
+                  - generic [ref=f18e290]: 
+                - generic [ref=f18e291]:
+                  - generic [ref=f18e293]:
+                    - paragraph [ref=f18e294]: Alf Website
+                    - paragraph [ref=f18e295]: Standard
+                  - paragraph [ref=f18e299]: Build your dream website in minutes, no tech skills needed, just your ideas.
+          - group "Choose slide to display" [ref=f18e302]:
+            - button "Slide 0" [disabled]
+            - button "Slide 1" [ref=f18e303] [cursor=pointer]
+            - button "Slide 2" [ref=f18e304] [cursor=pointer]
+            - button "Slide 3" [ref=f18e305] [cursor=pointer]
+  - generic [ref=f18e309]:
+    - separator [ref=f18e310]
+    - contentinfo "More on Spaceship" [ref=f18e311]:
+      - generic [ref=f18e312]:
+        - navigation [ref=f18e313]:
+          - list [ref=f18e315]:
+            - listitem [ref=f18e316]:
+              - button "Domains" [ref=f18e317]
+            - listitem [ref=f18e321]:
+              - button "Hosting" [ref=f18e322]
+            - listitem [ref=f18e326]:
+              - button "Email" [ref=f18e327]
+            - listitem [ref=f18e331]:
+              - button "Starlight™ Cloud" [ref=f18e332]
+            - listitem [ref=f18e336]:
+              - button "Security" [ref=f18e337]
+          - button "Transfer to Us" [ref=f18e342]
+          - button "Why Spaceship" [ref=f18e347]
+          - button "About Spaceship" [ref=f18e352]
+          - button "Customer Service" [ref=f18e357]
+        - generic [ref=f18e361]:
+          - separator [ref=f18e363]
+          - generic [ref=f18e364]:
+            - paragraph [ref=f18e365]: Payment Options
+            - 'figure "Display of available payment options: Visa, Mastercard, American Express, PayPal, Bitcoin" [ref=f18e366]':
+              - generic [ref=f18e367]:
+                - img "Visa" [ref=f18e368]
+                - img "Mastercard" [ref=f18e369]
+                - img "American express" [ref=f18e370]
+                - img "Discover" [ref=f18e371]
+                - img "Dinersclub" [ref=f18e372]
+                - img "JCB" [ref=f18e373]
+                - img "UnionPay" [ref=f18e374]
+                - img "Bitcoin" [ref=f18e375]
+                - img "Paypal" [ref=f18e376]
+                - img "GooglePay" [ref=f18e377]
+                - img "ApplePay" [ref=f18e378]
+                - img "Alipay" [ref=f18e379]
+              - paragraph [ref=f18e380]: We protect and save your data.
+          - generic [ref=f18e381]:
+            - paragraph [ref=f18e382]: Certified By
+            - generic [ref=f18e383]:
+              - list [ref=f18e385]:
+                - listitem [ref=f18e386]:
+                  - img "icann" [ref=f18e387]
+                  - paragraph [ref=f18e388]: We are an ICANN-accredited registrar. Serving customers since 2022.
+                - listitem [ref=f18e389]:
+                  - img "Sectigo" [ref=f18e390]
+              - link [ref=f18e392] [cursor=pointer]:
+                - /url: https://www.producthunt.com/posts/spaceship-3?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-spaceship-3
+                - img "Spaceship.com - The future of domain, website, and digital product management | Product Hunt" [ref=f18e393]
+          - separator [ref=f18e395]
+        - generic [ref=f18e396]:
+          - generic [ref=f18e398]:
+            - img "Spaceship" [ref=f18e399]
+            - generic [ref=f18e400]:
+              - paragraph [ref=f18e401]: The entirety of this site is protected by copyright © 2019–2026 Spaceship, Inc
+              - paragraph [ref=f18e402]: 4600 East Washington Street, Suite 300, Phoenix, AZ 85034, USA
+          - list [ref=f18e404]:
+            - listitem [ref=f18e405]:
+              - link "Facebook" [ref=f18e406] [cursor=pointer]:
+                - /url: https://www.facebook.com/spaceship
+            - listitem [ref=f18e410]:
+              - link "Twitter" [ref=f18e411] [cursor=pointer]:
+                - /url: https://twitter.com/spaceship
+            - listitem [ref=f18e415]:
+              - link "Instagram" [ref=f18e416] [cursor=pointer]:
+                - /url: https://www.instagram.com/spaceship
+            - listitem [ref=f18e420]:
+              - link "Linkedin" [ref=f18e421] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/spaceshipcom/
+  - generic [ref=f18e427]:
+    - heading "Hello! Want to change your language?" [level=6] [ref=f18e428]
+    - generic [ref=f18e429]: Do you speak Español?
+    - generic [ref=f18e430]: You can change your preferences to use Spaceship in Español.
+    - generic [ref=f18e431]:
+      - button "No, don't change" [ref=f18e432] [cursor=pointer]
+      - button "Yes, change my preferences" [ref=f18e434] [cursor=pointer]

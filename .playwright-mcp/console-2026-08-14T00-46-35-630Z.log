@@ -1,0 +1,4 @@
+[    1205ms] [LOG] Hydration mode @ https://www.namesilo.com/spa/search-domains/js/app.2148df8e.js:0
+[    1539ms] [LOG] mount @ https://www.namesilo.com/spa/search-domains/js/chunk-vendors.258b8d4e.js:23
+[    1783ms] [ERROR] Hydration completed but contains mismatches. @ https://www.namesilo.com/spa/search-domains/js/chunk-vendors.258b8d4e.js:23
+[    2485ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://www.namesilo.com/ai/widget/ai-chat-widget.mjs:0

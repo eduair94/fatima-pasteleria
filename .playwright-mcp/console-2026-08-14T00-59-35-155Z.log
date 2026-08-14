@@ -1,0 +1,30 @@
+[    1516ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://www.godaddy.com/es/dominios/registro-de-dominios:0
+[    1719ms] [ERROR] Error resolving from component map (LocalizedUrl) @ https://www.godaddy.com/storefront-assets/155/_next/static/chunks/pages/_app-db5baf00b43ad077.js:0
+[    1782ms] Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at oa (https://img6.wsimg.com/ux-assets/react/18/jsx/react-dom.umd.js:10:48168)
+    at Do (https://img6.wsimg.com/ux-assets/react/18/jsx/react-dom.umd.js:10:78074)
+    at wi (https://img6.wsimg.com/ux-assets/react/18/jsx/react-dom.umd.js:10:121083)
+    at vs (https://img6.wsimg.com/ux-assets/react/18/jsx/react-dom.umd.js:10:108458)
+    at hs (https://img6.wsimg.com/ux-assets/react/18/jsx/react-dom.umd.js:10:108386)
+    at ms (https://img6.wsimg.com/ux-assets/react/18/jsx/react-dom.umd.js:10:108249)
+    at ts (https://img6.wsimg.com/ux-assets/react/18/jsx/react-dom.umd.js:10:103414)
+    at w (https://img6.wsimg.com/ux-assets/react/18/jsx/react-dom.umd.js:1:1856)
+    at MessagePort.P (https://img6.wsimg.com/ux-assets/react/18/jsx/react-dom.umd.js:1:2388)
+[    1783ms] Error: Minified React error #423; visit https://reactjs.org/docs/error-decoder.html?invariant=423 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at wi (https://img6.wsimg.com/ux-assets/react/18/jsx/react-dom.umd.js:10:120566)
+    at vs (https://img6.wsimg.com/ux-assets/react/18/jsx/react-dom.umd.js:10:108458)
+    at hs (https://img6.wsimg.com/ux-assets/react/18/jsx/react-dom.umd.js:10:108386)
+    at ms (https://img6.wsimg.com/ux-assets/react/18/jsx/react-dom.umd.js:10:108249)
+    at rs (https://img6.wsimg.com/ux-assets/react/18/jsx/react-dom.umd.js:10:105084)
+    at ts (https://img6.wsimg.com/ux-assets/react/18/jsx/react-dom.umd.js:10:103640)
+    at w (https://img6.wsimg.com/ux-assets/react/18/jsx/react-dom.umd.js:1:1856)
+    at MessagePort.P (https://img6.wsimg.com/ux-assets/react/18/jsx/react-dom.umd.js:1:2388)
+[    2075ms] [LOG] data = {standardEventName: PageView, tagIds: Array(5), eventName: standard, advancedMatching: false, includeTcf: false} @ https://img1.wsimg.com/tagging/js/g.js?p=GTM-5WB8X7D&l=_wGtmDataLayer:1010
+[    2163ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://cdn.krxd.net/controltag/ux5pjwjr7.js:0
+[    2366ms] [WARNING] pixel already configured. @ https://cdn.pdst.fm/ping.min.js:0
+[    2429ms] [WARNING] [Meta Pixel] - Invalid parameter format for currency. Please refer https://developers.facebook.com/docs/meta-pixel/reference/ for valid parameter specifications. @ https://connect.facebook.net/en_US/fbevents.js:197
+[    2573ms] Unexpected identifier 'content'
+[    3018ms] [ERROR] Attestation check for Attribution Reporting on https://ara.paa-reporting-advertising.amazon failed. @ https://www.godaddy.com/es/dominios/registro-de-dominios:0
+[    3028ms] [ERROR] Attestation check for Shared Storage on https://ara.paa-reporting-advertising.amazon failed. @ https://www.godaddy.com/es/dominios/registro-de-dominios:0
+[    3710ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://www.godaddy.com/es/device-risk/general5/gCXbkfe08EXkWVwoV47pGOwRrZgO9gm1DGsVtkV4Wiw/static_wdp.js?loaderVer=5.8.1&compat=false&tp=true&tp_split=false&fp_static=true&fp_dyn=true:0
+[    3743ms] [ERROR] Invalid command sent to data layer undefined [cmdLogEvent, impression, ads.adPlacementKey_fos-404-house.omsId_baseline/ps…bd871e1904fa1950f34da35d1a92b.viewable.impression, undefined] @ https://edge.fullstory.com/s/fs.js:1
